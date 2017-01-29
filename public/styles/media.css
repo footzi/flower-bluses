@@ -1,0 +1,56 @@
+@media (max-width:640px) {
+
+body {
+  background-image: url("../images/fon640.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav{
+    display:none;
+}
+.stock{
+    display:none;
+}
+.news{
+    display:none;
+}
+footer{
+    display:none;
+}
+main{
+    width:100%;
+    text-align:center;
+    box-sizing:border-box;
+    margin:20% 0 0 0;
+    padding:0 5% 0 5%;
+
+}
+.header-burgerbutton img{
+    margin:3% 3% 0 0;
+    float:right;
+    width:10%;
+
+}
+.clear{
+    clear: both;
+}
+.title{
+    outline:2px solid red;
+}
+.main-title{
+    margin:0;
+    font-size: 4vw;
+}
+.main-introducion{
+    margin:0;
+    font-size:3vw;
+}
+}
+
+
+
+@media (min-width:641px){
+    header{
+        display:none;
+    }
+}
