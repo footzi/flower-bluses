@@ -1,0 +1,27 @@
+var webpack = require('webpack');
+var path = require('path');
+
+module.exports = {
+    entry: './src/js/app.js',
+    output: {
+        path: __dirname + '/public/js',
+        publicPath: 'js/',
+        filename: 'build.js'
+    },
+
+    module: {
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: "react-hot!babel",
+                exclude: [/node_modules/, /public/]
+            },{
+                test: /\.jsx$/,
+                loader: "react-hot!babel",
+                exclude: [/node_modules/, /public/]
+            },
+
+        ]
+    },
+    plugins: []
+}
