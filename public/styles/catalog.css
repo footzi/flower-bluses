@@ -1,0 +1,14 @@
+.catalog-name {
+  margin-top: 9.5%;
+  font-size: 3vw;
+  font-family: "Arial";
+  color: rgb(129, 88, 159);
+}
+.catalog-introduction {
+  font-size: 26px;
+  font-family: "Arial";
+  color: rgb(106, 106, 106);
+}
+.catalog-img img {
+    margin-right:0.7%;
+}
