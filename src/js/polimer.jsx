@@ -11,19 +11,20 @@ let Polimer = React.createClass({
 <div>
     Полимерная глина
     <div>
-        <ul>
-            <Link to="/catalog/polimer:pendants"><li>Все</li></Link>    
-            <li><a href="#">Кулоны/подвески</a></li>
-            <li><a href="#">Серьги</a></li>
-            <li><a href="#">Кольца</a></li>
-            <li><a href="#">Браслеты</a></li>
-            <li><a href="#">Броши/заколки</a></li>
-            <li><a href="#">Наборы</a></li>
-            <li><a href="#">Обводки</a></li>
-            <div>
-    {this.props.children}
-    </div>
-        </ul>
+        <div className="catalog-navbar">
+            <ul>
+                <Link to="/catalog/polimer/pendants"><li>Все</li></Link>    
+                <li><a href="#">Кулоны/подвески</a></li>
+                <li><a href="#">Серьги</a></li>
+                <li><a href="#">Кольца</a></li>
+                <li><a href="#">Браслеты</a></li>
+                <li><a href="#">Наборы</a></li>
+                <li><a href="#">Обводки</a></li>
+            </ul>
+        </div>
+        <div>
+            {this.props.children}
+        </div>
         
     </div>
 </div>
