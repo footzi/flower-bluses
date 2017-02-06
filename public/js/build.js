@@ -72,12 +72,41 @@
 
 	var _polimerJsx2 = _interopRequireDefault(_polimerJsx);
 
+	var _pendantsJsx = __webpack_require__(244);
+
+	var _pendantsJsx2 = _interopRequireDefault(_pendantsJsx);
+
+	var _productPendantJsx = __webpack_require__(248);
+
+	var _productPendantJsx2 = _interopRequireDefault(_productPendantJsx);
+
+	var _allJsx = __webpack_require__(246);
+
+	var _allJsx2 = _interopRequireDefault(_allJsx);
+
+	var _productAllJsx = __webpack_require__(249);
+
+	var _productAllJsx2 = _interopRequireDefault(_productAllJsx);
+
 	_reactDom2['default'].render(_react2['default'].createElement(
 	    _reactRouter.Router,
-	    { history: _reactRouter.hashHistory },
+	    { history: _reactRouter.browserHistory },
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/', component: _indexJsx2['default'] }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/catalog', component: _catalogJsx2['default'] }),
-	    _react2['default'].createElement(_reactRouter.Route, { path: '/polimer', component: _polimerJsx2['default'] })
+	    _react2['default'].createElement(
+	        _reactRouter.Route,
+	        { path: '/catalog/polimer', component: _polimerJsx2['default'] },
+	        _react2['default'].createElement(
+	            _reactRouter.Route,
+	            { path: '/catalog/polimer/all', component: _allJsx2['default'] },
+	            _react2['default'].createElement(_reactRouter.Route, { path: '/catalog/polimer/all/:productId', component: _productAllJsx2['default'] })
+	        ),
+	        _react2['default'].createElement(
+	            _reactRouter.Route,
+	            { path: '/catalog/polimer/pendants', component: _pendantsJsx2['default'] },
+	            _react2['default'].createElement(_reactRouter.Route, { path: '/catalog/polimer/pendants/:productId', component: _productPendantJsx2['default'] })
+	        )
+	    )
 	), document.getElementById("main"));
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "app.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
@@ -27206,7 +27235,12 @@
 	                _react2['default'].createElement(
 	                    'p',
 	                    { className: 'main-introduction' },
-	                    'Безусловно, достичь совершенства и соперничать с художником – природой , невозможно... Но, приблизиться к природной красоте , так, чтобы захотелось вдохнуть аромат , всколыхнуть воспоминания о весеннем пробуждении или почувствовать грусть осени… эту возможность дает удивительное искусство Керамической флористики!'
+	                    'Безусловно, достичь совершенства и соперничать с художником – природой, невозможно... Но, приблизиться к природной красоте, так, чтобы захотелось вдохнуть аромат, всколыхнуть воспоминания о весеннем пробуждении или почувствовать грусть осени... эту возможность дает удивительное искусство ',
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'center' },
+	                        'Керамической флористики!'
+	                    )
 	                )
 	            ),
 	            _react2['default'].createElement(
@@ -27296,7 +27330,7 @@
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
-	   value: true
+	    value: true
 	});
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
@@ -27308,41 +27342,78 @@
 	var _reactRouter = __webpack_require__(178);
 
 	var Catalog = _react2["default"].createClass({
-	   displayName: "Catalog",
+	    displayName: "Catalog",
 
-	   render: function render() {
-	      return _react2["default"].createElement(
-	         "div",
-	         null,
-	         _react2["default"].createElement(
+	    render: function render() {
+	        return _react2["default"].createElement(
 	            "div",
-	            { className: "catalog-title" },
+	            { className: "catalog" },
 	            _react2["default"].createElement(
-	               "div",
-	               { className: "catalog-name" },
-	               "Каталог"
+	                "div",
+	                { className: "catalog-title" },
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "main-title" },
+	                    "Каталог"
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "main-introduction" },
+	                    "Здесь Вы найдете нежные и изящные украшения и необычные интерьерные композициции из цветов. Они не завянут и Вы сможете любоваться ими круглый год, и они всегда будут радовать Вас своей свежестью и красотой! По Вашему желанию, можно обсудить возможность создания Ваших любимых цветов. Цветочные украшения изготавливаются только из сертифицированных японских самозастывающих полимерных глин и ювелирной смлы Практически все цветы из полимерной глины я делаю на заказ. Уточнить наличие той или иной композиции можно, ",
+	                    _react2["default"].createElement(
+	                        "p",
+	                        { className: "center" },
+	                        "написав мне на почту."
+	                    )
+	                )
 	            ),
 	            _react2["default"].createElement(
-	               "p",
-	               { className: "catalog-introduction" },
-	               "Здесь Вы найдете нежные и изящные украшения и необычные интерьерные композициции из цветов. Они не завянут и Вы сможете любоваться ими круглый год, и они всегда будут радовать Вас своей свежестью и красотой! По Вашему желанию, можно обсудить возможность создания Ваших любимых цветов. Цветочные украшения изготавливаются только из сертифицированных японских самозастывающих полимерных глин и ювелирной смлы Практически все цветы из полимерной глины я делаю на заказ. Уточнить наличие той или иной композиции можно, написав мне на почту."
+	                "div",
+	                { className: "catalog-img" },
+	                _react2["default"].createElement(
+	                    _reactRouter.Link,
+	                    { to: "/catalog/polimer" },
+	                    " ",
+	                    _react2["default"].createElement("img", { src: "../images/catalog/1.png" }),
+	                    " "
+	                ),
+	                _react2["default"].createElement("img", { src: "../images/catalog/2.png" }),
+	                _react2["default"].createElement("img", { className: "last", src: "../images/catalog/3.png" })
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                { className: "catalog-info" },
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "catalog-info-polimer" },
+	                    _react2["default"].createElement(
+	                        "p",
+	                        { className: "catalog-info-title" },
+	                        "ПОЛИМЕРНАЯ ГЛИНА"
+	                    ),
+	                    _react2["default"].createElement(
+	                        "p",
+	                        { className: "catalog-info-text" },
+	                        "Цветочные украшения из полимерной глины обладают необычайной легкостью и реалистичностью. Благодаря этим двум качествам цветы ручной работы пользуются большой популярностью среди женского населения. Многообразие цветов и исключительно ручная работа позволяет создавать уникальные украшения, которых не будет больше ни у кого. Даже две одинаковые веточки сирени будут выглядеть по-разному и необычайно живо. Украшения ручной работы из самозастывающей полимерной глины — это красивый, эффектный и уникальный подарок. Вам не стоит бояться, что вы можете подарить то, что уже есть у человека. Любое цветочное украшение будет уникальным!"
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "catalog-info-jewellery" },
+	                    _react2["default"].createElement(
+	                        "p",
+	                        { className: "catalog-info-title" },
+	                        "ЮВЕЛИРНАЯ СМОЛА"
+	                    ),
+	                    _react2["default"].createElement(
+	                        "p",
+	                        { className: "catalog-info-text" },
+	                        "Цветочные украшения из полимерной глины обладают необычайной легкостью и реалистичностью. Благодаря этим двум качествам цветы ручной работы пользуются большой популярностью среди женского населения. Многообразие цветов и исключительно ручная работа позволяет создавать уникальные украшения, которых не будет больше ни у кого. Даже две одинаковые веточки сирени будут выглядеть по-разному и необычайно живо. Украшения ручной работы из самозастывающей полимерной глины — это красивый, эффектный и уникальный подарок. Вам не стоит бояться, что вы можете подарить то, что уже есть у человека. Любое цветочное украшение будет уникальным!"
+	                    )
+	                )
 	            )
-	         ),
-	         _react2["default"].createElement(
-	            "div",
-	            { className: "catalog-img" },
-	            _react2["default"].createElement(
-	               _reactRouter.Link,
-	               { to: "/polimer" },
-	               " ",
-	               _react2["default"].createElement("img", { src: "../images/catalog/1.jpg" }),
-	               " "
-	            ),
-	            _react2["default"].createElement("img", { src: "../images/catalog/2.jpg" }),
-	            _react2["default"].createElement("img", { src: "../images/catalog/3.jpg" })
-	         )
-	      );
-	   }
+	        );
+	    }
 	});
 
 	exports["default"] = Catalog;
@@ -27378,94 +27449,136 @@
 
 	var _pendantsJsx2 = _interopRequireDefault(_pendantsJsx);
 
+	var _allJsx = __webpack_require__(246);
+
+	var _allJsx2 = _interopRequireDefault(_allJsx);
+
 	var Polimer = _react2['default'].createClass({
 	    displayName: 'Polimer',
 
+	    getInitialState: function getInitialState() {
+	        return {
+	            shouldHide: false
+	        };
+	    },
+	    onClick: function onClick() {
+	        if (!this.state.shouldHide) {
+	            this.setState({
+	                shouldHide: true
+	            });
+	        }
+	    },
 	    render: function render() {
 	        return _react2['default'].createElement(
 	            'div',
-	            null,
-	            'Полимерная глина',
+	            { className: 'list-items' },
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'catalog-info-polimer' },
+	                _react2['default'].createElement(
+	                    'p',
+	                    { className: 'catalog-info-title' },
+	                    'ПОЛИМЕРНАЯ ГЛИНА'
+	                ),
+	                _react2['default'].createElement(
+	                    'p',
+	                    { className: 'catalog-info-text' },
+	                    'Цветочные украшения из полимерной глины обладают необычайной легкостью и реалистичностью. Благодаря этим двум качествам цветы ручной работы пользуются большой популярностью среди женского населения. Многообразие цветов и исключительно ручная работа позволяет создавать уникальные украшения, которых не будет больше ни у кого. Даже две одинаковые веточки сирени будут выглядеть по-разному и необычайно живо. Украшения ручной работы из самозастывающей полимерной глины — это красивый, эффектный и уникальный подарок. Вам не стоит бояться, что вы можете подарить то, что уже есть у человека. Любое цветочное украшение будет уникальным!'
+	                )
+	            ),
 	            _react2['default'].createElement(
 	                'div',
 	                null,
 	                _react2['default'].createElement(
-	                    'ul',
-	                    null,
+	                    'div',
+	                    { className: 'catalog-navbar' },
 	                    _react2['default'].createElement(
-	                        _reactRouter.Link,
-	                        { to: '/pendants' },
-	                        _react2['default'].createElement(
-	                            'li',
-	                            null,
-	                            'Все'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'li',
+	                        'ul',
 	                        null,
 	                        _react2['default'].createElement(
-	                            'a',
-	                            { href: '#' },
-	                            'Кулоны/подвески'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'li',
-	                        null,
+	                            _reactRouter.Link,
+	                            { to: '/catalog/polimer/all', activeClassName: 'active-link', className: 'Link', onClick: this.onClick },
+	                            _react2['default'].createElement(
+	                                'li',
+	                                null,
+	                                'Все'
+	                            )
+	                        ),
 	                        _react2['default'].createElement(
-	                            'a',
-	                            { href: '#' },
-	                            'Серьги'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'li',
-	                        null,
+	                            _reactRouter.Link,
+	                            { to: '/catalog/polimer/pendants', activeClassName: 'active-link', className: 'Link', onClick: this.onClick },
+	                            _react2['default'].createElement(
+	                                'li',
+	                                null,
+	                                'Кулоны/подвески'
+	                            )
+	                        ),
 	                        _react2['default'].createElement(
-	                            'a',
-	                            { href: '#' },
-	                            'Кольца'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'li',
-	                        null,
+	                            _reactRouter.Link,
+	                            { to: '/catalog/polimer/pendants', className: 'Link' },
+	                            _react2['default'].createElement(
+	                                'li',
+	                                null,
+	                                'Серьги'
+	                            )
+	                        ),
 	                        _react2['default'].createElement(
-	                            'a',
-	                            { href: '#' },
-	                            'Браслеты'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'li',
-	                        null,
+	                            _reactRouter.Link,
+	                            { to: '/catalog/polimer/pendants', className: 'Link' },
+	                            _react2['default'].createElement(
+	                                'li',
+	                                null,
+	                                'Кольца'
+	                            )
+	                        ),
 	                        _react2['default'].createElement(
-	                            'a',
-	                            { href: '#' },
-	                            'Броши/заколки'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'li',
-	                        null,
+	                            _reactRouter.Link,
+	                            { to: '/catalog/polimer/pendants', className: 'Link' },
+	                            _react2['default'].createElement(
+	                                'li',
+	                                null,
+	                                'Браслеты'
+	                            )
+	                        ),
 	                        _react2['default'].createElement(
-	                            'a',
-	                            { href: '#' },
-	                            'Наборы'
-	                        )
-	                    ),
-	                    _react2['default'].createElement(
-	                        'li',
-	                        null,
+	                            _reactRouter.Link,
+	                            { to: '/catalog/polimer/pendants', className: 'Link' },
+	                            _react2['default'].createElement(
+	                                'li',
+	                                null,
+	                                'Броши/Заколки'
+	                            )
+	                        ),
 	                        _react2['default'].createElement(
-	                            'a',
-	                            { href: '#' },
-	                            'Обводки'
+	                            _reactRouter.Link,
+	                            { to: '/catalog/polimer/pendants', className: 'Link' },
+	                            _react2['default'].createElement(
+	                                'li',
+	                                null,
+	                                'Наборы'
+	                            )
+	                        ),
+	                        _react2['default'].createElement(
+	                            _reactRouter.Link,
+	                            { to: '/catalog/polimer/pendants', className: 'Link' },
+	                            _react2['default'].createElement(
+	                                'li',
+	                                null,
+	                                'Обводки'
+	                            )
 	                        )
 	                    )
 	                ),
-	                _react2['default'].createElement('div', { id: 'list' })
+	                _react2['default'].createElement(
+	                    'div',
+	                    { id: 'all', className: this.state.shouldHide ? 'hidden' : '' },
+	                    _react2['default'].createElement(_allJsx2['default'], null)
+	                ),
+	                _react2['default'].createElement(
+	                    'div',
+	                    null,
+	                    this.props.children
+	                )
 	            )
 	        );
 	    }
@@ -27482,34 +27595,403 @@
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	'use strict';
+	"use strict";
 
-	Object.defineProperty(exports, '__esModule', {
+	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var Pendants = _react2['default'].createClass({
-	    displayName: 'Pendants',
+	var _DataDataPendantsJs = __webpack_require__(245);
 
+	var _DataDataPendantsJs2 = _interopRequireDefault(_DataDataPendantsJs);
+
+	var Pendants = _react2["default"].createClass({
+	    displayName: "Pendants",
+
+	    contextTypes: {
+	        router: _react2["default"].PropTypes.object.isRequired
+	    },
+	    getInitialState: function getInitialState() {
+	        return {
+	            pendants: _DataDataPendantsJs2["default"]
+	        };
+	    },
+
+	    handlePreviewClick: function handlePreviewClick(productId) {
+	        this.context.router.push("/catalog/polimer/pendants/" + productId);
+	    },
 	    render: function render() {
-	        return _react2['default'].createElement(
-	            'div',
+	        var _this = this;
+
+	        var pendants = this.state.pendants;
+
+	        return _react2["default"].createElement(
+	            "div",
 	            null,
-	            'Здесь долдны быть подвески'
+	            _react2["default"].createElement(
+	                "p",
+	                null,
+	                "Здесь долдны быть подвески"
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                null,
+	                pendants.map(function (product) {
+	                    return _react2["default"].createElement(ProductPreview, {
+	                        key: product.id,
+	                        onClick: _this.handlePreviewClick.bind(null, product.id),
+	                        name: product.name,
+	                        text: product.text
+	                    });
+	                })
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                null,
+	                this.props.children
+	            )
 	        );
 	    }
 	});
 
-	exports['default'] = Pendants;
-	module.exports = exports['default'];
+	var ProductPreview = _react2["default"].createClass({
+	    displayName: "ProductPreview",
+
+	    render: function render() {
+	        var _props = this.props;
+	        var name = _props.name;
+	        var text = _props.text;
+	        var onClick = _props.onClick;
+
+	        return _react2["default"].createElement(
+	            "div",
+	            { className: "product-preview" },
+	            _react2["default"].createElement("img", { className: "product-preview-img", src: "/../images/catalog/3.png" }),
+	            _react2["default"].createElement(
+	                "div",
+	                { className: "TextNameProductPreview" },
+	                text
+	            ),
+	            _react2["default"].createElement(
+	                "button",
+	                { onClick: onClick },
+	                "Кнопошка "
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                null,
+	                this.props.children
+	            )
+	        );
+	    }
+	});
+
+	exports["default"] = Pendants;
+	module.exports = exports["default"];
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "pendants.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var pendants = [{
+	    "id": "1-1",
+	    "name": "Обнимашки 1",
+	    "text": "Обнимашки 1S",
+	    "body": "зто обнимашки 1"
+	}, {
+	    "id": "1-2",
+	    "name": "Обнимашки 2",
+	    "text": "Обнимашки 2",
+	    "body": "зто обнимашки 2"
+	}];
+
+	exports["default"] = pendants;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-pendants.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _DataDataAllJs = __webpack_require__(247);
+
+	var _DataDataAllJs2 = _interopRequireDefault(_DataDataAllJs);
+
+	var All = _react2["default"].createClass({
+	    displayName: "All",
+
+	    contextTypes: {
+	        router: _react2["default"].PropTypes.object.isRequired
+	    },
+	    getInitialState: function getInitialState() {
+	        return {
+	            all: _DataDataAllJs2["default"]
+	        };
+	    },
+
+	    handlePreviewClick: function handlePreviewClick(productId) {
+	        this.context.router.push("/catalog/polimer/all/" + productId);
+	    },
+	    render: function render() {
+	        var _this = this;
+
+	        var all = this.state.all;
+
+	        return _react2["default"].createElement(
+	            "div",
+	            null,
+	            _react2["default"].createElement(
+	                "p",
+	                null,
+	                "Здесь долдны быть подвески"
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                null,
+	                all.map(function (product) {
+	                    return _react2["default"].createElement(ProductPreview, {
+	                        key: product.id,
+	                        onClick: _this.handlePreviewClick.bind(null, product.id),
+	                        name: product.name,
+	                        text: product.text
+	                    });
+	                })
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                null,
+	                this.props.children
+	            )
+	        );
+	    }
+	});
+
+	var ProductPreview = _react2["default"].createClass({
+	    displayName: "ProductPreview",
+
+	    render: function render() {
+	        var _props = this.props;
+	        var name = _props.name;
+	        var text = _props.text;
+	        var onClick = _props.onClick;
+
+	        return _react2["default"].createElement(
+	            "div",
+	            { className: "product-preview" },
+	            _react2["default"].createElement("img", { className: "product-preview-img", src: "/../images/catalog/3.png" }),
+	            _react2["default"].createElement(
+	                "div",
+	                { className: "TextNameProductPreview" },
+	                text
+	            ),
+	            _react2["default"].createElement(
+	                "button",
+	                { onClick: onClick },
+	                "Кнопошка "
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                null,
+	                this.props.children
+	            )
+	        );
+	    }
+	});
+
+	exports["default"] = All;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "all.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var all = [{
+	    "id": "1-1-1",
+	    "name": "Обнимашки все",
+	    "text": "Обнимашки все",
+	    "body": "зто обнимашки 1"
+	}, {
+	    "id": "1-1-2",
+	    "name": "Обнимашки все",
+	    "text": "Обнимашки все",
+	    "body": "зто обнимашки 2"
+	}];
+
+	exports["default"] = all;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-all.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _DataDataPendantsJs = __webpack_require__(245);
+
+	var _DataDataPendantsJs2 = _interopRequireDefault(_DataDataPendantsJs);
+
+	var ProductPendant = _react2["default"].createClass({
+	    displayName: "ProductPendant",
+
+	    getInitialState: function getInitialState() {
+	        var productId = this.props.params.productId;
+
+	        return {
+	            product: _DataDataPendantsJs2["default"].find(function (product) {
+	                return product.id === productId;
+	            })
+	        };
+	    },
+	    render: function render() {
+	        var product = this.state.product;
+
+	        return _react2["default"].createElement(
+	            "div",
+	            null,
+	            _react2["default"].createElement(
+	                "p",
+	                null,
+	                product.name
+	            ),
+	            _react2["default"].createElement(
+	                "p",
+	                null,
+	                product.text
+	            ),
+	            _react2["default"].createElement(
+	                "p",
+	                null,
+	                product.body
+	            )
+	        );
+	    }
+	});
+
+	exports["default"] = ProductPendant;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product-pendant.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _DataDataAllJs = __webpack_require__(247);
+
+	var _DataDataAllJs2 = _interopRequireDefault(_DataDataAllJs);
+
+	var ProductAll = _react2["default"].createClass({
+	    displayName: "ProductAll",
+
+	    getInitialState: function getInitialState() {
+	        var productId = this.props.params.productId;
+
+	        return {
+	            product: _DataDataAllJs2["default"].find(function (product) {
+	                return product.id === productId;
+	            })
+	        };
+	    },
+	    render: function render() {
+	        var product = this.state.product;
+
+	        return _react2["default"].createElement(
+	            "div",
+	            null,
+	            _react2["default"].createElement(
+	                "p",
+	                null,
+	                product.name
+	            ),
+	            _react2["default"].createElement(
+	                "p",
+	                null,
+	                product.text
+	            ),
+	            _react2["default"].createElement(
+	                "p",
+	                null,
+	                product.body
+	            )
+	        );
+	    }
+	});
+
+	exports["default"] = ProductAll;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product-all.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ }
 /******/ ]);

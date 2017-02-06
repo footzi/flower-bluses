@@ -1,27 +1,28 @@
 import React from 'react';
-import pendants from "./Data/data-pendants.js";
+import ReactDOM from "react-dom";
+import all from "./Data/data-all.js";
 
-let Pendants = React.createClass({
+let All = React.createClass({
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
     getInitialState() {
         return {
-            pendants
+            all
         }
     },
 
     handlePreviewClick(productId) {
-        this.context.router.push(`/catalog/polimer/pendants/${productId}`);
+        this.context.router.push(`/catalog/polimer/all/${productId}`);
     },
     render () {
-        let { pendants } = this.state;
+        let { all } = this.state;
         return (
-            <div>
+            <div >
             <p>Здесь долдны быть подвески</p>
                 <div>
                 {
-                    pendants.map(product => 
+                    all.map(product => 
                     <ProductPreview
                         key={product.id}
                         onClick={this.handlePreviewClick.bind(null, product.id)}
@@ -63,6 +64,4 @@ let ProductPreview = React.createClass ({
 })
 
 
-
-
-export default Pendants;
+export default All;

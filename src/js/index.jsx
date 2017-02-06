@@ -12,6 +12,7 @@ let Index = React.createClass({
             <h1 className="stock-title">УКРАШЕНИЯ В НАЛИЧИИ:</h1>
             <div className="img">
                 <img className="stock-img" src="images/1.jpg" />
+            
                 <img className="stock-img" src="images/2.jpg" />
                 <img className="stock-img" src="images/3.jpg" />
             </div>
