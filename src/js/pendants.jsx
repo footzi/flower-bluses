@@ -18,13 +18,13 @@ let Pendants = React.createClass({
         let { pendants } = this.state;
         return (
             <div>
-            <p>Здесь долдны быть подвески</p>
                 <div>
                 {
                     pendants.map(product => 
                     <ProductPreview
                         key={product.id}
                         onClick={this.handlePreviewClick.bind(null, product.id)}
+                        imagePreview={product.imagePreview}
                         name={product.name}
                         text={product.text}
                     />
@@ -45,18 +45,23 @@ let Pendants = React.createClass({
 
 let ProductPreview = React.createClass ({
 	render () {
-		let {name, text, onClick } = this.props;
+    
+		let {name, text, imagePreview, onClick} = this.props;
 		return (
 		<div className="product-preview">
-            <img className="product-preview-img" src="/../images/catalog/3.png" />
-                  <div className="TextNameProductPreview">{text}</div>
-                  <button onClick={onClick}>Кнопошка </button>
-                  <div>
-                     {this.props.children}
-                  </div>
 
-                                                  
-            
+            <div className="thumbs">
+                <img className="product-preview-img" src={imagePreview} />
+                <div className="caption">
+                    <span className="TextNameProductPreview title">{name}</span>
+                    <span className="info" onClick={onClick}> 
+                    <button >Кнопочка </button></span> 
+                   
+                </div>
+            </div>
+        <div>
+            {this.props.children} 
+        </div>
 		</div>
 		)
 	}

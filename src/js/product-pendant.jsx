@@ -16,7 +16,6 @@ let ProductPendant = React.createClass({
             <div>
                 <p>{product.name}</p>
                 <p>{product.text}</p>
-                <p>{product.body}</p>
             </div>
 
         )
