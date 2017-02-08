@@ -1,7 +1,11 @@
 import React from "react";
 import pendants from "./Data/data-pendants.js";
+import { Link } from "react-router";
+//import Carousel from "react-responsive-carousel";
+var Carousel = require('react-responsive-carousel').Carousel;
 
 let ProductPendant = React.createClass({
+    
     getInitialState() {
         let { productId } = this.props.params;
 
@@ -10,12 +14,49 @@ let ProductPendant = React.createClass({
         };
     },
     render () {
+        function order(e) {
+            e.preventDefault();
+            document.getElementById("product-order").style="display:table";
+            document.getElementById("product-info").style="display:none";
+         }
+        function back(e) {
+                    e.preventDefault();
+                    document.getElementById("product-order").style="display:none";
+                    document.getElementById("product-info").style="display:table";
+        }
+        
         let { product } = this.state;
 
         return (
-            <div>
+            <div id="b-popup" className={this.state.shouldHide ? 'hidden' : ''}>
+            <div className="b-popup-content">
+            <div id="product-info">
                 <p>{product.name}</p>
                 <p>{product.text}</p>
+                <button><Link to="/catalog/polimer/pendants"> закрыть</Link></button>
+                <button onClick={order}>Заказать</button>
+                <Carousel>
+                    <div><img src={product.image1} /></div>
+                    <div><img src={product.image2} /></div>
+                    <div><img src={product.image3} /></div>
+                    <div><img src={product.image4} /></div>
+                    <div><img src={product.image5} /></div>
+                </Carousel>
+            </div>
+            <div id="product-order">
+            Заказать товар
+            <form>
+                <input type="text" value={product.text}/>
+                <input type="text" />
+                <input type="text" />
+                <input type="text" />
+                <button>Отправить</button>
+                <button><Link to="/catalog/polimer/pendants"> закрыть</Link></button>
+                <button onClick={back}> назад</button>
+            </form>
+        
+            </div>
+            </div>
             </div>
 
         )

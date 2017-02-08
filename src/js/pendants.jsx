@@ -45,6 +45,10 @@ let Pendants = React.createClass({
 
 let ProductPreview = React.createClass ({
 	render () {
+        function openPopup(e) {
+            e.preventDefault();
+            document.getElementById("b-popup").style="display:table"
+  }
     
 		let {name, text, imagePreview, onClick} = this.props;
 		return (
@@ -55,7 +59,7 @@ let ProductPreview = React.createClass ({
                 <div className="caption">
                     <span className="TextNameProductPreview title">{name}</span>
                     <span className="info" onClick={onClick}> 
-                    <button >Кнопочка </button></span> 
+                    <button onClick={openPopup}>Кнопочка </button></span> 
                    
                 </div>
             </div>

@@ -1,20 +1,6 @@
-1. Для загрузки картинок под разные экраны использовать плагин из видео
+﻿1. Для загрузки картинок под разные экраны использовать плагин из видео
+
+2. модалка http://shibe97.github.io/react-awesome-modal/
 
 
 
-
-ReactDOM.render (
-    <Router history={hashHistory}>
-        <Route path="/" component={Index} />
-        <Route path="/catalog" component={Catalog} />
-        <Route path="/catalog/polimer" component={Polimer} >
-        <Route path="/catalog/polimer/all" component={All} >
-        <Route path="/catalog/polimer/all/:productId" component={ProductAll} />
-        </Route>
-        <Route path="/catalog/polimer/pendants" component={Pendants} >
-        <Route path="/catalog/polimer/pendants/:productId" component={ProductPendant} />
-        </Route>
-        </Route>
-    </Router>,
-    document.getElementById("main")
-);

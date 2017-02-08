@@ -84,7 +84,7 @@
 
 	var _allJsx2 = _interopRequireDefault(_allJsx);
 
-	var _productAllJsx = __webpack_require__(243);
+	var _productAllJsx = __webpack_require__(254);
 
 	var _productAllJsx2 = _interopRequireDefault(_productAllJsx);
 
@@ -26940,55 +26940,55 @@
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '/catalog/polimer/pendants', activeClassName: 'active-link', className: 'Link' },
+	                        { to: '/catalog/polimer/pendants', className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
-	                            { className: 'link-name' },
+	                            null,
 	                            'СЕРЬГИ'
 	                        )
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '/catalog/polimer/pendants', activeClassName: 'active-link', className: 'Link' },
+	                        { to: '/catalog/polimer/pendants', className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
-	                            { className: 'link-name' },
+	                            null,
 	                            'КОЛЬЦА'
 	                        )
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '/catalog/polimer/pendants', activeClassName: 'active-link', className: 'Link' },
+	                        { to: '/catalog/polimer/pendants', className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
-	                            { className: 'link-name' },
+	                            null,
 	                            'БРАСЛЕТЫ'
 	                        )
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '/catalog/polimer/pendants', activeClassName: 'active-link', className: 'Link' },
+	                        { to: '/catalog/polimer/pendants', className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
-	                            { className: 'link-name' },
+	                            null,
 	                            'БРОШИ/ЗАКОЛКИ'
 	                        )
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '/catalog/polimer/pendants', activeClassName: 'active-link', className: 'Link' },
+	                        { to: '/catalog/polimer/pendants', className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
-	                            { className: 'link-name' },
+	                            null,
 	                            'НАБОРЫ'
 	                        )
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '/catalog/polimer/pendants', activeClassName: 'active-link', className: 'Link' },
+	                        { to: '/catalog/polimer/pendants', className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
-	                            { className: 'link-name' },
+	                            null,
 	                            'ОБВОДКИ'
 	                        )
 	                    )
@@ -27084,6 +27084,11 @@
 	    displayName: "ProductPreview",
 
 	    render: function render() {
+	        function openPopup(e) {
+	            e.preventDefault();
+	            document.getElementById("b-popup").style = "display:table";
+	        }
+
 	        var _props = this.props;
 	        var name = _props.name;
 	        var text = _props.text;
@@ -27110,7 +27115,7 @@
 	                        { className: "info", onClick: onClick },
 	                        _react2["default"].createElement(
 	                            "button",
-	                            null,
+	                            { onClick: openPopup },
 	                            "Кнопочка "
 	                        )
 	                    )
@@ -27145,46 +27150,52 @@
 	    "id": "1-1",
 	    "name": "Заколка для волос:'Лето'",
 	    "text": "Обнимашки 1S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.png",
+	    "image1": "/images/catalog/pendants/1-1.png",
+	    "image2": "/images/catalog/pendants/1-1.png",
+	    "image3": "/images/catalog/pendants/1-1.png",
+	    "image4": "/images/catalog/pendants/1-1.png",
+	    "image5": "/images/catalog/pendants/1-1.png"
+
 	}, {
 	    "id": "1-2",
 	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "text": "Обнимашки 2S",
 	    "imagePreview": "/images/catalog/pendants/1-1.png"
 	}, {
 	    "id": "1-3",
 	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "text": "Обнимашки 3S",
 	    "imagePreview": "/images/catalog/pendants/1-1.png"
 	}, {
 	    "id": "1-4",
 	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "text": "Обнимашки 4S",
 	    "imagePreview": "/images/catalog/pendants/1-1.png"
 	}, {
 	    "id": "1-5",
 	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "text": "Обнимашки 5S",
 	    "imagePreview": "/images/catalog/pendants/1-1.png"
 	}, {
 	    "id": "1-6",
 	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "text": "Обнимашки 6S",
 	    "imagePreview": "/images/catalog/pendants/1-1.png"
 	}, {
 	    "id": "1-7",
 	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "text": "Обнимашки 7S",
 	    "imagePreview": "/images/catalog/pendants/1-1.png"
 	}, {
 	    "id": "1-8",
 	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "text": "Обнимашки 8S",
 	    "imagePreview": "/images/catalog/pendants/1-1.png"
 	}, {
 	    "id": "1-9",
 	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "text": "Обнимашки 9S",
 	    "imagePreview": "/images/catalog/pendants/1-1.png"
 	}];
 
@@ -27363,6 +27374,11 @@
 
 	var _DataDataPendantsJs2 = _interopRequireDefault(_DataDataPendantsJs);
 
+	var _reactRouter = __webpack_require__(178);
+
+	//import Carousel from "react-responsive-carousel";
+	var Carousel = __webpack_require__(243).Carousel;
+
 	var ProductPendant = _react2["default"].createClass({
 	    displayName: "ProductPendant",
 
@@ -27376,20 +27392,114 @@
 	        };
 	    },
 	    render: function render() {
+	        function order(e) {
+	            e.preventDefault();
+	            document.getElementById("product-order").style = "display:table";
+	            document.getElementById("product-info").style = "display:none";
+	        }
+	        function back(e) {
+	            e.preventDefault();
+	            document.getElementById("product-order").style = "display:none";
+	            document.getElementById("product-info").style = "display:table";
+	        }
+
 	        var product = this.state.product;
 
 	        return _react2["default"].createElement(
 	            "div",
-	            null,
+	            { id: "b-popup", className: this.state.shouldHide ? 'hidden' : '' },
 	            _react2["default"].createElement(
-	                "p",
-	                null,
-	                product.name
-	            ),
-	            _react2["default"].createElement(
-	                "p",
-	                null,
-	                product.text
+	                "div",
+	                { className: "b-popup-content" },
+	                _react2["default"].createElement(
+	                    "div",
+	                    { id: "product-info" },
+	                    _react2["default"].createElement(
+	                        "p",
+	                        null,
+	                        product.name
+	                    ),
+	                    _react2["default"].createElement(
+	                        "p",
+	                        null,
+	                        product.text
+	                    ),
+	                    _react2["default"].createElement(
+	                        "button",
+	                        null,
+	                        _react2["default"].createElement(
+	                            _reactRouter.Link,
+	                            { to: "/catalog/polimer/pendants" },
+	                            " закрыть"
+	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "button",
+	                        { onClick: order },
+	                        "Заказать"
+	                    ),
+	                    _react2["default"].createElement(
+	                        Carousel,
+	                        null,
+	                        _react2["default"].createElement(
+	                            "div",
+	                            null,
+	                            _react2["default"].createElement("img", { src: product.image1 })
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            null,
+	                            _react2["default"].createElement("img", { src: product.image2 })
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            null,
+	                            _react2["default"].createElement("img", { src: product.image3 })
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            null,
+	                            _react2["default"].createElement("img", { src: product.image4 })
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            null,
+	                            _react2["default"].createElement("img", { src: product.image5 })
+	                        )
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { id: "product-order" },
+	                    "Заказать товар",
+	                    _react2["default"].createElement(
+	                        "form",
+	                        null,
+	                        _react2["default"].createElement("input", { type: "text", value: product.text }),
+	                        _react2["default"].createElement("input", { type: "text" }),
+	                        _react2["default"].createElement("input", { type: "text" }),
+	                        _react2["default"].createElement("input", { type: "text" }),
+	                        _react2["default"].createElement(
+	                            "button",
+	                            null,
+	                            "Отправить"
+	                        ),
+	                        _react2["default"].createElement(
+	                            "button",
+	                            null,
+	                            _react2["default"].createElement(
+	                                _reactRouter.Link,
+	                                { to: "/catalog/polimer/pendants" },
+	                                " закрыть"
+	                            )
+	                        ),
+	                        _react2["default"].createElement(
+	                            "button",
+	                            { onClick: back },
+	                            " назад"
+	                        )
+	                    )
+	                )
 	            )
 	        );
 	    }
@@ -27402,6 +27512,1179 @@
 
 /***/ },
 /* 243 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	module.exports = {
+	    Carousel: __webpack_require__(244),
+	    Thumbs: __webpack_require__(252)
+	};
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol ? "symbol" : typeof obj; };
+
+	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(32);
+	var klass = __webpack_require__(245);
+	var merge = __webpack_require__(247);
+	var CSSTranslate = __webpack_require__(248);
+	var Swipe = __webpack_require__(250);
+	var Thumbs = __webpack_require__(252);
+
+	// react-swipe was compiled using babel
+	Swipe = Swipe.default;
+
+	module.exports = React.createClass({
+	    displayName: 'Slider',
+	    propTypes: {
+	        children: React.PropTypes.node.isRequired,
+	        showArrows: React.PropTypes.bool,
+	        showStatus: React.PropTypes.bool,
+	        showIndicators: React.PropTypes.bool,
+	        infiniteLoop: React.PropTypes.bool,
+	        showThumbs: React.PropTypes.bool,
+	        selectedItem: React.PropTypes.number,
+	        onClickItem: React.PropTypes.func,
+	        onClickThumb: React.PropTypes.func,
+	        onChange: React.PropTypes.func,
+	        axis: React.PropTypes.oneOf(['horizontal', 'vertical']),
+	        width: React.PropTypes.string,
+	        useKeyboardArrows: React.PropTypes.bool,
+	        autoPlay: React.PropTypes.bool,
+	        stopOnHover: React.PropTypes.bool,
+	        interval: React.PropTypes.number,
+	        swipeScrollTolerance: React.PropTypes.oneOfType([React.PropTypes.number, React.PropTypes.string]),
+	        dynamicHeight: React.PropTypes.bool
+	    },
+
+	    getDefaultProps: function getDefaultProps() {
+	        return {
+	            showIndicators: true,
+	            showArrows: true,
+	            showStatus: true,
+	            showThumbs: true,
+	            infiniteLoop: false,
+	            selectedItem: 0,
+	            axis: 'horizontal',
+	            useKeyboardArrows: false,
+	            autoPlay: false,
+	            stopOnHover: true,
+	            interval: 3000,
+	            swipeScrollTolerance: 5,
+	            dynamicHeight: false
+	        };
+	    },
+	    getInitialState: function getInitialState() {
+	        return {
+	            // index of the image to be shown.
+	            selectedItem: this.props.selectedItem,
+	            hasMount: false
+	        };
+	    },
+	    componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	        if (nextProps.selectedItem !== this.state.selectedItem) {
+	            this.updateSizes();
+	            this.setState({
+	                selectedItem: nextProps.selectedItem
+	            });
+	        }
+
+	        if (nextProps.autoPlay !== this.props.autoPlay) {
+	            if (nextProps.autoPlay) {
+	                this.setupAutoPlay();
+	            } else {
+	                this.destroyAutoPlay();
+	            }
+	        }
+	    },
+	    componentDidMount: function componentDidMount() {
+	        this.bindEvents();
+
+	        if (this.props.autoPlay) {
+	            this.setupAutoPlay();
+	        }
+
+	        var images = ReactDOM.findDOMNode(this.item0).getElementsByTagName('img');
+	        var initialImage = images && images[this.props.selectedItem];
+
+	        if (initialImage) {
+	            // if it's a carousel of images, we set the mount state after the first image is loaded
+	            initialImage.addEventListener('load', this.setMountState);
+	        } else {
+	            this.setMountState();
+	        }
+	    },
+	    componentWillUnmount: function componentWillUnmount() {
+	        this.unbindEvents();
+	        this.destroyAutoPlay();
+	    },
+	    setupAutoPlay: function setupAutoPlay() {
+	        this.autoPlay();
+
+	        if (this.props.stopOnHover) {
+	            var carouselWrapper = ReactDOM.findDOMNode(this.carouselWrapper);
+	            carouselWrapper.addEventListener('mouseenter', this.stopOnHover);
+	            carouselWrapper.addEventListener('mouseleave', this.autoPlay);
+	        }
+	    },
+	    destroyAutoPlay: function destroyAutoPlay() {
+	        this.clearAutoPlay();
+
+	        if (this.props.stopOnHover) {
+	            var carouselWrapper = ReactDOM.findDOMNode(this.carouselWrapper);
+	            carouselWrapper.removeEventListener('mousemove', this.stopOnHover);
+	            carouselWrapper.removeEventListener('mouseleave', this.autoPlay);
+	        }
+	    },
+	    autoPlay: function autoPlay() {
+	        var _this = this;
+
+	        this.timer = setTimeout(function () {
+	            _this.increment();
+	            _this.autoPlay();
+	        }, this.props.interval);
+	    },
+	    clearAutoPlay: function clearAutoPlay() {
+	        clearTimeout(this.timer);
+	    },
+	    stopOnHover: function stopOnHover() {
+	        this.clearAutoPlay();
+	    },
+	    bindEvents: function bindEvents() {
+	        // as the widths are calculated, we need to resize
+	        // the carousel when the window is resized
+	        window.addEventListener("resize", this.updateSizes);
+	        // issue #2 - image loading smaller
+	        window.addEventListener("DOMContentLoaded", this.updateSizes);
+
+	        if (this.props.useKeyboardArrows) {
+	            document.addEventListener("keydown", this.navigateWithKeyboard);
+	        }
+	    },
+	    unbindEvents: function unbindEvents() {
+	        // removing listeners
+	        window.removeEventListener("resize", this.updateSizes);
+	        window.removeEventListener("DOMContentLoaded", this.updateSizes);
+
+	        if (this.props.useKeyboardArrows) {
+	            document.removeEventListener("keydown", this.navigateWithKeyboard);
+	        }
+	    },
+	    navigateWithKeyboard: function navigateWithKeyboard(e) {
+	        var nextKeys = ['ArrowDown', 'ArrowRight'];
+	        var prevKeys = ['ArrowUp', 'ArrowLeft'];
+	        var allowedKeys = nextKeys.concat(prevKeys);
+
+	        if (allowedKeys.indexOf(e.key) > -1) {
+	            if (nextKeys.indexOf(e.key) > -1) {
+	                this.increment();
+	            } else if (prevKeys.indexOf(e.key) > -1) {
+	                this.decrement();
+	            }
+	        }
+	    },
+	    updateSizes: function updateSizes() {
+	        var isHorizontal = this.props.axis === 'horizontal';
+	        var firstItem = ReactDOM.findDOMNode(this.item0);
+	        var itemSize = isHorizontal ? firstItem.clientWidth : firstItem.clientHeight;
+
+	        this.setState({
+	            itemSize: itemSize,
+	            wrapperSize: isHorizontal ? itemSize * this.props.children.length : itemSize
+	        });
+	    },
+	    setMountState: function setMountState() {
+	        this.setState({ hasMount: true });
+	        this.updateSizes();
+	    },
+	    handleClickItem: function handleClickItem(index, item) {
+	        var handler = this.props.onClickItem;
+
+	        if (typeof handler === 'function') {
+	            handler(index, item);
+	        }
+
+	        if (index !== this.state.selectedItem) {
+	            this.setState({
+	                selectedItem: index
+	            });
+	        }
+	    },
+	    handleOnChange: function handleOnChange(index, item) {
+	        var handler = this.props.onChange;
+
+	        if (typeof handler === 'function') {
+	            handler(index, item);
+	        }
+	    },
+	    handleClickThumb: function handleClickThumb(index, item) {
+	        var handler = this.props.onClickThumb;
+
+	        if (typeof handler === 'function') {
+	            handler(index, item);
+	        }
+
+	        this.selectItem({
+	            selectedItem: index
+	        });
+	    },
+	    onSwipeStart: function onSwipeStart() {
+	        this.setState({
+	            swiping: true
+	        });
+	    },
+	    onSwipeEnd: function onSwipeEnd() {
+	        this.setState({
+	            swiping: false
+	        });
+	    },
+	    onSwipeMove: function onSwipeMove(delta) {
+	        var _this2 = this;
+
+	        var list = ReactDOM.findDOMNode(this.itemList);
+	        var isHorizontal = this.props.axis === 'horizontal';
+
+	        var initialBoundry = 0;
+
+	        var currentPosition = -this.state.selectedItem * 100;
+	        var finalBoundry = -(this.props.children.length - 1) * 100;
+
+	        var axisDelta = isHorizontal ? delta.x : delta.y;
+	        var handledDelta = axisDelta;
+
+	        // prevent user from swiping left out of boundaries
+	        if (currentPosition === initialBoundry && axisDelta > 0) {
+	            handledDelta = 0;
+	        }
+
+	        // prevent user from swiping right out of boundaries
+	        if (currentPosition === finalBoundry && axisDelta < 0) {
+	            handledDelta = 0;
+	        }
+
+	        var position = currentPosition + 100 / (this.state.wrapperSize / handledDelta) + '%';
+
+	        ['WebkitTransform', 'MozTransform', 'MsTransform', 'OTransform', 'transform', 'msTransform'].forEach(function (prop) {
+	            list.style[prop] = CSSTranslate(position, _this2.props.axis);
+	        });
+
+	        // allows scroll if the swipe was within the tolerance
+	        return Math.abs(axisDelta) > this.props.swipeScrollTolerance;
+	    },
+	    decrement: function decrement(positions) {
+	        this.moveTo(this.state.selectedItem - (typeof positions === 'Number' ? positions : 1));
+	    },
+	    increment: function increment(positions) {
+	        this.moveTo(this.state.selectedItem + (typeof positions === 'Number' ? positions : 1));
+	    },
+	    moveTo: function moveTo(position) {
+	        var lastPosition = this.props.children.length - 1;
+
+	        if (position < 0) {
+	            position = this.props.infiniteLoop ? lastPosition : 0;
+	        }
+
+	        if (position > lastPosition) {
+	            position = this.props.infiniteLoop ? 0 : lastPosition;
+	        }
+
+	        this.selectItem({
+	            // if it's not a slider, we don't need to set position here
+	            selectedItem: position
+	        });
+	    },
+	    changeItem: function changeItem(e) {
+	        var newIndex = e.target.value;
+
+	        this.selectItem({
+	            selectedItem: newIndex
+	        });
+	    },
+	    selectItem: function selectItem(state) {
+	        this.setState(state);
+	        this.handleOnChange(state.selectedItem, this.props.children[state.selectedItem]);
+	    },
+	    renderItems: function renderItems() {
+	        var _this3 = this;
+
+	        return React.Children.map(this.props.children, function (item, index) {
+	            var hasMount = _this3.state.hasMount;
+	            var itemClass = klass.ITEM(true, index === _this3.state.selectedItem);
+
+	            return React.createElement(
+	                'li',
+	                { ref: function ref(node) {
+	                        return _this3["item" + index] = node;
+	                    }, key: "itemKey" + index, className: itemClass,
+	                    onClick: _this3.handleClickItem.bind(_this3, index, item) },
+	                item
+	            );
+	        });
+	    },
+	    renderControls: function renderControls() {
+	        var _this4 = this;
+
+	        if (!this.props.showIndicators) {
+	            return null;
+	        }
+
+	        return React.createElement(
+	            'ul',
+	            { className: 'control-dots' },
+	            React.Children.map(this.props.children, function (item, index) {
+	                return React.createElement('li', { className: klass.DOT(index === _this4.state.selectedItem), onClick: _this4.changeItem, value: index, key: index });
+	            })
+	        );
+	    },
+	    renderStatus: function renderStatus() {
+	        if (!this.props.showStatus) {
+	            return null;
+	        }
+
+	        return React.createElement(
+	            'p',
+	            { className: 'carousel-status' },
+	            this.state.selectedItem + 1,
+	            ' of ',
+	            this.props.children.length
+	        );
+	    },
+	    renderThumbs: function renderThumbs() {
+	        if (!this.props.showThumbs) {
+	            return null;
+	        }
+
+	        return React.createElement(
+	            Thumbs,
+	            { onSelectItem: this.handleClickThumb, selectedItem: this.state.selectedItem },
+	            this.props.children
+	        );
+	    },
+	    getVariableImageHeight: function getVariableImageHeight(position) {
+	        var _this5 = this;
+
+	        if (this.state.hasMount && this['item' + position].getElementsByTagName('img').length > 0) {
+	            var _ret = function () {
+	                var image = _this5['item' + position].getElementsByTagName('img')[0];
+
+	                if (!image.complete) {
+	                    (function () {
+	                        // if the image is still loading, the size won't be available so we trigger a new render after it's done
+	                        var onImageLoad = function onImageLoad() {
+	                            _this5.forceUpdate();
+	                            image.removeEventListener('load', onImageLoad);
+	                        };
+
+	                        image.addEventListener('load', onImageLoad);
+	                    })();
+	                }
+
+	                var height = _this5['item' + position].getElementsByTagName('img')[0].clientHeight;
+	                return {
+	                    v: height > 0 ? height : null
+	                };
+	            }();
+
+	            if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
+	        }
+
+	        return null;
+	    },
+	    render: function render() {
+	        var _this6 = this;
+
+	        var itemsLength = this.props.children.length;
+
+	        if (itemsLength === 0) {
+	            return null;
+	        }
+
+	        var isHorizontal = this.props.axis === 'horizontal';
+
+	        var canShowArrows = this.props.showArrows && itemsLength > 1;
+
+	        // show left arrow?
+	        var hasPrev = canShowArrows && this.state.selectedItem > 0 || this.props.infiniteLoop;
+	        // show right arrow
+	        var hasNext = canShowArrows && this.state.selectedItem < itemsLength - 1 || this.props.infiniteLoop;
+	        // obj to hold the transformations and styles
+	        var itemListStyles = {};
+
+	        var currentPosition = -this.state.selectedItem * 100 + '%';
+
+	        // if 3d is available, let's take advantage of the performance of transform
+	        var transformProp = CSSTranslate(currentPosition, this.props.axis);
+
+	        itemListStyles = {
+	            'WebkitTransform': transformProp,
+	            'MozTransform': transformProp,
+	            'MsTransform': transformProp,
+	            'OTransform': transformProp,
+	            'transform': transformProp,
+	            'msTransform': transformProp
+	        };
+
+	        var swiperProps = {
+	            selectedItem: this.state.selectedItem,
+	            className: klass.SLIDER(true, this.state.swiping),
+	            onSwipeMove: this.onSwipeMove,
+	            onSwipeStart: this.onSwipeStart,
+	            onSwipeEnd: this.onSwipeEnd,
+	            style: itemListStyles,
+	            ref: function ref(node) {
+	                return _this6.itemList = node;
+	            }
+	        };
+
+	        var containerStyles = {};
+
+	        if (isHorizontal) {
+	            merge(swiperProps, {
+	                onSwipeLeft: this.increment,
+	                onSwipeRight: this.decrement
+	            });
+
+	            if (this.props.dynamicHeight) {
+	                var itemHeight = this.getVariableImageHeight(this.state.selectedItem);
+	                swiperProps.style.height = itemHeight || 'auto';
+	                containerStyles.height = itemHeight || 'auto';
+	            }
+	        } else {
+	            merge(swiperProps, {
+	                onSwipeUp: this.decrement,
+	                onSwipeDown: this.increment
+	            });
+
+	            swiperProps.style.height = this.state.itemSize;
+	            containerStyles.height = this.state.itemSize;
+	        }
+
+	        return React.createElement(
+	            'div',
+	            { className: this.props.className, ref: function ref(node) {
+	                    return _this6.carouselWrapper = node;
+	                } },
+	            React.createElement(
+	                'div',
+	                { className: klass.CAROUSEL(true), style: { width: this.props.width || '100%' } },
+	                React.createElement('button', { type: 'button', className: klass.ARROW_PREV(!hasPrev), onClick: this.decrement }),
+	                React.createElement(
+	                    'div',
+	                    { className: klass.WRAPPER(true, this.props.axis), style: containerStyles, ref: function ref(node) {
+	                            return _this6.itemsWrapper = node;
+	                        } },
+	                    React.createElement(
+	                        Swipe,
+	                        _extends({ tagName: 'ul' }, swiperProps),
+	                        this.renderItems()
+	                    )
+	                ),
+	                React.createElement('button', { type: 'button', className: klass.ARROW_NEXT(!hasNext), onClick: this.increment }),
+	                this.renderControls(),
+	                this.renderStatus()
+	            ),
+	            this.renderThumbs()
+	        );
+	    }
+	});
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var classNames = __webpack_require__(246);
+
+	module.exports = {
+	    CAROUSEL: function CAROUSEL(isSlider) {
+	        return classNames({
+	            "carousel": true,
+	            "carousel-slider": isSlider
+	        });
+	    },
+	    WRAPPER: function WRAPPER(isSlider, axis) {
+	        return classNames({
+	            "thumbs-wrapper": !isSlider,
+	            "slider-wrapper": isSlider,
+	            "axis-horizontal": axis === "horizontal",
+	            "axis-vertical": axis !== "horizontal"
+	        });
+	    },
+	    SLIDER: function SLIDER(isSlider, isSwiping) {
+	        return classNames({
+	            "thumbs": !isSlider,
+	            "slider": isSlider,
+	            "animated": !isSwiping
+	        });
+	    },
+	    ITEM: function ITEM(isSlider, selected) {
+	        return classNames({
+	            "thumb": !isSlider,
+	            "slide": isSlider,
+	            "selected": selected
+	        });
+	    },
+	    ARROW_PREV: function ARROW_PREV(disabled) {
+	        return classNames({
+	            "control-arrow control-prev": true,
+	            "control-disabled": disabled
+	        });
+	    },
+	    ARROW_NEXT: function ARROW_NEXT(disabled) {
+	        return classNames({
+	            "control-arrow control-next": true,
+	            "control-disabled": disabled
+	        });
+	    },
+	    DOT: function DOT(selected) {
+	        return classNames({
+	            "dot": true,
+	            'selected': selected
+	        });
+	    }
+	};
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+	  Copyright (c) 2016 Jed Watson.
+	  Licensed under the MIT License (MIT), see
+	  http://jedwatson.github.io/classnames
+	*/
+	/* global define */
+
+	(function () {
+		'use strict';
+
+		var hasOwn = {}.hasOwnProperty;
+
+		function classNames () {
+			var classes = [];
+
+			for (var i = 0; i < arguments.length; i++) {
+				var arg = arguments[i];
+				if (!arg) continue;
+
+				var argType = typeof arg;
+
+				if (argType === 'string' || argType === 'number') {
+					classes.push(arg);
+				} else if (Array.isArray(arg)) {
+					classes.push(classNames.apply(null, arg));
+				} else if (argType === 'object') {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(key);
+						}
+					}
+				}
+			}
+
+			return classes.join(' ');
+		}
+
+		if (typeof module !== 'undefined' && module.exports) {
+			module.exports = classNames;
+		} else if (true) {
+			// register as 'classnames', consistent with npm package name
+			!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+				return classNames;
+			}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		} else {
+			window.classNames = classNames;
+		}
+	}());
+
+
+/***/ },
+/* 247 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = function (target) {
+	  if (target === undefined || target === null) {
+	    throw new TypeError('Cannot convert undefined or null to object');
+	  }
+
+	  var output = Object(target);
+	  for (var index = 1; index < arguments.length; index++) {
+	    var source = arguments[index];
+	    if (source !== undefined && source !== null) {
+	      for (var nextKey in source) {
+	        if (source.hasOwnProperty(nextKey)) {
+	          output[nextKey] = source[nextKey];
+	        }
+	      }
+	    }
+	  }
+	  return output;
+	};
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var has3d = __webpack_require__(249);
+
+	module.exports = function (position, axis) {
+	    var _has3d = has3d();
+	    var positionCss = axis === 'horizontal' ? [position, 0] : [0, position];
+	    var transitionProp = _has3d ? 'translate3d' : 'translate';
+
+	    if (_has3d) {
+	        // adds z position
+	        positionCss.push(0);
+	    }
+
+	    var translatedPosition = '(' + positionCss.join(',') + ')';
+
+	    return transitionProp + translatedPosition;
+	};
+
+/***/ },
+/* 249 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	module.exports = function has3d() {
+	    if (typeof window === 'undefined' || !window.getComputedStyle) {
+	        return false;
+	    }
+
+	    var el = document.createElement('p'),
+	        has3d,
+	        transforms = {
+	        'webkitTransform': '-webkit-transform',
+	        'OTransform': '-o-transform',
+	        'msTransform': '-ms-transform',
+	        'MozTransform': '-moz-transform',
+	        'transform': 'transform'
+	    };
+
+	    // Add it to the body to get the computed style.
+	    document.body.insertBefore(el, null);
+
+	    for (var t in transforms) {
+	        if (el.style[t] !== undefined) {
+	            el.style[t] = "translate3d(1px,1px,1px)";
+	            has3d = window.getComputedStyle(el).getPropertyValue(transforms[t]);
+	        }
+	    }
+
+	    document.body.removeChild(el);
+
+	    return has3d !== undefined && has3d.length > 0 && has3d !== "none";
+	};
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(251)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports !== "undefined") {
+	    factory(exports, require('./react-swipe'));
+	  } else {
+	    var mod = {
+	      exports: {}
+	    };
+	    factory(mod.exports, global.reactSwipe);
+	    global.index = mod.exports;
+	  }
+	})(this, function (exports, _reactSwipe) {
+	  'use strict';
+
+	  Object.defineProperty(exports, "__esModule", {
+	    value: true
+	  });
+
+	  var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+	  function _interopRequireDefault(obj) {
+	    return obj && obj.__esModule ? obj : {
+	      default: obj
+	    };
+	  }
+
+	  exports.default = _reactSwipe2.default;
+	});
+
+/***/ },
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+	  if (true) {
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(1)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	  } else if (typeof exports !== "undefined") {
+	    factory(exports, require('react'));
+	  } else {
+	    var mod = {
+	      exports: {}
+	    };
+	    factory(mod.exports, global.react);
+	    global.reactSwipe = mod.exports;
+	  }
+	})(this, function (exports, _react) {
+	  'use strict';
+
+	  Object.defineProperty(exports, "__esModule", {
+	    value: true
+	  });
+
+	  var _react2 = _interopRequireDefault(_react);
+
+	  function _interopRequireDefault(obj) {
+	    return obj && obj.__esModule ? obj : {
+	      default: obj
+	    };
+	  }
+
+	  function _classCallCheck(instance, Constructor) {
+	    if (!(instance instanceof Constructor)) {
+	      throw new TypeError("Cannot call a class as a function");
+	    }
+	  }
+
+	  var _createClass = function () {
+	    function defineProperties(target, props) {
+	      for (var i = 0; i < props.length; i++) {
+	        var descriptor = props[i];
+	        descriptor.enumerable = descriptor.enumerable || false;
+	        descriptor.configurable = true;
+	        if ("value" in descriptor) descriptor.writable = true;
+	        Object.defineProperty(target, descriptor.key, descriptor);
+	      }
+	    }
+
+	    return function (Constructor, protoProps, staticProps) {
+	      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+	      if (staticProps) defineProperties(Constructor, staticProps);
+	      return Constructor;
+	    };
+	  }();
+
+	  function _possibleConstructorReturn(self, call) {
+	    if (!self) {
+	      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	    }
+
+	    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+	  }
+
+	  function _inherits(subClass, superClass) {
+	    if (typeof superClass !== "function" && superClass !== null) {
+	      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+	    }
+
+	    subClass.prototype = Object.create(superClass && superClass.prototype, {
+	      constructor: {
+	        value: subClass,
+	        enumerable: false,
+	        writable: true,
+	        configurable: true
+	      }
+	    });
+	    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	  }
+
+	  var ReactSwipe = function (_Component) {
+	    _inherits(ReactSwipe, _Component);
+
+	    function ReactSwipe() {
+	      _classCallCheck(this, ReactSwipe);
+
+	      var _this = _possibleConstructorReturn(this, (ReactSwipe.__proto__ || Object.getPrototypeOf(ReactSwipe)).call(this));
+
+	      _this._handleSwipeStart = _this._handleSwipeStart.bind(_this);
+	      _this._handleSwipeMove = _this._handleSwipeMove.bind(_this);
+	      _this._handleSwipeEnd = _this._handleSwipeEnd.bind(_this);
+	      return _this;
+	    }
+
+	    _createClass(ReactSwipe, [{
+	      key: '_handleSwipeStart',
+	      value: function _handleSwipeStart(e) {
+	        var _e$touches$ = e.touches[0];
+	        var pageX = _e$touches$.pageX;
+	        var pageY = _e$touches$.pageY;
+
+	        this.touchStart = { pageX: pageX, pageY: pageY };
+	        this.props.onSwipeStart();
+	      }
+	    }, {
+	      key: '_handleSwipeMove',
+	      value: function _handleSwipeMove(e) {
+	        var deltaX = e.touches[0].pageX - this.touchStart.pageX;
+	        var deltaY = e.touches[0].pageY - this.touchStart.pageY;
+	        this.swiping = true;
+
+	        // handling the responsability of cancelling the scroll to
+	        // the component handling the event
+	        var shouldPreventDefault = this.props.onSwipeMove({
+	          x: deltaX,
+	          y: deltaY
+	        });
+
+	        if (shouldPreventDefault) {
+	          e.preventDefault();
+	        }
+
+	        this.touchPosition = { deltaX: deltaX, deltaY: deltaY };
+	      }
+	    }, {
+	      key: '_handleSwipeEnd',
+	      value: function _handleSwipeEnd() {
+	        if (this.swiping) {
+	          if (this.touchPosition.deltaX < 0) {
+	            this.props.onSwipeLeft(1);
+	          } else if (this.touchPosition.deltaX > 0) {
+	            this.props.onSwipeRight(1);
+	          }
+	          if (this.touchPosition.deltaY < 0) {
+	            this.props.onSwipeUp(1);
+	          } else if (this.touchPosition.deltaY > 0) {
+	            this.props.onSwipeDown(1);
+	          }
+	        }
+	        this.props.onSwipeEnd();
+	        this.touchStart = null;
+	        this.swiping = false;
+	        this.touchPosition = null;
+	      }
+	    }, {
+	      key: 'render',
+	      value: function render() {
+	        return _react2.default.createElement(
+	          this.props.tagName,
+	          {
+	            onTouchMove: this._handleSwipeMove,
+	            onTouchStart: this._handleSwipeStart,
+	            onTouchEnd: this._handleSwipeEnd,
+	            className: this.props.className,
+	            style: this.props.style
+	          },
+	          this.props.children
+	        );
+	      }
+	    }]);
+
+	    return ReactSwipe;
+	  }(_react.Component);
+
+	  ReactSwipe.propTypes = {
+	    tagName: _react.PropTypes.string,
+	    className: _react.PropTypes.string,
+	    style: _react.PropTypes.object,
+	    children: _react.PropTypes.node,
+	    onSwipeUp: _react.PropTypes.func,
+	    onSwipeDown: _react.PropTypes.func,
+	    onSwipeLeft: _react.PropTypes.func,
+	    onSwipeRight: _react.PropTypes.func,
+	    onSwipeStart: _react.PropTypes.func,
+	    onSwipeMove: _react.PropTypes.func,
+	    onSwipeEnd: _react.PropTypes.func
+	  };
+	  ReactSwipe.defaultProps = {
+	    tagName: 'div',
+	    onSwipeUp: function onSwipeUp() {},
+	    onSwipeDown: function onSwipeDown() {},
+	    onSwipeLeft: function onSwipeLeft() {},
+	    onSwipeRight: function onSwipeRight() {},
+	    onSwipeStart: function onSwipeStart() {},
+	    onSwipeMove: function onSwipeMove() {},
+	    onSwipeEnd: function onSwipeEnd() {}
+	  };
+
+
+	  ReactSwipe.displayName = 'ReactSwipe';
+
+	  exports.default = ReactSwipe;
+	});
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+	var ReactDOM = __webpack_require__(32);
+	var klass = __webpack_require__(245);
+	var has3d = __webpack_require__(249)();
+	var outerWidth = __webpack_require__(253).outerWidth;
+	var CSSTranslate = __webpack_require__(248);
+	var Swipe = __webpack_require__(250);
+
+	// react-swipe was compiled using babel
+	Swipe = Swipe.default;
+
+	module.exports = React.createClass({
+	    displayName: 'exports',
+
+
+	    propsTypes: {
+	        children: React.PropTypes.element.isRequired,
+	        selectedItem: React.PropTypes.number
+	    },
+
+	    getDefaultProps: function getDefaultProps() {
+	        return {
+	            selectedItem: 0,
+	            axis: 'horizontal'
+	        };
+	    },
+	    getInitialState: function getInitialState() {
+	        return {
+	            selectedItem: this.props.selectedItem,
+	            hasMount: false,
+	            firstItem: this.getFirstItem(this.props.selectedItem)
+	        };
+	    },
+	    componentWillReceiveProps: function componentWillReceiveProps(props, state) {
+	        if (props.selectedItem !== this.state.selectedItem) {
+	            this.setState({
+	                selectedItem: props.selectedItem,
+	                firstItem: this.getFirstItem(props.selectedItem)
+	            });
+	        }
+	    },
+	    componentWillMount: function componentWillMount() {
+	        // as the widths are calculated, we need to resize
+	        // the carousel when the window is resized
+	        window.addEventListener("resize", this.updateStatics);
+	        // issue #2 - image loading smaller
+	        window.addEventListener("DOMContentLoaded", this.updateStatics);
+	    },
+	    componentWillUnmount: function componentWillUnmount() {
+	        // removing listeners
+	        window.removeEventListener("resize", this.updateStatics);
+	        window.removeEventListener("DOMContentLoaded", this.updateStatics);
+	    },
+	    componentDidMount: function componentDidMount(nextProps) {
+	        // when the component is rendered we need to calculate
+	        // the container size to adjust the responsive behaviour
+	        this.updateStatics();
+
+	        var defaultImg = ReactDOM.findDOMNode(this.thumb0).getElementsByTagName('img')[0];
+	        defaultImg.addEventListener('load', this.setMountState);
+	    },
+	    updateStatics: function updateStatics() {
+	        var total = this.props.children.length;
+	        this.wrapperSize = this.itemsWrapper.clientWidth;
+	        this.itemSize = outerWidth(this.thumb0);
+	        this.visibleItems = Math.floor(this.wrapperSize / this.itemSize);
+	        this.lastPosition = total - this.visibleItems;
+	        this.showArrows = this.visibleItems < total;
+	    },
+	    setMountState: function setMountState() {
+	        this.setState({ hasMount: true });
+	    },
+	    handleClickItem: function handleClickItem(index, item) {
+	        var handler = this.props.onSelectItem;
+
+	        if (typeof handler === 'function') {
+	            handler(index, item);
+	        }
+	    },
+	    onSwipeStart: function onSwipeStart() {
+	        this.setState({
+	            swiping: true
+	        });
+	    },
+	    onSwipeEnd: function onSwipeEnd() {
+	        this.setState({
+	            swiping: false
+	        });
+	    },
+	    onSwipeMove: function onSwipeMove(deltaX) {
+	        var _this = this;
+
+	        var leftBoundry = 0;
+	        var list = ReactDOM.findDOMNode(this.itemList);
+	        var wrapperSize = list.clientWidth;
+	        var visibleItems = Math.floor(wrapperSize / this.itemSize);
+
+	        var currentPosition = -this.state.firstItem * this.itemSize;
+	        var lastLeftBoundry = -this.visibleItems * this.itemSize;
+
+	        // prevent user from swiping left out of boundaries
+	        if (currentPosition === leftBoundry && deltaX > 0) {
+	            deltaX = 0;
+	        }
+
+	        // prevent user from swiping right out of boundaries
+	        if (currentPosition === lastLeftBoundry && deltaX < 0) {
+	            deltaX = 0;
+	        }
+
+	        var position = currentPosition + 100 / (wrapperSize / deltaX) + '%';
+
+	        // if 3d isn't available we will use left to move
+	        ['WebkitTransform', 'MozTransform', 'MsTransform', 'OTransform', 'transform', 'msTransform'].forEach(function (prop) {
+	            list.style[prop] = CSSTranslate(position, _this.props.axis);
+	        });
+	    },
+	    slideRight: function slideRight(positions) {
+	        this.moveTo(this.state.firstItem - (typeof positions === 'Number' ? positions : 1));
+	    },
+	    slideLeft: function slideLeft(positions) {
+	        this.moveTo(this.state.firstItem + (typeof positions === 'Number' ? positions : 1));
+	    },
+	    moveTo: function moveTo(position) {
+	        // position can't be lower than 0
+	        position = position < 0 ? 0 : position;
+	        // position can't be higher than last postion
+	        position = position >= this.lastPosition ? this.lastPosition : position;
+
+	        this.setState({
+	            firstItem: position,
+	            // if it's not a slider, we don't need to set position here
+	            selectedItem: this.state.selectedItem
+	        });
+	    },
+	    getFirstItem: function getFirstItem(selectedItem) {
+	        if (!this.showArrows) {
+	            return 0;
+	        }
+
+	        var firstItem = selectedItem;
+
+	        if (selectedItem >= this.lastPosition) {
+	            firstItem = this.lastPosition;
+	        }
+
+	        if (selectedItem < this.state.firstItem + this.visibleItems) {
+	            firstItem = this.state.firstItem;
+	        }
+
+	        if (selectedItem < this.state.firstItem) {
+	            firstItem = selectedItem;
+	        }
+
+	        return firstItem;
+	    },
+	    renderItems: function renderItems() {
+	        var _this2 = this;
+
+	        return React.Children.map(this.props.children, function (item, index) {
+	            var itemClass = klass.ITEM(false, index === _this2.state.selectedItem && _this2.state.hasMount);
+
+	            var img = item;
+
+	            if (item.type !== "img") {
+	                img = React.Children.toArray(item.props.children).filter(function (children) {
+	                    return children.type === "img";
+	                })[0];
+	            }
+
+	            if (img.length) {
+	                console.warn(img, img.length, "No images found! Can't build the thumb list. If you don't need thumbs, set showThumbs={false} in the Carousel");
+	                return null;
+	            }
+
+	            return React.createElement(
+	                'li',
+	                { key: index, ref: function ref(node) {
+	                        return _this2["thumb" + index] = node;
+	                    }, className: itemClass,
+	                    onClick: _this2.handleClickItem.bind(_this2, index, item) },
+	                img
+	            );
+	        });
+	    },
+	    render: function render() {
+	        var _this3 = this;
+
+	        if (this.props.children.length === 0) {
+	            return null;
+	        }
+
+	        // show left arrow?
+	        var hasPrev = this.showArrows && this.state.firstItem > 0;
+	        // show right arrow
+	        var hasNext = this.showArrows && this.state.firstItem < this.lastPosition;
+	        // obj to hold the transformations and styles
+	        var itemListStyles = {};
+
+	        var currentPosition = -this.state.firstItem * this.itemSize + 'px';
+
+	        var transformProp = CSSTranslate(currentPosition, this.props.axis);
+
+	        itemListStyles = {
+	            'WebkitTransform': transformProp,
+	            'MozTransform': transformProp,
+	            'MsTransform': transformProp,
+	            'OTransform': transformProp,
+	            'transform': transformProp,
+	            'msTransform': transformProp
+	        };
+
+	        return React.createElement(
+	            'div',
+	            { className: klass.CAROUSEL(false) },
+	            React.createElement(
+	                'div',
+	                { className: klass.WRAPPER(false), ref: function ref(node) {
+	                        return _this3.itemsWrapper = node;
+	                    } },
+	                React.createElement('button', { type: 'button', className: klass.ARROW_PREV(!hasPrev), onClick: this.slideRight }),
+	                React.createElement(
+	                    Swipe,
+	                    { tagName: 'ul',
+	                        selectedItem: this.state.selectedItem,
+	                        className: klass.SLIDER(false, this.state.swiping),
+	                        onSwipeLeft: this.slideLeft,
+	                        onSwipeRight: this.slideRight,
+	                        onSwipeMove: this.onSwipeMove,
+	                        onSwipeStart: this.onSwipeStart,
+	                        onSwipeEnd: this.onSwipeEnd,
+	                        style: itemListStyles,
+	                        ref: function ref(node) {
+	                            return _this3.itemList = node;
+	                        } },
+	                    this.renderItems()
+	                ),
+	                React.createElement('button', { type: 'button', className: klass.ARROW_NEXT(!hasNext), onClick: this.slideLeft })
+	            )
+	        );
+	    }
+	});
+
+/***/ },
+/* 253 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	module.exports = {
+		outerWidth: function outerWidth(el) {
+			var width = el.offsetWidth;
+			var style = getComputedStyle(el);
+
+			width += parseInt(style.marginLeft) + parseInt(style.marginRight);
+			return width;
+		}
+	};
+
+/***/ },
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
