@@ -29,7 +29,7 @@ let Polimer = React.createClass({
     </div>
 
     <div className="catalog-navbar">
-            <ul>
+            <ul className="catalog-navbar-ul">
                 <Link to="/catalog/polimer/all" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="link-name">ВСЕ</li></Link> 
                 <Link to="/catalog/polimer/pendants" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="link-name">КУЛОНЫ/ПОДВЕСТКИ</li></Link>
                 <Link to="/catalog/polimer/pendants"  className="Link"><li >СЕРЬГИ</li></Link>

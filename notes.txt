@@ -2,5 +2,6 @@
 
 2. модалка http://shibe97.github.io/react-awesome-modal/
 
+3. в popup поставить паддинг вместо марджинов
 
 

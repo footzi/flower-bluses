@@ -27148,14 +27148,14 @@
 	});
 	var pendants = [{
 	    "id": "1-1",
-	    "name": "Заколка для волос:'Лето'",
-	    "text": "Обнимашки 1S",
+	    "name": "ЗАКОЛКА ДЛЯ ВОЛОС 'ЛЕТО'",
+	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной сморо",
 	    "imagePreview": "/images/catalog/pendants/1-1.png",
-	    "image1": "/images/catalog/pendants/1-1.png",
-	    "image2": "/images/catalog/pendants/1-1.png",
-	    "image3": "/images/catalog/pendants/1-1.png",
-	    "image4": "/images/catalog/pendants/1-1.png",
-	    "image5": "/images/catalog/pendants/1-1.png"
+	    "image1": "/images/catalog/pendants/1.jpg",
+	    "image2": "/images/catalog/pendants/1.jpg",
+	    "image3": "/images/catalog/pendants/1.jpg",
+	    "image4": "/images/catalog/pendants/1.jpg",
+	    "image5": "/images/catalog/pendants/1.jpg"
 
 	}, {
 	    "id": "1-2",
@@ -27413,31 +27413,43 @@
 	                { className: "b-popup-content" },
 	                _react2["default"].createElement(
 	                    "div",
+	                    { id: "b-popup-close-button" },
+	                    _react2["default"].createElement(
+	                        _reactRouter.Link,
+	                        { to: "/catalog/polimer/pendants" },
+	                        _react2["default"].createElement("img", { src: "/./images/catalog/close.png" })
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
 	                    { id: "product-info" },
 	                    _react2["default"].createElement(
 	                        "p",
-	                        null,
+	                        { className: "product-info-name" },
 	                        product.name
 	                    ),
 	                    _react2["default"].createElement(
 	                        "p",
-	                        null,
+	                        { className: "product-info-text" },
 	                        product.text
 	                    ),
+	                    _react2["default"].createElement("img", { className: "butterfly", id: "butterfly1", src: "/./images/catalog/butterfly1.png" }),
+	                    _react2["default"].createElement("img", { className: "butterfly", id: "butterfly2", src: "/./images/catalog/butterfly2.png" }),
+	                    _react2["default"].createElement("img", { className: "butterfly", id: "butterfly3", src: "/./images/catalog/butterfly3.png" }),
 	                    _react2["default"].createElement(
 	                        "button",
 	                        null,
-	                        _react2["default"].createElement(
-	                            _reactRouter.Link,
-	                            { to: "/catalog/polimer/pendants" },
-	                            " закрыть"
-	                        )
+	                        " закрыть"
 	                    ),
 	                    _react2["default"].createElement(
 	                        "button",
 	                        { onClick: order },
 	                        "Заказать"
-	                    ),
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { id: "product-carousel" },
 	                    _react2["default"].createElement(
 	                        Carousel,
 	                        null,

@@ -29,36 +29,41 @@ let ProductPendant = React.createClass({
 
         return (
             <div id="b-popup" className={this.state.shouldHide ? 'hidden' : ''}>
-            <div className="b-popup-content">
-            <div id="product-info">
-                <p>{product.name}</p>
-                <p>{product.text}</p>
-                <button><Link to="/catalog/polimer/pendants"> закрыть</Link></button>
-                <button onClick={order}>Заказать</button>
-                <Carousel>
-                    <div><img src={product.image1} /></div>
-                    <div><img src={product.image2} /></div>
-                    <div><img src={product.image3} /></div>
-                    <div><img src={product.image4} /></div>
-                    <div><img src={product.image5} /></div>
-                </Carousel>
+                <div className="b-popup-content">
+                    <div id="b-popup-close-button">
+                        <Link to="/catalog/polimer/pendants"><img src="/./images/catalog/close.png" /></Link>
+                    </div>  
+                    <div id="product-info">   
+                        <p className="product-info-name">{product.name}</p>
+                        <p className="product-info-text">{product.text}</p>
+                        <img className="butterfly" id="butterfly1" src="/./images/catalog/butterfly1.png" /> 
+                        <img className="butterfly" id="butterfly2" src="/./images/catalog/butterfly2.png" />  
+                        <img className="butterfly" id="butterfly3" src="/./images/catalog/butterfly3.png" />   
+                        <button onClick={order}>Заказать</button>
+                    </div>
+                    <div id="product-carousel">
+                        <Carousel>
+                            <div><img src={product.image1} /></div>
+                            <div><img src={product.image2} /></div>
+                            <div><img src={product.image3} /></div>
+                            <div><img src={product.image4} /></div>
+                            <div><img src={product.image5} /></div>
+                        </Carousel>
+                    </div>
+                    <div id="product-order">
+                        Заказать товар
+                        <form>
+                            <input type="text" value={product.text}/>
+                            <input type="text" />
+                            <input type="text" />
+                            <input type="text" />
+                            <button>Отправить</button>
+                            <button><Link to="/catalog/polimer/pendants"> закрыть</Link></button>
+                            <button onClick={back}> назад</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div id="product-order">
-            Заказать товар
-            <form>
-                <input type="text" value={product.text}/>
-                <input type="text" />
-                <input type="text" />
-                <input type="text" />
-                <button>Отправить</button>
-                <button><Link to="/catalog/polimer/pendants"> закрыть</Link></button>
-                <button onClick={back}> назад</button>
-            </form>
-        
-            </div>
-            </div>
-            </div>
-
         )
     }
 })
