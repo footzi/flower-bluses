@@ -1,56 +1,4 @@
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Главная</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="/styles/index.css">
-    <link rel="stylesheet" href="/styles/catalog.css">
-    <link rel="stylesheet" href="/styles/media.css">
-    <link rel="stylesheet" href="/styles/carousel.css">
-</head>
-<body>
-    <header>
-        <div class="header-burgerbutton">
-            <img src="images/burger-button.png">
-        </div>
-        <div class="clear"></div>
-    </header>
-    <nav>
-        <div class="navbar-button">
-            <a href="/"><img class="navbar-button-main" src="/images/navbar/button-main.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="#"><img class="navbar-button-about" src="/images/navbar/button-about.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="/catalog"><img class="navbar-button-catalog" src="/images/navbar/button-catalog.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="#"><img class="navbar-button-mk" src="/images/navbar/button-mk.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="#"><img class="navbar-button-contacts" src="/images/navbar/button-contacts.png"></a>
-        </div>
-        <img class="navbar-butterfly" src="/images/navbar/butterfly.png">
-    </nav>
-    <main id="main">
-    </main>
-    <footer>
-        <div class="footer-content">
-        <p class="footer-title">Cвязаться с нами: </p>
-        <p class="footer-text">г.Нижний Новгород</p>
-        <p class="footer-text">тел: <u>+7(953)1833296</u></p>
-        <p class="footer-text">e-mail: <u>specy@rambler.ru</u></p>
-        </div>
-    </footer>
-<script src="/js/build.js"></script>
-<script src="/js/jquery-3.1.1.min.js"></script>
-<script src="/js/jquery.hashchange.min.js"></script>
-<script src="/js/HashChange.js"></script>
-<script>
-
-    let link = /([http://localhost:8080/catalog/polimer/])/;
+<html><head><meta charset="utf-8"><title>Главная</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/styles/index.css"><link rel="stylesheet" href="/styles/catalog.css"></head><body><header><div class="header-burgerbutton"><img src="/images/burger-button.png"></div><div class="clear"></div></header><nav><div class="navbar-button"><a href="/"><img class="navbar-button-main" src="/images/navbar/button-main.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-about" src="/images/navbar/button-about.png"></a></div><div class="navbar-button"><a href="/catalog"><img class="navbar-button-catalog" src="/images/navbar/button-catalog.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-mk" src="/images/navbar/button-mk.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-contacts" src="/images/navbar/button-contacts.png"></a></div><img class="navbar-butterfly" src="/images/navbar/butterfly.png"></nav><main id="main"></main><footer><div class="footer-content"><p class="footer-title">Cвязаться с нами:</p><p class="footer-text">г.Нижний Новгород</p><p class="footer-text">тел: <u>+7(953)1833296</u></p><p class="footer-text">e-mail: <u>specy@rambler.ru</u></p></div></footer><script src="/js/build.js"></script><script src="/js/jquery-3.1.1.min.js"></script><script src="/js/jquery.hashchange.min.js"></script><script src="/js/HashChange.js"></script><script>let link = /([http://localhost:8080/catalog/polimer/])/;
     let test = document.location.href
 
     if (link==test)
@@ -58,9 +6,4 @@
         console.log("ok")
         else {
             document.getElementById("all").style.display="none"
-        }
-
-</script>
-</body>
-</html>    
-    
+        }</script></body></html>

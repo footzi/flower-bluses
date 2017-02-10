@@ -59,7 +59,8 @@ let ProductPreview = React.createClass ({
                 <div className="caption">
                     <span className="TextNameProductPreview title">{name}</span>
                     <span className="info" onClick={onClick}> 
-                    <button onClick={openPopup}>Кнопочка </button></span> 
+                        <div id="product-preview-button" onClick={openPopup}>Заказать</div>
+                    </span> 
                    
                 </div>
             </div>

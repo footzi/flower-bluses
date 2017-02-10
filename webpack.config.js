@@ -23,5 +23,7 @@ module.exports = {
 
         ]
     },
-    plugins: []
+    plugins: [
+        // new webpack.optimize.UglifyJsPlugin()
+    ]
 }

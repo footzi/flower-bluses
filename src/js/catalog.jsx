@@ -12,9 +12,32 @@ let Catalog = React.createClass ({
      </div>
 
      <div className="catalog-img">
-        <Link to="/catalog/polimer"> <img src="../images/catalog/1.png" /> </Link>
-        <img src="../images/catalog/2.png" />
-        <img className="last" src="../images/catalog/3.png" />
+        <div className="catalog-img-prew">
+        <div className="catalog-thumbs">
+            <Link to="/catalog/polimer"> <img src="../images/catalog/1.png" /> </Link>
+            <div className="catalog-caption">
+                <span>Украшения из полимерной глины</span>
+            </div>
+        </div>
+        </div>
+
+        <div className="catalog-img-prew">
+        <div className="catalog-thumbs">
+            <Link to="/catalog/polimer"> <img src="../images/catalog/2.png" /> </Link>
+            <div className="catalog-caption">
+                <span>Украшения из полимерной глины</span>
+            </div>
+        </div>
+        </div>
+
+        <div className="catalog-img-prew">
+        <div className="catalog-thumbs">
+            <Link to="/catalog/polimer"> <img src="../images/catalog/3.png" /> </Link>
+            <div className="catalog-caption">
+                <span>Украшения из полимерной глины</span>
+            </div>
+        </div>
+        </div>
      </div>
      <div className="catalog-info">
         <div className="catalog-info-polimer">

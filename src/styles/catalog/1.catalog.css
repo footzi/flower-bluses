@@ -1,0 +1,194 @@
+.catalog{
+  outline:2px solid blue;
+}
+.catalog-title .main-title {
+  font-size: 2.5vw;
+  margin-top: 10%;
+  padding-bottom: 6.5%;
+}
+.catalog-title .main-introduction {
+  font-size: 1.5vw;
+}
+.catalog-img {
+  margin-top:0.6%;
+}
+.catalog-img img {
+  margin-right:1.5%;
+}
+.catalog-img .last {
+  margin-right:0%;
+} 
+.catalog-img-prew {
+  width: 30%;
+  outline:2px solid red;
+  display:inline-table;
+}
+
+.catalog-navbar{
+  margin-top:3.1%;
+}
+
+.catalog-info {
+  outline:3px solid blue;
+  margin-top: 7%;
+}
+.catalog-info-polimer, .catalog-info-jewellery {
+  background-image: url("../images/catalog/fon-info.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0.1%;
+}
+.catalog-info-jewellery {
+  margin-top: 5%;
+}
+
+.catalog-info-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  color: rgb(112, 82, 144);
+}
+.catalog-info-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3vw;
+  color: rgb(136, 136, 136);
+  text-align: justify;
+  text-indent: 2%;
+  padding-bottom: 3%;
+  margin: 0 1%;
+}
+
+
+.list-items {
+  outline:3px solid black;
+}
+
+
+
+.catalog-navbar-ul{
+  border: 2px solid #705290; 
+}
+
+.Link {
+  font-size: 1vw;
+  font-weight: bolder;
+  display: inline-block;
+  padding: 2%;
+}
+li {
+  text-decoration: none;
+  display: inline-block;
+  
+}
+.Link:hover {
+  background-color: red;
+  text-decoration: underline;
+  
+}
+.active-link {
+  background-color: red;
+  text-decoration: underline;
+}
+
+
+.hidden {
+  display:none; 
+}
+.product-preview{
+  margin-top: 5%;
+  margin-right: 6%;
+  outline: 4px solid black;
+  display: inline-table;
+  width:29%;
+}
+.product-preview:nth-child(3n) {
+  margin-right:0;
+}
+.product-preview-img {
+  width:30%;
+}
+#product-preview-button{
+  display:inline;
+  width:25%;
+  border:2px solid blue;
+  border-radius:10%;
+  padding:2%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#b-popup{
+    left:0;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index:3;
+}
+#b-popup .b-popup-content{
+    background-color: #e6e2eb;
+    margin:4% auto 0 auto;
+    width:60%;
+    height: 40%;
+    border-radius:1%;
+}
+#b-popup-close-button {
+  text-align: right;
+  padding: 0.5%;
+  margin-bottom:1%
+}
+#product-info{
+  margin-top:4.5%; 
+  width: 37%;
+  outline:2px solid red;
+  float:right;
+}
+#product-info-button{
+  width:30%;
+  border:2px solid blue;
+  border-radius:10%;
+  padding:1%;
+}
+
+.product-info-name {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#705290;
+  font-size: 1.2vw; 
+}
+.product-info-text {
+  font-family: Arial, Helvetica, sans-serif;
+  color:#888888;
+  font-size: 1vw; 
+}
+
+.butterfly {
+  display:none;
+  position: absolute;
+}
+#butterfly1 {
+  top:19.5%;
+  right:35%;
+}
+
+
+
+
+#product-carousel {
+  margin-left: 3%;
+  width:60%;
+}
+#order {
+  display: none;
+}

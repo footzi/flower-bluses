@@ -5,3 +5,5 @@
 3. в popup поставить паддинг вместо марджинов
 
 
+npm i gulp gulp-concat gulp-uglify gulp-uglifycss gulp-htmlmin gulp-minify gulp-concat-css gulp-watch --save -dev
+npm i gulp-webpack --save -dev

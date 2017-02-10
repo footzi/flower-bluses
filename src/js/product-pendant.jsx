@@ -16,13 +16,13 @@ let ProductPendant = React.createClass({
     render () {
         function order(e) {
             e.preventDefault();
-            document.getElementById("product-order").style="display:table";
-            document.getElementById("product-info").style="display:none";
+            document.getElementById("order").style="display:table";
+            document.getElementById("product").style="display:none";
          }
         function back(e) {
                     e.preventDefault();
-                    document.getElementById("product-order").style="display:none";
-                    document.getElementById("product-info").style="display:table";
+                    document.getElementById("order").style="display:none";
+                    document.getElementById("product").style="display:table";
         }
         
         let { product } = this.state;
@@ -33,6 +33,7 @@ let ProductPendant = React.createClass({
                     <div id="b-popup-close-button">
                         <Link to="/catalog/polimer/pendants"><img src="/./images/catalog/close.png" /></Link>
                     </div>  
+                    <div id="product">
                     <div id="product-info">   
                         <p className="product-info-name">{product.name}</p>
                         <p className="product-info-text">{product.text}</p>
@@ -40,6 +41,7 @@ let ProductPendant = React.createClass({
                         <img className="butterfly" id="butterfly2" src="/./images/catalog/butterfly2.png" />  
                         <img className="butterfly" id="butterfly3" src="/./images/catalog/butterfly3.png" />   
                         <button onClick={order}>Заказать</button>
+                        <div id="product-info-button">Заказать</div>
                     </div>
                     <div id="product-carousel">
                         <Carousel>
@@ -50,7 +52,8 @@ let ProductPendant = React.createClass({
                             <div><img src={product.image5} /></div>
                         </Carousel>
                     </div>
-                    <div id="product-order">
+                    </div>
+                    <div id="order">
                         Заказать товар
                         <form>
                             <input type="text" value={product.text}/>

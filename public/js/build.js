@@ -26799,14 +26799,77 @@
 	                "div",
 	                { className: "catalog-img" },
 	                _react2["default"].createElement(
-	                    _reactRouter.Link,
-	                    { to: "/catalog/polimer" },
-	                    " ",
-	                    _react2["default"].createElement("img", { src: "../images/catalog/1.png" }),
-	                    " "
+	                    "div",
+	                    { className: "catalog-img-prew" },
+	                    _react2["default"].createElement(
+	                        "div",
+	                        { className: "catalog-thumbs" },
+	                        _react2["default"].createElement(
+	                            _reactRouter.Link,
+	                            { to: "/catalog/polimer" },
+	                            " ",
+	                            _react2["default"].createElement("img", { src: "../images/catalog/1.png" }),
+	                            " "
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            { className: "catalog-caption" },
+	                            _react2["default"].createElement(
+	                                "span",
+	                                null,
+	                                "Украшения из полимерной глины"
+	                            )
+	                        )
+	                    )
 	                ),
-	                _react2["default"].createElement("img", { src: "../images/catalog/2.png" }),
-	                _react2["default"].createElement("img", { className: "last", src: "../images/catalog/3.png" })
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "catalog-img-prew" },
+	                    _react2["default"].createElement(
+	                        "div",
+	                        { className: "catalog-thumbs" },
+	                        _react2["default"].createElement(
+	                            _reactRouter.Link,
+	                            { to: "/catalog/polimer" },
+	                            " ",
+	                            _react2["default"].createElement("img", { src: "../images/catalog/2.png" }),
+	                            " "
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            { className: "catalog-caption" },
+	                            _react2["default"].createElement(
+	                                "span",
+	                                null,
+	                                "Украшения из полимерной глины"
+	                            )
+	                        )
+	                    )
+	                ),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "catalog-img-prew" },
+	                    _react2["default"].createElement(
+	                        "div",
+	                        { className: "catalog-thumbs" },
+	                        _react2["default"].createElement(
+	                            _reactRouter.Link,
+	                            { to: "/catalog/polimer" },
+	                            " ",
+	                            _react2["default"].createElement("img", { src: "../images/catalog/3.png" }),
+	                            " "
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            { className: "catalog-caption" },
+	                            _react2["default"].createElement(
+	                                "span",
+	                                null,
+	                                "Украшения из полимерной глины"
+	                            )
+	                        )
+	                    )
+	                )
 	            ),
 	            _react2["default"].createElement(
 	                "div",
@@ -26919,7 +26982,7 @@
 	                { className: 'catalog-navbar' },
 	                _react2['default'].createElement(
 	                    'ul',
-	                    null,
+	                    { className: 'catalog-navbar-ul' },
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
 	                        { to: '/catalog/polimer/all', activeClassName: 'active-link', className: 'Link', onClick: this.onClick },
@@ -27114,9 +27177,9 @@
 	                        "span",
 	                        { className: "info", onClick: onClick },
 	                        _react2["default"].createElement(
-	                            "button",
-	                            { onClick: openPopup },
-	                            "Кнопочка "
+	                            "div",
+	                            { id: "product-preview-button", onClick: openPopup },
+	                            "Заказать"
 	                        )
 	                    )
 	                )
@@ -27394,13 +27457,13 @@
 	    render: function render() {
 	        function order(e) {
 	            e.preventDefault();
-	            document.getElementById("product-order").style = "display:table";
-	            document.getElementById("product-info").style = "display:none";
+	            document.getElementById("order").style = "display:table";
+	            document.getElementById("product").style = "display:none";
 	        }
 	        function back(e) {
 	            e.preventDefault();
-	            document.getElementById("product-order").style = "display:none";
-	            document.getElementById("product-info").style = "display:table";
+	            document.getElementById("order").style = "display:none";
+	            document.getElementById("product").style = "display:table";
 	        }
 
 	        var product = this.state.product;
@@ -27422,67 +27485,71 @@
 	                ),
 	                _react2["default"].createElement(
 	                    "div",
-	                    { id: "product-info" },
+	                    { id: "product" },
 	                    _react2["default"].createElement(
-	                        "p",
-	                        { className: "product-info-name" },
-	                        product.name
+	                        "div",
+	                        { id: "product-info" },
+	                        _react2["default"].createElement(
+	                            "p",
+	                            { className: "product-info-name" },
+	                            product.name
+	                        ),
+	                        _react2["default"].createElement(
+	                            "p",
+	                            { className: "product-info-text" },
+	                            product.text
+	                        ),
+	                        _react2["default"].createElement("img", { className: "butterfly", id: "butterfly1", src: "/./images/catalog/butterfly1.png" }),
+	                        _react2["default"].createElement("img", { className: "butterfly", id: "butterfly2", src: "/./images/catalog/butterfly2.png" }),
+	                        _react2["default"].createElement("img", { className: "butterfly", id: "butterfly3", src: "/./images/catalog/butterfly3.png" }),
+	                        _react2["default"].createElement(
+	                            "button",
+	                            { onClick: order },
+	                            "Заказать"
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            { id: "product-info-button" },
+	                            "Заказать"
+	                        )
 	                    ),
 	                    _react2["default"].createElement(
-	                        "p",
-	                        { className: "product-info-text" },
-	                        product.text
-	                    ),
-	                    _react2["default"].createElement("img", { className: "butterfly", id: "butterfly1", src: "/./images/catalog/butterfly1.png" }),
-	                    _react2["default"].createElement("img", { className: "butterfly", id: "butterfly2", src: "/./images/catalog/butterfly2.png" }),
-	                    _react2["default"].createElement("img", { className: "butterfly", id: "butterfly3", src: "/./images/catalog/butterfly3.png" }),
-	                    _react2["default"].createElement(
-	                        "button",
-	                        null,
-	                        " закрыть"
-	                    ),
-	                    _react2["default"].createElement(
-	                        "button",
-	                        { onClick: order },
-	                        "Заказать"
-	                    )
-	                ),
-	                _react2["default"].createElement(
-	                    "div",
-	                    { id: "product-carousel" },
-	                    _react2["default"].createElement(
-	                        Carousel,
-	                        null,
+	                        "div",
+	                        { id: "product-carousel" },
 	                        _react2["default"].createElement(
-	                            "div",
+	                            Carousel,
 	                            null,
-	                            _react2["default"].createElement("img", { src: product.image1 })
-	                        ),
-	                        _react2["default"].createElement(
-	                            "div",
-	                            null,
-	                            _react2["default"].createElement("img", { src: product.image2 })
-	                        ),
-	                        _react2["default"].createElement(
-	                            "div",
-	                            null,
-	                            _react2["default"].createElement("img", { src: product.image3 })
-	                        ),
-	                        _react2["default"].createElement(
-	                            "div",
-	                            null,
-	                            _react2["default"].createElement("img", { src: product.image4 })
-	                        ),
-	                        _react2["default"].createElement(
-	                            "div",
-	                            null,
-	                            _react2["default"].createElement("img", { src: product.image5 })
+	                            _react2["default"].createElement(
+	                                "div",
+	                                null,
+	                                _react2["default"].createElement("img", { src: product.image1 })
+	                            ),
+	                            _react2["default"].createElement(
+	                                "div",
+	                                null,
+	                                _react2["default"].createElement("img", { src: product.image2 })
+	                            ),
+	                            _react2["default"].createElement(
+	                                "div",
+	                                null,
+	                                _react2["default"].createElement("img", { src: product.image3 })
+	                            ),
+	                            _react2["default"].createElement(
+	                                "div",
+	                                null,
+	                                _react2["default"].createElement("img", { src: product.image4 })
+	                            ),
+	                            _react2["default"].createElement(
+	                                "div",
+	                                null,
+	                                _react2["default"].createElement("img", { src: product.image5 })
+	                            )
 	                        )
 	                    )
 	                ),
 	                _react2["default"].createElement(
 	                    "div",
-	                    { id: "product-order" },
+	                    { id: "order" },
 	                    "Заказать товар",
 	                    _react2["default"].createElement(
 	                        "form",
