@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Carousel from 're-carousel'
 let Index = React.createClass({
     render () {
         return (
@@ -11,10 +12,15 @@ let Index = React.createClass({
         <div className="stock">
             <h1 className="stock-title">УКРАШЕНИЯ В НАЛИЧИИ:</h1>
             <div className="img">
-                <img className="stock-img" src="images/1.jpg" />
-            
-                <img className="stock-img" src="images/2.jpg" />
-                <img className="stock-img" src="images/3.jpg" />
+                <Carousel auto>
+                    <div style={{backgroundColor: 'tomato', height: '100%'}}>Frame 1</div>
+                    <div style={{backgroundColor: 'orange', height: '100%'}}>Frame 2</div>
+                    <div style={{backgroundColor: 'orchid', height: '100%'}}>Frame 3</div>
+                </Carousel>
+
+                    <img className="stock-img" src="images/1.jpg" />
+                    <img className="stock-img" src="images/2.jpg" />
+                    <img className="stock-img" src="images/3.jpg" />
             </div>
             <div className="button">
                 <img className="button-img" src="images/button.png" />
