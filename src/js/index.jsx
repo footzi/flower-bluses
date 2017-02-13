@@ -7,12 +7,12 @@ let Index = React.createClass({
 <div>
         <div className="title">
             <h1 className="main-title">Добро пожаловать на виртуальную страничку моей домашней мастерской!</h1>
-            <p className="main-introduction" >Безусловно, достичь совершенства и соперничать с художником – природой, невозможно... Но, приблизиться к природной красоте, так, чтобы захотелось вдохнуть аромат, всколыхнуть воспоминания о весеннем пробуждении или почувствовать грусть осени... эту возможность дает удивительное искусство <p className="center">Керамической флористики!</p></p>
+            <p className="main-introduction" >Безусловно, достичь совершенства и соперничать с художником – природой, невозможно... Но, приблизиться к природной красоте, так, чтобы захотелось вдохнуть аромат, всколыхнуть воспоминания о весеннем пробуждении или почувствовать грусть осени... эту возможность дает удивительное искусство Керамической флористики!</p>
         </div>
         <div className="stock">
             <h1 className="stock-title">УКРАШЕНИЯ В НАЛИЧИИ:</h1>
             <div className="img">
-                <div className="carousel-fl" data-flickity='{ "autoPlay": 1500 }'>
+                <div className="carousel-fl" data-flickity='{ "cellAlign": "left", "groupCells": 1, "autoPlay": false, "pauseAutoPlayOnHover": false }'>
                       <div className="carousel-cell"><img className="stock-img" src="images/1.jpg" /></div>
                       <div className="carousel-cell"><img className="stock-img" src="images/2.jpg" /></div>
                       <div className="carousel-cell"><img className="stock-img" src="images/3.jpg" /></div>
@@ -20,10 +20,6 @@ let Index = React.createClass({
                       <div className="carousel-cell"><img className="stock-img" src="images/2.jpg" /></div>
                       <div className="carousel-cell"><img className="stock-img" src="images/3.jpg" /></div>
                 </div>
-
-                   
-                   
-                    
             </div>
             <div className="button">
                 <img className="button-img" src="images/button.png" />

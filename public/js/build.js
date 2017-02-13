@@ -26667,12 +26667,7 @@
 	                _react2['default'].createElement(
 	                    'p',
 	                    { className: 'main-introduction' },
-	                    'Безусловно, достичь совершенства и соперничать с художником – природой, невозможно... Но, приблизиться к природной красоте, так, чтобы захотелось вдохнуть аромат, всколыхнуть воспоминания о весеннем пробуждении или почувствовать грусть осени... эту возможность дает удивительное искусство ',
-	                    _react2['default'].createElement(
-	                        'p',
-	                        { className: 'center' },
-	                        'Керамической флористики!'
-	                    )
+	                    'Безусловно, достичь совершенства и соперничать с художником – природой, невозможно... Но, приблизиться к природной красоте, так, чтобы захотелось вдохнуть аромат, всколыхнуть воспоминания о весеннем пробуждении или почувствовать грусть осени... эту возможность дает удивительное искусство Керамической флористики!'
 	                )
 	            ),
 	            _react2['default'].createElement(
@@ -26688,7 +26683,7 @@
 	                    { className: 'img' },
 	                    _react2['default'].createElement(
 	                        'div',
-	                        { className: 'carousel-fl', 'data-flickity': '{ "autoPlay": 1500 }' },
+	                        { className: 'carousel-fl', 'data-flickity': '{ "cellAlign": "left", "groupCells": 1, "autoPlay": false, "pauseAutoPlayOnHover": false }' },
 	                        _react2['default'].createElement(
 	                            'div',
 	                            { className: 'carousel-cell' },

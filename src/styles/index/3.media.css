@@ -9,7 +9,18 @@ nav{
     display:none;
 }
 .stock{
+    background-image: url("../images/fon2-640.png");
+    margin-top:-8%;
+    padding-top: 21%;
+
+}
+.stock-title {
+    font-size: 4vw;
+    font-weight: 700;
+}
+.img {
     display:none;
+
 }
 .news{
     display:none;
@@ -21,12 +32,12 @@ main{
     width:100%;
     text-align:center;
     box-sizing:border-box;
-    margin:20% 0 0 0;
-    padding:0 5% 0 5%;
+    margin:25% 0 0 0;
+    padding:0 8% 0 8%;
 
 }
 .header-burgerbutton img{
-    margin:3% 3% 0 0;
+    margin:1.5% 2% 0 0;
     float:right;
     width:10%;
 
@@ -39,11 +50,13 @@ main{
 }
 .main-title{
     margin:0;
-    font-size: 4vw;
+    font-size: 5vw;
+    margin-bottom: 15%;
 }
-.main-introducion{
+.main-introduction{
     margin:0;
-    font-size:3vw;
+    font-size:4vw;
+    text-indent: 5%
 }
 }
 
