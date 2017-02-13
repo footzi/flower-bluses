@@ -8,7 +8,6 @@ var concatCss = require('gulp-concat-css');
 var watch = require('gulp-watch')
 var webpack = require('gulp-webpack');
 
-var browserSync = require('browser-sync');
 
 gulp.task('css-index', function () {
   return gulp.src('src/styles/index/*.css')

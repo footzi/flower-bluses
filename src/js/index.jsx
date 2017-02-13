@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-import Carousel from 're-carousel'
 let Index = React.createClass({
     render () {
         return (
@@ -11,15 +10,25 @@ let Index = React.createClass({
         </div>
         <div className="stock">
             <h1 className="stock-title">УКРАШЕНИЯ В НАЛИЧИИ:</h1>
-            <div className="img">
-                <div className="carousel-fl" data-flickity='{ "cellAlign": "left", "groupCells": 1, "autoPlay": false, "pauseAutoPlayOnHover": false }'>
-                      <div className="carousel-cell"><img className="stock-img" src="images/1.jpg" /></div>
-                      <div className="carousel-cell"><img className="stock-img" src="images/2.jpg" /></div>
-                      <div className="carousel-cell"><img className="stock-img" src="images/3.jpg" /></div>
-                      <div className="carousel-cell"><img className="stock-img" src="images/1.jpg" /></div>
-                      <div className="carousel-cell"><img className="stock-img" src="images/2.jpg" /></div>
-                      <div className="carousel-cell"><img className="stock-img" src="images/3.jpg" /></div>
-                </div>
+            <div className="stock-images">
+                <ul className="bxslider">
+                    <li ><img src="images/1.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/1.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
+                </ul>
+            </div>
+            <div className="stock-images-640">
+                <ul className="bxslider-640">
+                    <li ><img src="images/1.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/1.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
+                </ul>
             </div>
             <div className="button">
                 <img className="button-img" src="images/button.png" />
@@ -54,3 +63,13 @@ let Index = React.createClass({
 })
 
 export default Index;
+
+// <div className="carousel-fl" data-flickity='{ "cellAlign": "left", "groupCells": 1, "autoPlay": false, "pauseAutoPlayOnHover": false, "adaptiveHeight": true }'>
+// <div>    
+//                       <div className="carousel-cell"><img className="stock-img" src="images/1.jpg" /></div>
+//                       <div className="carousel-cell"><img className="stock-img" src="images/2.jpg" /></div>
+//                       <div className="carousel-cell"><img className="stock-img" src="images/3.jpg" /></div>
+//                       <div className="carousel-cell"><img className="stock-img" src="images/1.jpg" /></div>
+//                       <div className="carousel-cell"><img className="stock-img" src="images/2.jpg" /></div>
+//                       <div className="carousel-cell"><img className="stock-img" src="images/3.jpg" /></div>
+//                 </div>

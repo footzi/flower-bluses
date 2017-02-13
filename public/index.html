@@ -1,9 +1,28 @@
-<html><head><meta charset="utf-8"><title>Главная</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/styles/index.css"><link rel="stylesheet" href="/styles/catalog.css"></head><body><header><div class="header-burgerbutton"><img src="/images/burger-button.png"></div><div class="clear"></div></header><nav><div class="navbar-button"><a href="/"><img class="navbar-button-main" src="/images/navbar/button-main.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-about" src="/images/navbar/button-about.png"></a></div><div class="navbar-button"><a href="/catalog"><img class="navbar-button-catalog" src="/images/navbar/button-catalog.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-mk" src="/images/navbar/button-mk.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-contacts" src="/images/navbar/button-contacts.png"></a></div><img class="navbar-butterfly" src="/images/navbar/butterfly.png"></nav><main id="main"></main><footer><div class="footer-content"><p class="footer-title">Cвязаться с нами:</p><p class="footer-text">г.Нижний Новгород</p><p class="footer-text">тел: <u>+7(953)1833296</u></p><p class="footer-text">e-mail: <u>specy@rambler.ru</u></p></div></footer><script src="/js/build.js"></script><script src="/js/jquery-3.1.1.min.js"></script><script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.js"></script><script>let link = /([http://localhost:8080/catalog/polimer/])/;
-    let test = document.location.href
+<html><head><meta charset="utf-8"><title>Главная</title><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/styles/index.css"><link rel="stylesheet" href="/styles/catalog.css"></head><body><header><div class="header-burgerbutton"><img src="/images/burger-button.png"></div><div class="clear"></div></header><nav><div class="navbar-button"><a href="/"><img class="navbar-button-main" src="/images/navbar/button-main.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-about" src="/images/navbar/button-about.png"></a></div><div class="navbar-button"><a href="/catalog"><img class="navbar-button-catalog" src="/images/navbar/button-catalog.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-mk" src="/images/navbar/button-mk.png"></a></div><div class="navbar-button"><a href="#"><img class="navbar-button-contacts" src="/images/navbar/button-contacts.png"></a></div><img class="navbar-butterfly" src="/images/navbar/butterfly.png"></nav><main id="main"></main><footer><div class="footer-content"><p class="footer-title">Cвязаться с нами:</p><p class="footer-text">г.Нижний Новгород</p><p class="footer-text">тел: <u>+7(953)1833296</u></p><p class="footer-text">e-mail: <u>specy@rambler.ru</u></p></div></footer><script src="/js/build.js"></script><script src="/js/jquery.min.js"></script><!-- <script src="/js/flickity.pkgd.js"></script> --><script src="/js/jquery.bxslider.js"></script><script>// let link = /([http://localhost:8080/catalog/polimer/])/;
+    // let test = document.location.href
 
-    if (link==test)
-        // document.getElementById("all").style.display="none";
-        console.log("ok")
-        else {
-            document.getElementById("all").style.display="none"
-        }</script></body></html>
+    // if (link==test)
+    //     // document.getElementById("all").style.display="none";
+    //     console.log("ok")
+    //     else {
+    //         document.getElementById("all").style.display="none"
+    //    }
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    auto:true,
+    minSlides: 4,
+  maxSlides: 4,
+  slideWidth: 360,
+  slideMargin: 10
+  })  
+});
+   
+$(document).ready(function(){
+  $('.bxslider-640').bxSlider({
+    auto:true,
+    minSlides: 2,
+  maxSlides: 2,
+  slideWidth: 360,
+  slideMargin: 10
+  })  
+});</script></body></html>

@@ -74,13 +74,18 @@ nav {
   color: rgb(112, 82, 144);
 
 }
-.img {
-  width:100%;
-  text-align: center;
-  margin-top: 3%;
+.stock-images {
+  outline:2px solid red;
+  width: 100%;
 }
+.stock-images-640{
+    display:none;
+}
+
 .stock-img {
- 
+  outline:2px solid red;
+
+
 }
 .stock-img:last-child {
   margin-right: 0;
