@@ -5,19 +5,22 @@ let Index = React.createClass({
         return (
 <div>
         <div className="title">
-            <h1 className="main-title">Добро пожаловать на виртуальную страничку моей домашней мастерской!</h1>
-            <p className="main-introduction" >Безусловно, достичь совершенства и соперничать с художником – природой, невозможно... Но, приблизиться к природной красоте, так, чтобы захотелось вдохнуть аромат, всколыхнуть воспоминания о весеннем пробуждении или почувствовать грусть осени... эту возможность дает удивительное искусство Керамической флористики!</p>
+            <h1 className="main-title">ДОБРО ПОЖАЛОВАТЬ НА ВИРТУАЛЬНУЮ СТРАНИЧКУ МОЕЙ ДОМАШНЕЙ МАСТЕРСКОЙ!</h1>
+            <p className="main-introduction" >Безусловно, достичь совершенства и соперничать с художником – природой , невозможно... Но, приблизиться к природной красоте , так, чтобы захотелось вдохнуть аромат , всколыхнуть воспоминания о весеннем пробуждении или почувствовать грусть осени… эту возможность дает удивительное искусство Керамической флористики! <br />Для создания этих невероятно живых цветов и цветочных композиций используют специальные полимерные глины - эластичные материалы, которые позволяют максимально имитировать строение цветка. Каждый лепесточек, каждый стебелек создается вручную. Особые свойства материала и авторские методики помогают детально проработать каждый элемент, тем самым достигается невероятное сходство с живыми цветами. </p>
         </div>
         <div className="stock">
             <h1 className="stock-title">УКРАШЕНИЯ В НАЛИЧИИ:</h1>
+            <p className="stock-text">Большинство изделий я делаю на заказ, но есть и те которые Вы можете преобрести в самые короткие сроки, не дожидаясь их изготовления. Вот самые свежие готовые новинки В НАЛИЧИИ, успейте сделать заказ и уже через пару* дней Вы его получите!</p>
             <div className="stock-images">
                 <ul className="bxslider">
-                    <li ><img src="images/1.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
                     <li className="slide"><img className="stock-img" src="images/1.jpg" /></li>
                     <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
                     <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/4.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/1.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
+                    <li className="slide"><img className="stock-img" src="images/4.jpg" /></li>
                 </ul>
             </div>
             <div className="stock-images-640">

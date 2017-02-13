@@ -11,49 +11,71 @@ body {
   background-size: cover;
 }
 main {
-  width:69%;
+  width:73.8%;
   outline: 4px solid red;
-  margin-top: 16%;
-  margin-left: 24%;
+  margin-top: 17%;
+  margin-left: 20%;
   text-align: center;
   padding:4% 3% 0 3%;
 }
 
 nav {
   float:left;
-  margin-top:19%;
-  margin-left: 3%;
-  outline: 0px solid green;
-  width:15%;
+  margin-top:17%;
+  margin-left: 1.5%;
+  outline: 2px solid green;
+  width:14%;
 
 
 }
 .navbar-button{
-  margin-bottom:10%;
+  margin-top: 10%;
+  width:96%;
 }
 
 
 .navbar-button img{
   width:100%;
-
 }
+.navbar-butterfly{
+    position: absolute;
+    z-index:2;
+    width: 3%;
+    margin-left: -0.5%;
+}
+.navbar-butterfly2{
+    position: absolute;
+    z-index:2;
+    width: 2.5%;
+    margin-top: 11%;
+    margin-left: 11.8%;
+}
+.navbar-butterfly3{
+    position: absolute;
+    z-index:2;
+    width: 2.5%;
+    margin-top: 21.9%;
+    margin-left: -0.8%;
+}
+
+
 
 .main-title{
-  outline:0px solid red;
+  outline:2px solid red;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vw;
-  color: rgb(112, 82, 144);
-  font-weight: bolder;
-  margin:0 12%
+  color: #705290;
+  margin:0 10%
 }
 .main-introduction{
+  margin-top:6%;
   outline:3px solid red;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.8vw;
-  color: rgb(97, 92, 101);
+  font-size: 1.4vw;
+  color: #888888;
   padding-bottom: 1.5%;
   text-align: justify;
-  text-indent: 2%
+  line-height: 130%;
 }
 .center {
   margin: 0;
@@ -61,21 +83,31 @@ nav {
 }
 
 .stock {
-  outline: 0px solid yellow;
+  margin-top: 6.3%;
+  padding: 4% 2%;
+  outline: 2px solid yellow;
   background-image: url("../images/fon2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 5%;
-  padding-bottom: 6%;
+  
 }
 .stock-title {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw;
-  color: rgb(112, 82, 144);
+  font-size: 1.7vw;
+  color: #705290;
+}
+.stock-text {
+  margin: 2.2% 0;
+  outline: 2px solid red;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#888888;
+  font-size: 1.2vw;
+  font-weight: bolder;
 
 }
 .stock-images {
   outline:2px solid red;
+  margin-top: 3%;
   width: 100%;
 }
 .stock-images-640{
@@ -100,6 +132,7 @@ nav {
   width: 29%;
 }
 .news {
+  display:none;
   outline: 0px solid green;
   background-image: url("../images/fon2.png");
   background-repeat: no-repeat;
@@ -140,6 +173,7 @@ nav {
   margin-bottom:2%;
 }
 footer{
+  display:none;
   outline:0px solid magenta;
   margin-top:17%;
 }
@@ -164,20 +198,6 @@ footer{
    margin-bottom: 1%
 }
 
-.navbar-button-about {
-      margin-top: -6%;
-}
-.navbar-button-mk{
-    margin-top: 5%;
-}
 
-.navbar-button-contacts{
-    margin-top: 5%
-}
-.navbar-butterfly{
-    width: 16%;
-    margin-top: -50%;
-    margin-left: -4%;
-}
 
 

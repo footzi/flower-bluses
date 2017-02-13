@@ -14,22 +14,24 @@
         <div class="clear"></div>
     </header>
     <nav>
-        <div class="navbar-button">
-            <a href="/"><img class="navbar-button-main" src="/images/navbar/button-main.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="#"><img class="navbar-button-about" src="/images/navbar/button-about.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="/catalog"><img class="navbar-button-catalog" src="/images/navbar/button-catalog.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="#"><img class="navbar-button-mk" src="/images/navbar/button-mk.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="#"><img class="navbar-button-contacts" src="/images/navbar/button-contacts.png"></a>
-        </div>
         <img class="navbar-butterfly" src="/images/navbar/butterfly.png">
+        <img class="navbar-butterfly2" src="/images/navbar/butterfly2.png">
+        <img class="navbar-butterfly3" src="/images/navbar/butterfly3.png">
+        <div class="navbar-button">
+            <a href="/"><img src="/images/navbar/button-main.png"></a>
+        </div>
+        <div class="navbar-button">
+            <a href="#"><img src="/images/navbar/button-about.png"></a>
+        </div>
+        <div class="navbar-button">
+            <a href="/catalog"><img src="/images/navbar/button-catalog.png"></a>
+        </div>
+        <div class="navbar-button">
+            <a href="#"><img src="/images/navbar/button-mk.png"></a>
+        </div>
+        <div class="navbar-button">
+            <a href="#"><img src="/images/navbar/button-contacts.png"></a>
+        </div>
     </nav>
     <main id="main">
     </main>
@@ -60,16 +62,19 @@
 $(document).ready(function(){
   $('.bxslider').bxSlider({
     auto:true,
+     moveSlides: 1,
     minSlides: 4,
   maxSlides: 4,
   slideWidth: 360,
-  slideMargin: 10
+  slideMargin: 13
   })  
 });
    
 $(document).ready(function(){
   $('.bxslider-640').bxSlider({
     auto:true,
+    moveSlides: 1,
+     mode: 'vertical',
     minSlides: 2,
   maxSlides: 2,
   slideWidth: 360,
