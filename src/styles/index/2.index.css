@@ -6,22 +6,23 @@
 	font-style: normal;
 }*/
 body {
+  font-size: 30px;
   background-image: url("../images/fon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 main {
+  float: right;
   width:71%;
   outline: 4px solid red;
   margin-top: 17%;
-  margin-left: 20%;
   text-align: center;
   padding:4% 6% 0 3%;
 }
 
 nav {
   float:left;
-  margin-top:17%;
+  margin-top:35%;
   margin-left: 1.5%;
   outline: 2px solid green;
   width:14%;

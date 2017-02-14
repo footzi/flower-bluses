@@ -55,6 +55,8 @@ let ProductPendant = React.createClass({
                     </div>
                     <div id="order">
                         Заказать товар
+                        <div>
+                        </div>
                         <form>
                             <input type="text" value={product.text}/>
                             <input type="text" />

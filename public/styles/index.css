@@ -1,9 +1,9 @@
 body{padding:0;margin:0;font:13px Arial,Helvetica,Garuda,sans-serif;*font-size:small;*font:x-small}
 h1,h2,h3,h4,h5,h6,ul,li,em,strong,pre,code{padding:0;margin:0;line-height:1em;font-size:100%;font-weight:normal;font-style:normal}
 table{font-size:inherit;font:100%}ul{list-style:none}img{border:0}p{margin:1em 0}
-body{background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover}
-main{width:71%;outline:4px solid red;margin-top:17%;margin-left:20%;text-align:center;padding:4% 6% 0 3%}
-nav{float:left;margin-top:17%;margin-left:1.5%;outline:2px solid green;width:14%}
+body{font-size:30px;background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover}
+main{float:right;width:71%;outline:4px solid red;margin-top:17%;text-align:center;padding:4% 6% 0 3%}
+nav{float:left;margin-top:35%;margin-left:1.5%;outline:2px solid green;width:14%}
 .navbar-button{margin-top:10%;width:96%}.navbar-button img{width:100%}.navbar-butterfly{position:absolute;z-index:2;width:3%;margin-left:-0.5%}
 .navbar-butterfly2{position:absolute;z-index:2;width:2.5%;margin-top:11%;margin-left:11.8%}
 .navbar-butterfly3{position:absolute;z-index:2;width:2.5%;margin-top:21.9%;margin-left:-0.8%}
