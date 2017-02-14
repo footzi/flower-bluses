@@ -11,12 +11,12 @@ body {
   background-size: cover;
 }
 main {
-  width:73.8%;
+  width:71%;
   outline: 4px solid red;
   margin-top: 17%;
   margin-left: 20%;
   text-align: center;
-  padding:4% 3% 0 3%;
+  padding:4% 6% 0 3%;
 }
 
 nav {
@@ -68,7 +68,7 @@ nav {
   margin:0 10%
 }
 .main-introduction{
-  margin-top:6%;
+  margin-top:5.5%;
   outline:3px solid red;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4vw;
@@ -83,8 +83,8 @@ nav {
 }
 
 .stock {
-  margin-top: 6.3%;
-  padding: 4% 2%;
+  margin-top: 5.5%;
+  padding: 3% 2%;
   outline: 2px solid yellow;
   background-image: url("../images/fon2.png");
   background-repeat: no-repeat;
@@ -107,8 +107,7 @@ nav {
 }
 .stock-images {
   outline:2px solid red;
-  margin-top: 3%;
-  width: 100%;
+  margin: 4% 1% 0 1%;
 }
 .stock-images-640{
     display:none;
