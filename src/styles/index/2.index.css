@@ -5,6 +5,13 @@
 	font-weight: normal;
 	font-style: normal;
 }*/
+@font-face {
+  font-family: 'PhillippScript';
+  src: url('../fonts/PhillippScript/PhillippScript.eot');
+  src: local('☺'), url('../fonts/PhillippScript/PhillippScript.woff') format('woff'), url('../fonts/PhillippScript.ttf') format('truetype'), url('../fonts/PhillippScript/PhillippScript.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-size: 30px;
   background-image: url("../images/fon.jpg");
@@ -125,42 +132,43 @@ nav {
 }
 
 .button {
-  margin-top: 5%;
-
-}
-
-.button-img{
-  width: 29%;
+  display:inline-block;
+  width: 27%;
+  border: 1px solid #705290;
+  border-radius: 10px;
+  padding: 1% 0 0;
+  margin-top: 4%;
+  font-family: PhillippScript;
+  font-size: 2vw;
+  color:#705290;
 }
 .news {
-  display:none;
-  outline: 0px solid green;
+  outline: 2px solid green;
   background-image: url("../images/fon2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 5%;
-  margin-top: 5%;
-  padding-bottom: 3%;
+  padding:3% 2%;
+  margin-top: 7%;
 }
 .news-content {
-  outline: 0px solid orange;
+  outline: 2px solid orange;
 }
 .news-calendar {
-  outline: 0px solid red;
+  width: 20%;
+  float:left;
+  outline: 2px solid red;
 }
 .news-calendar-img {
-  float: left;
-  width:14%;
-  margin:3% 0 15% 6%;
+  width:100%;
 }
 .news-details {
+  width: 80%;
+  float: right;
   text-align: left;
-  outline: 0px solid blue;
+  outline: 2px solid blue;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.6vw;
-  color: rgb(96, 92, 101);
-  margin-left:24.5%;
-  margin-right: 4%;
+  font-size: 1.2vw;
+  color: #888888;
   }
 .news-details-marker {
   margin-top: 2%;

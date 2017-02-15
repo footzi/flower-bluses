@@ -34,11 +34,12 @@ let Index = React.createClass({
                 </ul>
             </div>
             <div className="button">
-                <img className="button-img" src="images/button.png" />
+                Каталог
             </div>
         </div>
         <div className="news">
             <h1 className="stock-title">БЛИЖАЙШИЕ МАСТЕР-КЛАССЫ:</h1>
+            <p className="stock-text">Большинство изделий я делаю на заказ, но есть и те которые Вы можете преобрести в самые короткие сроки, не дожидаясь их изготовления. Вот самые свежие готовые новинки В НАЛИЧИИ, успейте сделать заказ и уже через пару* дней Вы его получите!</p>
             <div className="news-content">
                <div className="news-calendar">
                     <img className="news-calendar-img" src="images/calendar.png" />
@@ -54,9 +55,7 @@ let Index = React.createClass({
                     <span className="news-details-text">С завершенного МК, вы будете уходить с полностью готовой работой! </span>
                 </div>
                 <div className="clear"></div>
-                <div className="news-button">
-                    <img className="button-img" src="images/button2.png" />
-            </div>
+                <div className="news-button"></div>
             </div>
         </div>
         

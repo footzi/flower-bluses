@@ -11,8 +11,8 @@ import ProductPendant from "./product-pendant.jsx"
 import All from "./all.jsx"
 import ProductAll from "./product-all.jsx"
 
-import "./Other/jquery.min.js"
-import "./Other/jquery.bxslider.js"
+//import "./Other/jquery.min.js"
+//import "./Other/jquery.bxslider.js"
 //import "./Other/html5shiv.js"
 //import "./Other/respond.js"
 

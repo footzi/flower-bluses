@@ -16,7 +16,7 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
 }
@@ -107,12 +107,13 @@
 	margin-top: -3%;
 	outline: 0;
 	width: 2.5%;
-	height: 30%;
+	height: 34%;
 	text-indent: -9999px;
 	z-index: 9999;
 
 	left: -3px;
-	background: url(../images/bx-prev.png) no-repeat 0;
+	background: url(../images/bx-prev.png) no-repeat;
+	background-size: 100% 100%;
 }
 
 .bx-wrapper .bx-next {
@@ -128,7 +129,7 @@
 	right: 0.8%;
 	background: url(../images/bx-next.png) no-repeat;
 	background-size: 101% 88%
-}
+}/
 
 
 
