@@ -22,7 +22,7 @@ main {
 
 nav {
   float:left;
-  margin-top:35%;
+  margin-top:34%;
   margin-left: 1.5%;
   outline: 2px solid green;
   width:14%;
@@ -30,7 +30,7 @@ nav {
 
 }
 .navbar-button{
-  margin-top: 10%;
+  margin-top: 7%;
   width:96%;
 }
 
@@ -104,11 +104,12 @@ nav {
   color:#888888;
   font-size: 1.2vw;
   font-weight: bolder;
+  line-height: 130%;
 
 }
 .stock-images {
   outline:2px solid red;
-  margin: 4% 1% 0 1%;
+  margin: 3.2% 0% 0 1.2%;
 }
 .stock-images-640{
     display:none;
