@@ -13,7 +13,6 @@
   font-style: normal;
 }
 body {
-  font-size: 30px;
   background-image: url("../images/fon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,6 +22,7 @@ main {
   width:71%;
   outline: 4px solid red;
   margin-top: 17%;
+  margin-bottom: 10%;
   text-align: center;
   padding:4% 6% 0 3%;
 }
@@ -94,9 +94,9 @@ nav {
   margin-top: 5.5%;
   padding: 3% 2%;
   outline: 2px solid yellow;
-  background-image: url("../images/fon2.png");
-  background-repeat: no-repeat;
   background-size: cover;
+  border: 1px solid rgba(129, 88, 159, 0.349);
+  background-color: rgba(255, 255, 255, 0.349);
   
 }
 .stock-title {
@@ -116,7 +116,7 @@ nav {
 }
 .stock-images {
   outline:2px solid red;
-  margin: 3.2% 0% 0 1.2%;
+  margin: 3.2% 0% 4% 1.2%;
 }
 .stock-images-640{
     display:none;
@@ -136,16 +136,15 @@ nav {
   width: 27%;
   border: 1px solid #705290;
   border-radius: 10px;
-  padding: 1% 0 0;
-  margin-top: 4%;
+  padding-top: 0.3%;
   font-family: PhillippScript;
   font-size: 2vw;
   color:#705290;
 }
 .news {
   outline: 2px solid green;
-  background-image: url("../images/fon2.png");
-  background-repeat: no-repeat;
+  border: 1px solid rgba(129, 88, 159, 0.349);
+  background-color: rgba(255, 255, 255, 0.349);
   background-size: cover;
   padding:3% 2%;
   margin-top: 7%;
@@ -154,7 +153,8 @@ nav {
   outline: 2px solid orange;
 }
 .news-calendar {
-  width: 20%;
+  width: 14.5%;
+  margin:4% 0 0 4%;
   float:left;
   outline: 2px solid red;
 }
@@ -162,7 +162,8 @@ nav {
   width:100%;
 }
 .news-details {
-  width: 80%;
+  width: 76%;
+  margin-top:-0.5%;
   float: right;
   text-align: left;
   outline: 2px solid blue;
@@ -170,21 +171,24 @@ nav {
   font-size: 1.2vw;
   color: #888888;
   }
+.news-details-text {
+  position: relative;
+  margin: -3.5%  0 3% 6%;
+  outline: 2px solid yellow;
+}
 .news-details-marker {
-  margin-top: 2%;
+  position: relative;
   display: inline;
-  width:5%;
+  width:4%;
 }
 .clear {
   clear: both;
 }
-.news-button{
-  margin-bottom:2%;
+.button .button-more {
+  margin-top: 0;
 }
 footer{
-  display:none;
-  outline:0px solid magenta;
-  margin-top:17%;
+  outline:2px solid magenta;
 }
 .footer-content{
   outline:0px solid black;
@@ -206,7 +210,6 @@ footer{
    margin: 0;
    margin-bottom: 1%
 }
-
 
 
 

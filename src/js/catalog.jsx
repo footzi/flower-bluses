@@ -7,10 +7,13 @@ let Catalog = React.createClass ({
         return (
 <div className="catalog">
 
-     <div className="catalog-title">
-        <div className="main-title">Каталог</div>
-        <div className="main-introduction">Здесь Вы найдете нежные и изящные украшения и необычные интерьерные композициции из цветов. Они не завянут и Вы сможете любоваться ими круглый год, и они всегда будут радовать Вас своей свежестью и красотой! По Вашему желанию, можно обсудить возможность создания Ваших любимых цветов. Цветочные украшения изготавливаются только из сертифицированных японских самозастывающих полимерных глин и ювелирной смлы Практически все цветы из полимерной глины я делаю на заказ. Уточнить наличие той или иной композиции можно, <p className="center">написав мне на почту.</p></div>
+     <div className="catalog-greeting">
+        <img className="catalog-butterfly1" src="../images/catalog/catalog-butterfly1.png" />
+        <div className="catalog-title">ДОБРО ПОЖАЛОВАТЬ</div>
+        <div className="catalog-introduction">Здесь Вы найдете нежные и изящные украшения и цветочные композиции ручной работы, которые будут радовать Вас своей свежестью и красатой круглый год!</div>
+        <img className="catalog-butterfly2" src="../images/catalog/catalog-butterfly2.png" />
      </div>
+
 
      <div className="catalog-img">
         <div className="catalog-img-prew">

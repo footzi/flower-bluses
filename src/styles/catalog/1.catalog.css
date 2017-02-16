@@ -1,14 +1,42 @@
 .catalog{
   outline:2px solid blue;
 }
-.catalog-title .main-title {
+.catalog-greeting  {
+  outline:2px solid red;
+  background-size: cover;
+  border: 1px solid rgba(129, 88, 159, 0.349);
+  background-color: rgba(255, 255, 255, 0.349);
   font-size: 2.5vw;
-  margin-top: 10%;
+  margin-top: 0.5%;
+  padding-top: 2.3%;
   padding-bottom: 6.5%;
 }
-.catalog-title .main-introduction {
-  font-size: 1.5vw;
+.catalog-butterfly1 {
+  position: absolute;
 }
+.catalog-butterfly2 {
+  position: absolute;
+}
+.catalog-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  color: #705290;
+  margin-bottom: 1%;
+}
+
+.catalog-introduction {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4vw;
+  color: #888888;
+
+}
+
+
+
+
+
+
+
 .catalog-img {
   margin-top:0.6%;
 }

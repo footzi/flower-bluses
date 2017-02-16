@@ -15,6 +15,7 @@
 ===================================*/
 
 .bx-wrapper {
+	width:100%;
 	position: relative;
 	margin: 0 auto;
 	padding: 0;
@@ -128,7 +129,7 @@
 
 	right: 0.8%;
 	background: url(../images/bx-next.png) no-repeat;
-	background-size: 101% 88%
+	background-size: 100% 100%
 }/
 
 

@@ -1,8 +1,9 @@
-.catalog{outline:2px solid blue}.catalog-title .main-title{font-size:2.5vw;margin-top:10%;padding-bottom:6.5%}
-.catalog-title .main-introduction{font-size:1.5vw}.catalog-img{margin-top:.6%}.catalog-img img{margin-right:1.5%}
-.catalog-img .last{margin-right:0}.catalog-img-prew{width:30%;outline:2px solid red;display:inline-table}
-.catalog-navbar{margin-top:3.1%}.catalog-info{outline:3px solid blue;margin-top:7%}
-.catalog-info-polimer,.catalog-info-jewellery{background-image:url("../images/catalog/fon-info.png");background-repeat:no-repeat;background-size:cover;padding-top:.1%}
+.catalog{outline:2px solid blue}.catalog-greeting{outline:2px solid red;background-size:cover;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);font-size:2.5vw;margin-top:.5%;padding-top:2.3%;padding-bottom:6.5%}
+.catalog-butterfly1{position:absolute}.catalog-butterfly2{position:absolute}.catalog-title{font-family:Arial,Helvetica,sans-serif;font-size:2vw;color:#705290;margin-bottom:1%}
+.catalog-introduction{font-family:Arial,Helvetica,sans-serif;font-size:1.4vw;color:#888}
+.catalog-img{margin-top:.6%}.catalog-img img{margin-right:1.5%}.catalog-img .last{margin-right:0}
+.catalog-img-prew{width:30%;outline:2px solid red;display:inline-table}.catalog-navbar{margin-top:3.1%}
+.catalog-info{outline:3px solid blue;margin-top:7%}.catalog-info-polimer,.catalog-info-jewellery{background-image:url("../images/catalog/fon-info.png");background-repeat:no-repeat;background-size:cover;padding-top:.1%}
 .catalog-info-jewellery{margin-top:5%}.catalog-info-title{font-family:Arial,Helvetica,sans-serif;font-size:2vw;color:#705290}
 .catalog-info-text{font-family:Arial,Helvetica,sans-serif;font-size:1.3vw;color:#888;text-align:justify;text-indent:2%;padding-bottom:3%;margin:0 1%}
 .list-items{outline:3px solid black}.catalog-navbar-ul{border:2px solid #705290}.Link{font-size:1vw;font-weight:bolder;display:inline-block;padding:2%}
