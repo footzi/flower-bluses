@@ -1,3 +1,11 @@
+/*@font-face {
+  font-family: 'PhillippScript';
+  src: url('../fonts/PhillippScript/PhillippScript.eot');
+  src: local('☺'), url('../fonts/PhillippScript/PhillippScript.woff') format('woff'), url('../fonts/PhillippScript.ttf') format('truetype'), url('../fonts/PhillippScript/PhillippScript.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*/
 .thumbs {
   width: 100%;
   position: relative;
@@ -40,6 +48,7 @@
   transition-delay: 0s;
 }
 .thumbs .caption .title {
+  font-family: PhillippScript;
   font-size: 1vw;
 }
 .thumbs .caption .info {

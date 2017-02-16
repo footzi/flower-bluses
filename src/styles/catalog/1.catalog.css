@@ -8,20 +8,21 @@
   background-color: rgba(255, 255, 255, 0.349);
   font-size: 2.5vw;
   margin-top: 0.5%;
-  padding-top: 2.3%;
-  padding-bottom: 6.5%;
+  padding: 2.3% 1% 6.5% 1%;
 }
 .catalog-butterfly1 {
+  display: none;
   position: absolute;
 }
 .catalog-butterfly2 {
+  display: none;
   position: absolute;
 }
 .catalog-title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vw;
   color: #705290;
-  margin-bottom: 1%;
+  margin-bottom: 1.5%;
 }
 
 .catalog-introduction {
@@ -38,20 +39,24 @@
 
 
 .catalog-img {
-  margin-top:0.6%;
-}
-.catalog-img img {
-  margin-right:1.5%;
-}
-.catalog-img .last {
-  margin-right:0%;
+  outline: 2px solid red;
+  margin-top:3.5%;
 } 
 .catalog-img-prew {
-  width: 30%;
+  width: 48%;
+  margin-right: 4%;
   outline:2px solid red;
   display:inline-table;
 }
+.catalog-img-prew:last-child {
+  margin-right: 0
+}
 
+.catalog-caption-text {
+  font-family: PhillippScript;
+  font-size: 2vw;
+
+}
 .catalog-navbar{
   margin-top:3.1%;
 }
@@ -59,30 +64,29 @@
 .catalog-info {
   outline:3px solid blue;
   margin-top: 7%;
-}
-.catalog-info-polimer, .catalog-info-jewellery {
-  background-image: url("../images/catalog/fon-info.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0.1%;
-}
-.catalog-info-jewellery {
-  margin-top: 5%;
+  padding-top: 2.6%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  color: #888888;
+  text-align: justify;
 }
 
 .catalog-info-title {
-  font-family: Arial, Helvetica, sans-serif;
+  color:#705290;
+  margin-top: 2%;
   font-size: 2vw;
-  color: rgb(112, 82, 144);
+  text-align: center;
 }
 .catalog-info-text {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.3vw;
-  color: rgb(136, 136, 136);
-  text-align: justify;
-  text-indent: 2%;
   padding-bottom: 3%;
   margin: 0 1%;
+}
+.catalog-info p {
+  margin:0;
+}
+.catalog-info-recomendation {
+  text-align: center;
+  text-decoration: underline;
 }
 
 
