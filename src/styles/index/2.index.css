@@ -188,6 +188,7 @@ nav {
 }
 footer{
   display: none;
+  margin-top: 2%;
   outline:2px solid magenta;
 }
 .footer-content{
@@ -200,13 +201,13 @@ footer{
   margin-top: 2.8%;
 }
 .footer-title{
-  font-size:1.3vw;
+  font-size:1vw;
   font-weight: bolder;
   margin: 0;
   margin-bottom: 8%;
 }
 .footer-text{
-  font-size:1vw;
+  font-size:0.8vw;
    margin: 0;
    margin-bottom: 1%
 }

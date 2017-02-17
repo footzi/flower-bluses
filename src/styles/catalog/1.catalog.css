@@ -1,46 +1,57 @@
 .catalog{
   outline:2px solid blue;
 }
+
+/*Первый блок с приветствием*/
 .catalog-greeting  {
+  height: 100%;
+  padding-top:2.5%;
+  padding-left: 1%;
+  padding-right: 1%;
   outline:2px solid red;
   background-size: cover;
+ /* background-image: url("../images/catalog/catalog-greeting-fon.png");*/
+ background-size: cover;
   border: 1px solid rgba(129, 88, 159, 0.349);
   background-color: rgba(255, 255, 255, 0.349);
-  font-size: 2.5vw;
   margin-top: 0.5%;
-  padding: 2.3% 1% 6.5% 1%;
 }
-.catalog-butterfly1 {
-  display: none;
-  position: absolute;
-}
-.catalog-butterfly2 {
-  display: none;
-  position: absolute;
-}
+
 .catalog-title {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw;
+  font-size: 1.8vw;
   color: #705290;
   margin-bottom: 1.5%;
 }
 
 .catalog-introduction {
+  margin-top: 2%;
+  margin-bottom: 3%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4vw;
+  font-size: 1.5vw;
   color: #888888;
+}
+.catalog-greeting-butterfly1 {
+  position: absolute;
+  width: 3%
+  margin-top:-10%;
+  margin-left:-35%;
+
+}
+
+.catalog-greeting-butterfly2 {
+  position: absolute;
 
 }
 
 
 
 
-
-
+/*Блок с картинками*/
 
 .catalog-img {
   outline: 2px solid red;
-  margin-top:3.5%;
+  margin-top:6.5%;
 } 
 .catalog-img-prew {
   width: 48%;
@@ -53,6 +64,7 @@
 }
 
 .catalog-caption-text {
+  color:#444444;
   font-family: PhillippScript;
   font-size: 2vw;
 
@@ -61,34 +73,49 @@
   margin-top:3.1%;
 }
 
+/*Блок с информацией*/
 .catalog-info {
+  height: 100%;
   outline:3px solid blue;
+  /*background-image: url("../images/catalog/catalog-info-fon.png");*/
+  background-size: cover;
+  border: 1px solid rgba(129, 88, 159, 0.349);
+  background-color: rgba(255, 255, 255, 0.349);
+
   margin-top: 7%;
   padding-top: 2.6%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5vw;
   color: #888888;
   text-align: justify;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .catalog-info-title {
   color:#705290;
-  margin-top: 2%;
-  font-size: 2vw;
+  margin-top: 0.6%;
+  font-size: 1.8vw;
   text-align: center;
 }
 .catalog-info-text {
-  padding-bottom: 3%;
-  margin: 0 1%;
-}
-.catalog-info p {
-  margin:0;
+  margin-top: 2%;
 }
 .catalog-info-recomendation {
+  margin-top: 3%;
+  font-size: 1.7vw;
   text-align: center;
   text-decoration: underline;
 }
-
+.catalog-info-text:last-child {
+  margin-top: 1%;
+}
+.catalog-info-text-list{
+  margin:0;
+}
+.catalog-info-text-list:nth-child(6){
+  margin-bottom: 6%;
+}
 
 .list-items {
   outline:3px solid black;
