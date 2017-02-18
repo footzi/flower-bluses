@@ -19,7 +19,10 @@ module.exports = {
                 test: /\.jsx$/,
                 loader: "react-hot!babel",
                 exclude: [/node_modules/, /public/]
-            },
+            },{
+                test: /\.css$/, loader: "style-loader!css-loader",
+                exclude: [/styles/, /public/]
+            }
 
         ]
     },

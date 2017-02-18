@@ -4,10 +4,10 @@
 
 /*Первый блок с приветствием*/
 .catalog-greeting  {
-  height: 100%;
   padding-top:2.5%;
   padding-left: 1%;
   padding-right: 1%;
+  height: 100%;
   outline:2px solid red;
   background-size: cover;
  /* background-image: url("../images/catalog/catalog-greeting-fon.png");*/
@@ -33,14 +33,17 @@
 }
 .catalog-greeting-butterfly1 {
   position: absolute;
-  width: 3%
+  width: 3%;
   margin-top:-10%;
   margin-left:-35%;
 
 }
 
 .catalog-greeting-butterfly2 {
+  width: 3%;
   position: absolute;
+  margin-top: -3%;
+  margin-left: 32%;
 
 }
 
@@ -87,7 +90,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5vw;
   color: #888888;
-  text-align: justify;
+  text-align: center;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -100,11 +103,11 @@
 }
 .catalog-info-text {
   margin-top: 2%;
+  text-align: justify;;
 }
 .catalog-info-recomendation {
   margin-top: 3%;
   font-size: 1.7vw;
-  text-align: center;
   text-decoration: underline;
 }
 .catalog-info-text:last-child {
@@ -117,7 +120,30 @@
   margin-bottom: 6%;
 }
 
-.list-items {
+.catalog-info-butterfly1{
+  position: absolute;
+  width: 3%;
+  margin-top: 0;
+  margin-left: -35%;
+}
+
+.catalog-info-butterfly2{
+  position: absolute;
+  width: 3%;
+  margin-top: -5%;
+  margin-left: 32%;
+}
+
+
+
+
+.catalog-list {
+  border: 1px solid rgba(129, 88, 159, 0.349);
+  background-color: rgba(255, 255, 255, 0.349);
+  padding-top:2.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  height: 100%;
   outline:3px solid black;
 }
 

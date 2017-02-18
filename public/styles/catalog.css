@@ -1,15 +1,18 @@
-.catalog{outline:2px solid blue}.catalog-greeting{height:100%;padding-top:2.5%;padding-left:1%;padding-right:1%;outline:2px solid red;background-size:cover;background-size:cover;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);margin-top:.5%}
+.catalog{outline:2px solid blue}.catalog-greeting{padding-top:2.5%;padding-left:1%;padding-right:1%;height:100%;outline:2px solid red;background-size:cover;background-size:cover;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);margin-top:.5%}
 .catalog-title{font-family:Arial,Helvetica,sans-serif;font-size:1.8vw;color:#705290;margin-bottom:1.5%}
 .catalog-introduction{margin-top:2%;margin-bottom:3%;font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888}
-.catalog-greeting-butterfly1{position:absolute;width:3% margin-top:-10%;margin-left:-35%}
-.catalog-greeting-butterfly2{position:absolute}.catalog-img{outline:2px solid red;margin-top:6.5%}
-.catalog-img-prew{width:48%;margin-right:4%;outline:2px solid red;display:inline-table}
+.catalog-greeting-butterfly1{position:absolute;width:3%;margin-top:-10%;margin-left:-35%}
+.catalog-greeting-butterfly2{width:3%;position:absolute;margin-top:-3%;margin-left:32%}
+.catalog-img{outline:2px solid red;margin-top:6.5%}.catalog-img-prew{width:48%;margin-right:4%;outline:2px solid red;display:inline-table}
 .catalog-img-prew:last-child{margin-right:0}.catalog-caption-text{color:#444;font-family:PhillippScript;font-size:2vw}
-.catalog-navbar{margin-top:3.1%}.catalog-info{height:100%;outline:3px solid blue;background-size:cover;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);margin-top:7%;padding-top:2.6%;font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888;text-align:justify;padding-left:2%;padding-right:2%}
+.catalog-navbar{margin-top:3.1%}.catalog-info{height:100%;outline:3px solid blue;background-size:cover;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);margin-top:7%;padding-top:2.6%;font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888;text-align:center;padding-left:2%;padding-right:2%}
 .catalog-info-title{color:#705290;margin-top:.6%;font-size:1.8vw;text-align:center}
-.catalog-info-text{margin-top:2%}.catalog-info-recomendation{margin-top:3%;font-size:1.7vw;text-align:center;text-decoration:underline}
+.catalog-info-text{margin-top:2%;text-align:justify}.catalog-info-recomendation{margin-top:3%;font-size:1.7vw;text-decoration:underline}
 .catalog-info-text:last-child{margin-top:1%}.catalog-info-text-list{margin:0}.catalog-info-text-list:nth-child(6){margin-bottom:6%}
-.list-items{outline:3px solid black}.catalog-navbar-ul{border:2px solid #705290}.Link{font-size:1vw;font-weight:bolder;display:inline-block;padding:2%}
+.catalog-info-butterfly1{position:absolute;width:3%;margin-top:0;margin-left:-35%}
+.catalog-info-butterfly2{position:absolute;width:3%;margin-top:-5%;margin-left:32%}
+.catalog-list{border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);padding-top:2.5%;padding-left:1%;padding-right:1%;height:100%;outline:3px solid black}
+.catalog-navbar-ul{border:2px solid #705290}.Link{font-size:1vw;font-weight:bolder;display:inline-block;padding:2%}
 li{text-decoration:none;display:inline-block}.Link:hover{background-color:red;text-decoration:underline}
 .active-link{background-color:red;text-decoration:underline}.hidden{display:none}
 .product-preview{margin-top:5%;margin-right:6%;outline:4px solid black;display:inline-table;width:29%}

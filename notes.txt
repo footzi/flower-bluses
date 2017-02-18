@@ -5,6 +5,8 @@
 3. в popup поставить паддинг вместо марджинов
 
 4. h1 только один раз на странице, нельзя явно указывать id или class
+
+5. для бабочек сделать 1 общий класс. вверх передвинуть 
 	
 npm i gulp gulp-concat gulp-uglify gulp-uglifycss gulp-htmlmin gulp-minify gulp-concat-css gulp-watch --save -dev
 npm i gulp-webpack --save -dev
@@ -14,3 +16,12 @@ npm i gulp-webpack --save -dev
 
 
 
+console.log(location.pathname);
+        let locationLink = location.pathname;
+        let locationCatalog = "/catalog";
+        let locationCatalogPendants="/catalog/polimer/pendants"
+        if (locationLink == locationCatalogPendants) {
+            document.getElementById("all").style.display="none"
+        };
+
+ document.getElementById("all").style.display="none";
