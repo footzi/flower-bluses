@@ -21,6 +21,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.8vw;
   color: #705290;
+  margin: 0;
   margin-bottom: 1.5%;
 }
 
@@ -72,9 +73,6 @@
   font-size: 2vw;
 
 }
-.catalog-navbar{
-  margin-top:3.1%;
-}
 
 /*Блок с информацией*/
 .catalog-info {
@@ -120,16 +118,16 @@
   margin-bottom: 6%;
 }
 
-.catalog-info-butterfly1{
+.catalog-butterfly-img {
   position: absolute;
   width: 3%;
+}
+.catalog-info-butterfly1{
   margin-top: 0;
   margin-left: -35%;
 }
 
 .catalog-info-butterfly2{
-  position: absolute;
-  width: 3%;
   margin-top: -5%;
   margin-left: 32%;
 }
@@ -137,16 +135,42 @@
 
 
 
+/*список продуктов*/
+
 .catalog-list {
-  border: 1px solid rgba(129, 88, 159, 0.349);
-  background-color: rgba(255, 255, 255, 0.349);
-  padding-top:2.5%;
-  padding-left: 1%;
-  padding-right: 1%;
+  
   height: 100%;
   outline:3px solid black;
 }
 
+.catalog-polimer {
+  padding-top: 2.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  border: 1px solid rgba(129, 88, 159, 0.349);
+  background-color: rgba(255, 255, 255, 0.349);
+
+}
+.catalog-polimer-introduction {
+  text-align: justify;
+  font-size: 1.2vw;
+  text-indent: 5%;
+}
+.catalog-polimer-butterfly1 {
+  margin-top: 0;
+  margin-left: -35%;
+}
+
+.catalog-polimer-butterfly2 {
+  margin-top: -2%;
+  margin-left: 32%
+}
+
+
+/*навбар в каталоге*/
+.catalog-navbar{
+  margin-top:4.5%;
+}
 
 
 .catalog-navbar-ul{
@@ -157,23 +181,25 @@
   font-size: 1vw;
   font-weight: bolder;
   display: inline-block;
-  padding: 2%;
+  padding: 1% 2%;
 }
 li {
-  text-decoration: none;
   display: inline-block;
   
 }
 .Link:hover {
-  background-color: red;
+  background-color: rgba(129, 88, 159, 0.5);
   text-decoration: underline;
-  
+}
+li:hover {
+  text-decoration: underline;
 }
 .active-link {
-  background-color: red;
+  background-color: rgba(129, 88, 159, 0.5);
   text-decoration: underline;
 }
 
+/*предпросмотр продукта*/
 
 .hidden {
   display:none; 

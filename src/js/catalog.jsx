@@ -16,8 +16,8 @@ let Catalog = React.createClass ({
      <div className="catalog-greeting">
         <div className="catalog-title">ДОБРО ПОЖАЛОВАТЬ!</div>
         <div className="catalog-introduction">Здесь Вы найдете нежные и изящные украшения и цветочные композиции ручной работы, <br/> которые будут радовать Вас своей свежестью и красатой круглый год!</div>
-        <img className="catalog-greeting-butterfly1" src="../images/catalog/catalog-butterfly1.png" />
-        <img className="catalog-greeting-butterfly2" src="../images/catalog/catalog-butterfly2.png" />
+        <img className="catalog-butterfly-img catalog-greeting-butterfly1" src="../images/catalog/catalog-butterfly1.png" />
+        <img className="catalog-butterfly-img catalog-greeting-butterfly2" src="../images/catalog/catalog-butterfly2.png" />
      </div>
 
 

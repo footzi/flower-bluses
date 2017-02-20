@@ -1,6 +1,5 @@
 import React from 'react';
 import pendants from "./Data/data-pendants.js";
-import $ from 'jquery';
 let Pendants = React.createClass({
     contextTypes: {
         router: React.PropTypes.object.isRequired
