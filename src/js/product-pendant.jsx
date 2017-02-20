@@ -35,6 +35,7 @@ let ProductPendant = React.createClass({
                     </div>  
                     <div id="product">
                     <div id="product-info">   
+                        
                         <p className="product-info-name">{product.name}</p>
                         <p className="product-info-text">{product.text}</p>
                         <img className="butterfly" id="butterfly1" src="/./images/catalog/butterfly1.png" /> 

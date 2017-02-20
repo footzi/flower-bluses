@@ -34,14 +34,14 @@ let Polimer = React.createClass({
 
     <div className="catalog-navbar">
             <ul className="catalog-navbar-ul">
-                <Link to="/catalog/polimer/all" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="link-name">ВСЕ</li></Link> 
-                <Link to="/catalog/polimer/pendants" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="link-name">КУЛОНЫ/ПОДВЕСТКИ</li></Link>
-                <Link to="/catalog/polimer/pendants" activeClassName="active-link" onClick={this.onClick}  className="Link"><li >СЕРЬГИ</li></Link>
-                <Link to="/catalog/polimer/pendants" activeClassName="active-link" onClick={this.onClick}  className="Link"><li >КОЛЬЦА</li></Link>
-                <Link to="/catalog/polimer/pendants" activeClassName="active-link" onClick={this.onClick} className="Link"><li >БРАСЛЕТЫ</li></Link>
-                <Link to="/catalog/polimer/pendants" activeClassName="active-link" onClick={this.onClick}  className="Link"><li >БРОШИ/ЗАКОЛКИ</li></Link>
-                <Link to="/catalog/polimer/pendants" activeClassName="active-link" onClick={this.onClick}  className="Link"><li >НАБОРЫ</li></Link>
-                <Link to="/catalog/polimer/pendants" activeClassName="active-link" onClick={this.onClick}  className="Link"><li >ОБВОДКИ</li></Link>
+                <Link to="/catalog/polimer/all" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="Link-name">ВСЕ</li></Link> 
+                <Link to="/catalog/polimer/pendants" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="Link-name">КУЛОНЫ/ПОДВЕСТКИ</li></Link>
+                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >СЕРЬГИ</li></Link>
+                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name">КОЛЬЦА</li></Link>
+                <Link to="#" activeClassName="active-link" onClick={this.onClick} className="Link"><li className="Link-name" >БРАСЛЕТЫ</li></Link>
+                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >БРОШИ/ЗАКОЛКИ</li></Link>
+                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >НАБОРЫ</li></Link>
+                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >ОБВОДКИ</li></Link>
             </ul>
     </div>
 

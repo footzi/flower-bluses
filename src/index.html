@@ -51,15 +51,16 @@
 <script src="/js/jquery.bxslider.js"></script>
 <script>
 
-    // let link = /([http://localhost:8080/catalog/polimer/])/;
+    // let link = /([http://localhost:8090/catalog/polimer/])/;
     // let test = document.location.href
 
     // if (link==test)
-    //     // document.getElementById("all").style.display="none";
+    //     document.getElementById("all").style.display="none";
     //     console.log("ok")
     //     else {
     //         document.getElementById("all").style.display="none"
     //    }
+
 $(document).ready(function(){
   $('.bxslider').bxSlider({
     auto:true,
@@ -82,7 +83,16 @@ $(document).ready(function(){
   slideMargin: 10
   })  
 });
-   
+
+let testLink=document.location.pathname
+let pendantsLink="/catalog/polimer/pendants"
+
+if (testLink==pendantsLink) {
+    document.getElementById("all").style.display="none";
+    console.log("ok")
+}
+
+
 
 </script>
 </body>
