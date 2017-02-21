@@ -27450,12 +27450,6 @@
 	    displayName: "Catalog",
 
 	    render: function render() {
-	        var locationLink = location.pathname;
-	        var locationCatalog = "/catalog";
-	        var locationCatalogPendants = "/catalog/polimer/pendants";
-	        if (locationLink == locationCatalog) {
-	            document.getElementById("footer").style.margin.top = "5%";
-	        };
 
 	        return _react2["default"].createElement(
 	            "div",
@@ -27653,7 +27647,7 @@
 	            _react2['default'].createElement(
 	                'div',
 	                { className: 'catalog-polimer' },
-	                _react2['default'].createElement('img', { className: 'catalog-butterfly-img catalog-polimer-butterfly1', src: '../images/catalog/catalog-butterfly1.png' }),
+	                _react2['default'].createElement('img', { className: 'catalog-butterfly-img catalog-polimer-butterfly1', src: '/../images/catalog/catalog-butterfly1.png' }),
 	                _react2['default'].createElement(
 	                    'p',
 	                    { className: 'catalog-title' },
@@ -27664,7 +27658,7 @@
 	                    { className: 'main-introduction catalog-polimer-introduction' },
 	                    'Цветочные украшения из полимерной глины обладают необычайной легкостью и реалистичностью. Благодаря этим двум качествам цветы ручной работы пользуются большой популярностью среди женского населения. Многообразие цветов и исключительно ручная работа позволяет создавать уникальные украшения, которых не будет больше ни у кого. Даже две одинаковые веточки сирени будут выглядеть по-разному и необычайно живо. Украшения ручной работы из самозастывающей полимерной глины — это красивый, эффектный и уникальный подарок. Вам не стоит бояться, что вы можете подарить то, что уже есть у человека. Любое цветочное украшение будет уникальным!'
 	                ),
-	                _react2['default'].createElement('img', { className: 'catalog-butterfly-img catalog-polimer-butterfly2', src: '../images/catalog/catalog-butterfly2.png' })
+	                _react2['default'].createElement('img', { className: 'catalog-butterfly-img catalog-polimer-butterfly2', src: '/../images/catalog/catalog-butterfly2.png' })
 	            ),
 	            _react2['default'].createElement(
 	                'div',
@@ -27820,7 +27814,8 @@
 	                        imagePreview: product.imagePreview,
 	                        name: product.name,
 	                        text: product.text,
-	                        cost: product.cost
+	                        cost: product.cost,
+	                        instock: product.instock
 	                    });
 	                })
 	            ),
@@ -27846,6 +27841,7 @@
 	        var name = _props.name;
 	        var text = _props.text;
 	        var cost = _props.cost;
+	        var instock = _props.instock;
 	        var imagePreview = _props.imagePreview;
 	        var onClick = _props.onClick;
 
@@ -27866,19 +27862,24 @@
 	                    ),
 	                    _react2["default"].createElement(
 	                        "span",
-	                        { className: "product-preview-name" },
+	                        { className: "product-preview-cost" },
 	                        "Цена: ",
 	                        cost,
 	                        " "
 	                    ),
 	                    _react2["default"].createElement(
 	                        "span",
-	                        { className: "info", onClick: onClick },
+	                        { className: "product-preview-button", onClick: onClick },
 	                        _react2["default"].createElement(
 	                            "div",
-	                            { className: "product-preview-button", onClick: openPopup },
+	                            { className: "product-preview-button-img", onClick: openPopup },
 	                            "Заказать"
 	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "span",
+	                        null,
+	                        _react2["default"].createElement("img", { className: "product-preview-instock", src: instock })
 	                    )
 	                )
 	            ),
@@ -27912,61 +27913,70 @@
 	    "name": "ЗАКОЛКА ДЛЯ ВОЛОС 'ЛЕТО'",
 	    "cost": "1500 руб.",
 	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной сморо",
-	    "imagePreview": "/images/catalog/pendants/1-1.png",
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
 	    "image1": "/images/catalog/pendants/1.jpg",
 	    "image2": "/images/catalog/pendants/1.jpg",
 	    "image3": "/images/catalog/pendants/1.jpg",
 	    "image4": "/images/catalog/pendants/1.jpg",
-	    "image5": "/images/catalog/pendants/1.jpg"
+	    "image5": "/images/catalog/pendants/1.jpg",
+	    "instock": "/images/catalog/instock.png"
 
 	}, {
 	    "id": "1-2",
 	    "name": "Заколка для волос:'Лето'",
 	    "cost": "1500 руб.",
 	    "text": "Обнимашки 2S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
+	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "1-3",
 	    "name": "Заколка для волос:'Лето'",
 	    "cost": "1500 руб.",
 	    "text": "Обнимашки 3S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
+	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "1-4",
 	    "name": "Заколка для волос:'Лето'",
 	    "cost": "1500 руб.",
 	    "text": "Обнимашки 4S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
+	    "instock": "/images/catalog/instock.png"
 	}, {
 	    "id": "1-5",
 	    "name": "Заколка для волос:'Лето'",
 	    "cost": "1500 руб.",
 	    "text": "Обнимашки 5S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
+	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "1-6",
 	    "name": "Заколка для волос:'Лето'",
 	    "cost": "1500 руб.",
 	    "text": "Обнимашки 6S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
+	    "instock": "/images/catalog/instock.png"
 	}, {
 	    "id": "1-7",
 	    "name": "Заколка для волос:'Лето'",
 	    "cost": "1500 руб.",
 	    "text": "Обнимашки 7S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
+	    "instock": "/images/catalog/instock.png"
 	}, {
 	    "id": "1-8",
 	    "name": "Заколка для волос:'Лето'",
 	    "cost": "1500 руб.",
 	    "text": "Обнимашки 8S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
+	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "1-9",
 	    "name": "Заколка для волос:'Лето'",
 	    "cost": "1500 руб.",
 	    "text": "Обнимашки 9S",
-	    "imagePreview": "/images/catalog/pendants/1-1.png"
+	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
+	    "instock": "/images/catalog/instock.png"
 	}];
 
 	exports["default"] = pendants;

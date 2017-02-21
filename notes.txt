@@ -6,9 +6,10 @@
 
 4. h1 только один раз на странице, нельзя явно указывать id или class
 
-5. для бабочек сделать 1 общий класс. вверх передвинуть 
+5. поменять span
 	
 6. для класса polimer сменить название
+
 
 npm i gulp gulp-concat gulp-uglify gulp-uglifycss gulp-htmlmin gulp-minify gulp-concat-css gulp-watch --save -dev
 npm i gulp-webpack --save -dev
@@ -27,3 +28,18 @@ console.log(location.pathname);
         };
 
  document.getElementById("all").style.display="none";
+
+
+ let locationLink = location.pathname;
+        let locationCatalog = "/catalog";
+        let locationCatalogPendants="/catalog/polimer/pendants"
+        if (locationLink == locationCatalog) {
+            document.getElementById("footer").style.margin.top="5%"
+        };
+
+
+
+Условия использования материалов ресурса:
+Все фотографии на данном ресурсе являются собственностью Агафоновой Галины.Запрещено использование любого контента данного ресурса для получения коммерческой выгоды.При размещении материалов на сторонних ресурсах обязательна ссылка на первоначальный ресурс-источник.
+
+Дизайн и разработка - Манаков Владислав

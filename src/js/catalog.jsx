@@ -3,12 +3,7 @@ import { Link } from "react-router"
 
 let Catalog = React.createClass ({
     render () {
-        let locationLink = location.pathname;
-        let locationCatalog = "/catalog";
-        let locationCatalogPendants="/catalog/polimer/pendants"
-        if (locationLink == locationCatalog) {
-            document.getElementById("footer").style.margin.top="5%"
-        };
+        
 
         return (
 <div className="catalog">
