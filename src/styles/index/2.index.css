@@ -186,30 +186,40 @@ nav {
 .button .button-more {
   margin-top: 0;
 }
+
 footer{
-  position: absolute;
-  margin-top: 2%;
+  margin-top: 13%;
   outline:2px solid magenta;
 }
+.footer-content-regulations {
+  display: inline-block;
+  outline:2px solid blue;
+  margin-left: 22%;
+}
+.footer-content-icons{
+  display: inline-block;
+  outline:2px solid orange;
+}
 .footer-content{
-  outline:0px solid black;
-  float:right;
+  outline:2px solid black;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(96, 92, 101);
-  margin-right:5.7%;
-  text-align: right;
-  margin-top: 2.8%;
 }
 .footer-title{
-  font-size:1vw;
+  font-size:0.8vw;
   font-weight: bolder;
   margin: 0;
-  margin-bottom: 8%;
+  margin-bottom: 3%;
 }
 .footer-text{
-  font-size:0.8vw;
+  font-size:0.7vw;
    margin: 0;
    margin-bottom: 1%
+}
+
+.footer-content-contacts {
+  display: inline-block;
+  outline:2px solid green;
 }
 
 

@@ -152,6 +152,7 @@
 
 }
 .catalog-polimer-introduction {
+  margin-bottom: 4%;
   text-align: justify;
   font-size: 1.2vw;
   text-indent: 5%;
@@ -162,40 +163,40 @@
 }
 
 .catalog-polimer-butterfly2 {
-  margin-top: -2%;
+  margin-top: -4%;
   margin-left: 32%
 }
 
 
 /*навбар в каталоге*/
 .catalog-navbar{
-  margin-top:4.5%;
+  border-top: 2px solid #705290;
+  border-bottom: 2px solid #705290;
+  margin-top:2.2%;
 }
 
-
-.catalog-navbar-ul{
-  border: 2px solid #705290; 
-}
 
 .Link {
-  font-size: 1vw;
+  color:#705290;
+  font-size: 0.9vw;
   font-weight: bolder;
   display: inline-block;
-  padding: 1% 2%;
+  padding: 0.7% 2.6%;
 }
-li {
-  display: inline-block;
+.Link-name {
+ display: inline-block;
   
 }
 .Link:hover {
-  background-color: rgba(129, 88, 159, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+  background-size: 90%; 
   text-decoration: underline;
 }
-li:hover {
+.Link-name:hover {
   text-decoration: underline;
 }
 .active-link {
-  background-color: rgba(129, 88, 159, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   text-decoration: underline;
 }
 
@@ -205,24 +206,52 @@ li:hover {
   display:none; 
 }
 .product-preview{
-  margin-top: 5%;
+  color:black;
+  margin-top: 7%;
   margin-right: 6%;
-  outline: 4px solid black;
   display: inline-table;
   width:29%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+  font-weight: bolder;
 }
 .product-preview:nth-child(3n) {
   margin-right:0;
 }
 .product-preview-img {
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.302);
   width:30%;
 }
-#product-preview-button{
+.product-preview-name{
+  color:#6d6d6d;
+  display: block;
+  margin-top:2%;
+  
+}
+.product-preview-cost {
+  color:#6d6d6d;
+  display: block;
+  margin-top:2%;
+}
+
+.product-preview-button-img{
+  cursor: pointer;
+  margin-top: 2%;
+  margin-left: -15%;
+  position: absolute;
+  color:#705290;
+  font-family: PhillippScript;
+  font-size: 1.2vw;
   display:inline;
   width:25%;
-  border:2px solid blue;
-  border-radius:10%;
-  padding:2%;
+  border:2px solid #705290;
+  border-radius:5px 5px;
+  padding-top:0.7%;
+}
+.product-preview-instock {
+  width: 10%;
+  margin-left: 32%;
+  position: absolute;
 }
 
 

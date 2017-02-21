@@ -3,12 +3,7 @@ import { Link } from "react-router"
 
 let Catalog = React.createClass ({
     render () {
-        let locationLink = location.pathname;
-        let locationCatalog = "/catalog";
-        let locationCatalogPendants="/catalog/polimer/pendants"
-        if (locationLink == locationCatalog) {
-            document.getElementById("footer").style.display="none"
-        };
+        
 
         return (
 <div className="catalog">
@@ -42,7 +37,7 @@ let Catalog = React.createClass ({
 
      </div>
      <div className="catalog-info">
-            <img className="catalog-info-butterfly1" src="../images/catalog/catalog-butterfly1.png" />
+            <img className="catalog-butterfly-img catalog-info-butterfly1" src="../images/catalog/catalog-butterfly1.png" />
             <h1 className="catalog-info-title">ПОЛИМЕРНАЯ ГЛИНА</h1>
             <div className="catalog-info-text">В своей работе я использую японские глины: Modena, Modena Soft, Clay Craft By Deco; и тайские: Modern, Bella Rosa. Эти глины позволяют тонко раскатываться,  создавать на своей поверхности  фактуру живых лепестков и листьев.  Они высыхают на воздухе без специального нагрева. Необходимый цвет и оттенки цветам из полимерных глин придаются расписыванием и добавлением в глину масляных красок или пастели. Все цветочные композиции в украшениях покрыты влагостойким, защитным лаком. Но длительный контакт таких украшений с водой все таки не рекомендуется. Для украшений я использую в основном фурнитуру гипоаллергенную, с родиевым покрытием, производства Чехии.</div>
             <h2 className="catalog-info-recomendation">Рекомендации по уходу</h2>
@@ -55,7 +50,7 @@ let Catalog = React.createClass ({
                 <p className="catalog-info-text-list">6. Если произошли непредвиденные обстоятельства и у вашего украшения или цветка из букета отломился  кусочек -  можете сами попробовать приклеить его на клей Момент-гель прозрачный. Если остались вопросы или необходима помощь и консультация  - я всегда готова вам помочь.</p>
             </div>
             
-            <img className="catalog-info-butterfly2" src="../images/catalog/catalog-butterfly2.png" />
+            <img className="catalog-butterfly-img catalog-info-butterfly2" src="../images/catalog/catalog-butterfly2.png" />
      
     </div>
 

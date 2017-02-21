@@ -28,6 +28,8 @@ let Pendants = React.createClass({
                         imagePreview={product.imagePreview}
                         name={product.name}
                         text={product.text}
+                        cost={product.cost}
+                        instock={product.instock}
                     />
 
                 )}
@@ -51,17 +53,20 @@ let ProductPreview = React.createClass ({
             document.getElementById("b-popup").style="display:table"
   }
     
-		let {name, text, imagePreview, onClick} = this.props;
+		let {name, text, cost, instock, imagePreview, onClick} = this.props;
 		return (
 		<div className="product-preview">
+
 
             <div className="thumbs">
                 <img className="product-preview-img" src={imagePreview} />
                 <div className="caption">
-                    <span className="TextNameProductPreview title">{name}</span>
-                    <span className="info" onClick={onClick}> 
-                        <div id="product-preview-button" onClick={openPopup}>Заказать</div>
-                    </span> 
+                    <span className="product-preview-name">{name}</span>
+                    <span className="product-preview-cost">Цена: {cost} </span>
+                    <span className="product-preview-button" onClick={onClick}>
+                        <div className="product-preview-button-img" onClick={openPopup}>Заказать</div>
+                    </span>
+                     <span><img className="product-preview-instock"  src={instock} /></span>
                    
                 </div>
             </div>

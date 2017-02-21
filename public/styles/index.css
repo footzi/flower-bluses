@@ -20,10 +20,11 @@ nav{float:left;margin-top:34%;margin-left:1.5%;outline:2px solid green;width:14%
 .news-calendar-img{width:100%}.news-details{width:76%;margin-top:-0.5%;float:right;text-align:left;outline:2px solid blue;font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888}
 .news-details-text{position:relative;margin:-3.5% 0 3% 6%;outline:2px solid yellow}
 .news-details-marker{position:relative;display:inline;width:4%}.clear{clear:both}
-.button .button-more{margin-top:0}footer{position:absolute;margin-top:2%;outline:2px solid magenta}
-.footer-content{outline:0 solid black;float:right;font-family:Arial,Helvetica,sans-serif;color:#605c65;margin-right:5.7%;text-align:right;margin-top:2.8%}
-.footer-title{font-size:1vw;font-weight:bolder;margin:0;margin-bottom:8%}.footer-text{font-size:.8vw;margin:0;margin-bottom:1%}
-@media(max-width:640px){body{background-image:url("../images/fon640.jpg");background-repeat:no-repeat;background-size:cover}
+.button .button-more{margin-top:0}footer{margin-top:13%;outline:2px solid magenta}
+.footer-content-regulations{display:inline-block;outline:2px solid blue;margin-left:22%}
+.footer-content-icons{display:inline-block;outline:2px solid orange}.footer-content{outline:2px solid black;font-family:Arial,Helvetica,sans-serif;color:#605c65}
+.footer-title{font-size:.8vw;font-weight:bolder;margin:0;margin-bottom:3%}.footer-text{font-size:.7vw;margin:0;margin-bottom:1%}
+.footer-content-contacts{display:inline-block;outline:2px solid green}@media(max-width:640px){body{background-image:url("../images/fon640.jpg");background-repeat:no-repeat;background-size:cover}
 nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-top:-8%;padding-top:21%}
 .stock-title{font-size:4vw;font-weight:700}.stock-images{display:none}.stock-images-640{display:block}
 .img{display:none}.news{display:none}footer{display:none}main{width:100%;text-align:center;box-sizing:border-box;margin:25% 0 0 0;padding:0 8% 0 8%}
