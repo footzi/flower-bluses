@@ -10,7 +10,11 @@
 	
 6. для класса polimer сменить название
 
+<<<<<<< HEAD
 
+=======
+7.проверить правильность ввыводимой ссылки в форме заказ
+>>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
 npm i gulp gulp-concat gulp-uglify gulp-uglifycss gulp-htmlmin gulp-minify gulp-concat-css gulp-watch --save -dev
 npm i gulp-webpack --save -dev
 удалить из package.json галлелею

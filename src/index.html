@@ -48,6 +48,7 @@
                 </p>
 
             </div>
+<<<<<<< HEAD
             <!-- <div class="footer-content-icons">
                 <img src="/images/vk.png">
                 <img src="/images/fb.png">
@@ -55,11 +56,27 @@
                 <img src="/images/ym.png">
             </div> -->
             <!-- <div class="footer-content-contacts">
+=======
+            <div class="footer-content-icons">
+                <img class="footer-content-icons-img" src="/images/vk.png">
+                <img class="footer-content-icons-img" src="/images/fb.png">
+                <img class="footer-content-icons-img" src="/images/in.png">
+                <img class="footer-content-icons-img" src="/images/ym.png">
+            </div>
+            <div class="footer-content-developer">
+                <p class="footer-title">Дизайн и разработка:<a href="vk.com/vlad.vlad.vlad">Манаков Владислав</a></p>
+            </div>
+            <div class="footer-content-contacts">
+>>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
                 <p class="footer-title">Cвязаться с нами: </p>
                 <p class="footer-text">г.Нижний Новгород</p>
                 <p class="footer-text">тел: <u>+7(953)1833296</u></p>
                 <p class="footer-text">e-mail: <u>specy@rambler.ru</u></p>
+<<<<<<< HEAD
             </div> -->
+=======
+            </div>
+>>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
             
 
         </div>
@@ -102,6 +119,7 @@ $(document).ready(function(){
   })  
 });
 
+<<<<<<< HEAD
 let testLink=document.location.pathname
 let pendantsLink="/catalog/polimer/pendants"
 
@@ -111,6 +129,26 @@ if (testLink==pendantsLink) {
 }
 
 
+=======
+// console.log(location.pathname);
+// let testLink=location.pathname;
+// let pendantsLink="/catalog/polimer";
+
+// if (testLink==pendantsLink) {
+//     document.getElementById("all").style.display="none"
+//     console.log("ok")
+// }
+let testLink=location.pathname;
+let pendantsLink="/catalog/polimer";
+
+if(false !== testLink.indexOf(pendantsLink)) {
+    console.log("ok")
+    document.getElementById("all").style.display="none"
+} else {
+    console.log("no")
+}
+
+>>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
 
 </script>
 </body>

@@ -14,6 +14,7 @@ let ProductPendant = React.createClass({
         };
     },
     render () {
+        let linkProduct = location.href
         function order(e) {
             e.preventDefault();
             document.getElementById("order").style="display:table";
@@ -34,6 +35,7 @@ let ProductPendant = React.createClass({
                         <Link to="/catalog/polimer/pendants"><img src="/./images/catalog/close.png" /></Link>
                     </div>  
                     <div id="product">
+<<<<<<< HEAD
                     <div id="product-info">   
                         
                         <p className="product-info-name">{product.name}</p>
@@ -44,6 +46,14 @@ let ProductPendant = React.createClass({
                         <button onClick={order}>Заказать</button>
                         <div id="product-info-button">Заказать</div>
                     </div>
+=======
+                        <div id="product-info">   
+                            <p className="product-info-name">{product.name}</p>
+                            <p className="product-info-text">{product.text}</p>
+                            <div id="product-info-button" onClick={order}>Заказать</div>
+                        </div>
+
+>>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
                     <div id="product-carousel">
                         <Carousel>
                             <div><img src={product.image1} /></div>
@@ -53,14 +63,19 @@ let ProductPendant = React.createClass({
                             <div><img src={product.image5} /></div>
                         </Carousel>
                     </div>
+                    
                     </div>
                     <div id="order">
                         Заказать товар
-                        <div>
+                        <div className="order-image">
+                            <img src={product.imagePreview}/>
                         </div>
-                        <form>
-                            <input type="text" value={product.text}/>
-                            <input type="text" />
+                        <form className="order-form">
+                            <input className="order-form-name" type="text" value={product.text}/>
+                            <div className="order-form-hide">
+                                <label >Ссылкa:</label> <input type="text" value={linkProduct}/>
+                            </div>
+                            <input className="order-form-input" type="text" />
                             <input type="text" />
                             <input type="text" />
                             <button>Отправить</button>
