@@ -2,7 +2,7 @@ let pendants = [{
     "id":"1-1",
     "name":"ЗАКОЛКА ДЛЯ ВОЛОС 'ЛЕТО'",
     "cost":"1500 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной сморо",
+    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины",
     "imagePreview":"/images/catalog/pendants/1-1.jpg",
     "image1":"/images/catalog/pendants/1.jpg",
     "image2":"/images/catalog/pendants/1.jpg",

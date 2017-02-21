@@ -197,8 +197,21 @@ footer{
   margin-left: 22%;
 }
 .footer-content-icons{
+  position: absolute;
   display: inline-block;
   outline:2px solid orange;
+  /*width: 20%;*/
+  margin-left: 6%;
+  margin-top:1%; 
+}
+.footer-content-icons-img {
+  width: 13%;
+  
+  margin-right: 5%;
+}
+.footer-content-developer{
+  outline: 2px solid red;
+  display: inline-block;
 }
 .footer-content{
   outline:2px solid black;
@@ -218,6 +231,8 @@ footer{
 }
 
 .footer-content-contacts {
+  position: absolute;
+  margin-left: 10%;
   display: inline-block;
   outline:2px solid green;
 }

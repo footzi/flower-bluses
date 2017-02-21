@@ -27912,7 +27912,7 @@
 	    "id": "1-1",
 	    "name": "ЗАКОЛКА ДЛЯ ВОЛОС 'ЛЕТО'",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной сморо",
+	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины",
 	    "imagePreview": "/images/catalog/pendants/1-1.jpg",
 	    "image1": "/images/catalog/pendants/1.jpg",
 	    "image2": "/images/catalog/pendants/1.jpg",
@@ -28213,6 +28213,7 @@
 	        };
 	    },
 	    render: function render() {
+	        var linkProduct = location.href;
 	        function order(e) {
 	            e.preventDefault();
 	            document.getElementById("order").style = "display:table";
@@ -28257,17 +28258,9 @@
 	                            { className: "product-info-text" },
 	                            product.text
 	                        ),
-	                        _react2["default"].createElement("img", { className: "butterfly", id: "butterfly1", src: "/./images/catalog/butterfly1.png" }),
-	                        _react2["default"].createElement("img", { className: "butterfly", id: "butterfly2", src: "/./images/catalog/butterfly2.png" }),
-	                        _react2["default"].createElement("img", { className: "butterfly", id: "butterfly3", src: "/./images/catalog/butterfly3.png" }),
-	                        _react2["default"].createElement(
-	                            "button",
-	                            { onClick: order },
-	                            "Заказать"
-	                        ),
 	                        _react2["default"].createElement(
 	                            "div",
-	                            { id: "product-info-button" },
+	                            { id: "product-info-button", onClick: order },
 	                            "Заказать"
 	                        )
 	                    ),
@@ -28309,12 +28302,27 @@
 	                    "div",
 	                    { id: "order" },
 	                    "Заказать товар",
-	                    _react2["default"].createElement("div", null),
+	                    _react2["default"].createElement(
+	                        "div",
+	                        { className: "order-image" },
+	                        _react2["default"].createElement("img", { src: product.imagePreview })
+	                    ),
 	                    _react2["default"].createElement(
 	                        "form",
-	                        null,
-	                        _react2["default"].createElement("input", { type: "text", value: product.text }),
-	                        _react2["default"].createElement("input", { type: "text" }),
+	                        { className: "order-form" },
+	                        _react2["default"].createElement("input", { className: "order-form-name", type: "text", value: product.text }),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            { className: "order-form-hide" },
+	                            _react2["default"].createElement(
+	                                "label",
+	                                null,
+	                                "Ссылкa:"
+	                            ),
+	                            " ",
+	                            _react2["default"].createElement("input", { type: "text", value: linkProduct })
+	                        ),
+	                        _react2["default"].createElement("input", { className: "order-form-input", type: "text" }),
 	                        _react2["default"].createElement("input", { type: "text" }),
 	                        _react2["default"].createElement("input", { type: "text" }),
 	                        _react2["default"].createElement(

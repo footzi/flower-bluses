@@ -14,6 +14,7 @@ let ProductPendant = React.createClass({
         };
     },
     render () {
+        let linkProduct = location.href
         function order(e) {
             e.preventDefault();
             document.getElementById("order").style="display:table";
@@ -34,16 +35,12 @@ let ProductPendant = React.createClass({
                         <Link to="/catalog/polimer/pendants"><img src="/./images/catalog/close.png" /></Link>
                     </div>  
                     <div id="product">
-                    <div id="product-info">   
-                        
-                        <p className="product-info-name">{product.name}</p>
-                        <p className="product-info-text">{product.text}</p>
-                        <img className="butterfly" id="butterfly1" src="/./images/catalog/butterfly1.png" /> 
-                        <img className="butterfly" id="butterfly2" src="/./images/catalog/butterfly2.png" />  
-                        <img className="butterfly" id="butterfly3" src="/./images/catalog/butterfly3.png" />   
-                        <button onClick={order}>Заказать</button>
-                        <div id="product-info-button">Заказать</div>
-                    </div>
+                        <div id="product-info">   
+                            <p className="product-info-name">{product.name}</p>
+                            <p className="product-info-text">{product.text}</p>
+                            <div id="product-info-button" onClick={order}>Заказать</div>
+                        </div>
+
                     <div id="product-carousel">
                         <Carousel>
                             <div><img src={product.image1} /></div>
@@ -53,14 +50,19 @@ let ProductPendant = React.createClass({
                             <div><img src={product.image5} /></div>
                         </Carousel>
                     </div>
+                    
                     </div>
                     <div id="order">
                         Заказать товар
-                        <div>
+                        <div className="order-image">
+                            <img src={product.imagePreview}/>
                         </div>
-                        <form>
-                            <input type="text" value={product.text}/>
-                            <input type="text" />
+                        <form className="order-form">
+                            <input className="order-form-name" type="text" value={product.text}/>
+                            <div className="order-form-hide">
+                                <label >Ссылкa:</label> <input type="text" value={linkProduct}/>
+                            </div>
+                            <input className="order-form-input" type="text" />
                             <input type="text" />
                             <input type="text" />
                             <button>Отправить</button>
