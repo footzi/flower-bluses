@@ -3,8 +3,6 @@ import { Link } from "react-router"
 
 let Catalog = React.createClass ({
     render () {
-        
-
         return (
 <div className="catalog">
 

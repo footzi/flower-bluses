@@ -58,9 +58,9 @@ let ProductPreview = React.createClass ({
 		<div className="product-preview">
 
 
-            <div className="thumbs">
+            <div className="product-preview-thumbs">
                 <img className="product-preview-img" src={imagePreview} />
-                <div className="caption">
+                <div className="product-preview-caption">
                     <span className="product-preview-name">{name}</span>
                     <span className="product-preview-cost">Цена: {cost} </span>
                     <span className="product-preview-button" onClick={onClick}>

@@ -147,6 +147,7 @@ nav {
   background-size: cover;
   padding:3% 2%;
   margin-top: 7%;
+  margin-bottom: 14%;
 }
 .news-content {
   outline: 2px solid orange;
@@ -188,40 +189,15 @@ nav {
 }
 
 footer{
-  margin-top: 13%;
+  /*margin-top: 12%;*/
+  margin-top: 1.6%;
+  padding-top: 2.5%;
   outline:2px solid magenta;
 }
-.footer-content-regulations {
-  display: inline-block;
-  outline:2px solid blue;
-  margin-left: 22%;
-}
-.footer-content-icons{
-<<<<<<< HEAD
-  display: inline-block;
-  outline:2px solid orange;
-=======
-  position: absolute;
-  display: inline-block;
-  outline:2px solid orange;
-  /*width: 20%;*/
-  margin-left: 6%;
-  margin-top:1%; 
-}
-.footer-content-icons-img {
-  width: 13%;
-  
-  margin-right: 5%;
-}
-.footer-content-developer{
-  outline: 2px solid red;
-  display: inline-block;
->>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
-}
 .footer-content{
-  outline:2px solid black;
+  outline:0px solid black;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(96, 92, 101);
+  color: #888888;
 }
 .footer-title{
   font-size:0.8vw;
@@ -231,19 +207,54 @@ footer{
 }
 .footer-text{
   font-size:0.7vw;
-   margin: 0;
-   margin-bottom: 1%
+  margin: 0;
+  margin-bottom: 1%
 }
+
+.footer-content-regulations {
+  display: inline-block;
+  outline:0px solid blue;
+  margin-left: 23.5%;
+}
+
+.footer-content-icons{
+  width: 15%;
+  position: absolute;
+  display: inline-block;
+  outline:0px solid orange;
+  margin-left: 7%;
+  margin-top:0.3%; 
+}
+.footer-content-icons-img {
+  width: 15%;
+  margin-right: 6%;
+}
+
+.footer-content-developer{
+  margin-left: 6%;
+  font-size:0.7vw;
+  outline: 0px solid red;
+  display: inline-block;
+}
+.footer-content-developer-title {
+  font-size:0.7vw;
+}
+.footer-content-developer-title a {
+  text-decoration: underline;
+  color:#888888;
+}
+
 
 .footer-content-contacts {
-<<<<<<< HEAD
-=======
   position: absolute;
-  margin-left: 10%;
->>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
+  margin-left: 6%;
   display: inline-block;
-  outline:2px solid green;
+  outline:0px solid green;
+  text-align: right;
 }
-
-
-
+.footer-content-contacts-title {
+  margin-bottom: 13%;
+}
+.footer-content-contacts-text {
+  margin-bottom: 5%;
+}

@@ -15,25 +15,21 @@ nav{float:left;margin-top:34%;margin-left:1.5%;outline:2px solid green;width:14%
 .stock-text{margin:2.2% 0;outline:2px solid red;font-family:Arial,Helvetica,sans-serif;color:#888;font-size:1.2vw;font-weight:bolder;line-height:130%}
 .stock-images{outline:2px solid red;margin:3.2% 0 4% 1.2%}.stock-images-640{display:none}
 .stock-img{outline:2px solid red}.stock-img:last-child{margin-right:0}.button{display:inline-block;width:27%;border:1px solid #705290;border-radius:10px;padding-top:.3%;font-family:PhillippScript;font-size:2vw;color:#705290}
-.news{outline:2px solid green;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);background-size:cover;padding:3% 2%;margin-top:7%}
+.news{outline:2px solid green;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);background-size:cover;padding:3% 2%;margin-top:7%;margin-bottom:14%}
 .news-content{outline:2px solid orange}.news-calendar{width:14.5%;margin:4% 0 0 4%;float:left;outline:2px solid red}
 .news-calendar-img{width:100%}.news-details{width:76%;margin-top:-0.5%;float:right;text-align:left;outline:2px solid blue;font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888}
 .news-details-text{position:relative;margin:-3.5% 0 3% 6%;outline:2px solid yellow}
 .news-details-marker{position:relative;display:inline;width:4%}.clear{clear:both}
-.button .button-more{margin-top:0}footer{margin-top:13%;outline:2px solid magenta}
-.footer-content-regulations{display:inline-block;outline:2px solid blue;margin-left:22%}
-<<<<<<< HEAD
-.footer-content-icons{display:inline-block;outline:2px solid orange}.footer-content{outline:2px solid black;font-family:Arial,Helvetica,sans-serif;color:#605c65}
+.button .button-more{margin-top:0}footer{margin-top:1.6%;padding-top:2.5%;outline:2px solid magenta}
+.footer-content{outline:0 solid black;font-family:Arial,Helvetica,sans-serif;color:#888}
 .footer-title{font-size:.8vw;font-weight:bolder;margin:0;margin-bottom:3%}.footer-text{font-size:.7vw;margin:0;margin-bottom:1%}
-.footer-content-contacts{display:inline-block;outline:2px solid green}@media(max-width:640px){body{background-image:url("../images/fon640.jpg");background-repeat:no-repeat;background-size:cover}
-=======
-.footer-content-icons{position:absolute;display:inline-block;outline:2px solid orange;margin-left:6%;margin-top:1%}
-.footer-content-icons-img{width:13%;margin-right:5%}.footer-content-developer{outline:2px solid red;display:inline-block}
-.footer-content{outline:2px solid black;font-family:Arial,Helvetica,sans-serif;color:#605c65}
-.footer-title{font-size:.8vw;font-weight:bolder;margin:0;margin-bottom:3%}.footer-text{font-size:.7vw;margin:0;margin-bottom:1%}
-.footer-content-contacts{position:absolute;margin-left:10%;display:inline-block;outline:2px solid green}
+.footer-content-regulations{display:inline-block;outline:0 solid blue;margin-left:23.5%}
+.footer-content-icons{width:15%;position:absolute;display:inline-block;outline:0 solid orange;margin-left:7%;margin-top:.3%}
+.footer-content-icons-img{width:15%;margin-right:6%}.footer-content-developer{margin-left:6%;font-size:.7vw;outline:0 solid red;display:inline-block}
+.footer-content-developer-title{font-size:.7vw}.footer-content-developer-title a{text-decoration:underline;color:#888}
+.footer-content-contacts{position:absolute;margin-left:6%;display:inline-block;outline:0 solid green;text-align:right}
+.footer-content-contacts-title{margin-bottom:13%}.footer-content-contacts-text{margin-bottom:5%}
 @media(max-width:640px){body{background-image:url("../images/fon640.jpg");background-repeat:no-repeat;background-size:cover}
->>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
 nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-top:-8%;padding-top:21%}
 .stock-title{font-size:4vw;font-weight:700}.stock-images{display:none}.stock-images-640{display:block}
 .img{display:none}.news{display:none}footer{display:none}main{width:100%;text-align:center;box-sizing:border-box;margin:25% 0 0 0;padding:0 8% 0 8%}

@@ -138,7 +138,7 @@
 /*список продуктов*/
 
 .catalog-list {
-  
+  margin-bottom: 16%;
   height: 100%;
   outline:3px solid black;
 }
@@ -279,34 +279,35 @@
 }
 #b-popup .b-popup-content{
     /*background-color: #e6e2eb;*/
-    background-image: url("../images/catalog/popup-fon.jpg");
+    background-image: url("../images/catalog/popup-fon.png");
     background-size: cover;
     margin:4% auto 0 auto;
-    width:60%;
-    height: 40%;
+    width:65%;
     border-radius:1%;
 }
 #b-popup-close-button {
+  cursor: pointer;
   text-align: right;
-  padding: 0.5%;
-  margin-bottom:1%
+  padding: 2% 2% 0 0;
 }
 #product-info{
   text-align: center;
-  margin-top:4.5%; 
-  width: 37%;
+  margin-top:2.5%; 
+  width: 45%;
   outline:2px solid red;
   float:right;
 }
-#product-info-button{
-  width:50%;
-  border:2px solid #705290;
-  border-radius:5px 5px;
-  padding-top:1%;
-  border-radius:10%;
-  color:#705290;
+.product-info-button{
+  cursor: pointer;
+  margin: 25% auto 0 auto;
+  display: inline-block;
+  width: 40%;
+  border: 1px solid #705290;
+  border-radius: 10px;
+  padding-top: 1%;
   font-family: PhillippScript;
-  font-size: 1.3vw;
+  font-size: 2vw;
+  color: #705290;
 }
 
 .product-info-name {
@@ -316,22 +317,17 @@
   font-size: 1.3vw; 
 }
 .product-info-text {
-  padding: 0 2%;
+  padding: 0 19%;
   outline:2px solid blue;
   font-family: Arial, Helvetica, sans-serif;
   color:#888888;
   text-align: justify;
-  text-indent: 5%;
   font-size: 1.1vw; 
 }
 
-
-
-
-
 #product-carousel {
   margin-left: 3%;
-  width:60%;
+  width:52%;
 }
 #order {
   display: none;
@@ -350,3 +346,4 @@
 .order-form-hide {
   display:none;
 }
+

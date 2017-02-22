@@ -35,25 +35,12 @@ let ProductPendant = React.createClass({
                         <Link to="/catalog/polimer/pendants"><img src="/./images/catalog/close.png" /></Link>
                     </div>  
                     <div id="product">
-<<<<<<< HEAD
-                    <div id="product-info">   
-                        
-                        <p className="product-info-name">{product.name}</p>
-                        <p className="product-info-text">{product.text}</p>
-                        <img className="butterfly" id="butterfly1" src="/./images/catalog/butterfly1.png" /> 
-                        <img className="butterfly" id="butterfly2" src="/./images/catalog/butterfly2.png" />  
-                        <img className="butterfly" id="butterfly3" src="/./images/catalog/butterfly3.png" />   
-                        <button onClick={order}>Заказать</button>
-                        <div id="product-info-button">Заказать</div>
-                    </div>
-=======
                         <div id="product-info">   
                             <p className="product-info-name">{product.name}</p>
                             <p className="product-info-text">{product.text}</p>
-                            <div id="product-info-button" onClick={order}>Заказать</div>
+                            <div className="product-info-button" onClick={order}>Заказать</div>
                         </div>
 
->>>>>>> b992f14596fbb36676e9c5710553a052d8964bd0
                     <div id="product-carousel">
                         <Carousel>
                             <div><img src={product.image1} /></div>
