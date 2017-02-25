@@ -53,21 +53,28 @@ let ProductPendant = React.createClass({
                     
                     </div>
                     <div id="order">
-                        Заказать товар
+                        <div className="order-title">ЗАКАЗАТЬ / УТОЧНИТЬ
+                        </div>
                         <div className="order-image">
                             <img src={product.imagePreview}/>
                         </div>
-                        <form className="order-form">
-                            <input className="order-form-name" type="text" value={product.text}/>
-                            <div className="order-form-hide">
-                                <label >Ссылкa:</label> <input type="text" value={linkProduct}/>
-                            </div>
-                            <input className="order-form-input" type="text" />
-                            <input type="text" />
-                            <input type="text" />
-                            <button>Отправить</button>
-                            <button><Link to="/catalog/polimer/pendants"> закрыть</Link></button>
-                            <button onClick={back}> назад</button>
+                        <form >
+                            <div className="order-form">
+                                <div className="order-form-hide">
+                                    <input className="order-form-name" type="text" value={product.text}/>
+                                    <label >Ссылкa:</label> <input type="text" value={linkProduct}/>
+                                </div>
+                                <input className="order-form-input" type="text" placeholder="Ваше имя:" />
+                                <input className="order-form-input" type="text" placeholder="Ваше имя:" />
+                                <input className="order-form-input" type="text" placeholder="Ваше имя:" />
+                                
+                                <button>Отправить</button>
+                                <button><Link to="/catalog/polimer/pendants"> закрыть</Link></button>
+                                <button onClick={back}> назад</button>
+                        </div>
+                        <div >
+                            <input className="order-form-input-message" type="text" placeholder="Ваше имя:" />
+                        </div>
                         </form>
                     </div>
                 </div>
