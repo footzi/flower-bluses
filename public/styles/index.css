@@ -36,9 +36,13 @@ nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-to
 .header-burgerbutton img{margin:1.5% 2% 0 0;float:right;width:10%}.clear{clear:both}
 .title{outline:2px solid red}.main-title{margin:0;font-size:5vw;margin-bottom:15%}
 .main-introduction{margin:0;font-size:4vw;text-indent:5%}}@media(min-width:641px){header{display:none}
-}.carousel-fl{width:93%;margin-left:5%}.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}
-.flickity-viewport{overflow:hidden;position:relative;height:100%}.flickity-slider{position:absolute;width:100%;height:100%}
-.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+}.about{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888;outline:2px solid green}
+.about-title{font-size:1.8vw;color:#705290;outline:2px solid green}.about-introduction{outline:2px solid blue;text-align:left}
+.about-introduction-marker{width:3%;margin-right:1%}.about-introduction-text{margin-top:1%}
+.about-i{text-align:center;outline:2px solid yellow}.about-i-photo{width:30%}.about-i-text{display:inline-block;width:50%;outline:2px solid black}
+.about-more{outline:2px solid red}.carousel-fl{width:93%;margin-left:5%}.flickity-enabled{position:relative}
+.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}
+.flickity-slider{position:absolute;width:100%;height:100%}.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}
 .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}
 .flickity-prev-next-button{position:absolute;top:50%;width:44px;height:44px;border:0;border-radius:50%;background:white;background:hsla(0,0%,100%,0.75);cursor:pointer;-webkit-transform:translateY(-50%);transform:translateY(-50%)}

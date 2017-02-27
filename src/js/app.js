@@ -4,6 +4,9 @@ import { Router, Route, IndexRoute, hashHistory, browserHistory } from 'react-ro
 import Index from "./index.jsx"
 import Catalog from "./catalog.jsx"
 import Polimer from "./polimer.jsx"
+import About from "./about.jsx"
+import Contacts from "./contacts.jsx"
+import Mk from "./mk.jsx"
 
 import InStock from "./inStock/inStock.jsx"
 import ProductInStock from "./inStock/product-inStock.jsx"
@@ -24,6 +27,9 @@ import ProductPendant from "./pendants/product-pendant.jsx"
 ReactDOM.render (
     <Router history={browserHistory}>
         <Route path="/" component={Index} />
+        <Route path="/about" component={About} />
+        <Route path="/contacts" componet={Contacts} />
+        <Route path="/mk" component={Mk} />
         <Route path="/catalog" component={Catalog} />
         <Route path="/catalog/polimer" component={Polimer} >
         <Route path="/catalog/polimer/inStock" component={InStock} >
