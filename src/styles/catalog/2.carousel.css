@@ -38,7 +38,7 @@
 
 .carousel {
   position: relative;
-  width: 184%; }
+  width: 192%; }
   .carousel * {
     margin: 0;
     padding: 0;
@@ -63,7 +63,6 @@
     border-style: solid;
     border-color:  #705290;
     margin-top: 1.5%;
-    padding-bottom: 1%;
     overflow: hidden; }
   .carousel .thumbs {
     -webkit-transition: all 0.15s ease-in;

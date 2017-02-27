@@ -5,11 +5,16 @@ import Index from "./index.jsx"
 import Catalog from "./catalog.jsx"
 import Polimer from "./polimer.jsx"
 
-import Pendants from "./pendants.jsx"
-import ProductPendant from "./product-pendant.jsx"
+import InStock from "./inStock/inStock.jsx"
+import ProductInStock from "./inStock/product-inStock.jsx"
 
-import All from "./all.jsx"
-import ProductAll from "./product-all.jsx"
+import All from "./all/all.jsx"
+import ProductAll from "./all/product-all.jsx"
+
+import Pendants from "./pendants/pendants.jsx"
+import ProductPendant from "./pendants/product-pendant.jsx"
+
+
 
 //import "./Other/jquery.min.js"
 //import "./Other/jquery.bxslider.js"
@@ -21,8 +26,12 @@ ReactDOM.render (
         <Route path="/" component={Index} />
         <Route path="/catalog" component={Catalog} />
         <Route path="/catalog/polimer" component={Polimer} >
+        <Route path="/catalog/polimer/inStock" component={InStock} >
+        <Route path="/catalog/polimer/inStock/:productId" component={ProductInStock} />
+        </Route>
         <Route path="/catalog/polimer/all" component={All} >
         <Route path="/catalog/polimer/all/:productId" component={ProductAll} />
+        
         </Route>
         <Route path="/catalog/polimer/pendants" component={Pendants} >
         <Route path="/catalog/polimer/pendants/:productId" component={ProductPendant} />

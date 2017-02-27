@@ -33,7 +33,7 @@ let Index = React.createClass({
                     <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
                 </ul>
             </div>
-            <div className="button">Каталог</div>
+            <Link to="/catalog"><div className="button">Каталог</div></Link>
         </div>
         <div className="news">
             <h1 className="stock-title">БЛИЖАЙШИЕ МАСТЕР-КЛАССЫ:</h1>

@@ -15,14 +15,16 @@ let Catalog = React.createClass ({
 
 
      <div className="catalog-img">
-        <div className="catalog-img-prew">
+       <div className="catalog-img-prew"> <Link to="/catalog/polimer">
         <div className="catalog-thumbs">
-            <Link to="/catalog/polimer"> <img src="../images/catalog/1.png" /> </Link>
+             <img src="../images/catalog/1.png" /> 
             <div className="catalog-caption">
                 <span className="catalog-caption-text">Украшения из<br/> полимерной глины</span>
             </div>
         </div>
+        </Link>
         </div>
+        
 
         <div className="catalog-img-prew">
         <div className="catalog-thumbs">

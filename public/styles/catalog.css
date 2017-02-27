@@ -23,25 +23,25 @@
 .product-preview-name{color:#6d6d6d;display:block;margin-top:2%}.product-preview-cost{color:#6d6d6d;display:block;margin-top:2%}
 .product-preview-button-img{cursor:pointer;margin-top:2%;margin-left:-15%;position:absolute;color:#705290;font-family:PhillippScript;font-size:1.2vw;display:inline;width:25%;border:2px solid #705290;border-radius:5px 5px;padding-top:.7%}
 .product-preview-instock{width:10%;margin-left:32%;position:absolute}#b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
-#b-popup .b-popup-content{background-image:url("../images/catalog/popup-fon.png");background-size:cover;margin:4% auto 0 auto;width:65%;border-radius:1%}
-#b-popup-close-button{cursor:pointer;text-align:right;padding:2% 2% 0 0}#product-info{text-align:center;margin-top:2.5%;width:45%;outline:2px solid red;float:right}
-.product-info-button{cursor:pointer;margin:25% auto 0 auto;display:inline-block;width:40%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
+#b-popup .b-popup-content{background-image:url("../images/catalog/popup-fon.png");background-size:100% 100%;margin:4% auto 0 auto;width:65%;border-radius:1%;padding:0 2% 1% 2%}
+#b-popup-close-button{cursor:pointer;text-align:right;padding-top:2%}#product-info{text-align:center;margin-top:2.5%;width:45%;outline:2px solid red;float:right}
+.product-info-button{cursor:pointer;margin:15% auto 0 auto;display:inline-block;width:40%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
 .product-info-name{outline:2px solid blue;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw}
-.product-info-text{padding:0 19%;outline:2px solid blue;font-family:Arial,Helvetica,sans-serif;color:#888;text-align:justify;font-size:1.1vw}
-#product-carousel{margin-left:3%;width:52%}#order{width:100%;padding:0 4%;display:none}
-.order-title{outline:2px solid blue;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw}
-.order-image{float:left;display:inline-table;outline:2px solid black;width:20%}.order-image img{width:100%}
-.order-form{height:100%;width:60%;float:right;display:inline-table;outline:2px solid red}
-.order-form-input{background-color:transparent;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw;width:100%;height:30%;display:block;margin-bottom:2%}
-.order-form-input-message{width:100%}.order-form-hide{display:none}.carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transition:all .25s ease-in;transition:all .25s ease-in;opacity:.4;filter:alpha(opacity=40);position:absolute;z-index:2;top:20px;background:0;border:0;font-size:32px;cursor:pointer}
+.product-info-text{margin-top:10%;padding:0 19%;outline:2px solid blue;font-family:Arial,Helvetica,sans-serif;color:#888;text-align:justify;font-size:1.1vw}
+#product-carousel{width:52%}#order{width:100%;display:none}.order-title{margin-bottom:3%;outline:2px solid blue;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw}
+.order-image{margin:0 3% 3% 0;float:left;display:inline-table;outline:2px solid black;width:20%}
+.order-image img{width:100%}.order-form{height:100%;width:77%;float:right;display:inline-table;outline:2px solid red}
+.order-form-input{background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw;width:100%;height:30%;display:block;margin-bottom:2.8%}
+.order-form-input-message{position:relative;left:-30%;display:block;width:130%;height:130%}
+.product-info-button{margin:29% auto 2% auto}.order-form-hide{display:none}.carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transition:all .25s ease-in;transition:all .25s ease-in;opacity:.4;filter:alpha(opacity=40);position:absolute;z-index:2;top:20px;background:0;border:0;font-size:32px;cursor:pointer}
 .carousel .control-arrow:hover{opacity:1;filter:alpha(opacity=100)}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:15px solid transparent;border-bottom:15px solid transparent;content:''}
 .carousel .control-disabled.control-arrow{opacity:1;cursor:inherit}.carousel .control-prev.control-arrow{left:0}
 .carousel .control-prev.control-arrow:before{border-right:15px solid #fff}.carousel .control-next.control-arrow{right:0}
-.carousel .control-next.control-arrow:before{border-left:15px solid #fff}.carousel{position:relative;width:184%}
+.carousel .control-next.control-arrow:before{border-left:15px solid #fff}.carousel{position:relative;width:192%}
 .carousel *{margin:0;padding:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 .carousel button{outline:0;border:0;background:0}.carousel img{width:100%;display:inline-block}
 .carousel .carousel{position:relative}.carousel .control-arrow{top:50%;margin-top:-13px;font-size:18px}
-.carousel .thumbs-wrapper{border-width:1px 0;border-style:solid;border-color:#705290;margin-top:1.5%;padding-bottom:1%;overflow:hidden}
+.carousel .thumbs-wrapper{border-width:1px 0;border-style:solid;border-color:#705290;margin-top:1.5%;overflow:hidden}
 .carousel .thumbs{-webkit-transition:all .15s ease-in;-moz-transition:all .15s ease-in;-ms-transition:all .15s ease-in;-o-transition:all .15s ease-in;transition:all .15s ease-in;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);position:relative;list-style:none;white-space:nowrap}
 .carousel .thumb{-webkit-transition:border .15s ease-in;-moz-transition:border .15s ease-in;-ms-transition:border .15s ease-in;-o-transition:border .15s ease-in;transition:border .15s ease-in;display:inline-block;width:22%;margin-right:6px;white-space:nowrap;overflow:hidden;border:0 solid #fff;padding:2px;opacity:.50}
 .carousel .thumb.selected,.carousel .thumb:hover{opacity:1}.carousel .thumb img{vertical-align:top}
