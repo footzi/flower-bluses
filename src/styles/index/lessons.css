@@ -1,0 +1,33 @@
+.lessons {
+	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 1.5vw;
+  	color: #888888;
+}
+.lessons-title {
+	font-size: 1.8vw;
+  	color: #705290;
+	outline: 2px solid green;
+}
+.lessons-introduction {
+	width: 70%;
+	margin: 0 auto;
+	/*display: inline-table;*/
+	outline: 2px solid green;
+	background-color: yellow;
+	padding: 1% 0;
+}
+.lessons-introduction-next-date {
+	display: inline-block;
+	outline: 2px solid green;
+}
+.lessons-introduction-date {
+	margin-bottom: 2%;
+	display: inline-block;
+	outline: 2px solid green;
+}
+.lessons-introduction-button {
+	margin-bottom: 2%;
+	display: inline-block;
+	outline: 2px solid green;
+	
+}

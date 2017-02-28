@@ -6,7 +6,9 @@ import Catalog from "./catalog.jsx"
 import Polimer from "./polimer.jsx"
 import About from "./about.jsx"
 import Contacts from "./сontacts.jsx"
-import Mk from "./mk.jsx"
+
+import Lessons from "./lessons.jsx"
+import LessonsInfo from "./lessonsInfo.jsx"
 
 import InStock from "./inStock/inStock.jsx"
 import ProductInStock from "./inStock/product-inStock.jsx"
@@ -29,7 +31,9 @@ ReactDOM.render (
         <Route path="/" component={Index} />
         <Route path="/about" component={About} />
         <Route path="/contacts" componet={Contacts} />
-        <Route path="/mk" component={Mk} />
+        <Route path="/lessons" component={Lessons} >
+        <Route path="/lessons/:lessonId" component={LessonsInfo} />
+        </Route>
         <Route path="/catalog" component={Catalog} />
         <Route path="/catalog/polimer" component={Polimer} >
         <Route path="/catalog/polimer/inStock" component={InStock} >
