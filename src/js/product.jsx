@@ -63,7 +63,7 @@ let Product = React.createClass({
                                 <input className="order-form-input" name="product" type="text" readonly placeholder="Ваш заказ:" value={this.props.name} />
                                 <input className="order-form-input" name="name" type="text" required placeholder="Ваше имя:" />
                                 <input className="order-form-input" name="email" type="email" required placeholder="Ваш e-mail:" /> 
-                                <input className="order-form-input order-form-input-message" name="info" type="text" placeholder="Сообщение:" />
+                                <textarea className="order-form-input order-form-input-message" name="info" type="text" placeholder="Сообщение:" />
                             </div>
                              <button id="orderform-button" className="product-info-button product-order-button">Отправить</button>
                              <button onClick={back}>Назад</button>

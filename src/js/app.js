@@ -5,7 +5,7 @@ import Index from "./index.jsx"
 import Catalog from "./catalog.jsx"
 import Polimer from "./polimer.jsx"
 import About from "./about.jsx"
-import Contacts from "./contacts.jsx"
+import Contacts from "./сontacts.jsx"
 import Mk from "./mk.jsx"
 
 import InStock from "./inStock/inStock.jsx"
