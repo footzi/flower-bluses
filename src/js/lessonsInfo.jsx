@@ -1,6 +1,6 @@
 import React from "react";
 import lessons from "./Data/data-lessons.js";
-import { Link } from "react-router";
+
 
 let LessonsInfo = React.createClass({
 	getInitialState() {
@@ -10,7 +10,18 @@ let LessonsInfo = React.createClass({
             lesson: lessons.find(lesson => lesson.id === lessonId)
         };
     },
+    componentWillReceiveProps(nextProps) {
+        let { lessonId: prevId } = this.props.params;
+        let { lessonId: nextId } = nextProps.params;
+
+        if (prevId !== nextId) {
+            this.setState({
+                lesson: lessons.find(lesson => lesson.id === nextId)
+            });
+        }
+    },
 	render () {
+        let { lesson }=this.state;
 		function close(e) {
             e.preventDefault();
             document.getElementById("b-popup").style="display:none";
@@ -25,11 +36,11 @@ let LessonsInfo = React.createClass({
                     document.getElementById("order").style="display:none";
                     document.getElementById("product").style="display:table";
         }
-		let { lesson }=this.state;
+		
 		return (
 			<div>
 			<div id="b-popup">
-                <div className="b-popup-content">
+                <div className="b-popup-content b-popup-content-lessons">
                     <div id="b-popup-close-button" onClick={close}>
                         <img src="/./images/catalog/close.png" />
                     </div>
@@ -40,6 +51,7 @@ let LessonsInfo = React.createClass({
 
                 </div>
             </div>
+            
 			</div>
 			)
 	}

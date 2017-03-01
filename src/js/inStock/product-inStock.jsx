@@ -13,6 +13,16 @@ let ProductInStock = React.createClass({
             product: products.find(product => product.id === productId)
         };
     },
+    componentWillReceiveProps(nextProps) {
+        let { productId: prevId } = this.props.params;
+        let { productId: nextId } = nextProps.params;
+
+        if (prevId !== nextId) {
+            this.setState({
+                product: products.find(product => product.id === nextId)
+            });
+        }
+    },
     render () {
        
         

@@ -1,6 +1,5 @@
 import React from "react";
 import products from "./../Data/data-pendants.js";
-import { Link } from "react-router";
 import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
 
@@ -12,6 +11,16 @@ let ProductPendant = React.createClass({
         return {
             product: products.find(product => product.id === productId)
         };
+    },
+    componentWillReceiveProps(nextProps) {
+        let { productId: prevId } = this.props.params;
+        let { productId: nextId } = nextProps.params;
+
+        if (prevId !== nextId) {
+            this.setState({
+                product: products.find(product => product.id === nextId)
+            });
+        }
     },
     render () {
        

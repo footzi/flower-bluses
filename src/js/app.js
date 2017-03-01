@@ -45,6 +45,7 @@ ReactDOM.render (
         </Route>
         <Route path="/catalog/polimer/pendants" component={Pendants} >
         <Route path="/catalog/polimer/pendants/:productId" component={ProductPendant} />
+        
         </Route>
         </Route>
     </Router>,

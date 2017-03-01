@@ -15,12 +15,13 @@ let Lessons = React.createClass({
         this.context.router.push(`/lessons/${lessonId}`);
     },
 	render () {
-        let pageLink=location.pathname;
-        let lessonsLink="/lessons";
-        if(false !== pageLink.indexOf(lessonsLink)) {
-             document.body.style.backgroundImage="url(/images/fon-lessons.jpg)"
-         }
-         
+        // let pageLink=location.pathname;
+        // let lessonsLink="/lessons";
+        // if(false !== pageLink.indexOf(lessonsLink)) {
+        //      
+        //  }
+        document.body.style.backgroundImage="url(/images/fon-lessons.jpg)"
+        document.getElementById("footer").style.marginTop="4.6%"
 
 		let { lessons } = this.state;
 		return (
@@ -94,7 +95,9 @@ let LessonsPreview = React.createClass({
 		let { name, info, image, duration, level, onClick } = this.props;
 		return(
 			<div className="lesson">
-                <img className="lesson-img" src={image} />
+               
+                    <img className="lesson-img" src={image} />
+                
                 <div className="lesson-info">
                     <div className="lesson-name">{name}</div>
                     <div className="lesson-more">
@@ -106,6 +109,9 @@ let LessonsPreview = React.createClass({
                 <div onClick={onClick}>
                     <div className="lessons-introduction-button lesson-button" onClick={openPopup}>Записаться</div>
                 </div>
+                <div>
+                     {this.props.children} 
+                 </div>
 			</div>
 			)
 	}
