@@ -23,7 +23,6 @@ npm i gulp-webpack --save -dev
 
 
 
-
 console.log(location.pathname);
         let locationLink = location.pathname;
         let locationCatalog = "/catalog";

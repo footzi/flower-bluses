@@ -15,6 +15,13 @@ let Lessons = React.createClass({
         this.context.router.push(`/lessons/${lessonId}`);
     },
 	render () {
+        let pageLink=location.pathname;
+        let lessonsLink="/lessons";
+        if(false !== pageLink.indexOf(lessonsLink)) {
+             document.body.style.backgroundImage="url(/images/fon-lessons.jpg)"
+         }
+         
+
 		let { lessons } = this.state;
 		return (
 			<div className="lessons">
@@ -47,6 +54,7 @@ let Lessons = React.createClass({
                     </div>
                     <p> Стоимость одного часа МК независимо от количества человек 350 руб. Шесть часов и более за одно посещение рассчитывается по 300 руб. за час.</p>
                 </div>
+
                 
 
                 <div className="lessons-list">
@@ -79,6 +87,10 @@ let Lessons = React.createClass({
 
 let LessonsPreview = React.createClass({
 	render() {
+             function openPopup(e) {
+            e.preventDefault();
+            document.getElementById("b-popup").style="display:table"
+  }
 		let { name, info, image, duration, level, onClick } = this.props;
 		return(
 			<div className="lesson">
@@ -91,7 +103,9 @@ let LessonsPreview = React.createClass({
                         <div>{level}</div>
                     </div>
                 </div>
-                <div className="lessons-introduction-button lesson-button" onClick={onClick}>Записаться</div>
+                <div onClick={onClick}>
+                    <div className="lessons-introduction-button lesson-button" onClick={openPopup}>Записаться</div>
+                </div>
 			</div>
 			)
 	}
