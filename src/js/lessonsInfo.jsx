@@ -24,34 +24,36 @@ let LessonsInfo = React.createClass({
         let { lesson }=this.state;
 		function close(e) {
             e.preventDefault();
-            document.getElementById("b-popup").style="display:none";
+            document.getElementById("lessons-b-popup").style="display:none";
          }
-        function order(e) {
-            e.preventDefault();
-            document.getElementById("order").style="display:table";
-            document.getElementById("product").style="display:none";
-         }
-        function back(e) {
-                    e.preventDefault();
-                    document.getElementById("order").style="display:none";
-                    document.getElementById("product").style="display:table";
-        }
+       
 		
 		return (
-			<div>
-			<div id="b-popup">
-                <div className="b-popup-content b-popup-content-lessons">
+			<div id="lessons-b-popup">
+                <div className="lessons-b-popup-content">
                     <div id="b-popup-close-button" onClick={close}>
                         <img src="/./images/catalog/close.png" />
                     </div>
-                <img src={lesson.image} />
-				<p>{lesson.name}</p>
-				<p>{lesson.duration}</p>
-				<p>{lesson.level}</p>
+                    <div className="lesson-order">
+                        <div className="order-title">ЗАКАЗАТЬ / УТОЧНИТЬ</div>
+                    </div>
+                    <div className="order-image">
+                            <img src={lesson.image} />
+                    </div>
+                    <form id="lessonsform" method="post">
+                            <div className="order-form">
+                           
+                                <input className="order-form-input" name="product" type="text" readonly placeholder="Название мастер-класса" subject={lesson.name}/>
+                                <input className="order-form-input" name="name" type="text" required placeholder="Ваше имя:" />
+                                <input className="order-form-input" name="email" type="email" required placeholder="Ваш e-mail:" />
 
-                </div>
-            </div>
-            
+                                <input className="order-form-input" name="data" type="number" required placeholder="Дата мастер-класса:"/> 
+                                <textarea className="order-form-input order-form-input-message" name="info" type="text" placeholder="Сообщение:" />
+                            </div>
+                             <button id="lessonsform-button" className="product-info-button product-order-button">Отправить</button>
+                    </form>
+
+                </div>            
 			</div>
 			)
 	}

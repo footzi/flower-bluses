@@ -20,7 +20,7 @@ body {
 main {
   float: right;
   width:71%;
-  outline: 4px solid red;
+  outline: 0px solid red;
   margin-top: 17%;
   text-align: center;
   padding:4% 6% 0 3%;
@@ -30,7 +30,7 @@ nav {
   float:left;
   margin-top:34%;
   margin-left: 1.5%;
-  outline: 2px solid green;
+  outline: 0px solid green;
   width:14%;
 
 
@@ -68,7 +68,7 @@ nav {
 
 
 .main-title{
-  outline:2px solid red;
+  outline:0px solid red;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2vw;
   color: #705290;
@@ -76,7 +76,7 @@ nav {
 }
 .main-introduction{
   margin-top:5.5%;
-  outline:3px solid red;
+  outline:0px solid red;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.4vw;
   color: #888888;
@@ -92,7 +92,7 @@ nav {
 .stock {
   margin-top: 5.5%;
   padding: 3% 2%;
-  outline: 2px solid yellow;
+  outline: 0px solid yellow;
   background-size: cover;
   border: 1px solid rgba(129, 88, 159, 0.349);
   background-color: rgba(255, 255, 255, 0.349);
@@ -105,7 +105,7 @@ nav {
 }
 .stock-text {
   margin: 2.2% 0;
-  outline: 2px solid red;
+  outline: 0px solid red;
   font-family: Arial, Helvetica, sans-serif;
   color:#888888;
   font-size: 1.2vw;
@@ -114,7 +114,7 @@ nav {
 
 }
 .stock-images {
-  outline:2px solid red;
+  outline:0px solid red;
   margin: 3.2% 0% 4% 1.2%;
 }
 .stock-images-640{
@@ -122,7 +122,7 @@ nav {
 }
 
 .stock-img {
-  outline:2px solid red;
+  outline:0px solid red;
 
 
 }
@@ -141,7 +141,7 @@ nav {
   color:#705290;
 }
 .news {
-  outline: 2px solid green;
+  outline: 0px solid green;
   border: 1px solid rgba(129, 88, 159, 0.349);
   background-color: rgba(255, 255, 255, 0.349);
   background-size: cover;
@@ -150,13 +150,13 @@ nav {
   margin-bottom: 14%;
 }
 .news-content {
-  outline: 2px solid orange;
+  outline: 0px solid orange;
 }
 .news-calendar {
   width: 14.5%;
   margin:4% 0 0 4%;
   float:left;
-  outline: 2px solid red;
+  outline: 0px solid red;
 }
 .news-calendar-img {
   width:100%;
@@ -166,7 +166,7 @@ nav {
   margin-top:-0.5%;
   float: right;
   text-align: left;
-  outline: 2px solid blue;
+  outline: 0px solid blue;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2vw;
   color: #888888;
@@ -174,7 +174,7 @@ nav {
 .news-details-text {
   position: relative;
   margin: -3.5%  0 3% 6%;
-  outline: 2px solid yellow;
+  outline: 0px solid yellow;
 }
 .news-details-marker {
   position: relative;
@@ -192,7 +192,7 @@ footer{
   /*margin-top: 12%;*/
   margin-top: 1.6%;
   padding-top: 2.5%;
-  outline:2px solid magenta;
+  outline:0px solid magenta;
 }
 .footer-content{
   outline:0px solid black;

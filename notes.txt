@@ -48,8 +48,4 @@ console.log(location.pathname);
 
 Дизайн и разработка - Манаков Владислав
 
-
-
-<button>Отправить</button>
-                                <button><Link to="/catalog/polimer/pendants"> закрыть</Link></button>
-                                <button onClick={back}> назад</button>ss
+                

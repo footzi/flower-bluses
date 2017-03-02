@@ -2,16 +2,16 @@
 	font-family: Arial, Helvetica, sans-serif;
   	font-size: 1.5vw;
   	color: #888888;
-	outline: 2px solid green;
+	outline: 0px solid green;
 }
 .about-title {
 	font-size: 1.8vw;
   	color: #705290;
-	outline: 2px solid green;
+	outline: 0px solid green;
 }
 .about-introduction {
 	margin-top: 5%;
-	outline:2px solid blue;
+	outline:0px solid blue;
 	text-align: left;
 }
 .about-introduction-marker {
@@ -26,7 +26,7 @@
 	display: table;
 	margin-top: 6%;
 	text-align: justify;
-	outline: 2px solid yellow;
+	outline: 0px solid yellow;
 }
 .about-i-photo {
 	vertical-align: middle;
@@ -38,13 +38,13 @@
 	text-indent: 3%;
 	margin-left: 7%;
 	width: 57%;
-	outline: 2px solid black;
+	outline: 0px solid black;
 }
 
 .about-more{
 	margin-top: 7%;
 	text-align: justify;
-	outline: 2px solid red;
+	outline: 0px solid red;
 }
 .about-more p:nth-child(1) {
 	font-style: italic;
@@ -72,7 +72,7 @@
 	margin-top:5.5%;
 	margin-bottom: 12%;
 	text-align: left;
-	outline: 2px solid rosybrown;
+	outline: 0px solid rosybrown;
 
 }
 .about-form form {
