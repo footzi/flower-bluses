@@ -76,9 +76,9 @@
 
 	var _aboutJsx2 = _interopRequireDefault(_aboutJsx);
 
-	var _ontactsJsx = __webpack_require__(248);
+	var _contactsJsx = __webpack_require__(248);
 
-	var _ontactsJsx2 = _interopRequireDefault(_ontactsJsx);
+	var _contactsJsx2 = _interopRequireDefault(_contactsJsx);
 
 	var _lessonsJsx = __webpack_require__(249);
 
@@ -122,7 +122,7 @@
 	    { history: _reactRouter.browserHistory },
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/', component: _indexJsx2['default'] }),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/about', component: _aboutJsx2['default'] }),
-	    _react2['default'].createElement(_reactRouter.Route, { path: '/contacts', componet: _ontactsJsx2['default'] }),
+	    _react2['default'].createElement(_reactRouter.Route, { path: '/contacts', component: _contactsJsx2['default'] }),
 	    _react2['default'].createElement(
 	        _reactRouter.Route,
 	        { path: '/lessons', component: _lessonsJsx2['default'] },
@@ -28176,34 +28176,119 @@
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	'use strict';
+	"use strict";
 
-	Object.defineProperty(exports, '__esModule', {
+	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var Contacts = _react2['default'].createClass({
-		displayName: 'Contacts',
+	var Contacts = _react2["default"].createClass({
+		displayName: "Contacts",
 
 		render: function render() {
-			return _react2['default'].createElement(
-				'div',
-				null,
-				'About'
+			return _react2["default"].createElement(
+				"div",
+				{ className: "contacts" },
+				_react2["default"].createElement(
+					"div",
+					{ className: "main-title" },
+					"Контакты"
+				),
+				_react2["default"].createElement(
+					"div",
+					{ className: "contacts-form" },
+					_react2["default"].createElement(
+						"form",
+						null,
+						_react2["default"].createElement(
+							"div",
+							{ className: "contacts-form-adress" },
+							_react2["default"].createElement(
+								"label",
+								null,
+								"Ваше имя:"
+							),
+							_react2["default"].createElement("input", { type: "text" }),
+							_react2["default"].createElement(
+								"label",
+								null,
+								"Ваш e-mail:"
+							),
+							_react2["default"].createElement("input", { type: "text" }),
+							_react2["default"].createElement(
+								"div",
+								null,
+								_react2["default"].createElement(
+									"h2",
+									null,
+									"ГОРОД"
+								),
+								_react2["default"].createElement(
+									"h3",
+									null,
+									"Нижний Новгород"
+								)
+							),
+							_react2["default"].createElement(
+								"div",
+								null,
+								_react2["default"].createElement(
+									"h2",
+									null,
+									"E-MAIL:"
+								),
+								_react2["default"].createElement(
+									"h3",
+									null,
+									"footzi@mail.ru"
+								)
+							),
+							_react2["default"].createElement(
+								"div",
+								null,
+								_react2["default"].createElement(
+									"h2",
+									null,
+									"ТЕЛЕФОН"
+								),
+								_react2["default"].createElement(
+									"h3",
+									null,
+									"+7(953)173-32-96"
+								)
+							)
+						),
+						_react2["default"].createElement(
+							"div",
+							{ className: "contacts-form-message" },
+							_react2["default"].createElement(
+								"label",
+								null,
+								"ВАШЕ СООБЩЕНИЕ:"
+							),
+							_react2["default"].createElement("textarea", null)
+						),
+						_react2["default"].createElement(
+							"button",
+							null,
+							"send"
+						)
+					)
+				)
 			);
 		}
 	});
 
-	exports['default'] = Contacts;
-	module.exports = exports['default'];
+	exports["default"] = Contacts;
+	module.exports = exports["default"];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "сontacts.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "contacts.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 249 */
@@ -28527,6 +28612,8 @@
 
 	var _DataDataLessonsJs2 = _interopRequireDefault(_DataDataLessonsJs);
 
+	var _reactRouter = __webpack_require__(178);
+
 	var LessonsInfo = _react2["default"].createClass({
 	    displayName: "LessonsInfo",
 
@@ -28568,7 +28655,12 @@
 	                _react2["default"].createElement(
 	                    "div",
 	                    { id: "b-popup-close-button", onClick: close },
-	                    _react2["default"].createElement("img", { src: "/./images/catalog/close.png" })
+	                    _react2["default"].createElement(
+	                        _reactRouter.Link,
+	                        { to: "/lessons" },
+	                        _react2["default"].createElement("img", { src: "/./images/catalog/close.png" }),
+	                        " "
+	                    )
 	                ),
 	                _react2["default"].createElement(
 	                    "div",
@@ -28589,12 +28681,35 @@
 	                    { id: "lessonsform", method: "post" },
 	                    _react2["default"].createElement(
 	                        "div",
-	                        { className: "order-form" },
-	                        _react2["default"].createElement("input", { className: "order-form-input", name: "product", type: "text", readonly: true, placeholder: "Название мастер-класса", subject: lesson.name }),
-	                        _react2["default"].createElement("input", { className: "order-form-input", name: "name", type: "text", required: true, placeholder: "Ваше имя:" }),
-	                        _react2["default"].createElement("input", { className: "order-form-input", name: "email", type: "email", required: true, placeholder: "Ваш e-mail:" }),
-	                        _react2["default"].createElement("input", { className: "order-form-input", name: "data", type: "number", required: true, placeholder: "Дата мастер-класса:" }),
-	                        _react2["default"].createElement("textarea", { className: "order-form-input order-form-input-message", name: "info", type: "text", placeholder: "Сообщение:" })
+	                        { className: "lesson-form" },
+	                        _react2["default"].createElement("input", { className: "lesson-form-input", name: "product", type: "text", readonly: true, placeholder: "Название мастер-класса", value: lesson.name }),
+	                        _react2["default"].createElement("input", { className: "lesson-form-input", name: "name", type: "text", required: true, placeholder: "Ваше имя:" }),
+	                        _react2["default"].createElement("input", { className: "lesson-form-input", name: "email", type: "email", required: true, placeholder: "Ваш e-mail:" }),
+	                        _react2["default"].createElement(
+	                            "select",
+	                            { className: "lesson-form-input lesson-form-input-data", required: true, name: "data" },
+	                            _react2["default"].createElement(
+	                                "option",
+	                                { value: "", disable: true, selected: true, hidden: true },
+	                                "Дата мастер класса:"
+	                            ),
+	                            _react2["default"].createElement(
+	                                "option",
+	                                { className: "lesson-form-option" },
+	                                "10.05.1990"
+	                            ),
+	                            _react2["default"].createElement(
+	                                "option",
+	                                null,
+	                                "10.05.1990"
+	                            ),
+	                            _react2["default"].createElement(
+	                                "option",
+	                                null,
+	                                "10.05.1990"
+	                            )
+	                        ),
+	                        _react2["default"].createElement("textarea", { className: "lesson-form-input lesson-form-input-message", name: "info", type: "text", placeholder: "Сообщение:" })
 	                    ),
 	                    _react2["default"].createElement(
 	                        "button",

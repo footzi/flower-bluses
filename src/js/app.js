@@ -5,7 +5,7 @@ import Index from "./index.jsx"
 import Catalog from "./catalog.jsx"
 import Polimer from "./polimer.jsx"
 import About from "./about.jsx"
-import Contacts from "./сontacts.jsx"
+import Contacts from "./contacts.jsx"
 
 import Lessons from "./lessons.jsx"
 import LessonsInfo from "./lessonsInfo.jsx"
@@ -30,7 +30,7 @@ ReactDOM.render (
     <Router history={browserHistory}>
         <Route path="/" component={Index} />
         <Route path="/about" component={About} />
-        <Route path="/contacts" componet={Contacts} />
+        <Route path="/contacts" component={Contacts} />
         <Route path="/lessons" component={Lessons} >
         <Route path="/lessons/:lessonId" component={LessonsInfo} />
         </Route>

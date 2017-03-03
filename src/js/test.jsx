@@ -1,11 +1,12 @@
 import React from 'react';
+
 let Contacts = React.createClass({
-	render() {
+	render () {
 		return (
 			<div>
-			About
+				kdkkskkskskskso
 			</div>)
 	}
-})
+});
 
 export default Contacts;

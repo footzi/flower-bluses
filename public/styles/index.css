@@ -48,9 +48,10 @@ nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-to
 .about-form form{display:inline-table;width:100%;height:100%}.about-form-input{height:20%;margin-bottom:1%;padding-left:.5%;background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1vw;width:99.6%}
 .about-form-input-email{position:relative;left:.3%;float:right;width:49%}.about-form-input-phone{float:left;width:49%}
 .about-form-input-message{width:99.4%;height:70%}.about-info-button{cursor:pointer;margin-left:81.3%;width:19%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
-.carousel-fl{width:93%;margin-left:5%}.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}
-.flickity-viewport{overflow:hidden;position:relative;height:100%}.flickity-slider{position:absolute;width:100%;height:100%}
-.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.contacts{outline:2px solid red}label{display:block}h2,h3{margin:0}.contacts-form-adress{outline:2px solid red;float:left}
+.contacts-form-message{outline:2px solid red;float:right}button{margin-top:10%}.carousel-fl{width:93%;margin-left:5%}
+.flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}
+.flickity-slider{position:absolute;width:100%;height:100%}.flickity-enabled.is-draggable{-webkit-tap-highlight-color:transparent;tap-highlight-color:transparent;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .flickity-enabled.is-draggable .flickity-viewport{cursor:move;cursor:-webkit-grab;cursor:grab}
 .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down{cursor:-webkit-grabbing;cursor:grabbing}
 .flickity-prev-next-button{position:absolute;top:50%;width:44px;height:44px;border:0;border-radius:50%;background:white;background:hsla(0,0%,100%,0.75);cursor:pointer;-webkit-transform:translateY(-50%);transform:translateY(-50%)}
@@ -92,4 +93,7 @@ nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-to
 .lesson-name{font-size:2vw;font-family:PhillippScript;color:#705290}.lesson-more{margin-top:2%;font-size:1.2vw}
 .lesson-button{margin:10.5% 0 0 83%;float:none}#lessons-b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
 #lessons-b-popup .lessons-b-popup-content{background-image:url("../images/lessons/popup-lessons-fon.png");background-size:100% 100%;margin:4% auto 0 auto;width:65%;border-radius:1%;padding:0 2% 1% 2%}
-.order-form-input-message{height:50%}
+.lesson-form{height:100%;width:77%;float:right;display:inline-table;outline:0 solid red}
+.lesson-form-input{background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw;width:100%;height:20%;padding-left:.5%;display:block;margin-bottom:2.8%}
+.lesson-form-input-data{color:#888}.lesson-form-input-message{position:relative;left:-30%;display:block;width:130%;height:80%}
+.product-info-button{background-color:transparent;margin:29% auto 2% auto}.lesson-form-option{color:red}

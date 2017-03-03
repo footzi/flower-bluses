@@ -1,6 +1,6 @@
 import React from "react";
 import lessons from "./Data/data-lessons.js";
-
+import { Link } from "react-router";
 
 let LessonsInfo = React.createClass({
 	getInitialState() {
@@ -32,7 +32,7 @@ let LessonsInfo = React.createClass({
 			<div id="lessons-b-popup">
                 <div className="lessons-b-popup-content">
                     <div id="b-popup-close-button" onClick={close}>
-                        <img src="/./images/catalog/close.png" />
+                        <Link to="/lessons"><img src="/./images/catalog/close.png" /> </Link>
                     </div>
                     <div className="lesson-order">
                         <div className="order-title">ЗАКАЗАТЬ / УТОЧНИТЬ</div>
@@ -41,14 +41,22 @@ let LessonsInfo = React.createClass({
                             <img src={lesson.image} />
                     </div>
                     <form id="lessonsform" method="post">
-                            <div className="order-form">
+                            <div className="lesson-form">
                            
-                                <input className="order-form-input" name="product" type="text" readonly placeholder="Название мастер-класса" subject={lesson.name}/>
-                                <input className="order-form-input" name="name" type="text" required placeholder="Ваше имя:" />
-                                <input className="order-form-input" name="email" type="email" required placeholder="Ваш e-mail:" />
+                                <input className="lesson-form-input" name="product" type="text" readonly placeholder="Название мастер-класса" value={lesson.name}/>
+                                <input className="lesson-form-input" name="name" type="text" required placeholder="Ваше имя:" />
+                                <input className="lesson-form-input" name="email" type="email" required placeholder="Ваш e-mail:" />
 
-                                <input className="order-form-input" name="data" type="number" required placeholder="Дата мастер-класса:"/> 
-                                <textarea className="order-form-input order-form-input-message" name="info" type="text" placeholder="Сообщение:" />
+                             
+                                	<select className="lesson-form-input lesson-form-input-data" required name="data">
+                                	<option  value="" disable selected hidden>Дата мастер класса:</option>
+                                	<option className="lesson-form-option">10.05.1990</option>
+                                	<option>10.05.1990</option>
+                                	<option>10.05.1990</option>
+                                	</select>
+                                
+                                
+                                <textarea className="lesson-form-input lesson-form-input-message" name="info" type="text" placeholder="Сообщение:" />
                             </div>
                              <button id="lessonsform-button" className="product-info-button product-order-button">Отправить</button>
                     </form>
