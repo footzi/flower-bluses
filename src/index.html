@@ -76,15 +76,14 @@
 <script src="/js/mail-lessonsform.js"></script>
 <script>
 
-    // let link = /([http://localhost:8090/catalog/polimer/])/;
-    // let test = document.location.href
 
-    // if (link==test)
-    //     document.getElementById("all").style.display="none";
-    //     console.log("ok")
-    //     else {
-    //         document.getElementById("all").style.display="none"
-    //    }
+
+let Page=location.pathname;
+let inStock="catalog/polimer"
+
+if(Page.indexOf(inStock)) {
+    $("#all").css({"display":"none"})
+        }
 
 $(document).ready(function(){
   $('.bxslider').bxSlider({
@@ -109,25 +108,11 @@ $(document).ready(function(){
   })  
 });
 
-// console.log(location.pathname);
-// let testLink=location.pathname;
-// let pendantsLink="/catalog/polimer";
-
-// if (testLink==pendantsLink) {
-//     document.getElementById("all").style.display="none"
-//     console.log("ok")
-// }
 
 
 
 
-let testLink=location.pathname;
-let pendantsLink="/catalog/polimer";
-let lessonsLink="/lessons";
 
-if(false !== testLink.indexOf(pendantsLink)) {
-    document.getElementById("all").style.display="none"
-}
 
 
 </script>

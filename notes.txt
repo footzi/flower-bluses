@@ -12,9 +12,9 @@
 
 7.Убрать фон автозаполнения в форме
 
+8. сделать amedia для картинки в форме записи в мастер-классах
 
-
-7.проверить правильность ввыводимой ссылки в форме заказ
+9. сделать один класс для всех кнопок
 
 npm i gulp gulp-concat gulp-uglify gulp-uglifycss gulp-htmlmin gulp-minify gulp-concat-css gulp-watch --save -dev
 npm i gulp-webpack --save -dev
@@ -49,3 +49,14 @@ console.log(location.pathname);
 Дизайн и разработка - Манаков Владислав
 
                 
+
+
+                let Page=location.pathname;
+        console.log(Page);
+
+        let inStock="/catalog/polimer/inStock";
+        if(Page.indexOf(inStock)) {
+            console.log("содержит")
+        }else (
+            document.getElementById("all").style.display="none"
+        )

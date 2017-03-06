@@ -106,6 +106,8 @@
 	height: 70%;
 }
 .about-info-button {
+	margin-top: 0;
+	background-color: transparent;
 	cursor: pointer;
 	margin-left: 81.3%;
 	width: 19%;

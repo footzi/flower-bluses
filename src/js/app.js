@@ -36,6 +36,7 @@ ReactDOM.render (
         </Route>
         <Route path="/catalog" component={Catalog} />
         <Route path="/catalog/polimer" component={Polimer} >
+        
         <Route path="/catalog/polimer/inStock" component={InStock} >
         <Route path="/catalog/polimer/inStock/:productId" component={ProductInStock} />
         </Route>
@@ -51,4 +52,6 @@ ReactDOM.render (
     </Router>,
     document.getElementById("main")
 );
+
+
 

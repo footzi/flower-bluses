@@ -75,3 +75,24 @@ main{
     }
     
 }
+
+@media (max-width:801px){
+.lesson-form img {
+    width: 18%;
+}
+.lesson-input {
+    margin-left: 37%;
+}
+.lesson-form-input {
+    width: 99%;
+}
+.lesson-form-input-message {
+    width: 159.5%;
+}
+.lesson-form-input-date {
+    width: 102.5%;
+}
+.lesson-form-input-message {
+    right: 58.9%;
+} 
+}

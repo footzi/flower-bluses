@@ -2,25 +2,31 @@ import React from 'react';
 import { Link } from "react-router";
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-
+import $ from "jquery"
 
 import InStock from "./inStock/inStock.jsx"
 
 let Polimer = React.createClass({
-    getInitialState: function() {
-        return { 
-        	shouldHide:false
-        };
-    },
-    onClick: function() {
-        if(!this.state.shouldHide){
-        	this.setState({
-        		shouldHide: true 
-        	})
-        }
-    },
+    // getInitialState: function() {
+    //     return { 
+    //     	shouldHide:false
+    //     };
+    // },
+    // onClick: function() {
+    //     if(!this.state.shouldHide){
+    //     	this.setState({
+    //     		shouldHide: true 
+    //     	})
+    //     }
+    // },
     render () {
+        let Page=location.pathname;
+        let inStock="catalog/polimer"
 
+        if(Page.indexOf(inStock)) {
+            $("#all").css({"display":"none"})
+        }
+        
         return (
 <div className="catalog-list">
 
@@ -45,8 +51,8 @@ let Polimer = React.createClass({
             </ul>
     </div>
 
-    <div  id="all" className={this.state.shouldHide ? 'hidden' : ''}>
-        <InStock />
+    <div  id="all" /*className={this.state.shouldHide ? 'hidden' : ''} */>
+       <InStock />
     </div>
     
     <div>

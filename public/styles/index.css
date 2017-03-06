@@ -29,6 +29,24 @@ nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.
 .footer-content-developer-title{font-size:.7vw}.footer-content-developer-title a{text-decoration:underline;color:#888}
 .footer-content-contacts{position:absolute;margin-left:6%;display:inline-block;outline:0 solid green;text-align:right}
 .footer-content-contacts-title{margin-bottom:13%}.footer-content-contacts-text{margin-bottom:5%}
+.lessons{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888}.lessons-title{font-size:1.8vw;color:#705290}
+.lessons-introduction{text-align:justify;color:#705290;width:76%;margin:4% auto 0 auto;background-image:url("../images/lessons-introduction-fon.png");background-repeat:no-repeat;background-size:100%;padding:4.5% 0}
+.lessons-introduction-next-date{margin-left:3.5%;margin-top:-0.8%;position:absolute;font-family:PhillippScript;width:10%;text-align:center;font-size:1.5vw;display:inline-block}
+.lessons-introduction-date{margin-top:.5%;margin-left:31%;font-size:2.6vw;display:inline-block}
+.lessons-introduction-button{margin-top:1.1%;float:right;margin-right:7%;cursor:pointer;width:17%;text-align:center;border:1px solid #705290;border-radius:10px;padding-top:.7%;font-family:PhillippScript;font-size:1.5vw;color:#705290}
+.lessons-info{margin-top:4%}.lessons-info p{margin-top:0}.lessons-info-more{text-align:justify;width:76%;margin:5% auto 7% auto}
+.lessons-info-more-text{margin-top:2%}.lessons-info-more-marker{width:4.5%}.lessons-list{margin-top:0}
+.lesson{margin-top:4%;text-align:justify;padding:1%;background-color:rgba(255,255,255,0.349)}
+.lesson-img{position:absolute;width:13%}.lesson-info{position:absolute;margin-left:18%;display:inline-block}
+.lesson-name{font-size:2vw;font-family:PhillippScript;color:#705290}.lesson-more{margin-top:2%;font-size:1.2vw}
+.lesson-button{margin:10.5% 0 0 83%;float:none}#lessons-b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
+#lessons-b-popup .lessons-b-popup-content{background-image:url("../images/lessons/popup-lessons-fon.png");background-size:100% 100%;margin:4% auto 0 auto;width:50%;border-radius:1%;padding:0 3% 1% 3%}
+.lesson-form{text-align:justify}#b-popup-lesson-close-button{position:relative;right:-4%;cursor:pointer;text-align:right;padding-top:1%}
+#b-popup-lesson-close-button img{width:1.5%}.lesson-input{margin-left:36%;display:inline-block;width:62.5%}
+.lesson-title{margin-bottom:2.5%;color:#705290;font-size:1.3vw}.lesson-form img{position:absolute;display:inline-block;width:17%}
+.lesson-form-input{background-color:transparent;border:1px solid #705290;color:#705290;font-size:1vw;width:100%;display:block;margin-bottom:2.8%;padding-left:2%;padding-top:2%;padding-bottom:2%}
+.lesson-form-input-date{margin-bottom:0;padding-left:1%;width:102.5%;color:#888}.lesson-form-input-message{margin-top:2%;position:relative;right:57.9%;display:block;width:159.5%;padding:.5% 0 26% .5%;margin-bottom:0}
+.lesson-form-button{margin-top:1%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:1.7vw;color:#705290;width:20%;background-color:transparent}
 @media(max-width:640px){body{background-image:url("../images/fon640.jpg");background-repeat:no-repeat;background-size:cover}
 nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-top:-8%;padding-top:21%}
 .stock-title{font-size:4vw;font-weight:700}.stock-images{display:none}.stock-images-640{display:block}
@@ -36,7 +54,9 @@ nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-to
 .header-burgerbutton img{margin:1.5% 2% 0 0;float:right;width:10%}.clear{clear:both}
 .title{outline:2px solid red}.main-title{margin:0;font-size:5vw;margin-bottom:15%}
 .main-introduction{margin:0;font-size:4vw;text-indent:5%}}@media(min-width:641px){header{display:none}
-}.about{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888;outline:0 solid green}
+}@media(max-width:801px){.lesson-form img{width:18%}.lesson-input{margin-left:37%}
+.lesson-form-input{width:99%}.lesson-form-input-message{width:159.5%}.lesson-form-input-date{width:102.5%}
+.lesson-form-input-message{right:58.9%}}.about{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888;outline:0 solid green}
 .about-title{font-size:1.8vw;color:#705290;outline:0 solid green}.about-introduction{margin-top:5%;outline:0 solid blue;text-align:left}
 .about-introduction-marker{width:3%;margin-right:1%}.about-introduction-text{margin-top:2%}
 .about-i{display:table;margin-top:6%;text-align:justify;outline:0 solid yellow}.about-i-photo{vertical-align:middle;width:35.4%}
@@ -47,7 +67,7 @@ nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-to
 .about-form{margin-top:5.5%;margin-bottom:12%;text-align:left;outline:0 solid rosybrown}
 .about-form form{display:inline-table;width:100%;height:100%}.about-form-input{height:20%;margin-bottom:1%;padding-left:.5%;background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1vw;width:99.6%}
 .about-form-input-email{position:relative;left:.3%;float:right;width:49%}.about-form-input-phone{float:left;width:49%}
-.about-form-input-message{width:99.4%;height:70%}.about-info-button{cursor:pointer;margin-left:81.3%;width:19%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
+.about-form-input-message{width:99.4%;height:70%}.about-info-button{margin-top:0;background-color:transparent;cursor:pointer;margin-left:81.3%;width:19%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
 .contacts{outline:2px solid red}label{display:block}h2,h3{margin:0}.contacts-form-adress{outline:2px solid red;float:left}
 .contacts-form-message{outline:2px solid red;float:right}button{margin-top:10%}.carousel-fl{width:93%;margin-left:5%}
 .flickity-enabled{position:relative}.flickity-enabled:focus{outline:0}.flickity-viewport{overflow:hidden;position:relative;height:100%}
@@ -81,21 +101,3 @@ nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-to
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{right:0;width:35px}
 .bx-wrapper .bx-caption{position:absolute;bottom:0;left:0;background:#666\9;background:rgba(80,80,80,0.75);width:100%}
 .bx-wrapper .bx-caption span{font-family:Arial;display:block;font-size:.85em;padding:10px}
-.lessons{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888}.lessons-title{font-size:1.8vw;color:#705290}
-.lessons-introduction{text-align:justify;color:#705290;width:76%;margin:4% auto 0 auto;background-image:url("../images/lessons-introduction-fon.png");background-repeat:no-repeat;background-size:100%;padding:4.5% 0}
-.lessons-introduction-next-date{margin-left:3.5%;margin-top:-0.8%;position:absolute;font-family:PhillippScript;width:10%;text-align:center;font-size:1.5vw;display:inline-block}
-.lessons-introduction-date{margin-top:.5%;margin-left:31%;font-size:2.6vw;display:inline-block}
-.lessons-introduction-button{margin-top:1.1%;float:right;margin-right:7%;cursor:pointer;width:17%;text-align:center;border:1px solid #705290;border-radius:10px;padding-top:.7%;font-family:PhillippScript;font-size:1.5vw;color:#705290}
-.lessons-info{margin-top:4%}.lessons-info p{margin-top:0}.lessons-info-more{text-align:justify;width:76%;margin:5% auto 7% auto}
-.lessons-info-more-text{margin-top:2%}.lessons-info-more-marker{width:4.5%}.lessons-list{margin-top:0}
-.lesson{margin-top:4%;text-align:justify;padding:1%;background-color:rgba(255,255,255,0.349)}
-.lesson-img{position:absolute;width:13%}.lesson-info{position:absolute;margin-left:18%;display:inline-block}
-.lesson-name{font-size:2vw;font-family:PhillippScript;color:#705290}.lesson-more{margin-top:2%;font-size:1.2vw}
-.lesson-button{margin:10.5% 0 0 83%;float:none}#lessons-b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
-#lessons-b-popup .lessons-b-popup-content{background-image:url("../images/lessons/popup-lessons-fon.png");background-size:100% 100%;margin:4% auto 0 auto;width:50%;border-radius:1%;padding:0 2% 1% 2%}
-.lesson-form{height:100%;width:62%;float:right;display:inline-table;outline:0 solid red}
-#b-popup-lesson-close-button{cursor:pointer;text-align:right;padding-top:1%}.lesson-image{width:35%;margin:0 3% 3% 0;float:left;display:inline-table}
-.lesson-title{margin-bottom:2%;color:#705290;font-size:1.3vw}.lesson-image img{width:100%}
-.lesson-form-input{background-color:transparent;border:1px solid #705290;color:#705290;font-size:1vw;width:96%;height:25%;display:block;margin-bottom:2.8%;padding-left:2%}
-.lesson-form-input-date{padding-left:1%;width:98.5%;color:#888}.lesson-form-input-message{position:relative;right:61.5%;display:block;width:157%;height:93%}
-.product-lesson-button{width:30%;position:relative;left:-19%;background-color:transparent;margin:29% auto 2% auto}

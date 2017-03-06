@@ -44,7 +44,7 @@ gulp.task('webpack', function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch('src/js/*', ['webpack'])
+    gulp.watch('src/js/**/*', ['webpack'])
     gulp.watch('src/styles/index/*.css', ['css-index'])
     gulp.watch('src/styles/catalog/*.css', ['css-catalog'])
     gulp.watch('src/*.html', ['html'])

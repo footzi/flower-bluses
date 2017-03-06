@@ -6,7 +6,8 @@ let Product = React.createClass({
     
     render () {
         let { product } = this.props;
-        let linkProduct = location.href
+        let linkProduct = location.href;
+
         function close(e) {
             e.preventDefault();
             document.getElementById("b-popup").style="display:none";
