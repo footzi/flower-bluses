@@ -26731,7 +26731,11 @@
 	                        _react2['default'].createElement(
 	                            'li',
 	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/1.jpg' })
+	                            _react2['default'].createElement(
+	                                'a',
+	                                { href: '/catalog/polimer/inStock/1-1' },
+	                                _react2['default'].createElement('img', { className: 'stock-img', src: 'images/1.jpg' })
+	                            )
 	                        ),
 	                        _react2['default'].createElement(
 	                            'li',
@@ -26869,9 +26873,13 @@
 	                    ),
 	                    _react2['default'].createElement('div', { className: 'clear' }),
 	                    _react2['default'].createElement(
-	                        'div',
-	                        { className: 'button' },
-	                        'Подробнее'
+	                        _reactRouter.Link,
+	                        { to: '/lessons' },
+	                        _react2['default'].createElement(
+	                            'div',
+	                            { className: 'button' },
+	                            'Подробнее'
+	                        )
 	                    )
 	                )
 	            )
@@ -38616,7 +38624,7 @@
 	                        ),
 	                        _react2["default"].createElement(
 	                            "button",
-	                            { id: "orderform-button", className: "product-info-button product-order-button" },
+	                            { id: "orderform-button", className: "order-info-button" },
 	                            "Отправить"
 	                        ),
 	                        _react2["default"].createElement(

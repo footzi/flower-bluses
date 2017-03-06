@@ -13,7 +13,7 @@ let Index = React.createClass({
             <p className="stock-text">Большинство изделий я делаю на заказ, но есть и те которые Вы можете преобрести в самые короткие сроки, не дожидаясь их изготовления. Вот самые свежие готовые новинки В НАЛИЧИИ, успейте сделать заказ и уже через пару* дней Вы его получите!</p>
             <div className="stock-images">
                 <ul className="bxslider">
-                    <li className="slide"><img className="stock-img" src="images/1.jpg" /></li>
+                    <li className="slide"><a href="/catalog/polimer/inStock/1-1"><img className="stock-img" src="images/1.jpg" /></a></li>
                     <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
                     <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
                     <li className="slide"><img className="stock-img" src="images/4.jpg" /></li>
@@ -56,7 +56,7 @@ let Index = React.createClass({
                     <div className="news-details-text">У вас будет возможность тратить столько часов на одно посещение, сколько вам необходимо. И Вы можете придти в указанные дни в удобное для вас время</div>
                 </div>
                 <div className="clear"></div>
-                <div className="button">Подробнее</div>
+                 <Link to="/lessons"><div className="button">Подробнее</div></Link>
             </div>
         </div>
         
