@@ -16,7 +16,7 @@ let InStock = React.createClass({
         this.context.router.push(`/catalog/polimer/inStock/${productId}`);
     },
     render () {
-        
+
         
 
         let { products } = this.state;
