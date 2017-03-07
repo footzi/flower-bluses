@@ -255,6 +255,12 @@
   position: absolute;
 }
 
+.pages {
+  width: 30px;
+  margin: 0 auto;
+  position: relative;
+  outline: 2px solid red;
+}
 
 
 

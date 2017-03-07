@@ -22,7 +22,8 @@
 .product-preview:nth-child(3n){margin-right:0}.product-preview-img{box-shadow:3px 3px rgba(0,0,0,0.302);width:30%}
 .product-preview-name{color:#6d6d6d;display:block;margin-top:2%}.product-preview-cost{color:#6d6d6d;display:block;margin-top:2%}
 .product-preview-button-img{cursor:pointer;margin-top:2%;margin-left:-15%;position:absolute;color:#705290;font-family:PhillippScript;font-size:1.2vw;display:inline;width:25%;border:2px solid #705290;border-radius:5px 5px;padding-top:.7%}
-.product-preview-instock{width:10%;margin-left:32%;position:absolute}#b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
+.product-preview-instock{width:10%;margin-left:32%;position:absolute}.pages{margin:0 auto;position:absolute;outline:2px solid red}
+#b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
 #b-popup .b-popup-content{background-image:url("../images/catalog/popup-fon.png");background-size:100% 100%;margin:4% auto 0 auto;width:65%;border-radius:1%;padding:0 2% 1% 2%}
 #b-popup-close-button{cursor:pointer;text-align:right;padding-top:2%}#product-info{text-align:center;margin-top:2.5%;width:45%;outline:0 solid red;float:right}
 .product-info-button{cursor:pointer;margin:15% auto 0 auto;display:inline-block;width:40%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}

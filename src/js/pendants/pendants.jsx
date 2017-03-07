@@ -1,6 +1,7 @@
 import React from 'react';
 import products from "./../Data/data-pendants.js";
 import ProductPreview from './../ProductPreview.jsx';
+import { Link } from 'react-router';
 
 let Pendants = React.createClass({
     contextTypes: {
@@ -37,6 +38,10 @@ let Pendants = React.createClass({
 
                 )}
             
+            </div>
+            <div className="pages">
+                <Link to="#" className="pages-link">1</Link>
+                <Link to="#" className="pages-link">2</Link>
             </div>
 
                 <div >
