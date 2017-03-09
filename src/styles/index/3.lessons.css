@@ -43,6 +43,7 @@
 	border: 1px solid #705290;
 	border-radius: 10px;
 	padding-top: 0.7%;
+	padding-bottom: 0.4%;
 	font-family: PhillippScript;
 	font-size: 1.5vw;
 	color: #705290;	
@@ -79,24 +80,25 @@
 	width: 13%;
 }
 
-.lesson-info{
+.lesson-info {
 	position: absolute;
 	margin-left: 18%;
 	display: inline-block;
 
 }
-.lesson-name{
+.lesson-name {
 	font-size: 2vw;
 	font-family: PhillippScript;
 	color: #705290;	
 }
 
-.lesson-more{
+.lesson-more {
 	margin-top: 2%;
 	font-size: 1.2vw;
 
 }
-.lesson-button{
+.lesson-button {
+	padding-bottom: 0.6%;
 	margin: 10.5% 0 0 83%;
 	float: none;
 }

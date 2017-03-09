@@ -27,10 +27,11 @@ let Product = React.createClass({
             
             <div id="b-popup">
                 <div className="b-popup-content">
-                    <div id="b-popup-close-button" onClick={close}>
-                        <img src="/./images/catalog/close.png" />
-                    </div>  
+                     
                     <div id="product">
+                        <div id="b-popup-close-button" onClick={close}>
+                            <img src="/./images/catalog/close.png" />
+                        </div> 
                         <div id="product-info">   
                             <p className="product-info-name">{this.props.name}</p>
                             <p className="product-info-text">{this.props.text}</p>
@@ -49,10 +50,13 @@ let Product = React.createClass({
                     
                     </div>
                     <div id="order">
+                        <div id="b-popup-close-button" className="order-close-button" onClick={close}>
+                            <img src="/./images/catalog/close.png" />
+                        </div> 
                         <div className="order-title">ЗАКАЗАТЬ / УТОЧНИТЬ
                         </div>
                         <div className="order-image">
-                            <img src={this.props.imagePreview}/>
+                            <img src={this.props.image1}/>
                         </div>
 
                         <form id="orderform" method="post">
@@ -66,8 +70,11 @@ let Product = React.createClass({
                                 <input className="order-form-input" name="email" type="email" required placeholder="Ваш e-mail:" /> 
                                 <textarea className="order-form-input order-form-input-message" name="info" type="text" placeholder="Сообщение:" />
                             </div>
-                             <button id="orderform-button" className="order-info-button">Отправить</button>
-                             <button onClick={back}>Назад</button>
+                             <div className="order-buttons">
+                                <span className="order-buttons-back" onClick={back}>◄ назад</span>
+                                <button id="orderform-button" className="order-buttons-send">Отправить</button>
+
+                             </div>
                         </form>
                     </div>
                 </div>

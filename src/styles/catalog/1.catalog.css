@@ -285,18 +285,28 @@
     z-index:3;
 }
 #b-popup .b-popup-content{
-    /*background-color: #e6e2eb;*/
-    background-image: url("../images/catalog/popup-fon.png");
-    background-size: 100% 100%;
     margin:4% auto 0 auto;
     width:65%;
-    border-radius:1%;
-    padding: 0 2% 1% 2%;
 }
 #b-popup-close-button {
   cursor: pointer;
   text-align: right;
   padding-top: 2%;
+}
+#b-popup-close-button img {
+  width: 1.5%;
+}
+.order-close-button {
+  position: relative;
+  right: -3.5%;
+}
+.order-close-button img {
+  width: 1.7%;
+}
+#product {
+   background-image: url("../images/catalog/product-fon.png");
+   background-size: 100% 100%;
+   padding: 0 2% 2% 2%;
 }
 #product-info{
   text-align: center;
@@ -338,7 +348,10 @@
   width:52%;
 }
 #order {
-  width: 100%;
+  background-image: url("../images/catalog/orderform-fon.png");
+  background-size: 100% 100%;
+  padding: 0 5% 2% 5%;
+  width: 90.1%;
   display: none;
 }
 .order-title {
@@ -354,14 +367,14 @@
   float: left;
   display:inline-table; 
   outline: 0px solid black;
-  width: 20%;
+  width: 28%;
 }
 .order-image img {
   width: 100%;
 }
 .order-form {
   height: 100%;
-  width: 77%;
+  width: 69%;
   float: right;
   display:inline-table;
   outline: 0px solid red;
@@ -376,27 +389,42 @@
   height: 30%;
   padding-left: 0.5%;
   display: block;
-  margin-bottom: 2.8%;
+  margin-bottom: 3.2%;
 }
 
 .order-form-input-message{
   position: relative;
-  left: -30%;
+  left: -45%;
   display: block;
-  width: 130%;
+  width: 145%;
   height: 130%;
 }
-.order-info-button{
+.order-buttons {
+  text-align: justify;
+}
+.order-buttons-back {
+  cursor: pointer;
+  font-size: 1vw;
+  position: relative;
+  right: 31%;
+  color:#705290;
+}
+
+.order-buttons-send {
+  cursor: pointer;
+  position: relative;
+  left: 2%;
+  margin:32.7% auto 2% auto;
   background-color: transparent;
   display: inline-block;
-  width: 40%;
+  width: 20%;
   border: 1px solid #705290;
   border-radius: 10px;
   padding-top: 1%;
   font-family: PhillippScript;
   font-size: 2vw;
   color: #705290;
-  margin:29% auto 2% auto;
+  
 }
 .order-form-hide {
   display:none;
