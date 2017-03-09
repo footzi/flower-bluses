@@ -19,6 +19,8 @@ import ProductAll from "./all/product-all.jsx"
 import Pendants from "./pendants/pendants.jsx"
 import ProductPendant from "./pendants/product-pendant.jsx"
 
+import Earrings from "./earrings/earrings.jsx"
+import ProductEarrings from "./earrings/product-earrings.jsx"
 
 
 //import "./Other/jquery.min.js"
@@ -46,7 +48,10 @@ ReactDOM.render (
         </Route>
         <Route path="/catalog/polimer/pendants" component={Pendants} >
         <Route path="/catalog/polimer/pendants/:productId" component={ProductPendant} />
-        
+        </Route>
+
+        <Route path="/catalog/polimer/earrings" component={Earrings} >
+        <Route path="/catalog/polimer/earrings/:productId" component={ProductEarrings} />
         </Route>
         </Route>
     </Router>,

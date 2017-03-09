@@ -43,7 +43,7 @@ let Polimer = React.createClass({
                 <Link to="/catalog/polimer/inStock" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="Link-name">В НАЛИЧИИ</li></Link> 
                 <Link to="/catalog/polimer/all" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="Link-name">ВСЕ</li></Link>
                 <Link to="/catalog/polimer/pendants" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >КУЛОНЫ/ПОДВЕСТКИ</li></Link>
-                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name">СЕРЬГИ</li></Link>
+                <Link to="/catalog/polimer/earrings" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name">СЕРЬГИ</li></Link>
                 <Link to="#" activeClassName="active-link" onClick={this.onClick} className="Link"><li className="Link-name" >КОЛЬЦА</li></Link>
                 <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >БРАСЛЕТЫ</li></Link>
                 <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >БРОШИ/ЗАКОЛКИ</li></Link>
