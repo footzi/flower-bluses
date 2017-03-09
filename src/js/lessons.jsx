@@ -1,5 +1,6 @@
 import React from "react";
 import lessons from "./Data/data-lessons.js";
+import { Link } from "react-router";
 
 let Lessons = React.createClass({
 	contextTypes: {
@@ -11,8 +12,11 @@ let Lessons = React.createClass({
         }
     },
 
-    handlePreviewClick(lessonId) {
-        this.context.router.push(`/lessons/${lessonId}`);
+    // handlePreviewClick(lessonId) {
+    //     this.context.router.push(`/lessons/${lessonId}`);
+    // },
+    handlePreviewClick(imageId) {
+        this.context.router.push(`/lessons/${imageId}`);
     },
 	render () {
         // let pageLink=location.pathname;
@@ -63,6 +67,8 @@ let Lessons = React.createClass({
                     lessons.map(lesson => 
                     <LessonsPreview
                         key={lesson.id}
+                        imageId={lesson}
+                        imageId={this.handlePreviewClick.bind(null, lesson.imageId)}
                         onClick={this.handlePreviewClick.bind(null, lesson.id)}
                         name={lesson.name}
                         image={lesson.image}
@@ -88,15 +94,23 @@ let Lessons = React.createClass({
 
 let LessonsPreview = React.createClass({
 	render() {
+        function close(e) {
+            e.preventDefault();
+            document.getElementById("lessons-image-b-popup").style="display:none";
+         }
              function openPopup(e) {
             e.preventDefault();
             document.getElementById("b-popup").style="display:table"
   }
-		let { name, info, image, duration, level, onClick } = this.props;
+        function openImage(e) {
+            e.preventDefault();
+            document.getElementById("lessons-image-b-popup").style="display:table"
+  }
+		let { name, info, image, duration, level, onClick, imageId} = this.props;
 		return(
 			<div className="lesson">
                
-                    <img className="lesson-img" src={image} />
+                    <img className="lesson-img" src={image} onClick={imageId}/>
                 
                 <div className="lesson-info">
                     <div className="lesson-name">{name}</div>
@@ -109,6 +123,7 @@ let LessonsPreview = React.createClass({
                 <div onClick={onClick}>
                     <div className="lessons-introduction-button lesson-button" onClick={openPopup}>Записаться</div>
                 </div>
+
                 <div>
                      {this.props.children} 
                  </div>

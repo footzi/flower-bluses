@@ -9,6 +9,7 @@ import Contacts from "./contacts.jsx"
 
 import Lessons from "./lessons.jsx"
 import LessonsInfo from "./lessonsInfo.jsx"
+import LessonsImage from "./lessonsImage.jsx"
 
 import InStock from "./inStock/inStock.jsx"
 import ProductInStock from "./inStock/product-inStock.jsx"
@@ -35,6 +36,7 @@ ReactDOM.render (
         <Route path="/contacts" component={Contacts} />
         <Route path="/lessons" component={Lessons} >
         <Route path="/lessons/:lessonId" component={LessonsInfo} />
+        <Route path="/lessons/:imageId" component={LessonsImage} />
         </Route>
         <Route path="/catalog" component={Catalog} />
         <Route path="/catalog/polimer" component={Polimer} >

@@ -1,5 +1,6 @@
 let lessons = [{
 	"id":"1",
+	"imageId":"1",
 	"image":"/images/lessons/1-1.jpg",
 	"name":"Полевой цветок Короставник",
 	"info":" ",

@@ -88,35 +88,39 @@
 
 	var _lessonsInfoJsx2 = _interopRequireDefault(_lessonsInfoJsx);
 
+	var _lessonsImageJsx = __webpack_require__(253);
+
+	var _lessonsImageJsx2 = _interopRequireDefault(_lessonsImageJsx);
+
 	var _inStockInStockJsx = __webpack_require__(245);
 
 	var _inStockInStockJsx2 = _interopRequireDefault(_inStockInStockJsx);
 
-	var _inStockProductInStockJsx = __webpack_require__(253);
+	var _inStockProductInStockJsx = __webpack_require__(254);
 
 	var _inStockProductInStockJsx2 = _interopRequireDefault(_inStockProductInStockJsx);
 
-	var _allAllJsx = __webpack_require__(266);
+	var _allAllJsx = __webpack_require__(267);
 
 	var _allAllJsx2 = _interopRequireDefault(_allAllJsx);
 
-	var _allProductAllJsx = __webpack_require__(268);
+	var _allProductAllJsx = __webpack_require__(269);
 
 	var _allProductAllJsx2 = _interopRequireDefault(_allProductAllJsx);
 
-	var _pendantsPendantsJsx = __webpack_require__(269);
+	var _pendantsPendantsJsx = __webpack_require__(270);
 
 	var _pendantsPendantsJsx2 = _interopRequireDefault(_pendantsPendantsJsx);
 
-	var _pendantsProductPendantJsx = __webpack_require__(271);
+	var _pendantsProductPendantJsx = __webpack_require__(272);
 
 	var _pendantsProductPendantJsx2 = _interopRequireDefault(_pendantsProductPendantJsx);
 
-	var _earringsEarringsJsx = __webpack_require__(272);
+	var _earringsEarringsJsx = __webpack_require__(273);
 
 	var _earringsEarringsJsx2 = _interopRequireDefault(_earringsEarringsJsx);
 
-	var _earringsProductEarringsJsx = __webpack_require__(274);
+	var _earringsProductEarringsJsx = __webpack_require__(275);
 
 	var _earringsProductEarringsJsx2 = _interopRequireDefault(_earringsProductEarringsJsx);
 
@@ -134,7 +138,8 @@
 	    _react2['default'].createElement(
 	        _reactRouter.Route,
 	        { path: '/lessons', component: _lessonsJsx2['default'] },
-	        _react2['default'].createElement(_reactRouter.Route, { path: '/lessons/:lessonId', component: _lessonsInfoJsx2['default'] })
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/lessons/:lessonId', component: _lessonsInfoJsx2['default'] }),
+	        _react2['default'].createElement(_reactRouter.Route, { path: '/lessons/:imageId', component: _lessonsImageJsx2['default'] })
 	    ),
 	    _react2['default'].createElement(_reactRouter.Route, { path: '/catalog', component: _catalogJsx2['default'] }),
 	    _react2['default'].createElement(
@@ -38566,6 +38571,8 @@
 
 	var _DataDataLessonsJs2 = _interopRequireDefault(_DataDataLessonsJs);
 
+	var _reactRouter = __webpack_require__(178);
+
 	var Lessons = _react2["default"].createClass({
 	    displayName: "Lessons",
 
@@ -38578,8 +38585,11 @@
 	        };
 	    },
 
-	    handlePreviewClick: function handlePreviewClick(lessonId) {
-	        this.context.router.push("/lessons/" + lessonId);
+	    // handlePreviewClick(lessonId) {
+	    //     this.context.router.push(`/lessons/${lessonId}`);
+	    // },
+	    handlePreviewClick: function handlePreviewClick(imageId) {
+	        this.context.router.push("/lessons/" + imageId);
 	    },
 	    render: function render() {
 	        var _this = this;
@@ -38674,6 +38684,8 @@
 	                lessons.map(function (lesson) {
 	                    return _react2["default"].createElement(LessonsPreview, {
 	                        key: lesson.id,
+	                        imageId: lesson,
+	                        imageId: _this.handlePreviewClick.bind(null, lesson.imageId),
 	                        onClick: _this.handlePreviewClick.bind(null, lesson.id),
 	                        name: lesson.name,
 	                        image: lesson.image,
@@ -38697,9 +38709,17 @@
 	    displayName: "LessonsPreview",
 
 	    render: function render() {
+	        function close(e) {
+	            e.preventDefault();
+	            document.getElementById("lessons-image-b-popup").style = "display:none";
+	        }
 	        function openPopup(e) {
 	            e.preventDefault();
 	            document.getElementById("b-popup").style = "display:table";
+	        }
+	        function openImage(e) {
+	            e.preventDefault();
+	            document.getElementById("lessons-image-b-popup").style = "display:table";
 	        }
 	        var _props = this.props;
 	        var name = _props.name;
@@ -38708,11 +38728,12 @@
 	        var duration = _props.duration;
 	        var level = _props.level;
 	        var onClick = _props.onClick;
+	        var imageId = _props.imageId;
 
 	        return _react2["default"].createElement(
 	            "div",
 	            { className: "lesson" },
-	            _react2["default"].createElement("img", { className: "lesson-img", src: image }),
+	            _react2["default"].createElement("img", { className: "lesson-img", src: image, onClick: imageId }),
 	            _react2["default"].createElement(
 	                "div",
 	                { className: "lesson-info" },
@@ -38776,6 +38797,7 @@
 	});
 	var lessons = [{
 		"id": "1",
+		"imageId": "1",
 		"image": "/images/lessons/1-1.jpg",
 		"name": "Полевой цветок Короставник",
 		"info": " ",
@@ -38999,17 +39021,109 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _DataDataLessonsJs = __webpack_require__(251);
+
+	var _DataDataLessonsJs2 = _interopRequireDefault(_DataDataLessonsJs);
+
+	var _reactRouter = __webpack_require__(178);
+
+	var LessonsInfo = _react2["default"].createClass({
+	    displayName: "LessonsInfo",
+
+	    getInitialState: function getInitialState() {
+	        var imageId = this.props.params.imageId;
+
+	        return {
+	            lesson: _DataDataLessonsJs2["default"].find(function (lesson) {
+	                return lesson.imageId === imageId;
+	            })
+	        };
+	    },
+	    componentWillReceiveProps: function componentWillReceiveProps(nextProps) {
+	        var prevId = this.props.params.imageId;
+	        var nextId = nextProps.params.imageId;
+
+	        if (prevId !== nextId) {
+	            this.setState({
+	                lesson: _DataDataLessonsJs2["default"].find(function (lesson) {
+	                    return lesson.imageId === nextId;
+	                })
+	            });
+	        }
+	    },
+	    render: function render() {
+	        var lesson = this.state.lesson;
+
+	        function close(e) {
+	            e.preventDefault();
+	            document.getElementById("lessons-b-popup").style = "display:none";
+	        }
+
+	        return _react2["default"].createElement(
+	            "div",
+	            null,
+	            _react2["default"].createElement(
+	                "div",
+	                { id: "lessons-image-b-popup" },
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "lessons-image-b-popup-content" },
+	                    _react2["default"].createElement(
+	                        "div",
+	                        { id: "b-popup-lesson-close-button", onClick: close },
+	                        _react2["default"].createElement(
+	                            _reactRouter.Link,
+	                            { to: "/lessons" },
+	                            _react2["default"].createElement("img", { src: "/./images/catalog/close.png" }),
+	                            " "
+	                        ),
+	                        _react2["default"].createElement("img", { className: "lesson-img", src: image }),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            { className: "lesson-name" },
+	                            name
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+
+	exports["default"] = LessonsInfo;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "lessonsImage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _DataDataInStockJs = __webpack_require__(246);
 
 	var _DataDataInStockJs2 = _interopRequireDefault(_DataDataInStockJs);
 
 	var _reactRouter = __webpack_require__(178);
 
-	var _productJsx = __webpack_require__(254);
+	var _productJsx = __webpack_require__(255);
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
-	var Carousel = __webpack_require__(255).Carousel;
+	var Carousel = __webpack_require__(256).Carousel;
 
 	var ProductInStock = _react2["default"].createClass({
 	    displayName: "ProductInStock",
@@ -39057,7 +39171,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product-inStock.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -39076,7 +39190,7 @@
 
 	var _reactRouter = __webpack_require__(178);
 
-	var Carousel = __webpack_require__(255).Carousel;
+	var Carousel = __webpack_require__(256).Carousel;
 
 	var Product = _react2["default"].createClass({
 	    displayName: "Product",
@@ -39236,18 +39350,18 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	module.exports = {
-	    Carousel: __webpack_require__(256),
-	    Thumbs: __webpack_require__(264)
+	    Carousel: __webpack_require__(257),
+	    Thumbs: __webpack_require__(265)
 	};
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39258,11 +39372,11 @@
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
-	var klass = __webpack_require__(257);
-	var merge = __webpack_require__(259);
-	var CSSTranslate = __webpack_require__(260);
-	var Swipe = __webpack_require__(262);
-	var Thumbs = __webpack_require__(264);
+	var klass = __webpack_require__(258);
+	var merge = __webpack_require__(260);
+	var CSSTranslate = __webpack_require__(261);
+	var Swipe = __webpack_require__(263);
+	var Thumbs = __webpack_require__(265);
 
 	// react-swipe was compiled using babel
 	Swipe = Swipe.default;
@@ -39722,12 +39836,12 @@
 	});
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var classNames = __webpack_require__(258);
+	var classNames = __webpack_require__(259);
 
 	module.exports = {
 	    CAROUSEL: function CAROUSEL(isSlider) {
@@ -39779,7 +39893,7 @@
 	};
 
 /***/ },
-/* 258 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -39833,7 +39947,7 @@
 
 
 /***/ },
-/* 259 */
+/* 260 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39858,12 +39972,12 @@
 	};
 
 /***/ },
-/* 260 */
+/* 261 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var has3d = __webpack_require__(261);
+	var has3d = __webpack_require__(262);
 
 	module.exports = function (position, axis) {
 	    var _has3d = has3d();
@@ -39881,7 +39995,7 @@
 	};
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39917,12 +40031,12 @@
 	};
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(263)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(264)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	  } else if (typeof exports !== "undefined") {
 	    factory(exports, require('./react-swipe'));
 	  } else {
@@ -39951,7 +40065,7 @@
 	});
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
@@ -40144,18 +40258,18 @@
 	});
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
-	var klass = __webpack_require__(257);
-	var has3d = __webpack_require__(261)();
-	var outerWidth = __webpack_require__(265).outerWidth;
-	var CSSTranslate = __webpack_require__(260);
-	var Swipe = __webpack_require__(262);
+	var klass = __webpack_require__(258);
+	var has3d = __webpack_require__(262)();
+	var outerWidth = __webpack_require__(266).outerWidth;
+	var CSSTranslate = __webpack_require__(261);
+	var Swipe = __webpack_require__(263);
 
 	// react-swipe was compiled using babel
 	Swipe = Swipe.default;
@@ -40393,7 +40507,7 @@
 	});
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40409,7 +40523,7 @@
 	};
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40426,7 +40540,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataAllJs = __webpack_require__(267);
+	var _DataDataAllJs = __webpack_require__(268);
 
 	var _DataDataAllJs2 = _interopRequireDefault(_DataDataAllJs);
 
@@ -40487,7 +40601,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "all.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40574,7 +40688,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-all.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40591,17 +40705,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataAllJs = __webpack_require__(267);
+	var _DataDataAllJs = __webpack_require__(268);
 
 	var _DataDataAllJs2 = _interopRequireDefault(_DataDataAllJs);
 
 	var _reactRouter = __webpack_require__(178);
 
-	var _productJsx = __webpack_require__(254);
+	var _productJsx = __webpack_require__(255);
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
-	var Carousel = __webpack_require__(255).Carousel;
+	var Carousel = __webpack_require__(256).Carousel;
 
 	var ProductAll = _react2["default"].createClass({
 	    displayName: "ProductAll",
@@ -40649,7 +40763,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product-all.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40666,7 +40780,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataPendantsJs = __webpack_require__(270);
+	var _DataDataPendantsJs = __webpack_require__(271);
 
 	var _DataDataPendantsJs2 = _interopRequireDefault(_DataDataPendantsJs);
 
@@ -40743,7 +40857,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "pendants.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40830,7 +40944,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-pendants.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40847,15 +40961,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataPendantsJs = __webpack_require__(270);
+	var _DataDataPendantsJs = __webpack_require__(271);
 
 	var _DataDataPendantsJs2 = _interopRequireDefault(_DataDataPendantsJs);
 
-	var _productJsx = __webpack_require__(254);
+	var _productJsx = __webpack_require__(255);
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
-	var Carousel = __webpack_require__(255).Carousel;
+	var Carousel = __webpack_require__(256).Carousel;
 
 	var ProductPendant = _react2["default"].createClass({
 	    displayName: "ProductPendant",
@@ -40903,7 +41017,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product-pendant.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40920,7 +41034,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataEarringsJs = __webpack_require__(273);
+	var _DataDataEarringsJs = __webpack_require__(274);
 
 	var _DataDataEarringsJs2 = _interopRequireDefault(_DataDataEarringsJs);
 
@@ -40983,7 +41097,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "earrings.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -41093,7 +41207,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-earrings.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -41110,15 +41224,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataEarringsJs = __webpack_require__(273);
+	var _DataDataEarringsJs = __webpack_require__(274);
 
 	var _DataDataEarringsJs2 = _interopRequireDefault(_DataDataEarringsJs);
 
-	var _productJsx = __webpack_require__(254);
+	var _productJsx = __webpack_require__(255);
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
-	var Carousel = __webpack_require__(255).Carousel;
+	var Carousel = __webpack_require__(256).Carousel;
 
 	var ProductEarrings = _react2["default"].createClass({
 	    displayName: "ProductEarrings",

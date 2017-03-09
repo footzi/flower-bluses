@@ -103,6 +103,24 @@
 	float: none;
 }
 
+#lessons-image-b-popup{
+    left:0;
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+    z-index:3;
+}
+#lessons-image-b-popup .lessons-image-b-popup-content{
+    background-color: #e6e2eb;
+    background-size: 100% 100%;
+    margin:4% auto 0 auto;
+    width:50%;
+    border-radius:1%;
+    padding: 0 3% 1% 3%;
+}
 
 
 
