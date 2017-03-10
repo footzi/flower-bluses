@@ -12,11 +12,11 @@ let Lessons = React.createClass({
         }
     },
 
-    // handlePreviewClick(lessonId) {
-    //     this.context.router.push(`/lessons/${lessonId}`);
-    // },
-    handlePreviewClick(imageId) {
-        this.context.router.push(`/lessons/${imageId}`);
+    lessonPreviewClick(lessonId) {
+        this.context.router.push(`/lessons/${lessonId}`);
+    },
+    imagePreviewClick(lessonId) {
+        this.context.router.push(`/lessons/picture/${lessonId}`);
     },
 	render () {
         // let pageLink=location.pathname;
@@ -67,11 +67,11 @@ let Lessons = React.createClass({
                     lessons.map(lesson => 
                     <LessonsPreview
                         key={lesson.id}
-                        imageId={lesson}
-                        imageId={this.handlePreviewClick.bind(null, lesson.imageId)}
-                        onClick={this.handlePreviewClick.bind(null, lesson.id)}
+                        imageId={lesson.imageid}
+                        openImage={this.imagePreviewClick.bind(null, lesson.id)}
+                        openPopup={this.lessonPreviewClick.bind(null, lesson.id)}
                         name={lesson.name}
-                        image={lesson.image}
+                        image1={lesson.image1}
                         info={lesson.info}
                         duration={lesson.duration}
                         level={lesson.level}
@@ -94,24 +94,12 @@ let Lessons = React.createClass({
 
 let LessonsPreview = React.createClass({
 	render() {
-        function close(e) {
-            e.preventDefault();
-            document.getElementById("lessons-image-b-popup").style="display:none";
-         }
-             function openPopup(e) {
-            e.preventDefault();
-            document.getElementById("b-popup").style="display:table"
-  }
-        function openImage(e) {
-            e.preventDefault();
-            document.getElementById("lessons-image-b-popup").style="display:table"
-  }
-		let { name, info, image, duration, level, onClick, imageId} = this.props;
+		let { name, info, image1, duration, level, openPopup, openImage } = this.props;
 		return(
 			<div className="lesson">
-               
-                    <img className="lesson-img" src={image} onClick={imageId}/>
-                
+               <div onClick={openImage}>
+                    <img className="lesson-img" src={image1} />
+                </div>
                 <div className="lesson-info">
                     <div className="lesson-name">{name}</div>
                     <div className="lesson-more">
@@ -120,10 +108,7 @@ let LessonsPreview = React.createClass({
                         <div>{level}</div>
                     </div>
                 </div>
-                <div onClick={onClick}>
                     <div className="lessons-introduction-button lesson-button" onClick={openPopup}>Записаться</div>
-                </div>
-
                 <div>
                      {this.props.children} 
                  </div>

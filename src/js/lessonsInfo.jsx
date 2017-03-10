@@ -29,6 +29,7 @@ let LessonsInfo = React.createClass({
        
 		
 		return (
+            
 			<div id="lessons-b-popup">
                 <div className="lessons-b-popup-content">
                     <div id="b-popup-lesson-close-button" onClick={close}>
@@ -41,7 +42,7 @@ let LessonsInfo = React.createClass({
                     <form id="lessonsform" method="post">
                             
                             <div className="lesson-form">
-                                <img src={lesson.image} />
+                                <img src={lesson.image1} />
                                 <div className="lesson-input">
                                     <input className="lesson-form-input" name="product" type="text" readonly placeholder="Название мастер-класса" value={lesson.name}/>
                                     <input className="lesson-form-input" name="name" type="text" required placeholder="Ваше имя:" />
@@ -61,6 +62,8 @@ let LessonsInfo = React.createClass({
 
                 </div>            
 			</div>
+            
+            
 			)
 	}
 });

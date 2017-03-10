@@ -60,3 +60,16 @@ console.log(location.pathname);
         }else (
             document.getElementById("all").style.display="none"
         )
+
+
+
+        {/*<div id="lessons-image-b-popup">
+                <div className="lessons-image-b-popup-content">
+                    <div id="b-popup-lesson-close-button" onClick={close}>
+                        <Link to="/lessons"><img src="/./images/catalog/close.png" /> </Link>
+                        <img className="lesson-img" src={lesson.image} />
+                        <div className="lesson-name">{lesson.name}</div>
+
+                    </div>
+                </div>
+            </div>   */} 

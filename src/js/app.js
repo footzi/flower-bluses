@@ -36,8 +36,9 @@ ReactDOM.render (
         <Route path="/contacts" component={Contacts} />
         <Route path="/lessons" component={Lessons} >
         <Route path="/lessons/:lessonId" component={LessonsInfo} />
-        <Route path="/lessons/:imageId" component={LessonsImage} />
+        <Route path="/lessons/picture/:lessonId" component={LessonsImage} />
         </Route>
+        
         <Route path="/catalog" component={Catalog} />
         <Route path="/catalog/polimer" component={Polimer} >
         
