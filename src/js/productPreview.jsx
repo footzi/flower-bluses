@@ -9,7 +9,7 @@ let ProductPreview = React.createClass ({
     
 		let {name, text, cost, instock, imagePreview, onClick} = this.props;
 		return (
-		<div className="product-preview">
+		<div className="product-preview" onClick={openPopup}>
             <div className="product-preview-thumbs">
                 <img className="product-preview-img" src={imagePreview} />
                 <div className="product-preview-caption">

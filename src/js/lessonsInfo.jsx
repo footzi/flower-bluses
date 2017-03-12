@@ -1,6 +1,7 @@
 import React from "react";
 import lessons from "./Data/data-lessons.js";
 import { Link } from "react-router";
+import { browserHistory } from 'react-router';
 
 let LessonsInfo = React.createClass({
 	getInitialState() {

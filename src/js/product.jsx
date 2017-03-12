@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 var Carousel = require('react-responsive-carousel').Carousel;
+import { browserHistory } from 'react-router';
 
 let Product = React.createClass({
     
@@ -8,10 +9,10 @@ let Product = React.createClass({
         let { product } = this.props;
         let linkProduct = location.href;
 
-        function close(e) {
-            e.preventDefault();
-            document.getElementById("b-popup").style="display:none";
-         }
+        // function close(e) {
+        //     e.preventDefault();
+        //     document.getElementById("b-popup").style="display:none";
+        //  }
         function order(e) {
             e.preventDefault();
             document.getElementById("order").style="display:table";
@@ -29,7 +30,7 @@ let Product = React.createClass({
                 <div className="b-popup-content">
                      
                     <div id="product">
-                        <div id="b-popup-close-button" onClick={close}>
+                        <div id="b-popup-close-button" onClick={browserHistory.goBack}>
                             <img src="/./images/catalog/close.png" />
                         </div> 
                         <div id="product-info">   
@@ -50,7 +51,7 @@ let Product = React.createClass({
                     
                     </div>
                     <div id="order">
-                        <div id="b-popup-close-button" className="order-close-button" onClick={close}>
+                        <div id="b-popup-close-button" className="order-close-button" onClick={browserHistory.goBack}>
                             <img src="/./images/catalog/close.png" />
                         </div> 
                         <div className="order-title">ЗАКАЗАТЬ / УТОЧНИТЬ

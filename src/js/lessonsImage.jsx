@@ -1,8 +1,8 @@
 import React from "react";
 import lessons from "./Data/data-lessons.js";
 import { Link } from "react-router";
-var Carousel = require('react-responsive-carousel').Carousel;
-import $ from "jquery";
+import { browserHistory } from 'react-router';
+
 let LessonsImage = React.createClass({
 	getInitialState() {
         let { lessonId } = this.props.params;
@@ -28,10 +28,6 @@ let LessonsImage = React.createClass({
             e.preventDefault();
             document.getElementById("lessons-image-b-popup").style="display:none";
          }
-         
-       
-		      
-
 		return (
             
 			<div>
@@ -42,23 +38,12 @@ let LessonsImage = React.createClass({
                     </div>
                     {lesson.name}
                     <div className="product-carousel">
-                        {/*<ul className="bxslider-lesson">
-                            <li><img src={lesson.image1} /></li>
-                            <li><img src={lesson.image2} /></li>
-                            <li><img src={lesson.image3} /></li>
-                        </ul>
-                        <div id="bx-pager">
-                            <a data-slide-index="0" href=""><img src={lesson.image1} /></a>
-                            <a data-slide-index="1" href=""><img src={lesson.image2} /></a>
-                            <a data-slide-index="2" href=""><img src={lesson.image3} /></a>
-                        </div>*/}
-                        <div id="photo-big">
+                      
+                        <div id="photo-big" >
+                            <img src={lesson.image1} />
                             <img src={lesson.image1} />
                         </div>
 
-                        <div id="photo-small">
-                            <img src={lesson.image2} />
-                        </div>
 
                     </div>
                 </div>
@@ -68,16 +53,6 @@ let LessonsImage = React.createClass({
 	}
 });
 
-let photoBig = document.getElementById("photo-big")
-let photoSmall = document.getElementById("photo-small")
 
-photoSmall.addEventListener("click", function () {
-    if (photoBig.getAttribute("src")=="{lesson.image1}") {
-        console.log("ok")
-    }
-})
-// $(".photo-small").bind("click", function() {
-//       $(".photo-big").attr("src","{lesson.image2}");
-// });
 
 export default LessonsImage;

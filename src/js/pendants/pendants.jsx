@@ -42,6 +42,7 @@ let Pendants = React.createClass({
             <div className="pages">
                 <Link to="#" className="pages-link">1</Link>
                 <Link to="#" className="pages-link">2</Link>
+                <Link to="#" className="pages-link">3</Link>
             </div>
 
                 <div >

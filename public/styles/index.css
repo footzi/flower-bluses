@@ -47,7 +47,7 @@ nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.
 #b-popup-lesson-close-button img{width:1.5%}.lesson-input{margin-left:36%;display:inline-block;width:62.5%}
 .lesson-title{margin-bottom:2.5%;color:#705290;font-size:1.3vw}.lesson-form img{position:absolute;display:inline-block;width:17%}
 .lesson-form-input{background-color:transparent;border:1px solid #705290;color:#705290;font-size:1vw;width:100%;display:block;margin-bottom:2.8%;padding-left:2%;padding-top:2%;padding-bottom:2%}
-.lesson-form-input-date{margin-bottom:0;padding-left:1%;width:102.5%;color:#888}.lesson-form-input-message{margin-top:2%;position:relative;right:57.9%;display:block;width:159.5%;padding:.5% 0 26% .5%;margin-bottom:0}
+.lesson-form-input-date{margin-bottom:0;padding-left:1%;width:102.5%;color:#888}.lesson-form-input-message{font-family:Arial,Helvetica,sans-serif;margin-top:2%;position:relative;right:57.9%;display:block;width:159.5%;padding:.5% 0 26% .5%;margin-bottom:0}
 .lesson-form-button{margin-top:1%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:1.7vw;color:#705290;width:20%;background-color:transparent}
 @media(max-width:640px){body{background-image:url("../images/fon640.jpg");background-repeat:no-repeat;background-size:cover}
 nav{display:none}.stock{background-image:url("../images/fon2-640.png");margin-top:-8%;padding-top:21%}
