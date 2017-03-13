@@ -22,12 +22,13 @@ let LessonsInfo = React.createClass({
         }
     },
 	render () {
+
         let { lesson }=this.state;
 		function close(e) {
             e.preventDefault();
             document.getElementById("lessons-b-popup").style="display:none";
          }
-       
+      
 		
 		return (
             

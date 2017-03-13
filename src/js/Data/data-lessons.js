@@ -1,8 +1,8 @@
 let lessons = [{
 	"id":"1",
-	"image1":"/images/lessons/1-1.jpg",
-	"image2":"/images/lessons/1.jpg",
-	"image3":"/images/lessons/1-1.jpg",
+	"image1":"/images/lessons/1.jpg",
+	"image2":"/images/lessons/2.jpg",
+	"image3":"/images/lessons/3.jpg",
 
 	"name":"Полевой цветок Короставник",
 	"info":" ",

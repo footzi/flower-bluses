@@ -2,8 +2,26 @@ import React from "react";
 import lessons from "./Data/data-lessons.js";
 import { Link } from "react-router";
 import { browserHistory } from 'react-router';
+import $ from "jquery";
 
 let LessonsImage = React.createClass({
+    componentDidMount() {
+        let photoBig=document.getElementById('photo-big-img').src
+        let photoSmall1=document.getElementById('photo-small-1').src
+        let photoSmall2=document.getElementById('photo-small-2').src
+        let photoSmall3=document.getElementById('photo-small-3').src
+        $("#photo-small-1").bind("click", function() {
+            $("#photo-big-img").attr("src", photoSmall1);
+        });
+        $("#photo-small-2").bind("click", function() {
+            $("#photo-big-img").attr("src", photoSmall2);
+        });
+        $("#photo-small-3").bind("click", function() {
+            $("#photo-big-img").attr("src", photoSmall3);
+        });
+
+
+    },
 	getInitialState() {
         let { lessonId } = this.props.params;
 
@@ -21,10 +39,8 @@ let LessonsImage = React.createClass({
             });
         }
     },
+
 	render () {
-       
-
-
         let { lesson }=this.state;
 		function close(e) {
             e.preventDefault();
@@ -41,9 +57,13 @@ let LessonsImage = React.createClass({
                     {lesson.name}
                     <div className="product-carousel">
                       
-                        <div id="photo-big" >
-                            <img id="1" src={lesson.image1} />
-                            <img id="2" src={lesson.image1} />
+                       <div className="photo-big" >
+                            <img id="photo-big-img" src={lesson.image1} />
+                        </div>
+                        <div className="photo-small">
+                            <img id="photo-small-1" src={lesson.image1} />
+                            <img id="photo-small-2" src={lesson.image2} />
+                            <img id="photo-small-3" src={lesson.image3} />
                         </div>
 
 

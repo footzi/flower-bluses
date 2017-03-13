@@ -26,6 +26,7 @@ let Lessons = React.createClass({
         //  }
         document.body.style.backgroundImage="url(/images/fon-lessons.jpg)"
         document.getElementById("footer").style.marginTop="3.1%"
+         
 
 		let { lessons } = this.state;
 		return (
@@ -94,11 +95,11 @@ let Lessons = React.createClass({
 
 let LessonsPreview = React.createClass({
 	render() {
-		let { name, info, image1, duration, level, openPopup, openImage } = this.props;
+		let { name, info, image1, duration, level, openPopup, openImage} = this.props;
 		return(
 			<div className="lesson">
                <div onClick={openImage}>
-                    <img className="lesson-img" src={image1} />
+                    <img className="lesson-img" src={image1}/>
                 </div>
                 <div className="lesson-info">
                     <div className="lesson-name">{name}</div>

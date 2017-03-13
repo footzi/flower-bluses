@@ -219,5 +219,11 @@
     width: 20%;
     background-color: transparent;
 }
-
+.photo-small {
+	width:100%;
+}
+.photo-small img {
+	width: 20%;
+	margin-right: 5%;
+}
 
