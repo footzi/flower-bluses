@@ -22,6 +22,8 @@ let LessonsImage = React.createClass({
         }
     },
 	render () {
+       
+
 
         let { lesson }=this.state;
 		function close(e) {
@@ -40,8 +42,8 @@ let LessonsImage = React.createClass({
                     <div className="product-carousel">
                       
                         <div id="photo-big" >
-                            <img src={lesson.image1} />
-                            <img src={lesson.image1} />
+                            <img id="1" src={lesson.image1} />
+                            <img id="2" src={lesson.image1} />
                         </div>
 
 

@@ -20,12 +20,12 @@ let Polimer = React.createClass({
     //     }
     // },
     render () {
-        let Page=location.pathname;
-        let inStock="catalog/polimer"
+        // let Page=location.pathname;
+        // let inStock="catalog/polimer"
 
-        if(Page.indexOf(inStock)) {
-            $("#all").css({"display":"none"})
-        }
+        // if(Page.indexOf(inStock)) {
+        //     $("#all").css({"display":"none"})
+        // }
         
         return (
 <div className="catalog-list">
@@ -51,9 +51,9 @@ let Polimer = React.createClass({
             </ul>
     </div>
 
-    <div  id="all" /*className={this.state.shouldHide ? 'hidden' : ''} */>
+    {/*<div  id="all" >
        <InStock />
-    </div>
+    </div> */}
     
     <div>
         {this.props.children}

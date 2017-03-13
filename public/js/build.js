@@ -27129,12 +27129,12 @@
 	    //     }
 	    // },
 	    render: function render() {
-	        var Page = location.pathname;
-	        var inStock = "catalog/polimer";
+	        // let Page=location.pathname;
+	        // let inStock="catalog/polimer"
 
-	        if (Page.indexOf(inStock)) {
-	            (0, _jquery2['default'])("#all").css({ "display": "none" });
-	        }
+	        // if(Page.indexOf(inStock)) {
+	        //     $("#all").css({"display":"none"})
+	        // }
 
 	        return _react2['default'].createElement(
 	            'div',
@@ -27237,11 +27237,6 @@
 	            ),
 	            _react2['default'].createElement(
 	                'div',
-	                { id: 'all' /*className={this.state.shouldHide ? 'hidden' : ''} */ },
-	                _react2['default'].createElement(_inStockInStockJsx2['default'], null)
-	            ),
-	            _react2['default'].createElement(
-	                'div',
 	                null,
 	                this.props.children
 	            )
@@ -27251,6 +27246,9 @@
 
 	exports['default'] = Polimer;
 	module.exports = exports['default'];
+	/*<div  id="all" >
+	  <InStock />
+	</div> */
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "polimer.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -38501,8 +38499,8 @@
 	                        _react2["default"].createElement(
 	                            "div",
 	                            { id: "photo-big" },
-	                            _react2["default"].createElement("img", { src: lesson.image1 }),
-	                            _react2["default"].createElement("img", { src: lesson.image1 })
+	                            _react2["default"].createElement("img", { id: "1", src: lesson.image1 }),
+	                            _react2["default"].createElement("img", { id: "2", src: lesson.image1 })
 	                        )
 	                    )
 	                )
@@ -40546,7 +40544,7 @@
 	    "id": "2-2",
 	    "name": "Серьги 2",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 2.jpg",
 	    "image1": "/images/catalog/earrings/серьги 2.png",
 	    "image2": "/images/catalog/earrings/серьги 2.1.png",

@@ -74,3 +74,26 @@ console.log(location.pathname);
                     </div>
                 </div>
             </div>   */} 
+
+
+let img1 = document.getElementById('1').src
+ let img2 = document.getElementById('2').src
+ let img3 = document.getElementById('3').src
+
+
+// function click () {
+// 	console.log("ok")
+// }
+
+// document.getElementById("2").onclick = function() {
+// 		if (img2 != img1)
+// 			img1 = document.getElementById('2').src
+// }
+
+
+$("#2").bind("click", function() {
+      $("#1").attr("src", img2);
+});
+$("#3").bind("click", function() {
+      $("#1").attr("src",img3);
+});

@@ -103,7 +103,6 @@
 
   .carousel.carousel-slider {
     width:70%;
-    outline:2px solid red;
     position: relative;
     margin: 0;
     overflow: hidden; }
