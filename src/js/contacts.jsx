@@ -30,7 +30,7 @@ let Contacts = React.createClass({
 		return (
 			
 			<div className="contacts">
-				<div className="main-title">Контакты</div>
+				<h1 className="main-title">Контакты</h1>
 				<div className="contacts-form">
 					<form id="contactsform" method="post">
 						<div className="contacts-form-adress">

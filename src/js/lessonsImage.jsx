@@ -57,7 +57,7 @@ let LessonsImage = React.createClass({
                     <div id="b-popup-lesson-close-button" onClick={close}>
                         <Link to="/lessons"><img src="/./images/catalog/close.png" /> </Link>
                     </div>
-                    <div className="lessons-image-name">{lesson.name} </div>
+                    <h1 className="lessons-image-name">{lesson.name} </h1>
                    
                     
                     <div className="lessons-image-photo-big" >

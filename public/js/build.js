@@ -26731,7 +26731,7 @@
 	                'div',
 	                { className: 'stock' },
 	                _react2['default'].createElement(
-	                    'h1',
+	                    'h2',
 	                    { className: 'stock-title' },
 	                    'УКРАШЕНИЯ В НАЛИЧИИ:'
 	                ),
@@ -26844,7 +26844,7 @@
 	                'div',
 	                { className: 'news' },
 	                _react2['default'].createElement(
-	                    'h1',
+	                    'h2',
 	                    { className: 'stock-title' },
 	                    'БЛИЖАЙШИЕ МАСТЕР-КЛАССЫ:'
 	                ),
@@ -26946,7 +26946,7 @@
 	                    "ДОБРО ПОЖАЛОВАТЬ!"
 	                ),
 	                _react2["default"].createElement(
-	                    "div",
+	                    "h1",
 	                    { className: "catalog-introduction" },
 	                    "Здесь Вы найдете нежные и изящные украшения и цветочные композиции ручной работы, ",
 	                    _react2["default"].createElement("br", null),
@@ -27012,7 +27012,7 @@
 	                { className: "catalog-info" },
 	                _react2["default"].createElement("img", { className: "catalog-butterfly-img catalog-info-butterfly1", src: "../images/catalog/catalog-butterfly1.png" }),
 	                _react2["default"].createElement(
-	                    "h1",
+	                    "h2",
 	                    { className: "catalog-info-title" },
 	                    "ПОЛИМЕРНАЯ ГЛИНА"
 	                ),
@@ -27022,7 +27022,7 @@
 	                    "В своей работе я использую японские глины: Modena, Modena Soft, Clay Craft By Deco; и тайские: Modern, Bella Rosa. Эти глины позволяют тонко раскатываться,  создавать на своей поверхности  фактуру живых лепестков и листьев.  Они высыхают на воздухе без специального нагрева. Необходимый цвет и оттенки цветам из полимерных глин придаются расписыванием и добавлением в глину масляных красок или пастели. Все цветочные композиции в украшениях покрыты влагостойким, защитным лаком. Но длительный контакт таких украшений с водой все таки не рекомендуется. Для украшений я использую в основном фурнитуру гипоаллергенную, с родиевым покрытием, производства Чехии."
 	                ),
 	                _react2["default"].createElement(
-	                    "h2",
+	                    "h3",
 	                    { className: "catalog-info-recomendation" },
 	                    "Рекомендации по уходу"
 	                ),
@@ -27134,12 +27134,12 @@
 	                { className: 'catalog-polimer' },
 	                _react2['default'].createElement('img', { className: 'catalog-butterfly-img catalog-polimer-butterfly1', src: '/../images/catalog/catalog-butterfly1.png' }),
 	                _react2['default'].createElement(
-	                    'p',
+	                    'h1',
 	                    { className: 'catalog-title' },
 	                    'ПОЛИМЕРНАЯ ГЛИНА'
 	                ),
 	                _react2['default'].createElement(
-	                    'p',
+	                    'h2',
 	                    { className: 'main-introduction catalog-polimer-introduction' },
 	                    'Цветочные украшения из полимерной глины обладают необычайной легкостью и реалистичностью. Благодаря этим двум качествам цветы ручной работы пользуются большой популярностью среди женского населения. Многообразие цветов и исключительно ручная работа позволяет создавать уникальные украшения, которых не будет больше ни у кого. Даже две одинаковые веточки сирени будут выглядеть по-разному и необычайно живо. Украшения ручной работы из самозастывающей полимерной глины — это красивый, эффектный и уникальный подарок. Вам не стоит бояться, что вы можете подарить то, что уже есть у человека. Любое цветочное украшение будет уникальным!'
 	                ),
@@ -37922,7 +37922,7 @@
 				"div",
 				{ className: "contacts" },
 				_react2["default"].createElement(
-					"div",
+					"h1",
 					{ className: "main-title" },
 					"Контакты"
 				),
@@ -38072,7 +38072,7 @@
 	            "div",
 	            { className: "lessons" },
 	            _react2["default"].createElement(
-	                "div",
+	                "h1",
 	                { className: "lessons-title" },
 	                "МАСТЕР-КЛАССЫ:"
 	            ),
@@ -38582,7 +38582,7 @@
 	                        )
 	                    ),
 	                    _react2["default"].createElement(
-	                        "div",
+	                        "h1",
 	                        { className: "lessons-image-name" },
 	                        lesson.name,
 	                        " "
@@ -38772,12 +38772,12 @@
 	                        "div",
 	                        { id: "product-info" },
 	                        _react2["default"].createElement(
-	                            "p",
+	                            "h1",
 	                            { className: "product-info-name" },
 	                            this.props.name
 	                        ),
 	                        _react2["default"].createElement(
-	                            "p",
+	                            "h2",
 	                            { className: "product-info-text" },
 	                            this.props.text
 	                        ),

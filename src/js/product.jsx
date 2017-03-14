@@ -58,8 +58,8 @@ let Product = React.createClass({
                             <img src="/./images/catalog/close.png" />
                         </div> 
                         <div id="product-info">   
-                            <p className="product-info-name">{this.props.name}</p>
-                            <p className="product-info-text">{this.props.text}</p>
+                            <h1 className="product-info-name">{this.props.name}</h1>
+                            <h2 className="product-info-text">{this.props.text}</h2>
                             <div className="product-info-button" onClick={order}>Заказать</div>
                         </div>
 

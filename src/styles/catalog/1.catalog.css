@@ -105,6 +105,7 @@
 }
 .catalog-info-recomendation {
   margin-top: 3%;
+  margin-bottom: 0;
   font-size: 1.7vw;
   text-decoration: underline;
 }

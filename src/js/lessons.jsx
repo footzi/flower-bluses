@@ -31,7 +31,7 @@ let Lessons = React.createClass({
 		let { lessons } = this.state;
 		return (
 			<div className="lessons">
-                <div className="lessons-title">МАСТЕР-КЛАССЫ:</div>
+                <h1 className="lessons-title">МАСТЕР-КЛАССЫ:</h1>
                 <div className="lessons-introduction">
                     <div className="lessons-introduction-next-date">Ближайшие даты проведения обучения</div>
                     <div className="lessons-introduction-date">13, 19, 25 марта</div>
