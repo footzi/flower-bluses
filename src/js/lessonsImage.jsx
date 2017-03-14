@@ -6,20 +6,23 @@ import $ from "jquery";
 
 let LessonsImage = React.createClass({
     componentDidMount() {
-        let photoBig=document.getElementById('photo-big-img').src
-        let photoSmall1=document.getElementById('photo-small-1').src
-        let photoSmall2=document.getElementById('photo-small-2').src
-        let photoSmall3=document.getElementById('photo-small-3').src
-        $("#photo-small-1").bind("click", function() {
-            $("#photo-big-img").attr("src", photoSmall1);
+        let photoSmall1=document.getElementById('lessons-image-photo-small-1').src
+        let photoSmall2=document.getElementById('lessons-image-photo-small-2').src
+        let photoSmall3=document.getElementById('lessons-image-photo-small-3').src
+        $("#lessons-image-photo-small-1").bind("click", function() {
+            $("#lessons-image-photo-big-img").attr("src", photoSmall1);
         });
-        $("#photo-small-2").bind("click", function() {
-            $("#photo-big-img").attr("src", photoSmall2);
+        $("#lessons-image-photo-small-2").bind("click", function() {
+            $("#lessons-image-photo-big-img").attr("src", photoSmall2);
         });
-        $("#photo-small-3").bind("click", function() {
-            $("#photo-big-img").attr("src", photoSmall3);
+        $("#lessons-image-photo-small-3").bind("click", function() {
+            $("#lessons-image-photo-big-img").attr("src", photoSmall3);
         });
 
+        if ($("#lessons-image-photo-small-3").attr("src")==" ") {
+            $("#lessons-image-photo-small-3").hide()
+        }
+        
 
     },
 	getInitialState() {
@@ -54,20 +57,20 @@ let LessonsImage = React.createClass({
                     <div id="b-popup-lesson-close-button" onClick={close}>
                         <Link to="/lessons"><img src="/./images/catalog/close.png" /> </Link>
                     </div>
-                    {lesson.name}
-                    <div className="product-carousel">
-                      
-                       <div className="photo-big" >
-                            <img id="photo-big-img" src={lesson.image1} />
-                        </div>
-                        <div className="photo-small">
-                            <img id="photo-small-1" src={lesson.image1} />
-                            <img id="photo-small-2" src={lesson.image2} />
-                            <img id="photo-small-3" src={lesson.image3} />
-                        </div>
-
-
+                    <div className="lessons-image-name">{lesson.name} </div>
+                   
+                    
+                    <div className="lessons-image-photo-big" >
+                        <img id="lessons-image-photo-big-img" src={lesson.image1} />
                     </div>
+                    <div className="lessons-image-photo-small">
+                        <img  id="lessons-image-photo-small-1" src={lesson.image1} />
+                        <img  id="lessons-image-photo-small-2" src={lesson.image2} />
+                        <img  id="lessons-image-photo-small-3" src={lesson.image3} />
+                    </div>
+
+
+                    
                 </div>
                </div>  
 			</div>

@@ -67,12 +67,3 @@ let Index = React.createClass({
 
 export default Index;
 
-// <div className="carousel-fl" data-flickity='{ "cellAlign": "left", "groupCells": 1, "autoPlay": false, "pauseAutoPlayOnHover": false, "adaptiveHeight": true }'>
-// <div>    
-//                       <div className="carousel-cell"><img className="stock-img" src="images/1.jpg" /></div>
-//                       <div className="carousel-cell"><img className="stock-img" src="images/2.jpg" /></div>
-//                       <div className="carousel-cell"><img className="stock-img" src="images/3.jpg" /></div>
-//                       <div className="carousel-cell"><img className="stock-img" src="images/1.jpg" /></div>
-//                       <div className="carousel-cell"><img className="stock-img" src="images/2.jpg" /></div>
-//                       <div className="carousel-cell"><img className="stock-img" src="images/3.jpg" /></div>
-//                 </div>

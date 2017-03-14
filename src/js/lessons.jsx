@@ -72,7 +72,7 @@ let Lessons = React.createClass({
                         openImage={this.imagePreviewClick.bind(null, lesson.id)}
                         openPopup={this.lessonPreviewClick.bind(null, lesson.id)}
                         name={lesson.name}
-                        image1={lesson.image1}
+                        imagePreview={lesson.imagePreview}
                         info={lesson.info}
                         duration={lesson.duration}
                         level={lesson.level}
@@ -95,11 +95,11 @@ let Lessons = React.createClass({
 
 let LessonsPreview = React.createClass({
 	render() {
-		let { name, info, image1, duration, level, openPopup, openImage} = this.props;
+		let { name, info, imagePreview, duration, level, openPopup, openImage} = this.props;
 		return(
 			<div className="lesson">
                <div onClick={openImage}>
-                    <img className="lesson-img" src={image1}/>
+                    <img className="lesson-img" src={imagePreview}/>
                 </div>
                 <div className="lesson-info">
                     <div className="lesson-name">{name}</div>
