@@ -2,10 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Главная</title>
+    <meta name="yandex-verification" content="dbad30fa38674322" />
+    <meta name="google-site-verification" content="_eAaz3IKaoOfYqTiKOrWGgZvBD7-UqxvBdg8zqfBctw" />
+    <title>Керамическая флористика, украшения, цветы</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/catalog.css">
+
 </head>
 <body>
     <header>
@@ -71,8 +75,31 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/jquery.bxslider.js"></script>
 <script src="/js/e-mail.min.js"></script>
-<script>
 
+<script>
+(function(){
+			emailjs.init("user_jmnF1YC49paVFwkbJRipP");
+		})();
+
+		var orderform = $("#aboutform");
+		orderform.submit(function(event){
+			event.preventDefault();
+
+		// Change to your service ID, or keep using the default service
+		var service_id = "mail_ru";
+		var template_id = "about";
+
+		orderform.find("#aboutform-button").text("Отправляется...");
+		emailjs.sendForm(service_id,template_id,"aboutform")
+			.then(function(){ 
+				console.log("Sent!");
+			orderform.find("#aboutform-button").text("Отправлено");
+			}, function(err) {
+			console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+			orderform.find("#aboutform-button").text("Oшибка");
+			});
+		return false;
+		});
 
 
 // let Page=location.pathname;

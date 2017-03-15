@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 var Carousel = require('react-responsive-carousel').Carousel;
 import { browserHistory } from 'react-router';
-
+import $ from "jquery";
 let Product = React.createClass({
     componentDidMount () {
                     (function(){
@@ -28,25 +28,22 @@ let Product = React.createClass({
                 });
             return false;
             });
+
+            $(".product-info-button").bind("click", function() {
+                $("#product").hide()
+                $("#order").show()
+            })
+
+             $(".order-buttons-back").bind("click", function() {
+                $("#product").show()
+                $("#order").hide()
+            })
+
     },
     render () {
         let { product } = this.props;
         let linkProduct = location.href;
 
-        // function close(e) {
-        //     e.preventDefault();
-        //     document.getElementById("b-popup").style="display:none";
-        //  }
-        function order(e) {
-            e.preventDefault();
-            document.getElementById("order").style="display:table";
-            document.getElementById("product").style="display:none";
-         }
-        function back(e) {
-                    e.preventDefault();
-                    document.getElementById("order").style="display:none";
-                    document.getElementById("product").style="display:table";
-        }
 
         return (
             
@@ -58,9 +55,9 @@ let Product = React.createClass({
                             <img src="/./images/catalog/close.png" />
                         </div> 
                         <div id="product-info">   
-                            <p className="product-info-name">{this.props.name}</p>
-                            <p className="product-info-text">{this.props.text}</p>
-                            <div className="product-info-button" onClick={order}>Заказать</div>
+                            <h1 className="product-info-name">{this.props.name}</h1>
+                            <h2 className="product-info-text">{this.props.text}</h2>
+                            <div className="product-info-button" >Заказать</div>
                         </div>
 
                     <div id="product-carousel">
@@ -96,7 +93,7 @@ let Product = React.createClass({
                                 <textarea className="order-form-input order-form-input-message" name="info" type="text" placeholder="Сообщение:" />
                             </div>
                              <div className="order-buttons">
-                                <span className="order-buttons-back" onClick={back}>◄ назад</span>
+                                <span className="order-buttons-back">◄ назад</span>
                                 <button id="orderform-button" className="order-buttons-send">Отправить</button>
 
                              </div>

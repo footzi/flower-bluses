@@ -27303,7 +27303,7 @@
 	                'div',
 	                { className: 'stock' },
 	                _react2['default'].createElement(
-	                    'h1',
+	                    'h2',
 	                    { className: 'stock-title' },
 	                    'УКРАШЕНИЯ В НАЛИЧИИ:'
 	                ),
@@ -27365,44 +27365,6 @@
 	                    )
 	                ),
 	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'stock-images-640' },
-	                    _react2['default'].createElement(
-	                        'ul',
-	                        { className: 'bxslider-640' },
-	                        _react2['default'].createElement(
-	                            'li',
-	                            null,
-	                            _react2['default'].createElement('img', { src: 'images/1.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/2.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/3.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/1.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/2.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/3.jpg' })
-	                        )
-	                    )
-	                ),
-	                _react2['default'].createElement(
 	                    _reactRouter.Link,
 	                    { to: '/catalog' },
 	                    _react2['default'].createElement(
@@ -27416,7 +27378,7 @@
 	                'div',
 	                { className: 'news' },
 	                _react2['default'].createElement(
-	                    'h1',
+	                    'h2',
 	                    { className: 'stock-title' },
 	                    'БЛИЖАЙШИЕ МАСТЕР-КЛАССЫ:'
 	                ),
@@ -27518,7 +27480,7 @@
 	                    "ДОБРО ПОЖАЛОВАТЬ!"
 	                ),
 	                _react2["default"].createElement(
-	                    "div",
+	                    "h1",
 	                    { className: "catalog-introduction" },
 	                    "Здесь Вы найдете нежные и изящные украшения и цветочные композиции ручной работы, ",
 	                    _react2["default"].createElement("br", null),
@@ -27584,7 +27546,7 @@
 	                { className: "catalog-info" },
 	                _react2["default"].createElement("img", { className: "catalog-butterfly-img catalog-info-butterfly1", src: "../images/catalog/catalog-butterfly1.png" }),
 	                _react2["default"].createElement(
-	                    "h1",
+	                    "h2",
 	                    { className: "catalog-info-title" },
 	                    "ПОЛИМЕРНАЯ ГЛИНА"
 	                ),
@@ -27594,7 +27556,7 @@
 	                    "В своей работе я использую японские глины: Modena, Modena Soft, Clay Craft By Deco; и тайские: Modern, Bella Rosa. Эти глины позволяют тонко раскатываться,  создавать на своей поверхности  фактуру живых лепестков и листьев.  Они высыхают на воздухе без специального нагрева. Необходимый цвет и оттенки цветам из полимерных глин придаются расписыванием и добавлением в глину масляных красок или пастели. Все цветочные композиции в украшениях покрыты влагостойким, защитным лаком. Но длительный контакт таких украшений с водой все таки не рекомендуется. Для украшений я использую в основном фурнитуру гипоаллергенную, с родиевым покрытием, производства Чехии."
 	                ),
 	                _react2["default"].createElement(
-	                    "h2",
+	                    "h3",
 	                    { className: "catalog-info-recomendation" },
 	                    "Рекомендации по уходу"
 	                ),
@@ -27706,12 +27668,12 @@
 	                { className: 'catalog-polimer' },
 	                _react2['default'].createElement('img', { className: 'catalog-butterfly-img catalog-polimer-butterfly1', src: '/../images/catalog/catalog-butterfly1.png' }),
 	                _react2['default'].createElement(
-	                    'p',
+	                    'h1',
 	                    { className: 'catalog-title' },
 	                    'ПОЛИМЕРНАЯ ГЛИНА'
 	                ),
 	                _react2['default'].createElement(
-	                    'p',
+	                    'h2',
 	                    { className: 'main-introduction catalog-polimer-introduction' },
 	                    'Цветочные украшения из полимерной глины обладают необычайной легкостью и реалистичностью. Благодаря этим двум качествам цветы ручной работы пользуются большой популярностью среди женского населения. Многообразие цветов и исключительно ручная работа позволяет создавать уникальные украшения, которых не будет больше ни у кого. Даже две одинаковые веточки сирени будут выглядеть по-разному и необычайно живо. Украшения ручной работы из самозастывающей полимерной глины — это красивый, эффектный и уникальный подарок. Вам не стоит бояться, что вы можете подарить то, что уже есть у человека. Любое цветочное украшение будет уникальным!'
 	                ),
@@ -38313,30 +38275,6 @@
 	var About = _react2["default"].createClass({
 		displayName: "About",
 
-		ComponentDidMount: function ComponentDidMount() {
-			(function () {
-				emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-			})();
-
-			var orderform = $("#aboutform");
-			orderform.submit(function (event) {
-				event.preventDefault();
-
-				// Change to your service ID, or keep using the default service
-				var service_id = "mail_ru";
-				var template_id = "about";
-
-				orderform.find("#aboutform-button").text("Отправляется...");
-				emailjs.sendForm(service_id, template_id, "aboutform").then(function () {
-					console.log("Sent!");
-					orderform.find("#aboutform-button").text("Отправлено");
-				}, function (err) {
-					console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-					orderform.find("#aboutform-button").text("Oшибка");
-				});
-				return false;
-			});
-		},
 		render: function render() {
 
 			return _react2["default"].createElement(
@@ -38462,29 +38400,34 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _jquery = __webpack_require__(244);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
 	var Contacts = _react2["default"].createClass({
 		displayName: "Contacts",
 
 		ComponentDidMount: function ComponentDidMount() {
-			(function () {
-				emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-			})();
-
-			var orderform = $("#contactsform");
-			orderform.submit(function (event) {
+			var myform = (0, _jquery2["default"])("form#contactsform");
+			myform.submit(function (event) {
 				event.preventDefault();
+
+				var params = myform.serializeArray().reduce(function (obj, item) {
+					obj[item.name] = item.value;
+					return obj;
+				}, {});
 
 				// Change to your service ID, or keep using the default service
 				var service_id = "mail_ru";
-				var template_id = "about";
 
-				orderform.find("#contactsform-button").text("Отправляется...");
-				emailjs.sendForm(service_id, template_id, "contactsform").then(function () {
-					console.log("Sent!");
-					orderform.find("#contactsform-button").text("Отправлено");
+				var template_id = "about";
+				myform.find("#contactsform-button").text("Sending...");
+				emailjs.send(service_id, template_id, params).then(function () {
+					alert("Sent!");
+					myform.find("#contactsform-button").text("Send");
 				}, function (err) {
-					console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-					orderform.find("#contactsform-button").text("Oшибка");
+					alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+					myform.find("#contactsform-button").text("Send");
 				});
 				return false;
 			});
@@ -38494,7 +38437,7 @@
 				"div",
 				{ className: "contacts" },
 				_react2["default"].createElement(
-					"div",
+					"h1",
 					{ className: "main-title" },
 					"Контакты"
 				),
@@ -38503,7 +38446,7 @@
 					{ className: "contacts-form" },
 					_react2["default"].createElement(
 						"form",
-						{ id: "contactsform", method: "post" },
+						{ id: "contactsform" },
 						_react2["default"].createElement(
 							"div",
 							{ className: "contacts-form-adress" },
@@ -38571,7 +38514,7 @@
 						),
 						_react2["default"].createElement(
 							"button",
-							{ id: "contactsform-button", className: "contacts-form-button" },
+							{ id: "contactsform-button", className: "contacts-form-button-send" },
 							"Отправить"
 						)
 					)
@@ -38644,7 +38587,7 @@
 	            "div",
 	            { className: "lessons" },
 	            _react2["default"].createElement(
-	                "div",
+	                "h1",
 	                { className: "lessons-title" },
 	                "МАСТЕР-КЛАССЫ:"
 	            ),
@@ -38919,6 +38862,8 @@
 
 	var _reactRouter = __webpack_require__(178);
 
+	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"ie-array-find-polyfill\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+
 	var LessonsInfo = _react2["default"].createClass({
 	    displayName: "LessonsInfo",
 
@@ -39154,7 +39099,7 @@
 	                        )
 	                    ),
 	                    _react2["default"].createElement(
-	                        "div",
+	                        "h1",
 	                        { className: "lessons-image-name" },
 	                        lesson.name,
 	                        " "
@@ -39277,6 +39222,10 @@
 
 	var _reactRouter = __webpack_require__(178);
 
+	var _jquery = __webpack_require__(244);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
 	var Carousel = __webpack_require__(256).Carousel;
 
 	var Product = _react2["default"].createClass({
@@ -39287,7 +39236,7 @@
 	            emailjs.init("user_jmnF1YC49paVFwkbJRipP");
 	        })();
 
-	        var orderform = $("#orderform");
+	        var orderform = (0, _jquery2["default"])("#orderform");
 	        orderform.submit(function (event) {
 	            event.preventDefault();
 
@@ -39305,26 +39254,21 @@
 	            });
 	            return false;
 	        });
+
+	        (0, _jquery2["default"])(".product-info-button").bind("click", function () {
+	            (0, _jquery2["default"])("#product").hide();
+	            (0, _jquery2["default"])("#order").show();
+	        });
+
+	        (0, _jquery2["default"])(".order-buttons-back").bind("click", function () {
+	            (0, _jquery2["default"])("#product").show();
+	            (0, _jquery2["default"])("#order").hide();
+	        });
 	    },
 	    render: function render() {
 	        var product = this.props.product;
 
 	        var linkProduct = location.href;
-
-	        // function close(e) {
-	        //     e.preventDefault();
-	        //     document.getElementById("b-popup").style="display:none";
-	        //  }
-	        function order(e) {
-	            e.preventDefault();
-	            document.getElementById("order").style = "display:table";
-	            document.getElementById("product").style = "display:none";
-	        }
-	        function back(e) {
-	            e.preventDefault();
-	            document.getElementById("order").style = "display:none";
-	            document.getElementById("product").style = "display:table";
-	        }
 
 	        return _react2["default"].createElement(
 	            "div",
@@ -39344,18 +39288,18 @@
 	                        "div",
 	                        { id: "product-info" },
 	                        _react2["default"].createElement(
-	                            "p",
+	                            "h1",
 	                            { className: "product-info-name" },
 	                            this.props.name
 	                        ),
 	                        _react2["default"].createElement(
-	                            "p",
+	                            "h2",
 	                            { className: "product-info-text" },
 	                            this.props.text
 	                        ),
 	                        _react2["default"].createElement(
 	                            "div",
-	                            { className: "product-info-button", onClick: order },
+	                            { className: "product-info-button" },
 	                            "Заказать"
 	                        )
 	                    ),
@@ -39439,7 +39383,7 @@
 	                            { className: "order-buttons" },
 	                            _react2["default"].createElement(
 	                                "span",
-	                                { className: "order-buttons-back", onClick: back },
+	                                { className: "order-buttons-back" },
 	                                "◄ назад"
 	                            ),
 	                            _react2["default"].createElement(
