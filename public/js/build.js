@@ -26793,44 +26793,6 @@
 	                    )
 	                ),
 	                _react2['default'].createElement(
-	                    'div',
-	                    { className: 'stock-images-640' },
-	                    _react2['default'].createElement(
-	                        'ul',
-	                        { className: 'bxslider-640' },
-	                        _react2['default'].createElement(
-	                            'li',
-	                            null,
-	                            _react2['default'].createElement('img', { src: 'images/1.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/2.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/3.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/1.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/2.jpg' })
-	                        ),
-	                        _react2['default'].createElement(
-	                            'li',
-	                            { className: 'slide' },
-	                            _react2['default'].createElement('img', { className: 'stock-img', src: 'images/3.jpg' })
-	                        )
-	                    )
-	                ),
-	                _react2['default'].createElement(
 	                    _reactRouter.Link,
 	                    { to: '/catalog' },
 	                    _react2['default'].createElement(

@@ -23,16 +23,6 @@ let Index = React.createClass({
                     <li className="slide"><img className="stock-img" src="images/4.jpg" /></li>
                 </ul>
             </div>
-            <div className="stock-images-640">
-                <ul className="bxslider-640">
-                    <li ><img src="images/1.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/1.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
-                </ul>
-            </div>
             <Link to="/catalog"><div className="button">Каталог</div></Link>
         </div>
         <div className="news">

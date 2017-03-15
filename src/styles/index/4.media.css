@@ -5,66 +5,58 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-nav{
+nav {
     display:none;
 }
-.stock{
-    background-image: url("../images/fon2-640.png");
-    margin-top:-8%;
-    padding-top: 21%;
+.header-burgerbutton img {
+    margin:1.5% 2% 0 0;
+    float:right;
+    width:10%;
+}
+main {
+    width:100%;
+    text-align:center;
+    box-sizing:border-box;
+    padding:0 6%;
+}
+.main-title {
+    margin:0;
+    font-size: 5vw;
+    margin-bottom: 12%;
+}
+.main-introduction{
+    margin:0;
+    font-size:4.5vw;
+    text-indent: 5%
+}
+.stock {
 }
 
 .stock-title {
     font-size: 4vw;
     font-weight: 700;
 }
-.stock-images{
-        display: none;
-    }
-
-.stock-images-640{
-    display: block;
-    
+.stock-images {
+     display: none;
 }
+
+
 .img {
     display:none;
 }
-.news{
+.news {
     display:none;
 }
-footer{
+footer {
     display:none;
 }
-main{
-    width:100%;
-    text-align:center;
-    box-sizing:border-box;
-    margin:25% 0 0 0;
-    padding:0 8% 0 8%;
 
-}
-.header-burgerbutton img{
-    margin:1.5% 2% 0 0;
-    float:right;
-    width:10%;
 
-}
-.clear{
+.clear {
     clear: both;
 }
-.title{
-    outline:2px solid red;
-}
-.main-title{
-    margin:0;
-    font-size: 5vw;
-    margin-bottom: 15%;
-}
-.main-introduction{
-    margin:0;
-    font-size:4vw;
-    text-indent: 5%
-}
+
+
 }
 
 
