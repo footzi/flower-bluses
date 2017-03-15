@@ -1,30 +1,32 @@
 import React from 'react';
+import $ from "jquery";
 
 let Contacts = React.createClass({
 	ComponentDidMount () {
-					(function(){
-			emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-		})();
+				var myform = $("form#contactsform");
+myform.submit(function(event){
+	event.preventDefault();
 
-		var orderform = $("#contactsform");
-		orderform.submit(function(event){
-			event.preventDefault();
+	var params = myform.serializeArray().reduce(function(obj, item) {
+     obj[item.name] = item.value;
+     return obj;
+  }, {});
 
-		// Change to your service ID, or keep using the default service
-		var service_id = "mail_ru";
-		var template_id = "about";
+  // Change to your service ID, or keep using the default service
+  var service_id = "mail_ru";
 
-		orderform.find("#contactsform-button").text("Отправляется...");
-		emailjs.sendForm(service_id,template_id,"contactsform")
-			.then(function(){ 
-				console.log("Sent!");
-			orderform.find("#contactsform-button").text("Отправлено");
-			}, function(err) {
-			console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-			orderform.find("#contactsform-button").text("Oшибка");
-			});
-		return false;
-		});
+  var template_id = "about";
+  myform.find("#contactsform-button").text("Sending...");
+  emailjs.send(service_id,template_id,params)
+  	.then(function(){ 
+       alert("Sent!");
+       myform.find("#contactsform-button").text("Send");
+     }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+       myform.find("#contactsform-button").text("Send");
+    });
+  return false;
+});
 	},
 	render () {
 		return (
@@ -32,7 +34,7 @@ let Contacts = React.createClass({
 			<div className="contacts">
 				<h1 className="main-title">Контакты</h1>
 				<div className="contacts-form">
-					<form id="contactsform" method="post">
+					<form id="contactsform">
 						<div className="contacts-form-adress">
 							<label>Ваше имя:</label>
 							<input className="contacts-form-input" name="name" type="text" required/>
@@ -57,7 +59,7 @@ let Contacts = React.createClass({
 							<textarea className="contacts-form-message-textarea" name="message" type="text" required></textarea>
 							
 						</div>
-							<button id="contactsform-button" className="contacts-form-button">Отправить</button>
+							<button id="contactsform-button" className="contacts-form-button-send">Отправить</button>
 						
 					</form>
 				</div>

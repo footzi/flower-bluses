@@ -61,7 +61,7 @@
 .catalog-img-prew {
   width: 48%;
   outline:0px solid red;
-  display:inline-table;
+  display:inline-block;
 }
 .catalog-img-prew-right {
   margin-left: 4%; 
@@ -238,12 +238,11 @@
 .product-preview-button-img{
   cursor: pointer;
   margin-top: 2%;
-  margin-left: -13%;
+  margin-left: 36%;
   position: absolute;
   color:#705290;
   font-family: PhillippScript;
   font-size: 1.2vw;
-  display:inline;
   width:25%;
   border:1px solid #705290;
   border-radius:5px 5px;
@@ -251,8 +250,8 @@
 }
 
 .product-preview-instock {
+  right: 10%;
   width: 10%;
-  margin-left: 32%;
   position: absolute;
 }
 

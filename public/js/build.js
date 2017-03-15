@@ -88,7 +88,7 @@
 
 	var _lessonsInfoJsx2 = _interopRequireDefault(_lessonsInfoJsx);
 
-	var _lessonsImageJsx = __webpack_require__(247);
+	var _lessonsImageJsx = __webpack_require__(248);
 
 	var _lessonsImageJsx2 = _interopRequireDefault(_lessonsImageJsx);
 
@@ -96,31 +96,31 @@
 
 	var _inStockInStockJsx2 = _interopRequireDefault(_inStockInStockJsx);
 
-	var _inStockProductInStockJsx = __webpack_require__(248);
+	var _inStockProductInStockJsx = __webpack_require__(249);
 
 	var _inStockProductInStockJsx2 = _interopRequireDefault(_inStockProductInStockJsx);
 
-	var _allAllJsx = __webpack_require__(261);
+	var _allAllJsx = __webpack_require__(262);
 
 	var _allAllJsx2 = _interopRequireDefault(_allAllJsx);
 
-	var _allProductAllJsx = __webpack_require__(263);
+	var _allProductAllJsx = __webpack_require__(264);
 
 	var _allProductAllJsx2 = _interopRequireDefault(_allProductAllJsx);
 
-	var _pendantsPendantsJsx = __webpack_require__(264);
+	var _pendantsPendantsJsx = __webpack_require__(265);
 
 	var _pendantsPendantsJsx2 = _interopRequireDefault(_pendantsPendantsJsx);
 
-	var _pendantsProductPendantJsx = __webpack_require__(266);
+	var _pendantsProductPendantJsx = __webpack_require__(267);
 
 	var _pendantsProductPendantJsx2 = _interopRequireDefault(_pendantsProductPendantJsx);
 
-	var _earringsEarringsJsx = __webpack_require__(267);
+	var _earringsEarringsJsx = __webpack_require__(268);
 
 	var _earringsEarringsJsx2 = _interopRequireDefault(_earringsEarringsJsx);
 
-	var _earringsProductEarringsJsx = __webpack_require__(269);
+	var _earringsProductEarringsJsx = __webpack_require__(270);
 
 	var _earringsProductEarringsJsx2 = _interopRequireDefault(_earringsProductEarringsJsx);
 
@@ -37741,30 +37741,6 @@
 	var About = _react2["default"].createClass({
 		displayName: "About",
 
-		ComponentDidMount: function ComponentDidMount() {
-			(function () {
-				emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-			})();
-
-			var orderform = $("#aboutform");
-			orderform.submit(function (event) {
-				event.preventDefault();
-
-				// Change to your service ID, or keep using the default service
-				var service_id = "mail_ru";
-				var template_id = "about";
-
-				orderform.find("#aboutform-button").text("Отправляется...");
-				emailjs.sendForm(service_id, template_id, "aboutform").then(function () {
-					console.log("Sent!");
-					orderform.find("#aboutform-button").text("Отправлено");
-				}, function (err) {
-					console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-					orderform.find("#aboutform-button").text("Oшибка");
-				});
-				return false;
-			});
-		},
 		render: function render() {
 
 			return _react2["default"].createElement(
@@ -37890,29 +37866,34 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _jquery = __webpack_require__(238);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
 	var Contacts = _react2["default"].createClass({
 		displayName: "Contacts",
 
 		ComponentDidMount: function ComponentDidMount() {
-			(function () {
-				emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-			})();
-
-			var orderform = $("#contactsform");
-			orderform.submit(function (event) {
+			var myform = (0, _jquery2["default"])("form#contactsform");
+			myform.submit(function (event) {
 				event.preventDefault();
+
+				var params = myform.serializeArray().reduce(function (obj, item) {
+					obj[item.name] = item.value;
+					return obj;
+				}, {});
 
 				// Change to your service ID, or keep using the default service
 				var service_id = "mail_ru";
-				var template_id = "about";
 
-				orderform.find("#contactsform-button").text("Отправляется...");
-				emailjs.sendForm(service_id, template_id, "contactsform").then(function () {
-					console.log("Sent!");
-					orderform.find("#contactsform-button").text("Отправлено");
+				var template_id = "about";
+				myform.find("#contactsform-button").text("Sending...");
+				emailjs.send(service_id, template_id, params).then(function () {
+					alert("Sent!");
+					myform.find("#contactsform-button").text("Send");
 				}, function (err) {
-					console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-					orderform.find("#contactsform-button").text("Oшибка");
+					alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+					myform.find("#contactsform-button").text("Send");
 				});
 				return false;
 			});
@@ -37931,7 +37912,7 @@
 					{ className: "contacts-form" },
 					_react2["default"].createElement(
 						"form",
-						{ id: "contactsform", method: "post" },
+						{ id: "contactsform" },
 						_react2["default"].createElement(
 							"div",
 							{ className: "contacts-form-adress" },
@@ -37999,7 +37980,7 @@
 						),
 						_react2["default"].createElement(
 							"button",
-							{ id: "contactsform-button", className: "contacts-form-button" },
+							{ id: "contactsform-button", className: "contacts-form-button-send" },
 							"Отправить"
 						)
 					)
@@ -38347,6 +38328,8 @@
 
 	var _reactRouter = __webpack_require__(178);
 
+	__webpack_require__(247);
+
 	var LessonsInfo = _react2["default"].createClass({
 	    displayName: "LessonsInfo",
 
@@ -38486,6 +38469,43 @@
 
 /***/ },
 /* 247 */
+/***/ function(module, exports) {
+
+	'use strict';
+	if (!Array.prototype.find) {
+	    Object.defineProperty(Array.prototype, 'find', {
+	        value: function (predicate) {
+
+	            if (this == null) {
+	                throw new TypeError('this is null or not defined');
+	            }
+
+	            var obj = Object(this);
+	            var len = obj.length >>> 0;
+
+	            if (typeof predicate !== 'function') {
+	                throw new TypeError('predicate must be a function');
+	            }
+
+	            var thisArg = arguments[1];
+
+	            var index = 0;
+
+	            while (index < len) {
+	                var iValue = obj[index];
+	                if (predicate.call(thisArg, iValue, index, obj)) {
+	                    return iValue;
+	                }
+	                index++;
+	            }
+
+	            return undefined;
+	        }
+	    });
+	}
+
+/***/ },
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -38611,7 +38631,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "lessonsImage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -38634,11 +38654,11 @@
 
 	var _reactRouter = __webpack_require__(178);
 
-	var _productJsx = __webpack_require__(249);
+	var _productJsx = __webpack_require__(250);
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
-	var Carousel = __webpack_require__(250).Carousel;
+	var Carousel = __webpack_require__(251).Carousel;
 
 	var ProductInStock = _react2["default"].createClass({
 	    displayName: "ProductInStock",
@@ -38686,7 +38706,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product-inStock.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 249 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -38705,7 +38725,11 @@
 
 	var _reactRouter = __webpack_require__(178);
 
-	var Carousel = __webpack_require__(250).Carousel;
+	var _jquery = __webpack_require__(238);
+
+	var _jquery2 = _interopRequireDefault(_jquery);
+
+	var Carousel = __webpack_require__(251).Carousel;
 
 	var Product = _react2["default"].createClass({
 	    displayName: "Product",
@@ -38715,7 +38739,7 @@
 	            emailjs.init("user_jmnF1YC49paVFwkbJRipP");
 	        })();
 
-	        var orderform = $("#orderform");
+	        var orderform = (0, _jquery2["default"])("#orderform");
 	        orderform.submit(function (event) {
 	            event.preventDefault();
 
@@ -38733,26 +38757,21 @@
 	            });
 	            return false;
 	        });
+
+	        (0, _jquery2["default"])(".product-info-button").bind("click", function () {
+	            (0, _jquery2["default"])("#product").hide();
+	            (0, _jquery2["default"])("#order").show();
+	        });
+
+	        (0, _jquery2["default"])(".order-buttons-back").bind("click", function () {
+	            (0, _jquery2["default"])("#product").show();
+	            (0, _jquery2["default"])("#order").hide();
+	        });
 	    },
 	    render: function render() {
 	        var product = this.props.product;
 
 	        var linkProduct = location.href;
-
-	        // function close(e) {
-	        //     e.preventDefault();
-	        //     document.getElementById("b-popup").style="display:none";
-	        //  }
-	        function order(e) {
-	            e.preventDefault();
-	            document.getElementById("order").style = "display:table";
-	            document.getElementById("product").style = "display:none";
-	        }
-	        function back(e) {
-	            e.preventDefault();
-	            document.getElementById("order").style = "display:none";
-	            document.getElementById("product").style = "display:table";
-	        }
 
 	        return _react2["default"].createElement(
 	            "div",
@@ -38783,7 +38802,7 @@
 	                        ),
 	                        _react2["default"].createElement(
 	                            "div",
-	                            { className: "product-info-button", onClick: order },
+	                            { className: "product-info-button" },
 	                            "Заказать"
 	                        )
 	                    ),
@@ -38867,7 +38886,7 @@
 	                            { className: "order-buttons" },
 	                            _react2["default"].createElement(
 	                                "span",
-	                                { className: "order-buttons-back", onClick: back },
+	                                { className: "order-buttons-back" },
 	                                "◄ назад"
 	                            ),
 	                            _react2["default"].createElement(
@@ -38889,18 +38908,18 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 250 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	module.exports = {
-	    Carousel: __webpack_require__(251),
-	    Thumbs: __webpack_require__(259)
+	    Carousel: __webpack_require__(252),
+	    Thumbs: __webpack_require__(260)
 	};
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38911,11 +38930,11 @@
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
-	var klass = __webpack_require__(252);
-	var merge = __webpack_require__(254);
-	var CSSTranslate = __webpack_require__(255);
-	var Swipe = __webpack_require__(257);
-	var Thumbs = __webpack_require__(259);
+	var klass = __webpack_require__(253);
+	var merge = __webpack_require__(255);
+	var CSSTranslate = __webpack_require__(256);
+	var Swipe = __webpack_require__(258);
+	var Thumbs = __webpack_require__(260);
 
 	// react-swipe was compiled using babel
 	Swipe = Swipe.default;
@@ -39375,12 +39394,12 @@
 	});
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 
-	var classNames = __webpack_require__(253);
+	var classNames = __webpack_require__(254);
 
 	module.exports = {
 	    CAROUSEL: function CAROUSEL(isSlider) {
@@ -39432,7 +39451,7 @@
 	};
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -39486,7 +39505,7 @@
 
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39511,12 +39530,12 @@
 	};
 
 /***/ },
-/* 255 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var has3d = __webpack_require__(256);
+	var has3d = __webpack_require__(257);
 
 	module.exports = function (position, axis) {
 	    var _has3d = has3d();
@@ -39534,7 +39553,7 @@
 	};
 
 /***/ },
-/* 256 */
+/* 257 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39570,12 +39589,12 @@
 	};
 
 /***/ },
-/* 257 */
+/* 258 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
 	  if (true) {
-	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(258)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(259)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	  } else if (typeof exports !== "undefined") {
 	    factory(exports, require('./react-swipe'));
 	  } else {
@@ -39604,7 +39623,7 @@
 	});
 
 /***/ },
-/* 258 */
+/* 259 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
@@ -39797,18 +39816,18 @@
 	});
 
 /***/ },
-/* 259 */
+/* 260 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
-	var klass = __webpack_require__(252);
-	var has3d = __webpack_require__(256)();
-	var outerWidth = __webpack_require__(260).outerWidth;
-	var CSSTranslate = __webpack_require__(255);
-	var Swipe = __webpack_require__(257);
+	var klass = __webpack_require__(253);
+	var has3d = __webpack_require__(257)();
+	var outerWidth = __webpack_require__(261).outerWidth;
+	var CSSTranslate = __webpack_require__(256);
+	var Swipe = __webpack_require__(258);
 
 	// react-swipe was compiled using babel
 	Swipe = Swipe.default;
@@ -40046,7 +40065,7 @@
 	});
 
 /***/ },
-/* 260 */
+/* 261 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -40062,7 +40081,7 @@
 	};
 
 /***/ },
-/* 261 */
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40079,7 +40098,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataAllJs = __webpack_require__(262);
+	var _DataDataAllJs = __webpack_require__(263);
 
 	var _DataDataAllJs2 = _interopRequireDefault(_DataDataAllJs);
 
@@ -40140,7 +40159,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "all.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 262 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40227,7 +40246,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-all.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 263 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40244,17 +40263,17 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataAllJs = __webpack_require__(262);
+	var _DataDataAllJs = __webpack_require__(263);
 
 	var _DataDataAllJs2 = _interopRequireDefault(_DataDataAllJs);
 
 	var _reactRouter = __webpack_require__(178);
 
-	var _productJsx = __webpack_require__(249);
+	var _productJsx = __webpack_require__(250);
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
-	var Carousel = __webpack_require__(250).Carousel;
+	var Carousel = __webpack_require__(251).Carousel;
 
 	var ProductAll = _react2["default"].createClass({
 	    displayName: "ProductAll",
@@ -40302,7 +40321,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product-all.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 264 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40319,7 +40338,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataPendantsJs = __webpack_require__(265);
+	var _DataDataPendantsJs = __webpack_require__(266);
 
 	var _DataDataPendantsJs2 = _interopRequireDefault(_DataDataPendantsJs);
 
@@ -40401,7 +40420,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "pendants.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 265 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40488,7 +40507,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-pendants.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 266 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40505,15 +40524,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataPendantsJs = __webpack_require__(265);
+	var _DataDataPendantsJs = __webpack_require__(266);
 
 	var _DataDataPendantsJs2 = _interopRequireDefault(_DataDataPendantsJs);
 
-	var _productJsx = __webpack_require__(249);
+	var _productJsx = __webpack_require__(250);
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
-	var Carousel = __webpack_require__(250).Carousel;
+	var Carousel = __webpack_require__(251).Carousel;
 
 	var ProductPendant = _react2["default"].createClass({
 	    displayName: "ProductPendant",
@@ -40561,7 +40580,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "product-pendant.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 267 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40578,7 +40597,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataEarringsJs = __webpack_require__(268);
+	var _DataDataEarringsJs = __webpack_require__(269);
 
 	var _DataDataEarringsJs2 = _interopRequireDefault(_DataDataEarringsJs);
 
@@ -40641,7 +40660,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "earrings.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 268 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40751,7 +40770,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-earrings.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 269 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -40768,15 +40787,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataEarringsJs = __webpack_require__(268);
+	var _DataDataEarringsJs = __webpack_require__(269);
 
 	var _DataDataEarringsJs2 = _interopRequireDefault(_DataDataEarringsJs);
 
-	var _productJsx = __webpack_require__(249);
+	var _productJsx = __webpack_require__(250);
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
-	var Carousel = __webpack_require__(250).Carousel;
+	var Carousel = __webpack_require__(251).Carousel;
 
 	var ProductEarrings = _react2["default"].createClass({
 	    displayName: "ProductEarrings",
