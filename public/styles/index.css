@@ -3,7 +3,7 @@ ul{list-style:none}img{border:0}p{margin:1em 0}@font-face{font-family:'PhillippS
 @font-face{font-family:'Arial';src:url("../fonts/Arial/arial.eot");src:local('☺'),url("../fonts/Arial/arial.woff") format('woff'),url("../fonts/Arial/arial.ttf") format('truetype'),url("../fonts/Arial/arial.svg") format('svg');font-weight:normal;font-style:normal}
 body{background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover}
 main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;padding:4% 6% 0 3%}
-nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.navbar-button{margin-top:7%;width:96%}
+.nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.navbar-button{margin-top:7%;width:96%}
 .navbar-button img{width:100%}.navbar-butterfly{position:absolute;z-index:2;width:3%;margin-left:-0.5%}
 .navbar-butterfly2{position:absolute;z-index:2;width:2.5%;margin-top:11%;margin-left:11.8%}
 .navbar-butterfly3{position:absolute;z-index:2;width:2.5%;margin-top:21.9%;margin-left:-0.8%}
@@ -13,7 +13,7 @@ nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.
 .stock-title{font-family:Arial,Helvetica,sans-serif;font-size:1.7vw;color:#705290}
 .stock-text{margin:2.2% 0;outline:0 solid red;font-family:Arial,Helvetica,sans-serif;color:#888;font-size:1.2vw;font-weight:bolder;line-height:130%}
 .stock-images{outline:0 solid red;margin:3.2% 0 4% 1.2%}.stock-images-640{display:none}
-.stock-img{outline:0 solid red}.stock-img:last-child{margin-right:0}.button{display:inline-block;width:27%;border:1px solid #705290;border-radius:10px;padding-top:.3%;font-family:PhillippScript;font-size:2vw;color:#705290}
+.stock-img{outline:0 solid red}.stock-img:last-child{margin-right:0}.stock-button{display:inline-block;width:27%;border:1px solid #705290;border-radius:10px;padding-top:.3%;font-family:PhillippScript;font-size:2vw;color:#705290}
 .news{outline:0 solid green;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);background-size:cover;padding:3% 2%;margin-top:7%;margin-bottom:14%}
 .news-content{outline:0 solid orange}.news-calendar{width:14.5%;margin:4% 0 0 4%;float:left;outline:0 solid red}
 .news-calendar-img{width:100%}.news-details{width:76%;margin-top:-0.5%;float:right;text-align:left;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888}
@@ -52,11 +52,14 @@ nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.
 .lesson-form-input-date{margin-bottom:0;padding-left:1%;width:102.5%;color:#888}.lesson-form-input-message{font-family:Arial,Helvetica,sans-serif;margin-top:2%;position:relative;right:57.9%;display:block;width:159.5%;padding:.5% 0 26% .5%;margin-bottom:0}
 .lesson-form-button{margin-top:1%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:1.7vw;color:#705290;width:20%;background-color:transparent}
 @media(max-width:640px){body{background-image:url("../images/fon640.jpg");background-repeat:no-repeat;background-size:cover}
-nav{display:none}.header-burgerbutton img{margin:1.5% 2% 0 0;float:right;width:10%}
+.nav{display:none}.header-burgerbutton img{margin:1.5% 2% 0 0;float:right;width:10%}
+.nav-mobile{display:none;position:absolute;float:right;width:30%;background-color:red}
 main{width:100%;text-align:center;box-sizing:border-box;padding:0 6%}.main-title{margin:0;font-size:5vw;margin-bottom:12%}
-.main-introduction{margin:0;font-size:4.5vw;text-indent:5%}.stock-title{font-size:4vw;font-weight:700}
-.stock-images{display:none}.img{display:none}.news{display:none}footer{display:none}
-.clear{clear:both}}@media(min-width:641px){header{display:none}}@media(max-width:801px){.lesson-form img{width:18%}
+.main-introduction{margin:0;font-size:4.5vw;text-indent:5%}.stock{padding:0}.stock-title{margin:2% 0;font-size:3vw}
+.stock-text{display:none}.stock-images{display:none}.stock-images-mobile img{margin-bottom:2%;width:80%}
+.stock-button{width:80%;font-size:5vw}.img{display:none}.news{padding:0}.news-text{font-family:Arial,Helvetica,sans-serif;color:#888;font-size:1.2vw;font-weight:bolder;line-height:130%}
+footer{display:none}.clear{clear:both}}@media(min-width:641px){.stock-images-mobile{display:none}
+.nav-mobile{display:none}header{display:none}}@media(max-width:801px){.lesson-form img{width:18%}
 .lesson-input{margin-left:37%}.lesson-form-input{width:99%}.lesson-form-input-message{width:159.5%}
 .lesson-form-input-date{width:102.5%}.lesson-form-input-message{right:58.9%}}.about{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888;outline:0 solid green}
 .about-title{font-size:1.8vw;color:#705290;outline:0 solid green}.about-introduction{margin-top:5%;outline:0 solid blue;text-align:left}

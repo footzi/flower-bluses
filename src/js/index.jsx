@@ -23,11 +23,18 @@ let Index = React.createClass({
                     <li className="slide"><img className="stock-img" src="images/4.jpg" /></li>
                 </ul>
             </div>
-            <Link to="/catalog"><div className="button">Каталог</div></Link>
+            <div className="stock-images-mobile">
+                <img src="images/1-mobile.jpg" />
+                <img src="images/2-mobile.jpg" />
+                <img src="images/3-mobile.jpg" />
+            </div>
+            <div className="stock-button">
+                <Link to="/catalog">Каталог</Link>
+            </div>
         </div>
         <div className="news">
             <h2 className="stock-title">БЛИЖАЙШИЕ МАСТЕР-КЛАССЫ:</h2>
-            <p className="stock-text">Если Вы покорены этим видом искусства – созданием цветов из полимерных глин, реалистической флори&shy;стикой и хотите научиться этому виду творчества, то я  Вам помогу осуществить эту мечту!</p>
+            <p className="news-text">Если Вы покорены этим видом искусства – созданием цветов из полимерных глин, реалистической флори&shy;стикой и хотите научиться этому виду творчества, то я  Вам помогу осуществить эту мечту!</p>
             <div className="news-content">
                <div className="news-calendar">
                     <img className="news-calendar-img" src="images/calendar.png" />

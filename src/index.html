@@ -18,26 +18,38 @@
         </div>
         <div class="clear"></div>
     </header>
-    <nav id="nav">
-        <img class="navbar-butterfly" src="/images/navbar/butterfly.png">
-        <img class="navbar-butterfly2" src="/images/navbar/butterfly2.png">
-        <img class="navbar-butterfly3" src="/images/navbar/butterfly3.png">
-        <div class="navbar-button">
-            <a href="/"><img src="/images/navbar/button-main.png"></a>
+    <nav>
+        <div class="nav">
+            <img class="navbar-butterfly" src="/images/navbar/butterfly.png">
+            <img class="navbar-butterfly2" src="/images/navbar/butterfly2.png">
+            <img class="navbar-butterfly3" src="/images/navbar/butterfly3.png">
+            <div class="navbar-button">
+                <a href="/"><img src="/images/navbar/button-main.png"></a>
+            </div>
+            <div class="navbar-button">
+                <a href="/about"><img src="/images/navbar/button-about.png"></a>
+            </div>
+            <div class="navbar-button">
+                <a href="/catalog"><img src="/images/navbar/button-catalog.png"></a>
+            </div>
+            <div class="navbar-button">
+                <a href="/lessons"><img src="/images/navbar/button-mk.png"></a>
+            </div>
+            <div class="navbar-button">
+                <a href="/contacts"><img src="/images/navbar/button-contacts.png"></a>
+            </div>
         </div>
-        <div class="navbar-button">
-            <a href="/about"><img src="/images/navbar/button-about.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="/catalog"><img src="/images/navbar/button-catalog.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="/lessons"><img src="/images/navbar/button-mk.png"></a>
-        </div>
-        <div class="navbar-button">
-            <a href="/contacts"><img src="/images/navbar/button-contacts.png"></a>
+        <div class="nav-mobile">
+            <ul>
+                <li>Главная</li>
+                <li>О нас</li>
+                <li>Каталог</li>
+                <li>Обучение</li>
+                <li>Контакты</li>
+            </ul>
         </div>
     </nav>
+
     
     <main id="main">
     </main>
@@ -77,6 +89,10 @@
 <script src="/js/e-mail.min.js"></script>
 
 <script>
+$(".header-burgerbutton").toggle(function(){
+    $(".nav-mobile").fadeIn()
+    return false;
+})
 (function(){
 			emailjs.init("user_jmnF1YC49paVFwkbJRipP");
 		})();
