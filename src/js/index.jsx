@@ -53,7 +53,7 @@ let Index = React.createClass({
                     <div className="news-details-text">У вас будет возможность тратить столько часов на одно посещение, сколько вам необходимо. И Вы можете придти в указанные дни в удобное для вас время</div>
                 </div>
                 <div className="clear"></div>
-                 <Link to="/lessons"><div className="stock-button">Подробнее</div></Link>
+                 <Link to="/lessons"><div className="stock-button news-button">Подробнее</div></Link>
             </div>
         </div>
         

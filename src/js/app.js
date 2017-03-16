@@ -57,6 +57,7 @@ ReactDOM.render (
         <Route path="/catalog/polimer/earrings/:productId" component={ProductEarrings} />
         </Route>
         </Route>
+
     </Router>,
     document.getElementById("main")
 );

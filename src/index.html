@@ -13,9 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="header-burgerbutton">
-            <img src="/images/burger-button.png">
-        </div>
+        
         <div class="clear"></div>
     </header>
     <nav>
@@ -40,12 +38,15 @@
             </div>
         </div>
         <div class="nav-mobile">
-            <ul>
-                <li>Главная</li>
-                <li>О нас</li>
-                <li>Каталог</li>
-                <li>Обучение</li>
-                <li>Контакты</li>
+            <div class="nav-mobile-button">
+                <img src="/images/burger-button.png">
+            </div>
+            <ul class="nav-mobile-menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about">О нас</a></li>
+                <li><a href="/catalog">Каталог</a></li>
+                <li><a href="/lessons">Обучение</a></li>
+                <li><a href="/contacts">Контакты</a></li>
             </ul>
         </div>
     </nav>
@@ -89,11 +90,11 @@
 <script src="/js/e-mail.min.js"></script>
 <script>
 
-$(".header-burgerbutton").click(function() {
-    if ($(".nav-mobile").css("display")=="none") {
-        $(".nav-mobile").css("display","block")
+$(".nav-mobile-button").click(function() {
+    if ($(".nav-mobile-menu").css("display")=="none") {
+        $(".nav-mobile-menu").css("display","block")
     } else 
-        $(".nav-mobile").css("display","none")
+        $(".nav-mobile-menu").css("display","none")
 });
 
 
