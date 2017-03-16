@@ -28,9 +28,9 @@ let Index = React.createClass({
                 <img src="images/2-mobile.jpg" />
                 <img src="images/3-mobile.jpg" />
             </div>
-            <div className="stock-button">
-                <Link to="/catalog">Каталог</Link>
-            </div>
+            <Link to="/catalog">
+                <div className="stock-button">Каталог</div>
+            </Link>
         </div>
         <div className="news">
             <h2 className="stock-title">БЛИЖАЙШИЕ МАСТЕР-КЛАССЫ:</h2>
@@ -53,7 +53,7 @@ let Index = React.createClass({
                     <div className="news-details-text">У вас будет возможность тратить столько часов на одно посещение, сколько вам необходимо. И Вы можете придти в указанные дни в удобное для вас время</div>
                 </div>
                 <div className="clear"></div>
-                 <Link to="/lessons"><div className="button">Подробнее</div></Link>
+                 <Link to="/lessons"><div className="stock-button">Подробнее</div></Link>
             </div>
         </div>
         

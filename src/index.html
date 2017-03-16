@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="yandex-verification" content="dbad30fa38674322" />
     <meta name="google-site-verification" content="_eAaz3IKaoOfYqTiKOrWGgZvBD7-UqxvBdg8zqfBctw" />
-    <title>Керамическая флористика, украшения, цветы</title>
+    <title>Керамическая флористика, подарки, украшения, цветы</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/styles/index.css">
@@ -87,12 +87,16 @@
 <script src="/js/jquery.min.js"></script>
 <script src="/js/jquery.bxslider.js"></script>
 <script src="/js/e-mail.min.js"></script>
-
 <script>
-$(".header-burgerbutton").toggle(function(){
-    $(".nav-mobile").fadeIn()
-    return false;
-})
+
+$(".header-burgerbutton").click(function() {
+    if ($(".nav-mobile").css("display")=="none") {
+        $(".nav-mobile").css("display","block")
+    } else 
+        $(".nav-mobile").css("display","none")
+});
+
+
 (function(){
 			emailjs.init("user_jmnF1YC49paVFwkbJRipP");
 		})();
