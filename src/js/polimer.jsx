@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import $ from "jquery"
 
-import InStock from "./inStock/inStock.jsx"
 
 let Polimer = React.createClass({
     // getInitialState: function() {
@@ -29,7 +28,7 @@ let Polimer = React.createClass({
         
         return (
 <div className="catalog-list">
-
+    
     <div className="catalog-polimer">
             <img className="catalog-butterfly-img catalog-polimer-butterfly1" src="/../images/catalog/catalog-butterfly1.png" />
             <h1 className="catalog-title">ПОЛИМЕРНАЯ ГЛИНА</h1>
@@ -44,16 +43,12 @@ let Polimer = React.createClass({
                 <Link to="/catalog/polimer/all" activeClassName="active-link" className="Link" onClick={this.onClick}><li className="Link-name">ВСЕ</li></Link>
                 <Link to="/catalog/polimer/pendants" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >КУЛОНЫ/ПОДВЕСТКИ</li></Link>
                 <Link to="/catalog/polimer/earrings" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name">СЕРЬГИ</li></Link>
-                <Link to="#" activeClassName="active-link" onClick={this.onClick} className="Link"><li className="Link-name" >КОЛЬЦА</li></Link>
-                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >БРАСЛЕТЫ</li></Link>
-                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >БРОШИ/ЗАКОЛКИ</li></Link>
-                <Link to="#" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >НАБОРЫ</li></Link>
+                <Link to="/catalog" activeClassName="active-link" onClick={this.onClick} className="Link"><li className="Link-name" >КОЛЬЦА</li></Link>
+                <Link to="/catalog" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >БРАСЛЕТЫ</li></Link>
+                <Link to="/catalog" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >БРОШИ/ЗАКОЛКИ</li></Link>
+                <Link to="/catalog" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >НАБОРЫ</li></Link>
             </ul>
     </div>
-
-    {/*<div  id="all" >
-       <InStock />
-    </div> */}
     
     <div>
         {this.props.children}

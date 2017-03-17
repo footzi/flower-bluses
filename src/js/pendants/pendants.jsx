@@ -23,6 +23,11 @@ let Pendants = React.createClass({
         let { products } = this.state;
         return (
             <div>
+                <div className="catalog-navigation">
+                    <a href="/catalog">Каталог>></a>
+                    <a href="/catalog/polimer/all">Полимерная глина>></a>
+                    <a href="/catalog/polimer/pendants">Кулоны/подвески</a>
+                </div>
                 <div>
                 {
                     products.map(product => 
@@ -40,9 +45,9 @@ let Pendants = React.createClass({
             
             </div>
             <div className="pages">
-                <Link to="#" className="pages-link">1</Link>
-                <Link to="#" className="pages-link">2</Link>
-                <Link to="#" className="pages-link">3</Link>
+                <Link to="/catalog" className="pages-link">1</Link>
+                <Link to="/catalog" className="pages-link">2</Link>
+                <Link to="/catalog" className="pages-link">3</Link>
             </div>
 
                 <div >

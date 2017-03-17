@@ -72,27 +72,27 @@
 
 	var _polimerJsx2 = _interopRequireDefault(_polimerJsx);
 
-	var _aboutJsx = __webpack_require__(248);
+	var _aboutJsx = __webpack_require__(245);
 
 	var _aboutJsx2 = _interopRequireDefault(_aboutJsx);
 
-	var _contactsJsx = __webpack_require__(249);
+	var _contactsJsx = __webpack_require__(246);
 
 	var _contactsJsx2 = _interopRequireDefault(_contactsJsx);
 
-	var _lessonsJsx = __webpack_require__(250);
+	var _lessonsJsx = __webpack_require__(247);
 
 	var _lessonsJsx2 = _interopRequireDefault(_lessonsJsx);
 
-	var _lessonsInfoJsx = __webpack_require__(252);
+	var _lessonsInfoJsx = __webpack_require__(249);
 
 	var _lessonsInfoJsx2 = _interopRequireDefault(_lessonsInfoJsx);
 
-	var _lessonsImageJsx = __webpack_require__(254);
+	var _lessonsImageJsx = __webpack_require__(251);
 
 	var _lessonsImageJsx2 = _interopRequireDefault(_lessonsImageJsx);
 
-	var _inStockInStockJsx = __webpack_require__(245);
+	var _inStockInStockJsx = __webpack_require__(252);
 
 	var _inStockInStockJsx2 = _interopRequireDefault(_inStockInStockJsx);
 
@@ -27640,10 +27640,6 @@
 
 	var _jquery2 = _interopRequireDefault(_jquery);
 
-	var _inStockInStockJsx = __webpack_require__(245);
-
-	var _inStockInStockJsx2 = _interopRequireDefault(_inStockInStockJsx);
-
 	var Polimer = _react2['default'].createClass({
 	    displayName: 'Polimer',
 
@@ -27730,7 +27726,7 @@
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '#', activeClassName: 'active-link', onClick: this.onClick, className: 'Link' },
+	                        { to: '/catalog', activeClassName: 'active-link', onClick: this.onClick, className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
 	                            { className: 'Link-name' },
@@ -27739,7 +27735,7 @@
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '#', activeClassName: 'active-link', onClick: this.onClick, className: 'Link' },
+	                        { to: '/catalog', activeClassName: 'active-link', onClick: this.onClick, className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
 	                            { className: 'Link-name' },
@@ -27748,7 +27744,7 @@
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '#', activeClassName: 'active-link', onClick: this.onClick, className: 'Link' },
+	                        { to: '/catalog', activeClassName: 'active-link', onClick: this.onClick, className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
 	                            { className: 'Link-name' },
@@ -27757,7 +27753,7 @@
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '#', activeClassName: 'active-link', onClick: this.onClick, className: 'Link' },
+	                        { to: '/catalog', activeClassName: 'active-link', onClick: this.onClick, className: 'Link' },
 	                        _react2['default'].createElement(
 	                            'li',
 	                            { className: 'Link-name' },
@@ -27777,9 +27773,6 @@
 
 	exports['default'] = Polimer;
 	module.exports = exports['default'];
-	/*<div  id="all" >
-	  <InStock />
-	</div> */
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "polimer.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
@@ -38015,258 +38008,6 @@
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _DataDataInStockJs = __webpack_require__(246);
-
-	var _DataDataInStockJs2 = _interopRequireDefault(_DataDataInStockJs);
-
-	var _ProductPreviewJsx = __webpack_require__(247);
-
-	var _ProductPreviewJsx2 = _interopRequireDefault(_ProductPreviewJsx);
-
-	var InStock = _react2['default'].createClass({
-	    displayName: 'InStock',
-
-	    contextTypes: {
-	        router: _react2['default'].PropTypes.object.isRequired
-	    },
-	    getInitialState: function getInitialState() {
-	        return {
-	            products: _DataDataInStockJs2['default']
-	        };
-	    },
-
-	    handlePreviewClick: function handlePreviewClick(productId) {
-	        this.context.router.push('/catalog/polimer/inStock/' + productId);
-	    },
-	    render: function render() {
-	        var _this = this;
-
-	        var products = this.state.products;
-
-	        return _react2['default'].createElement(
-	            'div',
-	            null,
-	            _react2['default'].createElement(
-	                'div',
-	                null,
-	                products.map(function (product) {
-	                    return _react2['default'].createElement(_ProductPreviewJsx2['default'], {
-	                        key: product.id,
-	                        onClick: _this.handlePreviewClick.bind(null, product.id),
-	                        imagePreview: product.imagePreview,
-	                        name: product.name,
-	                        text: product.text,
-	                        cost: product.cost,
-	                        instock: product.instock
-	                    });
-	                })
-	            ),
-	            _react2['default'].createElement(
-	                'div',
-	                null,
-	                this.props.children
-	            )
-	        );
-	    }
-	});
-
-	exports['default'] = InStock;
-	module.exports = exports['default'];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "inStock.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 246 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	var products = [{
-	    "id": "1-1",
-	    "name": "В наличии",
-	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "image1": "/images/catalog/inStock/1.jpg",
-	    "image2": "/images/catalog/inStock/1.jpg",
-	    "image3": "/images/catalog/inStock/1.jpg",
-	    "image4": "/images/catalog/inStock/1.jpg",
-	    "image5": "/images/catalog/inStock/1.jpg",
-	    "instock": "/images/catalog/instock.png"
-
-	}, {
-	    "id": "1-2",
-	    "name": "Заколка для волос:'Лето2'",
-	    "cost": "1500 руб.",
-	    "text": "Обнимашки 2S",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "instock": "/images/catalog/notstock.png"
-	}, {
-	    "id": "1-3",
-	    "name": "Заколка для волос:'Лето3'",
-	    "cost": "1500 руб.",
-	    "text": "Обнимашки 3S",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "instock": "/images/catalog/notstock.png"
-	}, {
-	    "id": "1-4",
-	    "name": "Заколка для волос:'Лето4'",
-	    "cost": "1500 руб.",
-	    "text": "Обнимашки 4S",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "instock": "/images/catalog/instock.png"
-	}, {
-	    "id": "1-5",
-	    "name": "Заколка для волос:'Лето5'",
-	    "cost": "1500 руб.",
-	    "text": "Обнимашки 5S",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "instock": "/images/catalog/notstock.png"
-	}, {
-	    "id": "1-6",
-	    "name": "Заколка для волос:'Лето6'",
-	    "cost": "1500 руб.",
-	    "text": "Обнимашки 6S",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "instock": "/images/catalog/instock.png"
-	}, {
-	    "id": "1-7",
-	    "name": "Заколка для волос:'Лето7'",
-	    "cost": "1500 руб.",
-	    "text": "Обнимашки 7S",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "instock": "/images/catalog/instock.png"
-	}, {
-	    "id": "1-8",
-	    "name": "Заколка для волос:'Лето8'",
-	    "cost": "1500 руб.",
-	    "text": "Обнимашки 8S",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "instock": "/images/catalog/notstock.png"
-	}, {
-	    "id": "1-9",
-	    "name": "Заколка для волос:'Лето9'",
-	    "cost": "1500 руб.",
-	    "text": "Обнимашки 9S",
-	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
-	    "instock": "/images/catalog/instock.png"
-	}];
-
-	exports["default"] = products;
-	module.exports = exports["default"];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-inStock.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 247 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var ProductPreview = _react2["default"].createClass({
-	    displayName: "ProductPreview",
-
-	    render: function render() {
-	        function openPopup(e) {
-	            e.preventDefault();
-	            document.getElementById("b-popup").style = "display:table";
-	        }
-
-	        var _props = this.props;
-	        var name = _props.name;
-	        var text = _props.text;
-	        var cost = _props.cost;
-	        var instock = _props.instock;
-	        var imagePreview = _props.imagePreview;
-	        var onClick = _props.onClick;
-
-	        return _react2["default"].createElement(
-	            "div",
-	            { className: "product-preview", onClick: openPopup },
-	            _react2["default"].createElement(
-	                "div",
-	                { className: "product-preview-thumbs" },
-	                _react2["default"].createElement("img", { className: "product-preview-img", src: imagePreview }),
-	                _react2["default"].createElement(
-	                    "div",
-	                    { className: "product-preview-caption" },
-	                    _react2["default"].createElement(
-	                        "span",
-	                        { className: "product-preview-name" },
-	                        name
-	                    ),
-	                    _react2["default"].createElement(
-	                        "span",
-	                        { className: "product-preview-cost" },
-	                        "Цена: ",
-	                        cost,
-	                        " "
-	                    ),
-	                    _react2["default"].createElement(
-	                        "span",
-	                        { className: "product-preview-button", onClick: onClick },
-	                        _react2["default"].createElement(
-	                            "div",
-	                            { className: "product-preview-button-img", onClick: openPopup },
-	                            "Заказать"
-	                        )
-	                    ),
-	                    _react2["default"].createElement(
-	                        "span",
-	                        null,
-	                        _react2["default"].createElement("img", { className: "product-preview-instock", src: instock })
-	                    )
-	                )
-	            ),
-	            _react2["default"].createElement(
-	                "div",
-	                null,
-	                this.props.children
-	            )
-	        );
-	    }
-	});
-
-	exports["default"] = ProductPreview;
-	module.exports = exports["default"];
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ProductPreview.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 248 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
@@ -38390,7 +38131,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "about.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 249 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -38536,7 +38277,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "contacts.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 250 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -38553,7 +38294,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataLessonsJs = __webpack_require__(251);
+	var _DataDataLessonsJs = __webpack_require__(248);
 
 	var _DataDataLessonsJs2 = _interopRequireDefault(_DataDataLessonsJs);
 
@@ -38759,7 +38500,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "lessons.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 251 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -38846,7 +38587,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-lessons.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 252 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -38863,13 +38604,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataLessonsJs = __webpack_require__(251);
+	var _DataDataLessonsJs = __webpack_require__(248);
 
 	var _DataDataLessonsJs2 = _interopRequireDefault(_DataDataLessonsJs);
 
 	var _reactRouter = __webpack_require__(178);
 
-	__webpack_require__(253);
+	__webpack_require__(250);
 
 	var LessonsInfo = _react2["default"].createClass({
 	    displayName: "LessonsInfo",
@@ -39009,7 +38750,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "lessonsInfo.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 253 */
+/* 250 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -39046,7 +38787,7 @@
 	}
 
 /***/ },
-/* 254 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -39063,7 +38804,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataLessonsJs = __webpack_require__(251);
+	var _DataDataLessonsJs = __webpack_require__(248);
 
 	var _DataDataLessonsJs2 = _interopRequireDefault(_DataDataLessonsJs);
 
@@ -39172,6 +38913,298 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "lessonsImage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _DataDataInStockJs = __webpack_require__(253);
+
+	var _DataDataInStockJs2 = _interopRequireDefault(_DataDataInStockJs);
+
+	var _ProductPreviewJsx = __webpack_require__(254);
+
+	var _ProductPreviewJsx2 = _interopRequireDefault(_ProductPreviewJsx);
+
+	var _reactRouter = __webpack_require__(178);
+
+	var InStock = _react2['default'].createClass({
+	    displayName: 'InStock',
+
+	    contextTypes: {
+	        router: _react2['default'].PropTypes.object.isRequired
+	    },
+	    getInitialState: function getInitialState() {
+	        return {
+	            products: _DataDataInStockJs2['default']
+	        };
+	    },
+
+	    handlePreviewClick: function handlePreviewClick(productId) {
+	        this.context.router.push('/catalog/polimer/inStock/' + productId);
+	    },
+	    render: function render() {
+	        var _this = this;
+
+	        var products = this.state.products;
+
+	        return _react2['default'].createElement(
+	            'div',
+	            null,
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'catalog-navigation' },
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog' },
+	                    'Каталог>>'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog/polimer/all' },
+	                    'Полимерная глина>>'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog/polimer/inStock' },
+	                    'В наличии'
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                null,
+	                products.map(function (product) {
+	                    return _react2['default'].createElement(_ProductPreviewJsx2['default'], {
+	                        key: product.id,
+	                        onClick: _this.handlePreviewClick.bind(null, product.id),
+	                        imagePreview: product.imagePreview,
+	                        name: product.name,
+	                        text: product.text,
+	                        cost: product.cost,
+	                        instock: product.instock
+	                    });
+	                })
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'pages' },
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '1'
+	                ),
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '2'
+	                ),
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '3'
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                null,
+	                this.props.children
+	            )
+	        );
+	    }
+	});
+
+	exports['default'] = InStock;
+	module.exports = exports['default'];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "inStock.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	var products = [{
+	    "id": "1-1",
+	    "name": "В наличии",
+	    "cost": "1500 руб.",
+	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "image1": "/images/catalog/inStock/1.jpg",
+	    "image2": "/images/catalog/inStock/1.jpg",
+	    "image3": "/images/catalog/inStock/1.jpg",
+	    "image4": "/images/catalog/inStock/1.jpg",
+	    "image5": "/images/catalog/inStock/1.jpg",
+	    "instock": "/images/catalog/instock.png"
+
+	}, {
+	    "id": "1-2",
+	    "name": "Заколка для волос:'Лето2'",
+	    "cost": "1500 руб.",
+	    "text": "Обнимашки 2S",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "instock": "/images/catalog/notstock.png"
+	}, {
+	    "id": "1-3",
+	    "name": "Заколка для волос:'Лето3'",
+	    "cost": "1500 руб.",
+	    "text": "Обнимашки 3S",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "instock": "/images/catalog/notstock.png"
+	}, {
+	    "id": "1-4",
+	    "name": "Заколка для волос:'Лето4'",
+	    "cost": "1500 руб.",
+	    "text": "Обнимашки 4S",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "instock": "/images/catalog/instock.png"
+	}, {
+	    "id": "1-5",
+	    "name": "Заколка для волос:'Лето5'",
+	    "cost": "1500 руб.",
+	    "text": "Обнимашки 5S",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "instock": "/images/catalog/notstock.png"
+	}, {
+	    "id": "1-6",
+	    "name": "Заколка для волос:'Лето6'",
+	    "cost": "1500 руб.",
+	    "text": "Обнимашки 6S",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "instock": "/images/catalog/instock.png"
+	}, {
+	    "id": "1-7",
+	    "name": "Заколка для волос:'Лето7'",
+	    "cost": "1500 руб.",
+	    "text": "Обнимашки 7S",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "instock": "/images/catalog/instock.png"
+	}, {
+	    "id": "1-8",
+	    "name": "Заколка для волос:'Лето8'",
+	    "cost": "1500 руб.",
+	    "text": "Обнимашки 8S",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "instock": "/images/catalog/notstock.png"
+	}, {
+	    "id": "1-9",
+	    "name": "Заколка для волос:'Лето9'",
+	    "cost": "1500 руб.",
+	    "text": "Обнимашки 9S",
+	    "imagePreview": "/images/catalog/inStock/3-1.jpg",
+	    "instock": "/images/catalog/instock.png"
+	}];
+
+	exports["default"] = products;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "data-inStock.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 254 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("c:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var ProductPreview = _react2["default"].createClass({
+	    displayName: "ProductPreview",
+
+	    render: function render() {
+	        function openPopup(e) {
+	            e.preventDefault();
+	            document.getElementById("b-popup").style = "display:table";
+	        }
+
+	        var _props = this.props;
+	        var name = _props.name;
+	        var text = _props.text;
+	        var cost = _props.cost;
+	        var instock = _props.instock;
+	        var imagePreview = _props.imagePreview;
+	        var onClick = _props.onClick;
+
+	        return _react2["default"].createElement(
+	            "div",
+	            { className: "product-preview", onClick: openPopup },
+	            _react2["default"].createElement(
+	                "div",
+	                { className: "product-preview-thumbs" },
+	                _react2["default"].createElement("img", { className: "product-preview-img", src: imagePreview }),
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "product-preview-caption" },
+	                    _react2["default"].createElement(
+	                        "span",
+	                        { className: "product-preview-name" },
+	                        name
+	                    ),
+	                    _react2["default"].createElement(
+	                        "span",
+	                        { className: "product-preview-cost" },
+	                        "Цена: ",
+	                        cost,
+	                        " "
+	                    ),
+	                    _react2["default"].createElement(
+	                        "span",
+	                        { className: "product-preview-button", onClick: onClick },
+	                        _react2["default"].createElement(
+	                            "div",
+	                            { className: "product-preview-button-img", onClick: openPopup },
+	                            "Заказать"
+	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "span",
+	                        null,
+	                        _react2["default"].createElement("img", { className: "product-preview-instock", src: instock })
+	                    )
+	                )
+	            ),
+	            _react2["default"].createElement(
+	                "div",
+	                null,
+	                this.props.children
+	            )
+	        );
+	    }
+	});
+
+	exports["default"] = ProductPreview;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("c:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "ProductPreview.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
 /* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -39189,7 +39222,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _DataDataInStockJs = __webpack_require__(246);
+	var _DataDataInStockJs = __webpack_require__(253);
 
 	var _DataDataInStockJs2 = _interopRequireDefault(_DataDataInStockJs);
 
@@ -40643,9 +40676,11 @@
 
 	var _DataDataAllJs2 = _interopRequireDefault(_DataDataAllJs);
 
-	var _ProductPreviewJsx = __webpack_require__(247);
+	var _ProductPreviewJsx = __webpack_require__(254);
 
 	var _ProductPreviewJsx2 = _interopRequireDefault(_ProductPreviewJsx);
+
+	var _reactRouter = __webpack_require__(178);
 
 	var All = _react2['default'].createClass({
 	    displayName: 'All',
@@ -40672,6 +40707,25 @@
 	            null,
 	            _react2['default'].createElement(
 	                'div',
+	                { className: 'catalog-navigation' },
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog' },
+	                    'Каталог>>'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog/polimer/all' },
+	                    'Полимерная глина>>'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog/polimer/all' },
+	                    'Всё'
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
 	                null,
 	                products.map(function (product) {
 	                    return _react2['default'].createElement(_ProductPreviewJsx2['default'], {
@@ -40689,6 +40743,25 @@
 	                'div',
 	                null,
 	                this.props.children
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'pages' },
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '1'
+	                ),
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '2'
+	                ),
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '3'
+	                )
 	            )
 	        );
 	    }
@@ -40883,7 +40956,7 @@
 
 	var _DataDataPendantsJs2 = _interopRequireDefault(_DataDataPendantsJs);
 
-	var _ProductPreviewJsx = __webpack_require__(247);
+	var _ProductPreviewJsx = __webpack_require__(254);
 
 	var _ProductPreviewJsx2 = _interopRequireDefault(_ProductPreviewJsx);
 
@@ -40914,6 +40987,25 @@
 	            null,
 	            _react2['default'].createElement(
 	                'div',
+	                { className: 'catalog-navigation' },
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog' },
+	                    'Каталог>>'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog/polimer/all' },
+	                    'Полимерная глина>>'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog/polimer/pendants' },
+	                    'Кулоны/подвески'
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
 	                null,
 	                products.map(function (product) {
 	                    return _react2['default'].createElement(_ProductPreviewJsx2['default'], {
@@ -40932,17 +41024,17 @@
 	                { className: 'pages' },
 	                _react2['default'].createElement(
 	                    _reactRouter.Link,
-	                    { to: '#', className: 'pages-link' },
+	                    { to: '/catalog', className: 'pages-link' },
 	                    '1'
 	                ),
 	                _react2['default'].createElement(
 	                    _reactRouter.Link,
-	                    { to: '#', className: 'pages-link' },
+	                    { to: '/catalog', className: 'pages-link' },
 	                    '2'
 	                ),
 	                _react2['default'].createElement(
 	                    _reactRouter.Link,
-	                    { to: '#', className: 'pages-link' },
+	                    { to: '/catalog', className: 'pages-link' },
 	                    '3'
 	                )
 	            ),
@@ -41142,7 +41234,7 @@
 
 	var _DataDataEarringsJs2 = _interopRequireDefault(_DataDataEarringsJs);
 
-	var _ProductPreviewJsx = __webpack_require__(247);
+	var _ProductPreviewJsx = __webpack_require__(254);
 
 	var _ProductPreviewJsx2 = _interopRequireDefault(_ProductPreviewJsx);
 
@@ -41173,6 +41265,25 @@
 	            null,
 	            _react2['default'].createElement(
 	                'div',
+	                { className: 'catalog-navigation' },
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog' },
+	                    'Каталог>>'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog/polimer/all' },
+	                    'Полимерная глина>>'
+	                ),
+	                _react2['default'].createElement(
+	                    'a',
+	                    { href: '/catalog/polimer/earrings' },
+	                    'Серьги'
+	                )
+	            ),
+	            _react2['default'].createElement(
+	                'div',
 	                null,
 	                products.map(function (product) {
 	                    return _react2['default'].createElement(_ProductPreviewJsx2['default'], {
@@ -41190,6 +41301,25 @@
 	                'div',
 	                null,
 	                this.props.children
+	            ),
+	            _react2['default'].createElement(
+	                'div',
+	                { className: 'pages' },
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '1'
+	                ),
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '2'
+	                ),
+	                _react2['default'].createElement(
+	                    _reactRouter.Link,
+	                    { to: '/catalog', className: 'pages-link' },
+	                    '3'
+	                )
 	            )
 	        );
 	    }

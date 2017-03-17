@@ -137,6 +137,16 @@
 
 
 /*список продуктов*/
+.catalog-navigation {
+  margin-top:-39.5%;
+  float: right;
+  
+}
+.catalog-navigation a {
+  text-decoration: none;
+  color:#888888;
+  font-size: 1vw;
+}
 
 .catalog-list {
   margin-bottom: 16%;

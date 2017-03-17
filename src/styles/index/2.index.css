@@ -17,7 +17,7 @@
 body {
   background-image: url("../images/fon.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 main {
@@ -207,7 +207,7 @@ footer{
   /*margin-top: 12%;*/
   margin-top: 1.6%;
   padding-top: 2.5%;
-  /*outline:2px solid magenta;*/
+  outline:2px solid red;
 }
 .footer-content{
   outline:0px solid black;
@@ -230,6 +230,9 @@ footer{
   display: inline-block;
   outline:0px solid blue;
   margin-left: 23.5%;
+}
+.footer-content-regulations-title {
+  font-size: 0.8vw;
 }
 
 .footer-content-icons{

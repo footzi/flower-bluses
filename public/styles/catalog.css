@@ -10,7 +10,8 @@
 .catalog-info-text{margin-top:2%;text-align:justify}.catalog-info-recomendation{margin-top:3%;margin-bottom:0;font-size:1.7vw;text-decoration:underline}
 .catalog-info-text:last-child{margin-top:1%}.catalog-info-text-list{margin:0}.catalog-info-text-list:nth-child(6){margin-bottom:6%}
 .catalog-butterfly-img{position:absolute;width:3%}.catalog-info-butterfly1{margin-top:0;margin-left:-35%}
-.catalog-info-butterfly2{margin-top:-5%;margin-left:32%}.catalog-list{margin-bottom:16%;height:100%;outline:0 solid black}
+.catalog-info-butterfly2{margin-top:-5%;margin-left:32%}.catalog-navigation{margin-top:-39.5%;float:right}
+.catalog-navigation a{text-decoration:none;color:#888;font-size:1vw}.catalog-list{margin-bottom:16%;height:100%;outline:0 solid black}
 .catalog-polimer{padding-top:2.5%;padding-left:1%;padding-right:1%;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349)}
 .catalog-polimer-introduction{margin-bottom:4%;text-align:justify;font-size:1.2vw;text-indent:5%}
 .catalog-polimer-butterfly1{margin-top:0;margin-left:-35%}.catalog-polimer-butterfly2{margin-top:-4%;margin-left:32%}

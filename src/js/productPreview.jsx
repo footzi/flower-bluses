@@ -22,9 +22,9 @@ let ProductPreview = React.createClass ({
                    
                 </div>
             </div>
-        <div>
-            {this.props.children} 
-        </div>
+            <div>
+                {this.props.children} 
+            </div>
 		</div>
 		)
 	}
