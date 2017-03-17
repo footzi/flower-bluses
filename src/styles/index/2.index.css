@@ -17,7 +17,7 @@
 body {
   background-image: url("../images/fon.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 main {
@@ -207,7 +207,7 @@ footer{
   /*margin-top: 12%;*/
   margin-top: 1.6%;
   padding-top: 2.5%;
-  outline:2px solid magenta;
+  /*outline:2px solid magenta;*/
 }
 .footer-content{
   outline:0px solid black;
