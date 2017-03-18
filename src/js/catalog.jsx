@@ -15,25 +15,26 @@ let Catalog = React.createClass ({
 
 
      <div className="catalog-img">
-        <a href="/catalog/polimer/inStock">
-            <div className="catalog-img-prew"> 
+        <div className="catalog-img-prew"> 
+            <a href="/catalog/polimer/inStock">
                 <div className="catalog-thumbs">
                     <img src="../images/catalog/1.png" /> 
                     <div className="catalog-caption">
                         <span className="catalog-caption-text">Украшения из<br/> полимерной глины</span>
                     </div>
                 </div>
-            </div>
-         </a>
-
-        <div className="catalog-img-prew catalog-img-prew-right"><Link to="/catalog/polimer">
-        <div className="catalog-thumbs">
-             <img src="../images/catalog/1.png" /> 
-            <div className="catalog-caption">
-                <span className="catalog-caption-text">Цветочные композиции<br/> из полимерной глины</span>
-            </div>
+            </a>
         </div>
-        </Link>
+    
+        <div className="catalog-img-prew catalog-img-prew-right">
+            <a href="/catalog/polimer/inStock">
+                <div className="catalog-thumbs">
+                    <img src="../images/catalog/1.png" /> 
+                    <div className="catalog-caption">
+                        <span className="catalog-caption-text">Цветочные композиции<br/> из полимерной глины</span>
+                    </div>
+                </div>
+            </a>
         </div>
 
      </div>

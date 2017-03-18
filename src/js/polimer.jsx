@@ -25,7 +25,7 @@ let Polimer = React.createClass({
         // if(Page.indexOf(inStock)) {
         //     $("#all").css({"display":"none"})
         // }
-        
+        document.getElementById("footer").style.marginTop="3.7%"
         return (
 <div className="catalog-list">
     

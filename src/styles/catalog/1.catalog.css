@@ -144,7 +144,7 @@
 }
 .catalog-navigation a {
   text-decoration: none;
-  color:#888888;
+  color:#A9A9A9;
   font-size: 1vw;
 }
 
@@ -184,6 +184,7 @@
   border-top: 2px solid #705290;
   border-bottom: 2px solid #705290;
   margin-top:2.2%;
+  margin-bottom: 1.5%;
 }
 
 
@@ -218,7 +219,7 @@
 }
 .product-preview{
   color:black;
-  margin-top: 7%;
+  margin-top: 6%;
   margin-right: 6%;
   display: inline-table;
   width:29%;
@@ -266,14 +267,37 @@
 }
 
 .pages {
-  margin-top: 3%;
+  width: 71%;
+  position: absolute;
+  margin-top: 5.6%;
+}
+.pages-back {
+  display: inline-table;
+  float: left;
+}
+.pages-next {
+  display: inline-table;
+  float: right;
 }
 .pages-link {
+  font-size: 1.2vw;
+  color:#888888;
+  text-decoration: underline;
+}
+.pages-numbers {
+  width: 10%;
+  display: inline-block;
+  margin: 0 auto 0 auto;
+}
+
+.pages-numbers-link {
+  font-size: 1.2vw;
   color:#888888;
   text-decoration: none;
-  margin-right: 1%;
+  margin-right: 20%;
 }
-.pages-link:hover {
+.pages-numbers-link:hover {
+  font-weight: bolder;
   text-decoration: underline;
   color:#705290;
 }

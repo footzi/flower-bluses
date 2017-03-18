@@ -20,15 +20,16 @@ main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;
 .news-calendar-img{width:100%}.news-details{width:76%;margin-top:-0.5%;float:right;text-align:left;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888}
 .news-details-text{position:relative;margin:-3.5% 0 3% 6%;outline:0 solid yellow}
 .news-details-marker{position:relative;display:inline;width:4%}.clear{clear:both}
-.button .button-more{margin-top:0}footer{margin-top:1.6%;padding-top:2.5%;outline:2px solid red}
+.button .button-more{margin-top:0}footer{margin-top:3.1%;padding-top:.5%;padding-bottom:.5%;outline:2px solid red}
 .footer-content{outline:0 solid black;font-family:Arial,Helvetica,sans-serif;color:#888}
 .footer-title{font-size:.8vw;font-weight:bolder;margin:0;margin-bottom:3%}.footer-text{font-size:.7vw;margin:0;margin-bottom:1%}
 .footer-content-regulations{display:inline-block;outline:0 solid blue;margin-left:23.5%}
-.footer-content-regulations-title{font-size:.8vw}.footer-content-icons{width:15%;position:absolute;display:inline-block;outline:0 solid orange;margin-left:7%;margin-top:.3%}
+.footer-content-regulations-title{font-weight:bolder;margin-top:0;font-size:.8vw}
+.footer-content-icons{width:15%;position:absolute;display:inline-block;outline:0 solid orange;margin-left:7%;margin-top:.3%}
 .footer-content-icons-img{width:15%;margin-right:6%}.footer-content-developer{margin-left:6%;font-size:.7vw;outline:0 solid red;display:inline-block}
-.footer-content-developer-title{font-size:.7vw}.footer-content-developer-title a{text-decoration:underline;color:#888}
+.footer-content-developer-title{margin-top:1%;font-size:.7vw}.footer-content-developer-title a{text-decoration:underline;color:#888}
 .footer-content-contacts{position:absolute;margin-left:6%;display:inline-block;outline:0 solid green;text-align:right}
-.footer-content-contacts-title{margin-bottom:13%}.footer-content-contacts-text{margin-bottom:5%}
+.footer-content-contacts-title{margin-bottom:10%}.footer-content-contacts-text{margin-bottom:5%}
 .lessons{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888}.lessons-title{font-size:1.8vw;color:#705290}
 .lessons-introduction{text-align:justify;color:#705290;width:76%;margin:4% auto 0 auto;background-image:url("../images/lessons-introduction-fon.png");background-repeat:no-repeat;background-size:100%;padding:4.5% 0}
 .lessons-introduction-next-date{margin-left:3.5%;margin-top:-0.8%;position:absolute;font-family:PhillippScript;width:10%;text-align:center;font-size:1.5vw;display:inline-block}
@@ -65,7 +66,7 @@ main{margin-top:12%;width:100%;text-align:center;box-sizing:border-box;padding:0
 .news-content{margin-top:9%;text-align:center}.news-calendar{margin:0;width:100%;float:none}
 .news-calendar img{margin-bottom:9%;width:40%}.news-details{font-size:3vw;width:100%;float:none}
 .news-details-text{margin:-6.6% 0 5% 12%}.news-details-text:last-child{margin:-6.6% 0 0 12%}
-.news-details-marker{width:6%}.news-button{width:100%}footer{width:78%;text-align:center;margin:0 auto 0 auto;padding-top:2%;margin-top:7%}
+.news-details-marker{width:6%}.news-button{width:100%}footer{width:78%;text-align:center;margin:7% auto 0 auto;padding:2% 0 0 0}
 .footer-content-icons{position:relative;width:100%;margin:0}.footer-content-icons img{cursor:pointer;width:10%;margin:0 6.5% 0 6.5%}
 .footer-content-regulations{padding:0 17%;position:absolute;margin:29% 0 4% 0;left:0}
 .footer-content-regulations-title{font-size:3vw;margin:0 0 2% 0;font-weight:bolder}

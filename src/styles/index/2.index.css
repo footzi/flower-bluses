@@ -205,8 +205,9 @@ main {
 
 footer{
   /*margin-top: 12%;*/
-  margin-top: 1.6%;
-  padding-top: 2.5%;
+  margin-top: 3.1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   outline:2px solid red;
 }
 .footer-content{
@@ -232,6 +233,8 @@ footer{
   margin-left: 23.5%;
 }
 .footer-content-regulations-title {
+  font-weight: bolder;
+  margin-top: 0;
   font-size: 0.8vw;
 }
 
@@ -255,6 +258,7 @@ footer{
   display: inline-block;
 }
 .footer-content-developer-title {
+  margin-top: 1%;
   font-size:0.7vw;
 }
 .footer-content-developer-title a {
@@ -271,7 +275,7 @@ footer{
   text-align: right;
 }
 .footer-content-contacts-title {
-  margin-bottom: 13%;
+  margin-bottom: 10%;
 }
 .footer-content-contacts-text {
   margin-bottom: 5%;

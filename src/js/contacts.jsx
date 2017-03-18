@@ -29,6 +29,7 @@ myform.submit(function(event){
 });
 	},
 	render () {
+		document.getElementById("footer").style.marginTop="76.2%";
 		return (
 			
 			<div className="contacts">

@@ -45,10 +45,18 @@ let Pendants = React.createClass({
             
             </div>
             <div className="pages">
-                <Link to="/catalog" className="pages-link">1</Link>
-                <Link to="/catalog" className="pages-link">2</Link>
-                <Link to="/catalog" className="pages-link">3</Link>
-            </div>
+                    <div className="pages-back">
+                         <a className="pages-link">← предыдущая</a>
+                    </div>
+                    <div className="pages-numbers">
+                        <Link to="/catalog" className="pages-numbers-link">1</Link>
+                        <Link to="/catalog" className="pages-numbers-link">2</Link>
+                        <Link to="/catalog" className="pages-numbers-link">3</Link>
+                    </div>
+                    <div className="pages-next">
+                         <a className="pages-link">следующая →</a>
+                    </div>
+                </div>
 
                 <div >
                 {this.props.children}

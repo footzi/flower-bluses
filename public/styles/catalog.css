@@ -11,20 +11,23 @@
 .catalog-info-text:last-child{margin-top:1%}.catalog-info-text-list{margin:0}.catalog-info-text-list:nth-child(6){margin-bottom:6%}
 .catalog-butterfly-img{position:absolute;width:3%}.catalog-info-butterfly1{margin-top:0;margin-left:-35%}
 .catalog-info-butterfly2{margin-top:-5%;margin-left:32%}.catalog-navigation{margin-top:-39.5%;float:right}
-.catalog-navigation a{text-decoration:none;color:#888;font-size:1vw}.catalog-list{margin-bottom:16%;height:100%;outline:0 solid black}
+.catalog-navigation a{text-decoration:none;color:#a9a9a9;font-size:1vw}.catalog-list{margin-bottom:16%;height:100%;outline:0 solid black}
 .catalog-polimer{padding-top:2.5%;padding-left:1%;padding-right:1%;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349)}
 .catalog-polimer-introduction{margin-bottom:4%;text-align:justify;font-size:1.2vw;text-indent:5%}
 .catalog-polimer-butterfly1{margin-top:0;margin-left:-35%}.catalog-polimer-butterfly2{margin-top:-4%;margin-left:32%}
-.catalog-navbar{border-top:2px solid #705290;border-bottom:2px solid #705290;margin-top:2.2%}
+.catalog-navbar{border-top:2px solid #705290;border-bottom:2px solid #705290;margin-top:2.2%;margin-bottom:1.5%}
 .Link{color:#705290;font-size:.9vw;font-weight:bolder;display:inline-block;padding:.7% 2.5%}
 .Link-name{display:inline-block}.Link:hover{background-color:rgba(255,255,255,0.5);background-size:90%;text-decoration:underline}
 .Link-name:hover{text-decoration:underline}.active-link{background-color:rgba(255,255,255,0.5);text-decoration:underline}
-.hidden{display:none}.product-preview{color:black;margin-top:7%;margin-right:6%;display:inline-table;width:29%;font-family:Arial,Helvetica,sans-serif;font-size:1vw;font-weight:bolder}
+.hidden{display:none}.product-preview{color:black;margin-top:6%;margin-right:6%;display:inline-table;width:29%;font-family:Arial,Helvetica,sans-serif;font-size:1vw;font-weight:bolder}
 .product-preview:nth-child(3n){margin-right:0}.product-preview-img{box-shadow:3px 3px rgba(0,0,0,0.302);width:30%}
 .product-preview-name{color:#6d6d6d;display:block;margin-top:2%}.product-preview-cost{color:#6d6d6d;display:block;margin-top:2%}
 .product-preview-button-img{cursor:pointer;margin-top:2%;margin-left:36%;position:absolute;color:#705290;font-family:PhillippScript;font-size:1.2vw;width:25%;border:1px solid #705290;border-radius:5px 5px;padding-top:.7%}
-.product-preview-instock{right:10%;width:10%;position:absolute}.pages{margin-top:3%}
-.pages-link{color:#888;text-decoration:none;margin-right:1%}.pages-link:hover{text-decoration:underline;color:#705290}
+.product-preview-instock{right:10%;width:10%;position:absolute}.pages{width:71%;position:absolute;margin-top:5.6%}
+.pages-back{display:inline-table;float:left}.pages-next{display:inline-table;float:right}
+.pages-link{font-size:1.2vw;color:#888;text-decoration:underline}.pages-numbers{width:10%;display:inline-block;margin:0 auto 0 auto}
+.pages-numbers-link{font-size:1.2vw;color:#888;text-decoration:none;margin-right:20%}
+.pages-numbers-link:hover{font-weight:bolder;text-decoration:underline;color:#705290}
 #b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
 #b-popup .b-popup-content{margin:4% auto 0 auto;width:65%}#b-popup-close-button{cursor:pointer;text-align:right;padding-top:2%}
 .order-close-button{position:relative;margin-top:.1%;left:3.3%}#product{background-image:url("../images/catalog/product-fon.png");background-size:100% 100%;padding:0 2% 2% 2%}

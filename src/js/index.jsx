@@ -14,13 +14,9 @@ let Index = React.createClass({
             <div className="stock-images">
                 <ul className="bxslider">
                     <li className="slide"><a href="/catalog/polimer/inStock/1-1"><img className="stock-img" src="images/1.jpg" /></a></li>
-                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/4.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/1.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/2.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/3.jpg" /></li>
-                    <li className="slide"><img className="stock-img" src="images/4.jpg" /></li>
+                    <li className="slide"><a href="/catalog/polimer/earrings/2-1"><img className="stock-img" src="images/2.jpg" /></a></li>
+                    <li className="slide"><a href="/catalog/polimer/earrings/2-2"><img className="stock-img" src="images/3.jpg" /></a></li>
+                    <li className="slide"><a href="/catalog/polimer/earrings/2-3"><img className="stock-img" src="images/4.jpg" /></a></li>
                 </ul>
             </div>
             <div className="stock-images-mobile">

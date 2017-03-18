@@ -93,7 +93,7 @@ let Product = React.createClass({
                                 <textarea className="order-form-input order-form-input-message" name="info" type="text" placeholder="Сообщение:" />
                             </div>
                              <div className="order-buttons">
-                                <span className="order-buttons-back">◄ назад</span>
+                                <span className="order-buttons-back">← назад</span>
                                 <button id="orderform-button" className="order-buttons-send">Отправить</button>
 
                              </div>

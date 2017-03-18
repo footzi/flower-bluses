@@ -142,9 +142,8 @@ main {
 footer {
     width: 78%;
     text-align: center;
-    margin: 0 auto 0 auto;
-    padding-top: 2%;
-    margin-top: 7%; 
+    margin: 7% auto 0 auto;
+    padding: 2% 0 0 0;
 }
 .footer-content-icons {
     position: relative;

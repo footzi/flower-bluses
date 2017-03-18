@@ -25,7 +25,7 @@ let Lessons = React.createClass({
         //      
         //  }
         document.body.style.backgroundImage="url(/images/fon-lessons.jpg)"
-        document.getElementById("footer").style.marginTop="3.1%"
+        document.getElementById("footer").style.marginTop="5%"
          
 
 		let { lessons } = this.state;
