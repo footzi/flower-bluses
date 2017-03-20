@@ -37444,7 +37444,7 @@
 		displayName: "About",
 
 		render: function render() {
-			document.getElementById("footer").style.marginTop = "2.6%";
+			document.getElementById("footer").style.marginTop = "3.7%";
 			return _react2["default"].createElement(
 				"div",
 				{ className: "about" },

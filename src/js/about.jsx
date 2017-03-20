@@ -3,7 +3,7 @@ import React from 'react';
 let About = React.createClass({
 
 	render() {
-		document.getElementById("footer").style.marginTop="2.6%"
+		document.getElementById("footer").style.marginTop="3.7%"
 		return (
 			<div className="about">
 				<div className="about-title">БЛАГОДАРЮ ВСЕХ, КТО ЗАШЕЛ НА МОЙ САЙТ!</div>

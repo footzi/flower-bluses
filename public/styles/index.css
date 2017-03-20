@@ -1,7 +1,7 @@
 body{padding:0;margin:0;*font-size:small;*font:x-small}h1,h2,h3,h4,h5,h6,ul,li,em,strong,pre,code{padding:0;margin:0;line-height:1em;font-size:100%;font-weight:normal;font-style:normal}
 ul{list-style:none}img{border:0}p{margin:1em 0}@font-face{font-family:'PhillippScript';src:url("../fonts/PhillippScript/PhillippScript.eot");src:local('☺'),url("../fonts/PhillippScript/PhillippScript.woff") format('woff'),url("../fonts/PhillippScript.ttf") format('truetype'),url("../fonts/PhillippScript/PhillippScript.svg") format('svg');font-weight:normal;font-style:normal}
 @font-face{font-family:'Arial';src:url("../fonts/Arial/arial.eot");src:local('☺'),url("../fonts/Arial/arial.woff") format('woff'),url("../fonts/Arial/arial.ttf") format('truetype'),url("../fonts/Arial/arial.svg") format('svg');font-weight:normal;font-style:normal}
-body{background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover}
+body{background-position:bottom;background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover}
 main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;padding:4% 6% 0 3%}
 .nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.navbar-button{margin-top:7%;width:96%}
 .navbar-button img{width:100%}.navbar-butterfly{position:absolute;z-index:2;width:3%;margin-left:-0.5%}
@@ -20,7 +20,7 @@ main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;
 .news-calendar-img{width:100%}.news-details{width:76%;margin-top:-0.5%;float:right;text-align:left;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888}
 .news-details-text{position:relative;margin:-3.5% 0 3% 6%;outline:0 solid yellow}
 .news-details-marker{position:relative;display:inline;width:4%}.clear{clear:both}
-.button .button-more{margin-top:0}footer{margin-top:3.1%;padding-top:.5%;padding-bottom:.5%;outline:2px solid red}
+.button .button-more{margin-top:0}footer{margin-top:3.1%;padding-top:.5%;padding-bottom:.5%;outline:0 solid red}
 .footer-content{outline:0 solid black;font-family:Arial,Helvetica,sans-serif;color:#888}
 .footer-title{font-size:.8vw;font-weight:bolder;margin:0;margin-bottom:3%}.footer-text{font-size:.7vw;margin:0;margin-bottom:1%}
 .footer-content-regulations{display:inline-block;outline:0 solid blue;margin-left:23.5%}
