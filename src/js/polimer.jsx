@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from "react-router";
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import $ from "jquery"
 
 
 let Polimer = React.createClass({

@@ -3,30 +3,30 @@ import $ from "jquery";
 
 let Contacts = React.createClass({
 	ComponentDidMount () {
-				var myform = $("form#contactsform");
-myform.submit(function(event){
-	event.preventDefault();
+// 				var myform = $("form#contactsform");
+// myform.submit(function(event){
+// 	event.preventDefault();
 
-	var params = myform.serializeArray().reduce(function(obj, item) {
-     obj[item.name] = item.value;
-     return obj;
-  }, {});
+// 	var params = myform.serializeArray().reduce(function(obj, item) {
+//      obj[item.name] = item.value;
+//      return obj;
+//   }, {});
 
-  // Change to your service ID, or keep using the default service
-  var service_id = "mail_ru";
+//   // Change to your service ID, or keep using the default service
+//   var service_id = "mail_ru";
 
-  var template_id = "about";
-  myform.find("#contactsform-button").text("Sending...");
-  emailjs.send(service_id,template_id,params)
-  	.then(function(){ 
-       alert("Sent!");
-       myform.find("#contactsform-button").text("Send");
-     }, function(err) {
-       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-       myform.find("#contactsform-button").text("Send");
-    });
-  return false;
-});
+//   var template_id = "about";
+//   myform.find("#contactsform-button").text("Sending...");
+//   emailjs.send(service_id,template_id,params)
+//   	.then(function(){ 
+//        alert("Sent!");
+//        myform.find("#contactsform-button").text("Send");
+//      }, function(err) {
+//        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+//        myform.find("#contactsform-button").text("Send");
+//     });
+//   return false;
+// });
 	},
 	render () {
 		document.getElementById("footer").style.marginTop="76.2%";
@@ -35,7 +35,7 @@ myform.submit(function(event){
 			<div className="contacts">
 				<h1 className="main-title">Контакты</h1>
 				<div className="contacts-form">
-					<form id="contactsform">
+					<form id="aboutform">
 						<div className="contacts-form-adress">
 							<label>Ваше имя:</label>
 							<input className="contacts-form-input" name="name" type="text" required/>
@@ -60,7 +60,7 @@ myform.submit(function(event){
 							<textarea className="contacts-form-message-textarea" name="message" type="text" required></textarea>
 							
 						</div>
-							<button id="contactsform-button" className="contacts-form-button-send">Отправить</button>
+							<button id="aboutform-button" className="contacts-form-button-send">Отправить</button>
 						
 					</form>
 				</div>

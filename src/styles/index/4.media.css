@@ -4,6 +4,8 @@ body {
   background-image: url("../images/fon640.jpg");
   background-repeat: no-repeat;
   background-size: 100% 110.5%;
+  /*background-size: cover;*/
+  background-position:top; 
 }
 .nav {
     display:none;

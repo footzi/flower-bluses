@@ -35,7 +35,7 @@ let Lessons = React.createClass({
                 <div className="lessons-introduction">
                     <div className="lessons-introduction-next-date">Ближайшие даты проведения обучения</div>
                     <div className="lessons-introduction-date">13, 19, 25 марта</div>
-                    <div className="lessons-introduction-button">Записаться</div>
+                    <a href="/lessons/1"><div className="lessons-introduction-button">Записаться</div></a>
                 </div>
                 <div className="lessons-info">
                     <p>Для тех, кто хочет научиться очень популярному виду искусства «Создание реалистичных цветов из самозастывающих полимерных глин». Все предлагаемые мастер-классы проводятся в моей уютной домашней мастерской. Здесь достаточно места для 6 человек. Но, на сегодняшний день мне удобен формат проведения МК для 1-4 человек.</p>
