@@ -1,7 +1,7 @@
 body{padding:0;margin:0;*font-size:small;*font:x-small}h1,h2,h3,h4,h5,h6,ul,li,em,strong,pre,code{padding:0;margin:0;line-height:1em;font-size:100%;font-weight:normal;font-style:normal}
 ul{list-style:none}img{border:0}p{margin:1em 0}@font-face{font-family:'PhillippScript';src:url("../fonts/PhillippScript/PhillippScript.eot");src:local('☺'),url("../fonts/PhillippScript/PhillippScript.woff") format('woff'),url("../fonts/PhillippScript.ttf") format('truetype'),url("../fonts/PhillippScript/PhillippScript.svg") format('svg');font-weight:normal;font-style:normal}
 @font-face{font-family:'Arial';src:url("../fonts/Arial/arial.eot");src:local('☺'),url("../fonts/Arial/arial.woff") format('woff'),url("../fonts/Arial/arial.ttf") format('truetype'),url("../fonts/Arial/arial.svg") format('svg');font-weight:normal;font-style:normal}
-body{background-position:bottom;background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover}
+body{background-position:center;background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover}
 main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;padding:4% 6% 0 3%}
 .nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.navbar-button{margin-top:7%;width:96%}
 .navbar-button img{width:100%}.navbar-butterfly{position:absolute;z-index:2;width:3%;margin-left:-0.5%}

@@ -26,9 +26,10 @@ import ProductEarrings from "./earrings/product-earrings.jsx"
 
 //import "./Other/jquery.min.js"
 //import "./Other/jquery.bxslider.js"
+//import "./main.js"
 //import "./Other/html5shiv.js"
 //import "./Other/respond.js"
-
+ 
 ReactDOM.render (
     <Router history={browserHistory}>
         <Route path="/" component={Index} />
