@@ -1,14 +1,25 @@
 import React from 'react';
-import products from "./../Data/data-pendants.js";
+import { products, products2 } from "./../Data/data-pendants.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
+import Product from "../product.jsx"
+var Carousel = require('react-responsive-carousel').Carousel;
+
+
+
+
+
+
 
 let Pendants = React.createClass({
+     
+       
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
     getInitialState() {
         return {
+            
             products
         }
     },
@@ -17,10 +28,14 @@ let Pendants = React.createClass({
         this.context.router.push(`/catalog/polimer/pendants/${productId}`);
     },
     render () {
+        // let { products } = this.state;
+        // let Page=location.pathname;
+        // let test="/catalog/polimer/pendants";
+        // products=products2;
+        
         
         
 
-        let { products } = this.state;
         return (
             <div>
                 <div className="catalog-navigation">
@@ -68,8 +83,46 @@ let Pendants = React.createClass({
     }
 })
 
+let ProductPendant = React.createClass({
+    
+   
+    getInitialState() {
+        let { productId } = this.props.params;
+        return {
+            
+            product: products.find(product => product.id === productId)
+        };
+    },
+    componentWillReceiveProps(nextProps) {
+        let { productId: prevId } = this.props.params;
+        let { productId: nextId } = nextProps.params;
+
+        if (prevId !== nextId) {
+            this.setState({
+                product: products.find(product => product.id === nextId)
+            });
+        }
+    },
+    render () {
+       
+        
+        let { product } = this.state;
+
+        return (
+            <Product 
+                  id={product.id}
+                  name={ product.name }
+                  text={ product.text }
+                  image1={product.image1}
+                  image2={product.image2}
+                  image3={product.image3}
+                  image4={product.image4}
+                  image5={product.image5}
+                  imagePreview={product.imagePreview}/>
+        )
+    }
+})
 
 
 
-
-export default Pendants;
+export { Pendants, ProductPendant };

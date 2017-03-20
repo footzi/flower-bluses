@@ -1,6 +1,6 @@
 import React from "react"; 
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Router, Route, browserHistory } from 'react-router';
 import Index from "./index.jsx"
 import Catalog from "./catalog.jsx"
 import Polimer from "./polimer.jsx"
@@ -11,17 +11,11 @@ import Lessons from "./lessons.jsx"
 import LessonsInfo from "./lessonsInfo.jsx"
 import LessonsImage from "./lessonsImage.jsx"
 
-import InStock from "./inStock/inStock.jsx"
-import ProductInStock from "./inStock/product-inStock.jsx"
+import { InStock, ProductInStock } from "./inStock/inStock.jsx"
+import { All, ProductAll} from "./all/all.jsx"
+import { Pendants, ProductPendant } from "./pendants/pendants.jsx"
+import { Earrings, ProductEarrings } from "./earrings/earrings.jsx"
 
-import All from "./all/all.jsx"
-import ProductAll from "./all/product-all.jsx"
-
-import Pendants from "./pendants/pendants.jsx"
-import ProductPendant from "./pendants/product-pendant.jsx"
-
-import Earrings from "./earrings/earrings.jsx"
-import ProductEarrings from "./earrings/product-earrings.jsx"
 
 
 //import "./Other/jquery.min.js"
