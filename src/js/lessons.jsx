@@ -1,8 +1,12 @@
 import React from "react";
 import lessons from "./Data/data-lessons.js";
 import { Link } from "react-router";
-
+import $ from "jquery";
 let Lessons = React.createClass({
+    componentDidMount () {
+        $("body").css({"background-image":"url(/images/fon-lessons.jpg)"});
+        $("#footer").css({"margin-top":"5%"});
+    },
 	contextTypes: {
         router: React.PropTypes.object.isRequired
     },
@@ -24,8 +28,8 @@ let Lessons = React.createClass({
         // if(false !== pageLink.indexOf(lessonsLink)) {
         //      
         //  }
-        document.body.style.backgroundImage="url(/images/fon-lessons.jpg)"
-        document.getElementById("footer").style.marginTop="5%"
+        //document.body.style.backgroundImage="url(/images/fon-lessons.jpg)"
+        //document.getElementById("footer").style.marginTop="5%"
          
 
 		let { lessons } = this.state;

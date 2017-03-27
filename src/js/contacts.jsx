@@ -1,41 +1,41 @@
 import React from 'react';
-import $ from "jquery";
+
 
 let Contacts = React.createClass({
-	ComponentDidMount () {
-// 				var myform = $("form#contactsform");
-// myform.submit(function(event){
-// 	event.preventDefault();
+	componentDidMount () {
+		$("body").css({"background-image":"url(/images/fon.jpg)"});
+        $("#footer").css({"margin-top":"76.2%"});
+        (function(){
+            emailjs.init("user_jmnF1YC49paVFwkbJRipP");
+        })();
 
-// 	var params = myform.serializeArray().reduce(function(obj, item) {
-//      obj[item.name] = item.value;
-//      return obj;
-//   }, {});
+        var orderform = $("#aboutform");
+        orderform.submit(function(event){
+            event.preventDefault();
 
-//   // Change to your service ID, or keep using the default service
-//   var service_id = "mail_ru";
+        // Change to your service ID, or keep using the default service
+        var service_id = "mail_ru";
+        var template_id = "about";
 
-//   var template_id = "about";
-//   myform.find("#contactsform-button").text("Sending...");
-//   emailjs.send(service_id,template_id,params)
-//   	.then(function(){ 
-//        alert("Sent!");
-//        myform.find("#contactsform-button").text("Send");
-//      }, function(err) {
-//        alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-//        myform.find("#contactsform-button").text("Send");
-//     });
-//   return false;
-// });
+        orderform.find("#aboutform-button").text("Отправляется...");
+        emailjs.sendForm(service_id,template_id,"aboutform")
+            .then(function(){ 
+                console.log("Sent!");
+            orderform.find("#aboutform-button").text("Отправлено");
+            }, function(err) {
+            console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+            orderform.find("#aboutform-button").text("Oшибка");
+            });
+        return false;
+        });
 	},
 	render () {
-		document.getElementById("footer").style.marginTop="76.2%";
 		return (
 			
 			<div className="contacts">
 				<h1 className="main-title">Контакты</h1>
 				<div className="contacts-form">
-					<form id="aboutform">
+					<form id="aboutform" method="post">
 						<div className="contacts-form-adress">
 							<label>Ваше имя:</label>
 							<input className="contacts-form-input" name="name" type="text" required/>

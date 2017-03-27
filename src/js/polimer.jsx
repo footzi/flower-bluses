@@ -4,6 +4,9 @@ import ReactDOM from 'react-dom';
 
 
 let Polimer = React.createClass({
+    componentDidMount () {
+        $("#footer").css({"margin-top":"3.7%"});
+    },
     // getInitialState: function() {
     //     return { 
     //     	shouldHide:false
@@ -23,7 +26,6 @@ let Polimer = React.createClass({
         // if(Page.indexOf(inStock)) {
         //     $("#all").css({"display":"none"})
         // }
-        document.getElementById("footer").style.marginTop="3.7%"
         return (
 <div className="catalog-list">
     

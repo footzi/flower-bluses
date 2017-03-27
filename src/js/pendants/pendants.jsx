@@ -5,12 +5,6 @@ import { Link } from 'react-router';
 import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
 
-
-
-
-
-
-
 let Pendants = React.createClass({
      
        
@@ -28,7 +22,7 @@ let Pendants = React.createClass({
         this.context.router.push(`/catalog/polimer/pendants/${productId}`);
     },
     render () {
-        // let { products } = this.state;
+            let { products } = this.state;
         // let Page=location.pathname;
         // let test="/catalog/polimer/pendants";
         // products=products2;
@@ -39,9 +33,9 @@ let Pendants = React.createClass({
         return (
             <div>
                 <div className="catalog-navigation">
-                    <a href="/catalog">Каталог>></a>
-                    <a href="/catalog/polimer/all">Полимерная глина>></a>
-                    <a href="/catalog/polimer/pendants">Кулоны/подвески</a>
+                    <Link to="/catalog">Каталог>></Link>
+                    <Link to="/catalog/polimer/all">Полимерная глина>></Link>
+                    <Link to="/catalog/polimer/pendants">Кулоны/подвески</Link>
                 </div>
                 <div>
                 {

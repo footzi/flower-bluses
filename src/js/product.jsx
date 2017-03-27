@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 var Carousel = require('react-responsive-carousel').Carousel;
 import { browserHistory } from 'react-router';
-import $ from "jquery";
+
 let Product = React.createClass({
     componentDidMount () {
                     (function(){

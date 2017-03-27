@@ -2,7 +2,7 @@ import React from "react";
 import lessons from "./Data/data-lessons.js";
 import { Link } from "react-router";
 import { browserHistory } from 'react-router';
-import $ from "jquery";
+
 
 let LessonsImage = React.createClass({
     componentDidMount() {

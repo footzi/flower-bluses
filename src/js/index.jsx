@@ -1,6 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router';
+//import $ from "jquery";
+//import "./jquery.bxslider.js"
 let Index = React.createClass({
+    componentDidMount () {
+        
+        $("body").css({"background-image":"url(/images/fon.jpg)"});
+        $("#footer").css({"margin-top":"0"});
+    
+        $('.bxslider').bxSlider({
+            auto:true,
+             moveSlides: 1,
+            minSlides: 4,
+          maxSlides: 4,
+          slideWidth: 360,
+          slideMargin: 13
+          })
+          
+          
+    },
     render () {
         return (
 <div>
@@ -52,6 +70,7 @@ let Index = React.createClass({
                  <Link to="/lessons"><div className="stock-button news-button">Подробнее</div></Link>
             </div>
         </div>
+        
         
 </div>
         )

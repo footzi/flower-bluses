@@ -1,8 +1,14 @@
 import React from 'react';
 import { Link } from "react-router"
 
+
 let Catalog = React.createClass ({
+    componentDidMount () {
+            $("body").css({"background-image":"url(/images/fon.jpg)"});
+            $("#footer").css({"margin-top":"5%"});
+        },
     render () {
+        
         return (
 <div className="catalog">
 
@@ -16,25 +22,25 @@ let Catalog = React.createClass ({
 
      <div className="catalog-img">
         <div className="catalog-img-prew"> 
-            <a href="/catalog/polimer/inStock">
+            <Link to="/catalog/polimer/inStock">
                 <div className="catalog-thumbs">
                     <img src="../images/catalog/1.png" /> 
                     <div className="catalog-caption">
                         <span className="catalog-caption-text">Украшения из<br/> полимерной глины</span>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
     
         <div className="catalog-img-prew catalog-img-prew-right">
-            <a href="/catalog/polimer/inStock">
+            <Link to="/catalog/polimer/inStock">
                 <div className="catalog-thumbs">
                     <img src="../images/catalog/1.png" /> 
                     <div className="catalog-caption">
                         <span className="catalog-caption-text">Цветочные композиции<br/> из полимерной глины</span>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
 
      </div>

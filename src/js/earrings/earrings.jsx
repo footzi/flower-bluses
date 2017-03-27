@@ -26,9 +26,9 @@ let Earrings  = React.createClass({
         return (
             <div>
                 <div className="catalog-navigation">
-                    <a href="/catalog">Каталог>></a>
-                    <a href="/catalog/polimer/all">Полимерная глина>></a>
-                    <a href="/catalog/polimer/earrings">Серьги</a>
+                    <Link to="/catalog">Каталог>></Link>
+                    <Link to="/catalog/polimer/all">Полимерная глина>></Link>
+                    <Link to="/catalog/polimer/earrings">Серьги</Link>
                 </div>
                 <div>
                 {

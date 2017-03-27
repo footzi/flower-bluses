@@ -1,9 +1,39 @@
 import React from 'react';
 
+
 let About = React.createClass({
+	componentDidMount () {
+		$("body").css({"background-image":"url(/images/fon.jpg)"});
+        $("#footer").css({"margin-top":"7%"});
+
+        (function(){
+            emailjs.init("user_jmnF1YC49paVFwkbJRipP");
+        })();
+
+        var orderform = $("#aboutform");
+        orderform.submit(function(event){
+            event.preventDefault();
+
+        // Change to your service ID, or keep using the default service
+        var service_id = "mail_ru";
+        var template_id = "about";
+
+        orderform.find("#aboutform-button").text("Отправляется...");
+        emailjs.sendForm(service_id,template_id,"aboutform")
+            .then(function(){ 
+                console.log("Sent!");
+            orderform.find("#aboutform-button").text("Отправлено");
+            }, function(err) {
+            console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+            orderform.find("#aboutform-button").text("Oшибка");
+            });
+        return false;
+        });
+	},
 
 	render() {
-		document.getElementById("footer").style.marginTop="3.7%"
+		// document.getElementById("footer").style.marginTop="3.7%"
+		
 		return (
 			<div className="about">
 				<div className="about-title">БЛАГОДАРЮ ВСЕХ, КТО ЗАШЕЛ НА МОЙ САЙТ!</div>
