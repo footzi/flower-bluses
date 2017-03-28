@@ -4,8 +4,9 @@ import { Link } from "react-router"
 
 let Catalog = React.createClass ({
     componentDidMount () {
+            window.scrollTo(0, 0)
             $("body").css({"background-image":"url(/images/fon.jpg)"});
-            $("#footer").css({"margin-top":"5%"});
+            $("#footer").css({"margin-top":"3.2%"});
         },
     render () {
         

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { products, products2 } from "./../Data/data-pendants.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';

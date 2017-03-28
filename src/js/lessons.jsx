@@ -4,8 +4,9 @@ import { Link } from "react-router";
 import $ from "jquery";
 let Lessons = React.createClass({
     componentDidMount () {
+        window.scrollTo(0, 0)
         $("body").css({"background-image":"url(/images/fon-lessons.jpg)"});
-        $("#footer").css({"margin-top":"5%"});
+        $("#footer").css({"margin-top":"4.8%"});
     },
 	contextTypes: {
         router: React.PropTypes.object.isRequired

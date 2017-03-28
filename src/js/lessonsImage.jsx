@@ -6,6 +6,7 @@ import { browserHistory } from 'react-router';
 
 let LessonsImage = React.createClass({
     componentDidMount() {
+        window.scrollTo(0, 0)
         let photoSmall1=document.getElementById('lessons-image-photo-small-1').src
         let photoSmall2=document.getElementById('lessons-image-photo-small-2').src
         let photoSmall3=document.getElementById('lessons-image-photo-small-3').src

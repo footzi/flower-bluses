@@ -3,6 +3,7 @@ import React from 'react';
 
 let Contacts = React.createClass({
 	componentDidMount () {
+		window.scrollTo(0, 0)
 		$("body").css({"background-image":"url(/images/fon.jpg)"});
         $("#footer").css({"margin-top":"76.2%"});
         (function(){

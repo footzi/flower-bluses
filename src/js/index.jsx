@@ -4,9 +4,9 @@ import { Link } from 'react-router';
 //import "./jquery.bxslider.js"
 let Index = React.createClass({
     componentDidMount () {
-        
+        window.scrollTo(0, 0)
         $("body").css({"background-image":"url(/images/fon.jpg)"});
-        $("#footer").css({"margin-top":"0"});
+        $("#footer").css({"margin-top":"3%"});
     
         $('.bxslider').bxSlider({
             auto:true,

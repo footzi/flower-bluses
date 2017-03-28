@@ -6,6 +6,7 @@ require('ie-array-find-polyfill');
 
 let LessonsInfo = React.createClass({
     componentDidMount() {
+        
                     (function(){
                 emailjs.init("user_jmnF1YC49paVFwkbJRipP");
             })();

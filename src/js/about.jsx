@@ -3,8 +3,9 @@ import React from 'react';
 
 let About = React.createClass({
 	componentDidMount () {
+		window.scrollTo(0, 0)
 		$("body").css({"background-image":"url(/images/fon.jpg)"});
-        $("#footer").css({"margin-top":"7%"});
+        $("#footer").css({"margin-top":"11%"});
 
         (function(){
             emailjs.init("user_jmnF1YC49paVFwkbJRipP");
