@@ -1,5 +1,5 @@
 let products = [{
-    "id":"1-1",
+    "id":"1-1-1",
     "name":"ЗАКОЛКА ДЛЯ ВОЛОС 'ЛЕТО'",
     "cost":"1500 руб.",
     "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
@@ -13,14 +13,14 @@ let products = [{
 
 
 },{
-    "id":"1-2",
+    "id":"1-1-2",
     "name":"Заколка для волос:'Лето'",
     "cost":"1500 руб.",
     "text":"Обнимашки 2S",
     "imagePreview":"/images/catalog/pendants/1-1.jpg",
     "instock":"/images/catalog/notstock.png"
 },{
-    "id":"1-3",
+    "id":"1-1-3",
     "name":"Заколка для волос:'Лето3'",
     "cost":"1500 руб.",
     "text":"Обнимашки 3S",
@@ -28,7 +28,7 @@ let products = [{
     "instock":"/images/catalog/notstock.png"
 }
 ,{
-    "id":"1-4",
+    "id":"1-1-4",
     "name":"Заколка для волос:'Лето4'",
     "cost":"1500 руб.",
     "text":"Обнимашки 4S",
@@ -36,7 +36,7 @@ let products = [{
     "instock":"/images/catalog/instock.png"
 }
 ,{
-    "id":"1-5",
+    "id":"1-1-5",
     "name":"Заколка для волос:'Лето5'",
     "cost":"1500 руб.",
     "text":"Обнимашки 5S",
@@ -44,7 +44,7 @@ let products = [{
     "instock":"/images/catalog/notstock.png"
 }
 ,{
-    "id":"1-6",
+    "id":"1-1-6",
     "name":"Заколка для волос:'Лето6'",
     "cost":"1500 руб.",
     "text":"Обнимашки 6S",
@@ -52,7 +52,7 @@ let products = [{
     "instock":"/images/catalog/instock.png"
 }
 ,{
-    "id":"1-7",
+    "id":"1-1-7",
     "name":"Заколка для волос:'Лето7'",
     "cost":"1500 руб.",
     "text":"Обнимашки 7S",
@@ -60,7 +60,7 @@ let products = [{
     "instock":"/images/catalog/instock.png"
 }
 ,{
-    "id":"1-8",
+    "id":"1-1-8",
     "name":"Заколка для волос:'Лето8'",
     "cost":"1500 руб.",
     "text":"Обнимашки 8S",
@@ -68,7 +68,7 @@ let products = [{
     "instock":"/images/catalog/notstock.png"
 }
 ,{
-    "id":"1-9",
+    "id":"1-1-9",
     "name":"Заколка для волос:'Лето9'",
     "cost":"1500 руб.",
     "text":"Обнимашки 9S",
@@ -77,7 +77,7 @@ let products = [{
 }];
 
 let products2 = [{
-    "id":"1-10",
+    "id":"1-2-1",
     "name":"Cтраница2",
     "cost":"1500 руб.",
     "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
@@ -91,14 +91,14 @@ let products2 = [{
 
 
 },{
-    "id":"1-11",
+    "id":"1-2-2",
     "name":"Заколка для волос:'Лето'",
     "cost":"1500 руб.",
     "text":"Обнимашки 2S",
     "imagePreview":"/images/catalog/pendants/3-1.jpg",
     "instock":"/images/catalog/notstock.png"
 },{
-    "id":"1-12",
+    "id":"1-2-3",
     "name":"Заколка для волос:'Лето3'",
     "cost":"1500 руб.",
     "text":"Обнимашки 3S",
@@ -106,7 +106,7 @@ let products2 = [{
     "instock":"/images/catalog/notstock.png"
 }
 ,{
-    "id":"1-13",
+    "id":"1-2-4",
     "name":"Заколка для волос:'Лето4'",
     "cost":"1500 руб.",
     "text":"Обнимашки 4S",
@@ -114,7 +114,7 @@ let products2 = [{
     "instock":"/images/catalog/instock.png"
 }
 ,{
-    "id":"1-14",
+    "id":"1-2-5",
     "name":"Заколка для волос:'Лето5'",
     "cost":"1500 руб.",
     "text":"Обнимашки 5S",
@@ -122,7 +122,7 @@ let products2 = [{
     "instock":"/images/catalog/notstock.png"
 }
 ,{
-    "id":"1-15",
+    "id":"1-2-6",
     "name":"Заколка для волос:'Лето6'",
     "cost":"1500 руб.",
     "text":"Обнимашки 6S",
@@ -130,7 +130,7 @@ let products2 = [{
     "instock":"/images/catalog/instock.png"
 }
 ,{
-    "id":"1-16",
+    "id":"1-2-7",
     "name":"Заколка для волос:'Лето7'",
     "cost":"1500 руб.",
     "text":"Обнимашки 7S",
@@ -138,7 +138,7 @@ let products2 = [{
     "instock":"/images/catalog/instock.png"
 }
 ,{
-    "id":"1-17",
+    "id":"1-2-8",
     "name":"Заколка для волос:'Лето8'",
     "cost":"1500 руб.",
     "text":"Обнимашки 8S",
@@ -146,7 +146,7 @@ let products2 = [{
     "instock":"/images/catalog/notstock.png"
 }
 ,{
-    "id":"1-18",
+    "id":"1-2-9",
     "name":"Заколка для волос:'Лето9'",
     "cost":"1500 руб.",
     "text":"Обнимашки 9S",

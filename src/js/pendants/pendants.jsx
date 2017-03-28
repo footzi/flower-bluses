@@ -1,16 +1,10 @@
 import React from 'react';
 
-// import { products, products2 } from "./../Data/data-pendants.js";
+import { products, products2 } from "./../Data/data-pendants.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
-let products = require("./../Data/data-pendants.js").products;
-let products2 = require("./../Data/data-pendants.js").products2;
-
-// let Page=location.pathname;
-// let test="/catalog/polimer/pendants/page2";
-
 
 let Pendants = React.createClass({
      
@@ -19,9 +13,6 @@ let Pendants = React.createClass({
         router: React.PropTypes.object.isRequired
     },
     
-    // componentWillMount() {
-        
-    // },
     getInitialState() {
         return {
             
