@@ -26,7 +26,7 @@
 .product-preview-instock{right:10%;width:10%;position:absolute}.pages{width:71%;position:absolute;margin-top:5.6%}
 .pages-back{display:inline-table;float:left}.pages-next{display:inline-table;float:right}
 .pages-link{font-size:1.2vw;color:#888;text-decoration:underline}.pages-numbers{width:10%;display:inline-block;margin:0 auto 0 auto}
-.pages-numbers-link{font-size:1.2vw;color:#888;text-decoration:none;margin-right:20%}
+.pages-numbers-link{display:inline;cursor:pointer;font-size:1.2vw;color:#888;text-decoration:none;margin-right:20%}
 .pages-numbers-link:hover{font-weight:bolder;text-decoration:underline;color:#705290}
 #b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
 #b-popup .b-popup-content{margin:4% auto 0 auto;width:65%}#b-popup-close-button{cursor:pointer;text-align:right;padding-top:2%}

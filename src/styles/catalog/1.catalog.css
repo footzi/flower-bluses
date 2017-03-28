@@ -291,6 +291,8 @@
 }
 
 .pages-numbers-link {
+  display: inline;
+  cursor:pointer;
   font-size: 1.2vw;
   color:#888888;
   text-decoration: none;

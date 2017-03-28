@@ -1,9 +1,16 @@
 import React from 'react';
-import { products, products2 } from "./../Data/data-pendants.js";
+
+// import { products, products2 } from "./../Data/data-pendants.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
+let products = require("./../Data/data-pendants.js").products;
+let products2 = require("./../Data/data-pendants.js").products2;
+
+// let Page=location.pathname;
+// let test="/catalog/polimer/pendants/page2";
+
 
 let Pendants = React.createClass({
      
@@ -11,25 +18,34 @@ let Pendants = React.createClass({
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
+    
+    // componentWillMount() {
+        
+    // },
     getInitialState() {
         return {
             
             products
         }
     },
+    
+        
 
     handlePreviewClick(productId) {
         this.context.router.push(`/catalog/polimer/pendants/${productId}`);
     },
+
+    toPage1: function(e) {
+                e.preventDefault();
+                this.setState({products:products});
+            },
+    toPage2: function(e) {
+        e.preventDefault();
+        this.setState({products:products2});
+    },
+
     render () {
             let { products } = this.state;
-        // let Page=location.pathname;
-        // let test="/catalog/polimer/pendants";
-        // products=products2;
-        
-        
-        
-
         return (
             <div>
                 <div className="catalog-navigation">
@@ -58,9 +74,9 @@ let Pendants = React.createClass({
                          <a className="pages-link">← предыдущая</a>
                     </div>
                     <div className="pages-numbers">
-                        <Link to="/catalog" className="pages-numbers-link">1</Link>
-                        <Link to="/catalog" className="pages-numbers-link">2</Link>
-                        <Link to="/catalog" className="pages-numbers-link">3</Link>
+                        <p className="pages-numbers-link" onClick={this.toPage1}> 1</p>
+                        <p to="/catalog" className="pages-numbers-link" onClick={this.toPage2}>2</p>
+                        <p to="/catalog" className="pages-numbers-link">3</p>
                     </div>
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>
@@ -77,46 +93,7 @@ let Pendants = React.createClass({
     }
 })
 
-let ProductPendant = React.createClass({
-    
-   
-    getInitialState() {
-        let { productId } = this.props.params;
-        return {
-            
-            product: products.find(product => product.id === productId)
-        };
-    },
-    componentWillReceiveProps(nextProps) {
-        let { productId: prevId } = this.props.params;
-        let { productId: nextId } = nextProps.params;
-
-        if (prevId !== nextId) {
-            this.setState({
-                product: products.find(product => product.id === nextId)
-            });
-        }
-    },
-    render () {
-       
-        
-        let { product } = this.state;
-
-        return (
-            <Product 
-                  id={product.id}
-                  name={ product.name }
-                  text={ product.text }
-                  image1={product.image1}
-                  image2={product.image2}
-                  image3={product.image3}
-                  image4={product.image4}
-                  image5={product.image5}
-                  imagePreview={product.imagePreview}/>
-        )
-    }
-})
 
 
 
-export { Pendants, ProductPendant };
+export default Pendants ;

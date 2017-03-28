@@ -13,7 +13,8 @@ import LessonsImage from "./lessonsImage.jsx"
 
 import { InStock, ProductInStock } from "./inStock/inStock.jsx"
 import { All, ProductAll} from "./all/all.jsx"
-import { Pendants, ProductPendant } from "./pendants/pendants.jsx"
+import Pendants from "./pendants/pendants.jsx"
+import ProductPendant from "./pendants/productPendants.jsx"
 import { Earrings, ProductEarrings } from "./earrings/earrings.jsx"
 
 
