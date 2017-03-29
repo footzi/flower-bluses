@@ -10,15 +10,18 @@ let Main = React.createClass({
          $(".nav-mobile-menu").css("display","none")
  });
 
-$(function(){
-	$(window).resize(function(){
-		if($(window).width()<=640) {
-			$("body").css({"background-image":"url(/images/fon640.jpg)"});
-		} else {
-			$("body").css({"background-image":"url(/images/fon.jpg)"});
-		}
-	}).resize()
-})
+  //           $(function(){
+  //           	$(window).resize(function(){
+  //           		if($(window).width()<=640) {
+  //           			//$("body").css({"background-image":"url(/images/fon640.jpg)"});
+  //                       $("body").css({"background-image":"none"})
+  //                       $("body").css({"background-color":"silver"});
+
+  //           		} else {
+  //           			$("body").css({"background-image":"url(/images/fon.jpg)"});
+  //           		}
+  //           	}).resize()
+  //           })
 		},
 
 	render() {
@@ -57,11 +60,11 @@ $(function(){
                 <img src="/images/burger-button.png" />
             </div>
             <ul className="nav-mobile-menu">
-                <li><a href="/">Главная</a></li>
-                <li><a>О нас</a></li>
-                <li><a>Каталог</a></li>
-                <li><a>Обучение</a></li>
-                <li><a>Контакты</a></li>
+                <li><Link to="/">Главная</Link></li>
+                <li><Link to="/about">О нас</Link></li>
+                <li><Link to="/catalog">Каталог</Link></li>
+                <li><Link to="/lessons">Обучение</Link></li>
+                <li><Link to="/contacts">>Контакты</Link></li>
             </ul>
         </div>
     </nav>
