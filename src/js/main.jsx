@@ -8,7 +8,12 @@ let Main = React.createClass({
          $(".nav-mobile-menu").css("display","block")
      } else 
          $(".nav-mobile-menu").css("display","none")
+
  });
+            $(".nav-mobile-menu li").click(function() {
+                $(".nav-mobile-menu").hide()
+         })
+
 
   //           $(function(){
   //           	$(window).resize(function(){
@@ -64,7 +69,7 @@ let Main = React.createClass({
                 <li><Link to="/about">О нас</Link></li>
                 <li><Link to="/catalog">Каталог</Link></li>
                 <li><Link to="/lessons">Обучение</Link></li>
-                <li><Link to="/contacts">>Контакты</Link></li>
+                <li><Link to="/contacts">Контакты</Link></li>
             </ul>
         </div>
     </nav>

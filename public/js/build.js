@@ -28165,6 +28165,9 @@
 	                $(".nav-mobile-menu").css("display", "block");
 	            } else $(".nav-mobile-menu").css("display", "none");
 	        });
+	        $(".nav-mobile-menu li").click(function () {
+	            $(".nav-mobile-menu").hide();
+	        });
 
 	        //           $(function(){
 	        //           	$(window).resize(function(){
@@ -28298,7 +28301,7 @@
 	                            _react2["default"].createElement(
 	                                _reactRouter.Link,
 	                                { to: "/contacts" },
-	                                ">Контакты"
+	                                "Контакты"
 	                            )
 	                        )
 	                    )
