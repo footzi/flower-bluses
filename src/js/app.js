@@ -15,8 +15,9 @@ import { InStock, ProductInStock } from "./inStock/inStock.jsx"
 import { All, ProductAll} from "./all/all.jsx"
 import Pendants from "./pendants/pendants.jsx"
 import ProductPendant from "./pendants/productPendants.jsx"
-import { Earrings, ProductEarrings } from "./earrings/earrings.jsx"
 
+import Earrings from "./earrings/earrings.jsx"
+import ProductEarrings from "./earrings/productEarrings.jsx"
 
 import "./other.js"
 import "./Other/jquery.min.js"

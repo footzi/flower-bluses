@@ -1,34 +1,71 @@
 import React from 'react';
-import products from "./../Data/data-earrings.js";
+import { products, products2, products3, products4 } from "./../Data/data-earrings.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
 
-let Earrings  = React.createClass({
+let Earrings = React.createClass({
+     componentDidMount () {
+        $(".pages-numbers-link1").addClass("pages-numbers-link-active");
+     },
+       
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
+    
     getInitialState() {
         return {
+            
             products
         }
     },
+    
+        
 
     handlePreviewClick(productId) {
         this.context.router.push(`/catalog/polimer/earrings/${productId}`);
     },
-    render () {
-        
-        
 
-        let { products } = this.state;
+    toPage1: function(e) {
+        e.preventDefault();
+        this.setState({products:products});
+        $("#footer").css({"margin-top":"3.5%"});
+        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+        $(".pages-numbers-link1").addClass("pages-numbers-link-active");
+
+    },
+    toPage2: function(e) {
+        e.preventDefault();
+        this.setState({products:products2});
+        $("#footer").css({"margin-top":"3.5%"});
+        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+        $(".pages-numbers-link2").addClass("pages-numbers-link-active");
+    },
+    toPage3: function(e) {
+        e.preventDefault();
+        this.setState({products:products3});
+        $("#footer").css({"margin-top":"3.5%"});
+        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+        $(".pages-numbers-link3").addClass("pages-numbers-link-active");
+    },
+    toPage4: function(e) {
+        e.preventDefault();
+        this.setState({products:products4});
+        $("#footer").css({"margin-top":"53.5%"});
+        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+        $(".pages-numbers-link4").addClass("pages-numbers-link-active");
+    },
+
+    render () {
+            window.scrollTo(0, 500);
+            let { products } = this.state;
         return (
             <div>
                 <div className="catalog-navigation">
                     <Link to="/catalog">Каталог>></Link>
                     <Link to="/catalog/polimer/all">Полимерная глина>></Link>
-                    <Link to="/catalog/polimer/earrings">Серьги</Link>
+                    <Link to="/catalog/polimer/pendants">Кулоны/подвески</Link>
                 </div>
                 <div>
                 {
@@ -45,23 +82,27 @@ let Earrings  = React.createClass({
 
                 )}
             
-                </div>
-                <div >
-                {this.props.children}
-                </div>
-                <div className="pages">
+            </div>
+            <div className="pages">
                     <div className="pages-back">
                          <a className="pages-link">← предыдущая</a>
                     </div>
                     <div className="pages-numbers">
-                        <Link to="/catalog" className="pages-numbers-link">1</Link>
-                        <Link to="/catalog" className="pages-numbers-link">2</Link>
-                        <Link to="/catalog" className="pages-numbers-link">3</Link>
+                        <p className="pages-numbers-link pages-numbers-link1" onClick={this.toPage1}> 1</p>
+                        <p className="pages-numbers-link pages-numbers-link2" onClick={this.toPage2}>2</p>
+                        <p className="pages-numbers-link pages-numbers-link3" onClick={this.toPage3}>3</p>
+                        <p className="pages-numbers-link pages-numbers-link4" onClick={this.toPage4}>4</p>
                     </div>
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>
                     </div>
                 </div>
+
+                <div >
+                {this.props.children}
+                </div>
+
+
             </div>
         )
     }
@@ -69,45 +110,5 @@ let Earrings  = React.createClass({
 
 
 
-let ProductEarrings = React.createClass({
-    
-    getInitialState() {
-        let { productId } = this.props.params;
 
-        return {
-            product: products.find(product => product.id === productId)
-        };
-    },
-    componentWillReceiveProps(nextProps) {
-        let { productId: prevId } = this.props.params;
-        let { productId: nextId } = nextProps.params;
-
-        if (prevId !== nextId) {
-            this.setState({
-                product: products.find(product => product.id === nextId)
-            });
-        }
-    },
-    render () {
-       
-        
-        let { product } = this.state;
-
-        return (
-            <Product 
-                  id={product.id}
-                  name={ product.name }
-                  text={ product.text }
-                  image1={product.image1}
-                  image2={product.image2}
-                  image3={product.image3}
-                  image4={product.image4}
-                  image5={product.image5}
-                  imagePreview={product.imagePreview}/>
-        )
-    }
-})
-
-
-
-export default { Earrings, ProductEarrings };
+export default Earrings ;

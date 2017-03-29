@@ -20,7 +20,7 @@ main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;
 .news-calendar-img{width:100%}.news-details{width:76%;margin-top:-0.5%;float:right;text-align:left;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888}
 .news-details-text{position:relative;margin:-3.5% 0 3% 6%;outline:0 solid yellow}
 .news-details-marker{position:relative;display:inline;width:4%}.clear{clear:both}
-.button .button-more{margin-top:0}footer{margin-top:3.1%;padding-top:.5%;padding-bottom:.5%;outline:2px solid red}
+.button .button-more{margin-top:0}footer{margin-top:3.1%;padding-top:.5%;padding-bottom:.5%;outline:0 solid red}
 .footer-content{outline:0 solid black;font-family:Arial,Helvetica,sans-serif;color:#888}
 .footer-title{font-size:.8vw;font-weight:bolder;margin:0;margin-bottom:3%}.footer-text{font-size:.7vw;margin:0;margin-bottom:1%}
 .footer-content-regulations{display:inline-block;outline:0 solid blue;margin-left:23.5%}

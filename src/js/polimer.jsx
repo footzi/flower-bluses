@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 let Polimer = React.createClass({
     componentDidMount () {
         window.scrollTo(0, 0)
-        $("#footer").css({"margin-top":"3.7%"});
+        $("#footer").css({"margin-top":"3.5%"});
     },
     // getInitialState: function() {
     //     return { 
