@@ -3,6 +3,7 @@ let products1 = require("./../Data/data-earrings.js").products;
 let products2 = require("./../Data/data-earrings.js").products2;
 let products3 = require("./../Data/data-earrings.js").products3;
 let products4 = require("./../Data/data-earrings.js").products4;
+let products5 = require("./../Data/data-earrings.js").products5;
 import Product from "../product.jsx"
 
 let ProductEarrings = React.createClass({
@@ -12,6 +13,9 @@ let ProductEarrings = React.createClass({
         let number = arr[1]
         let products;
         switch(number) {
+          case "5":
+            products=products5;
+            break;  
           case "4":
             products=products4;
             break;

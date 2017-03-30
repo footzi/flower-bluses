@@ -6,6 +6,9 @@ import Product from "./../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
 
 let InStock = React.createClass({
+    componentDidMount () {
+         $("#footer").css({"margin-top":"3.5%"});
+     },  
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },

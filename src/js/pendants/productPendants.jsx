@@ -1,23 +1,9 @@
 import React from 'react';
-let products1 = require("./../Data/data-pendants.js").products;
-let products2 = require("./../Data/data-pendants.js").products2;
+let products = require("./../Data/data-pendants.js").products;
 import Product from "../product.jsx"
 
 let ProductPendant = React.createClass({
     getInitialState() {
-        let Link=location.pathname;
-        let arr = Link.split("-");
-        let number = arr[1]
-        let products;
-        switch(number) {
-          case "2":
-            products=products2;
-            break;
-          case "1":
-            products=products1;
-            break;
-          
-        }
         let { productId } = this.props.params;
         return {
             

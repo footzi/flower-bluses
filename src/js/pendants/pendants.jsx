@@ -1,12 +1,14 @@
 import React from 'react';
-import { products, products2 } from "./../Data/data-pendants.js";
+import { products } from "./../Data/data-pendants.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
 
 let Pendants = React.createClass({
-     
+     componentDidMount () {
+         $("#footer").css({"margin-top":"28.5%"});
+     },
        
     contextTypes: {
         router: React.PropTypes.object.isRequired
@@ -23,15 +25,6 @@ let Pendants = React.createClass({
 
     handlePreviewClick(productId) {
         this.context.router.push(`/catalog/polimer/pendants/${productId}`);
-    },
-
-    toPage1: function(e) {
-                e.preventDefault();
-                this.setState({products:products});
-            },
-    toPage2: function(e) {
-        e.preventDefault();
-        this.setState({products:products2});
     },
 
     render () {
@@ -59,19 +52,6 @@ let Pendants = React.createClass({
                 )}
             
             </div>
-            <div className="pages">
-                    <div className="pages-back">
-                         <a className="pages-link">← предыдущая</a>
-                    </div>
-                    <div className="pages-numbers">
-                        <p className="pages-numbers-link" onClick={this.toPage1}> 1</p>
-                        <p to="/catalog" className="pages-numbers-link" onClick={this.toPage2}>2</p>
-                        <p to="/catalog" className="pages-numbers-link">3</p>
-                    </div>
-                    <div className="pages-next">
-                         <a className="pages-link">следующая →</a>
-                    </div>
-                </div>
 
                 <div >
                 {this.props.children}

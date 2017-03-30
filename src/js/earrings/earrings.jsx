@@ -1,15 +1,15 @@
 import React from 'react';
-import { products, products2, products3, products4 } from "./../Data/data-earrings.js";
+import { products, products2, products3, products4, products5 } from "./../Data/data-earrings.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
 
 let Earrings = React.createClass({
-     componentDidMount () {
-        $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-     },
-       
+    componentDidMount () {
+         $("#footer").css({"margin-top":"3.5%"});
+         $(".pages-numbers-link1").addClass("pages-numbers-link-active");
+     },   
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
@@ -38,23 +38,27 @@ let Earrings = React.createClass({
     toPage2: function(e) {
         e.preventDefault();
         this.setState({products:products2});
-        $("#footer").css({"margin-top":"3.5%"});
+        //$("#footer").css({"margin-top":"3.5%"});
         $(".pages-numbers-link").removeClass("pages-numbers-link-active");
         $(".pages-numbers-link2").addClass("pages-numbers-link-active");
     },
     toPage3: function(e) {
         e.preventDefault();
         this.setState({products:products3});
-        $("#footer").css({"margin-top":"3.5%"});
         $(".pages-numbers-link").removeClass("pages-numbers-link-active");
         $(".pages-numbers-link3").addClass("pages-numbers-link-active");
     },
     toPage4: function(e) {
         e.preventDefault();
         this.setState({products:products4});
-        $("#footer").css({"margin-top":"53.5%"});
         $(".pages-numbers-link").removeClass("pages-numbers-link-active");
         $(".pages-numbers-link4").addClass("pages-numbers-link-active");
+    },
+    toPage5: function(e) {
+        e.preventDefault();
+        this.setState({products:products5});
+        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+        $(".pages-numbers-link5").addClass("pages-numbers-link-active");
     },
 
     render () {
@@ -88,10 +92,11 @@ let Earrings = React.createClass({
                          <a className="pages-link">← предыдущая</a>
                     </div>
                     <div className="pages-numbers">
-                        <p className="pages-numbers-link pages-numbers-link1" onClick={this.toPage1}> 1</p>
+                        <p className="pages-numbers-link pages-numbers-link1" onClick={this.toPage1}>1</p>
                         <p className="pages-numbers-link pages-numbers-link2" onClick={this.toPage2}>2</p>
                         <p className="pages-numbers-link pages-numbers-link3" onClick={this.toPage3}>3</p>
                         <p className="pages-numbers-link pages-numbers-link4" onClick={this.toPage4}>4</p>
+                        <p className="pages-numbers-link pages-numbers-link5" onClick={this.toPage5}>5</p>
                     </div>
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>

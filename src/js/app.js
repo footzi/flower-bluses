@@ -13,11 +13,18 @@ import LessonsImage from "./lessonsImage.jsx"
 
 import { InStock, ProductInStock } from "./inStock/inStock.jsx"
 import { All, ProductAll} from "./all/all.jsx"
+
 import Pendants from "./pendants/pendants.jsx"
 import ProductPendant from "./pendants/productPendants.jsx"
 
 import Earrings from "./earrings/earrings.jsx"
 import ProductEarrings from "./earrings/productEarrings.jsx"
+
+import Rings from "./rings/rings.jsx"
+import ProductRings from "./rings/productRings.jsx"
+
+import Clips from "./clips/clips.jsx"
+import ProductClips from "./clips/productClips.jsx"
 
 import "./other.js"
 import "./Other/jquery.min.js"
@@ -52,6 +59,12 @@ ReactDOM.render (
                      </Route>
                      <Route path="/catalog/polimer/earrings" component={Earrings} >
                         <Route path="/catalog/polimer/earrings/:productId" component={ProductEarrings} />
+                     </Route>
+                     <Route path="/catalog/polimer/rings" component={Rings} >
+                        <Route path="/catalog/polimer/rings/:productId" component={ProductRings} />
+                     </Route>
+                     <Route path="/catalog/polimer/clips" component={Clips} >
+                        <Route path="/catalog/polimer/clips/:productId" component={ProductClips} />
                      </Route>
             </Route>
         </Route>
