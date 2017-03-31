@@ -1,12 +1,13 @@
 import React from 'react';
 
 let ProductPreview = React.createClass ({
+        
 	render () {
         function openPopup(e) {
             e.preventDefault();
-            document.getElementById("b-popup").style="display:table"
-  }
-    
+            $("b-popup").show()
+        }
+
 		let {name, text, cost, instock, imagePreview, onClick} = this.props;
 		return (
 		<div className="product-preview" onClick={openPopup}>

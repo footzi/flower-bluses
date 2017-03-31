@@ -26,6 +26,13 @@ import ProductRings from "./rings/productRings.jsx"
 import Clips from "./clips/clips.jsx"
 import ProductClips from "./clips/productClips.jsx"
 
+import Another from "./another/another.jsx"
+import ProductAnother from "./another/productAnother.jsx"
+
+import Sets from "./sets/sets.jsx"
+import ProductSets from "./sets/ProductSets.jsx"
+
+
 import "./other.js"
 import "./Other/jquery.min.js"
 import "./Other/jquery.bxslider.min.js"
@@ -65,6 +72,12 @@ ReactDOM.render (
                      </Route>
                      <Route path="/catalog/polimer/clips" component={Clips} >
                         <Route path="/catalog/polimer/clips/:productId" component={ProductClips} />
+                     </Route>
+                     <Route path="/catalog/polimer/another" component={Another} >
+                        <Route path="/catalog/polimer/another/:productId" component={ProductAnother} />
+                     </Route>
+                     <Route path="/catalog/polimer/sets" component={Sets} >
+                        <Route path="/catalog/polimer/sets/:productId" component={ProductSets} />
                      </Route>
             </Route>
         </Route>

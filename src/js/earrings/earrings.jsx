@@ -1,5 +1,5 @@
 import React from 'react';
-import { products, products2, products3, products4, products5 } from "./../Data/data-earrings.js";
+import products from "./../Data/data-earrings.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "../product.jsx"
@@ -9,6 +9,7 @@ let Earrings = React.createClass({
     componentDidMount () {
          $("#footer").css({"margin-top":"3.5%"});
          $(".pages-numbers-link1").addClass("pages-numbers-link-active");
+         $()
      },   
     contextTypes: {
         router: React.PropTypes.object.isRequired
@@ -101,7 +102,7 @@ let Earrings = React.createClass({
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>
                     </div>
-                </div>
+            </div>
 
                 <div >
                 {this.props.children}

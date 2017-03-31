@@ -8,25 +8,7 @@ let Polimer = React.createClass({
         window.scrollTo(0, 0)
         $("#footer").css({"margin-top":"3.5%"});
     },
-    // getInitialState: function() {
-    //     return { 
-    //     	shouldHide:false
-    //     };
-    // },
-    // onClick: function() {
-    //     if(!this.state.shouldHide){
-    //     	this.setState({
-    //     		shouldHide: true 
-    //     	})
-    //     }
-    // },
     render () {
-        // let Page=location.pathname;
-        // let inStock="catalog/polimer"
-
-        // if(Page.indexOf(inStock)) {
-        //     $("#all").css({"display":"none"})
-        // }
         return (
 <div className="catalog-list">
     
@@ -46,8 +28,8 @@ let Polimer = React.createClass({
                 <Link to="/catalog/polimer/earrings" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name">СЕРЬГИ</li></Link>
                 <Link to="/catalog/polimer/rings" activeClassName="active-link" onClick={this.onClick} className="Link"><li className="Link-name" >КОЛЬЦА</li></Link>
                 <Link to="/catalog/polimer/clips" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >БРОШИ/ЗАКОЛКИ</li></Link>
-                <Link to="/catalog" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >НАБОРЫ</li></Link>
-                <Link to="/catalog" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >РАЗНОЕ</li></Link>
+                <Link to="/catalog/polimer/sets" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >НАБОРЫ</li></Link>
+                <Link to="/catalog/polimer/another" activeClassName="active-link" onClick={this.onClick}  className="Link"><li className="Link-name" >РАЗНОЕ</li></Link>
             </ul>
     </div>
     
@@ -58,9 +40,5 @@ let Polimer = React.createClass({
         )
     }
 })
-
-
-
-
 
 export default Polimer

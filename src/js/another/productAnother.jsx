@@ -1,31 +1,9 @@
 import React from 'react';
-import products from "./../Data/data-earrings.js";
+let products = require("./../Data/data-another.js").products;
 import Product from "../product.jsx"
 
-let ProductEarrings = React.createClass({
+let ProductAnother = React.createClass({
     getInitialState() {
-    //     let Link=location.pathname;
-    //     let arr = Link.split("-");
-    //     let number = arr[1]
-    //     let products;
-    //     switch(number) {
-    //       case "5":
-    //         products=products5;
-    //         break;  
-    //       case "4":
-    //         products=products4;
-    //         break;
-    //       case "3":
-    //         products=products3;
-    //         break;  
-    //       case "2":
-    //         products=products2;
-    //         break;
-    //       case "1":
-    //         products=products1;
-    //         break;
-          
-      
         let { productId } = this.props.params;
         return {
             
@@ -59,4 +37,4 @@ let ProductEarrings = React.createClass({
         )
     }
 })
- export default ProductEarrings;
+ export default ProductAnother;

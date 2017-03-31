@@ -87,7 +87,9 @@ let products = [{
     "image4":"/images/catalog/earrings/серьги 9.3.png",
     "instock":"/images/catalog/instock.png"
 
-},{
+},]
+
+let products2 = [{
     "id":"2-2-10",
     "name":"Серьги 10",
     "cost":"1500 руб.",
@@ -173,7 +175,9 @@ let products = [{
     "image2":"/images/catalog/earrings/серьги 18.1.png",
     "instock":"/images/catalog/instock.png"
 
-},{
+},]
+
+let products3 = [{
     "id":"2-3-19",
     "name":"Серьги 19",
     "cost":"1500 руб.",
@@ -266,7 +270,9 @@ let products = [{
     "image2":"/images/catalog/earrings/серьги 27.1.png",
     "instock":"/images/catalog/instock.png"
 
-},{
+},]
+
+let products4 = [{
     "id":"2-4-28",
     "name":"Серьги 28",
     "cost":"1500 руб.",
@@ -358,7 +364,8 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 36.jpg",
     "image1":"/images/catalog/earrings/серьги 36.png",
     "instock":"/images/catalog/instock.png"
-},{
+}]
+let products5 = [{
     "id":"2-5-37",
     "name":"Серьги 37",
     "cost":"1500 руб.",
@@ -452,4 +459,4 @@ let products = [{
     "instock":"/images/catalog/instock.png"
 
 },]
-export default products;
+export { products, products2, products3, products4, products5};
