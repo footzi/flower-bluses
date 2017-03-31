@@ -72,7 +72,7 @@ let products = [{
     "image1":"/images/catalog/сlips/заколка 3.png",
     "image2":"/images/catalog/сlips/заколка 3.1.png",
     "image3":"/images/catalog/сlips/заколка 3.2.png",
-    "image3":"/images/catalog/сlips/заколка 3.3.png",
+    "image4":"/images/catalog/сlips/заколка 3.3.png",
     "instock":"/images/catalog/instock.png"
 },{
     "id":"4-1-9",

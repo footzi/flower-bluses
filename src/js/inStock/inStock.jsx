@@ -30,7 +30,7 @@ let InStock = React.createClass({
                     <Link to="/catalog/polimer/all">Полимерная глина>></Link>
                     <Link to="/catalog/polimer/inStock">В наличии</Link>
                 </div>
-                <div>
+                <div className="catalog-content">
                 {
                     products.map(product => 
                     <ProductPreview

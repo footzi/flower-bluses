@@ -1,5 +1,5 @@
 import React from 'react';
-import products from "./../Data/data-earrings.js";
+import { products } from "./../Data/data-earrings.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "../product.jsx"
@@ -9,7 +9,45 @@ let Earrings = React.createClass({
     componentDidMount () {
          $("#footer").css({"margin-top":"3.5%"});
          $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-         $()
+         
+         
+         $(".product-preview").hide();
+         $(".product-preview").slice(0,9).show();
+
+         $(".pages-numbers-link1").click(function(){
+            $(".product-preview").hide();
+            $(".product-preview").slice(0,9).show();
+            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+            $(".pages-numbers-link1").addClass("pages-numbers-link-active");
+        })
+        
+         $(".pages-numbers-link2").click(function(){
+            $(".product-preview").hide();
+            $(".product-preview").slice(9,18).show();
+            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+            $(".pages-numbers-link2").addClass("pages-numbers-link-active");
+         })
+
+          $(".pages-numbers-link3").click(function(){
+            $(".product-preview").hide();
+            $(".product-preview").slice(18,27).show();
+            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+            $(".pages-numbers-link3").addClass("pages-numbers-link-active");
+         })
+
+         $(".pages-numbers-link4").click(function(){
+            $(".product-preview").hide();
+            $(".product-preview").slice(27,36).show();
+            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+            $(".pages-numbers-link4").addClass("pages-numbers-link-active");
+         })
+
+         $(".pages-numbers-link5").click(function(){
+            $(".product-preview").hide();
+            $(".product-preview").slice(36,45).show();
+            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+            $(".pages-numbers-link5").addClass("pages-numbers-link-active");
+         })
      },   
     contextTypes: {
         router: React.PropTypes.object.isRequired
@@ -28,42 +66,10 @@ let Earrings = React.createClass({
         this.context.router.push(`/catalog/polimer/earrings/${productId}`);
     },
 
-    toPage1: function(e) {
-        e.preventDefault();
-        this.setState({products:products});
-        $("#footer").css({"margin-top":"3.5%"});
-        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-        $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-
-    },
-    toPage2: function(e) {
-        e.preventDefault();
-        this.setState({products:products2});
-        //$("#footer").css({"margin-top":"3.5%"});
-        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-        $(".pages-numbers-link2").addClass("pages-numbers-link-active");
-    },
-    toPage3: function(e) {
-        e.preventDefault();
-        this.setState({products:products3});
-        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-        $(".pages-numbers-link3").addClass("pages-numbers-link-active");
-    },
-    toPage4: function(e) {
-        e.preventDefault();
-        this.setState({products:products4});
-        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-        $(".pages-numbers-link4").addClass("pages-numbers-link-active");
-    },
-    toPage5: function(e) {
-        e.preventDefault();
-        this.setState({products:products5});
-        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-        $(".pages-numbers-link5").addClass("pages-numbers-link-active");
-    },
+    
 
     render () {
-            window.scrollTo(0, 500);
+           // window.scrollTo(0, 500);
             let { products } = this.state;
         return (
             <div>
@@ -72,7 +78,7 @@ let Earrings = React.createClass({
                     <Link to="/catalog/polimer/all">Полимерная глина>></Link>
                     <Link to="/catalog/polimer/pendants">Серьги</Link>
                 </div>
-                <div>
+                <div className="catalog-content">
                 {
                     products.map(product => 
                     <ProductPreview
@@ -93,11 +99,11 @@ let Earrings = React.createClass({
                          <a className="pages-link">← предыдущая</a>
                     </div>
                     <div className="pages-numbers">
-                        <p className="pages-numbers-link pages-numbers-link1" onClick={this.toPage1}>1</p>
-                        <p className="pages-numbers-link pages-numbers-link2" onClick={this.toPage2}>2</p>
-                        <p className="pages-numbers-link pages-numbers-link3" onClick={this.toPage3}>3</p>
-                        <p className="pages-numbers-link pages-numbers-link4" onClick={this.toPage4}>4</p>
-                        <p className="pages-numbers-link pages-numbers-link5" onClick={this.toPage5}>5</p>
+                        <p className="pages-numbers-link pages-numbers-link1">1</p>
+                        <p className="pages-numbers-link pages-numbers-link2">2</p>
+                        <p className="pages-numbers-link pages-numbers-link3">3</p>
+                        <p className="pages-numbers-link pages-numbers-link4">4</p>
+                        <p className="pages-numbers-link pages-numbers-link5">5</p>
                     </div>
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>
@@ -114,7 +120,43 @@ let Earrings = React.createClass({
     }
 })
 
+let ProductEarrings = React.createClass({
+    getInitialState() {
+      
+        let { productId } = this.props.params;
+        return {
+            
+            product: products.find(product => product.id === productId)
+        };
+    },
+    componentWillReceiveProps(nextProps) {
+        let { productId: prevId } = this.props.params;
+        let { productId: nextId } = nextProps.params;
+
+        if (prevId !== nextId) {
+            this.setState({
+                product: products.find(product => product.id === nextId)
+            });
+        }
+    },
+    render () {
+        let { product } = this.state;
+
+        return (
+            <Product 
+                  id={product.id}
+                  name={ product.name }
+                  text={ product.text }
+                  image1={product.image1}
+                  image2={product.image2}
+                  image3={product.image3}
+                  image4={product.image4}
+                  image5={product.image5}
+                  imagePreview={product.imagePreview}/>
+        )
+    }
+})
 
 
 
-export default Earrings ;
+export  { Earrings, ProductEarrings } ;

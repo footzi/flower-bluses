@@ -13,24 +13,12 @@ import LessonsImage from "./lessonsImage.jsx"
 
 import { InStock, ProductInStock } from "./inStock/inStock.jsx"
 import { All, ProductAll} from "./all/all.jsx"
-
-import Pendants from "./pendants/pendants.jsx"
-import ProductPendant from "./pendants/productPendants.jsx"
-
-import Earrings from "./earrings/earrings.jsx"
-import ProductEarrings from "./earrings/productEarrings.jsx"
-
-import Rings from "./rings/rings.jsx"
-import ProductRings from "./rings/productRings.jsx"
-
-import Clips from "./clips/clips.jsx"
-import ProductClips from "./clips/productClips.jsx"
-
-import Another from "./another/another.jsx"
-import ProductAnother from "./another/productAnother.jsx"
-
-import Sets from "./sets/sets.jsx"
-import ProductSets from "./sets/ProductSets.jsx"
+import { Pendants, ProductPendant } from "./pendants/pendants.jsx"
+import { Earrings, ProductEarrings } from "./earrings/earrings.jsx"
+import { Rings, ProductRings } from "./rings/rings.jsx"
+import { Clips, ProductClips } from "./clips/clips.jsx"
+import { Another, ProductAnother } from "./another/another.jsx"
+import {Sets, ProductSets } from "./sets/sets.jsx"
 
 
 import "./other.js"

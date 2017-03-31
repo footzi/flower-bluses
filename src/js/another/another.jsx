@@ -7,7 +7,7 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Another = React.createClass({
      componentDidMount () {
-         $("#footer").css({"margin-top":"28.5%"});
+         $("#footer").css({"margin-top":"53.5%"});
      },
        
     contextTypes: {
@@ -15,6 +15,7 @@ let Another = React.createClass({
     },
     
     getInitialState() {
+        
         return {
             
             products
@@ -28,6 +29,7 @@ let Another = React.createClass({
     },
 
     render () {
+            
             let { products } = this.state;
         return (
             <div>
@@ -36,7 +38,7 @@ let Another = React.createClass({
                     <Link to="/catalog/polimer/all">Полимерная глина>></Link>
                     <Link to="/catalog/polimer/pendants">Прочие</Link>
                 </div>
-                <div>
+                <div className="catalog-content">
                 {
                     products.map(product => 
                     <ProductPreview
@@ -63,7 +65,41 @@ let Another = React.createClass({
     }
 })
 
+let ProductAnother = React.createClass({
+    getInitialState() {
+        let { productId } = this.props.params;
+        return {
+            
+            product: products.find(product => product.id === productId)
+        };
+    },
+    componentWillReceiveProps(nextProps) {
+        let { productId: prevId } = this.props.params;
+        let { productId: nextId } = nextProps.params;
+
+        if (prevId !== nextId) {
+            this.setState({
+                product: products.find(product => product.id === nextId)
+            });
+        }
+    },
+    render () {
+        let { product } = this.state;
+
+        return (
+            <Product 
+                  id={product.id}
+                  name={ product.name }
+                  text={ product.text }
+                  image1={product.image1}
+                  image2={product.image2}
+                  image3={product.image3}
+                  image4={product.image4}
+                  image5={product.image5}
+                  imagePreview={product.imagePreview}/>
+        )
+    }
+})
 
 
-
-export default Another ;
+export { Another, ProductAnother } ;
