@@ -4,39 +4,20 @@ import { Link } from "react-router";
 let Main = React.createClass({
 		componentDidMount(){
 			$(".nav-mobile-button").click(function() {
-     if ($(".nav-mobile-menu").css("display")=="none") {
-         $(".nav-mobile-menu").css("display","block")
-     } else 
-         $(".nav-mobile-menu").css("display","none")
+                if ($(".nav-mobile-menu").css("display")=="none") {
+                    $(".nav-mobile-menu").css("display","block")
+                } else 
+                    $(".nav-mobile-menu").css("display","none")
 
- });
+                });
             $(".nav-mobile-menu li").click(function() {
-                $(".nav-mobile-menu").hide()
-         })
-
-
-  //           $(function(){
-  //           	$(window).resize(function(){
-  //           		if($(window).width()<=640) {
-  //           			//$("body").css({"background-image":"url(/images/fon640.jpg)"});
-  //                       $("body").css({"background-image":"none"})
-  //                       $("body").css({"background-color":"silver"});
-
-  //           		} else {
-  //           			$("body").css({"background-image":"url(/images/fon.jpg)"});
-  //           		}
-  //           	}).resize()
-  //           })
+            $(".nav-mobile-menu").hide()
+             })
 		},
-
 	render() {
-	
-		
-
 		return (
 			<div>
  		   		<header>
-        
         <div className="clear"></div>
     </header>
     <nav>
@@ -73,8 +54,6 @@ let Main = React.createClass({
             </ul>
         </div>
     </nav>
-
-    
     <main id="main">
     {this.props.children}
     </main>
@@ -87,7 +66,6 @@ let Main = React.createClass({
                 <p className="footer-text">Запрещено использование любого контента данного ресурса для получения коммерческой выгоды. </p>
                 <p className="footer-text">При размещении материалов на сторонних ресурсах обязательна ссылка на первоначальный ресурс-источник.
                 </p>
-
             </div>
             <div className="footer-content-icons">
                 <a href="https://vk.com/zivem_so_vkusom"><img className="footer-content-icons-img" src="/images/vk.png" /></a>
@@ -104,12 +82,9 @@ let Main = React.createClass({
                 <p className="footer-text footer-content-contacts-text">тел: <u>+7(953)1833296</u></p>
                 <p className="footer-text footer-content-contacts-text">e-mail: <u>specy@rambler.ru</u></p>
             </div>
-            
-
         </div>
     </footer>
 		    </div>
-
 				)
 	}
 })

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-//import $ from "jquery";
-//import "./jquery.bxslider.js"
+
 let Index = React.createClass({
     componentDidMount () {
         window.scrollTo(0, 0)
@@ -16,7 +15,6 @@ let Index = React.createClass({
                     }
                 }).resize()
             })
-        //$("body").css({"background-image":"url(/images/fon.jpg)"});
         $("#footer").css({"margin-top":"3%"});
     
         $('.bxslider').bxSlider({

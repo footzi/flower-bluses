@@ -3,73 +3,14 @@ import products  from "./../Data/data-all.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "../product.jsx"
+import navigationPage from "../other.js"
 var Carousel = require('react-responsive-carousel').Carousel;
 
 let All = React.createClass({
     componentDidMount () {
          $(".pages-numbers").css({"right":"5%"})
          $("#footer").css({"margin-top":"3.5%"});
-         $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-         
-         
-         $(".product-preview").hide();
-         $(".product-preview").slice(0,9).show();
-
-         $(".pages-numbers-link1").click(function(){
-            $(".product-preview").hide();
-            $(".product-preview").slice(0,9).show();
-            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-            $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-        })
-        
-         $(".pages-numbers-link2").click(function(){
-            $(".product-preview").hide();
-            $(".product-preview").slice(9,18).show();
-            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-            $(".pages-numbers-link2").addClass("pages-numbers-link-active");
-         })
-
-          $(".pages-numbers-link3").click(function(){
-            $(".product-preview").hide();
-            $(".product-preview").slice(18,27).show();
-            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-            $(".pages-numbers-link3").addClass("pages-numbers-link-active");
-         })
-
-         $(".pages-numbers-link4").click(function(){
-            $(".product-preview").hide();
-            $(".product-preview").slice(27,36).show();
-            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-            $(".pages-numbers-link4").addClass("pages-numbers-link-active");
-         })
-
-         $(".pages-numbers-link5").click(function(){
-            $(".product-preview").hide();
-            $(".product-preview").slice(36,45).show();
-            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-            $(".pages-numbers-link5").addClass("pages-numbers-link-active");
-         })
-
-         $(".pages-numbers-link6").click(function(){
-            $(".product-preview").hide();
-            $(".product-preview").slice(45,54).show();
-            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-            $(".pages-numbers-link6").addClass("pages-numbers-link-active");
-         })
-
-         $(".pages-numbers-link7").click(function(){
-            $(".product-preview").hide();
-            $(".product-preview").slice(54,63).show();
-            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-            $(".pages-numbers-link7").addClass("pages-numbers-link-active");
-         })
-
-         $(".pages-numbers-link8").click(function(){
-            $(".product-preview").hide();
-            $(".product-preview").slice(63,72).show();
-            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-            $(".pages-numbers-link8").addClass("pages-numbers-link-active");
-         })
+         navigationPage ();
      },  
     contextTypes: {
         router: React.PropTypes.object.isRequired

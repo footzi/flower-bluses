@@ -100,19 +100,19 @@
 
 	var _allAllJsx = __webpack_require__(261);
 
-	var _pendantsPendantsJsx = __webpack_require__(269);
+	var _pendantsPendantsJsx = __webpack_require__(270);
 
-	var _earringsEarringsJsx = __webpack_require__(270);
+	var _earringsEarringsJsx = __webpack_require__(271);
 
-	var _ringsRingsJsx = __webpack_require__(271);
+	var _ringsRingsJsx = __webpack_require__(272);
 
-	var _clipsClipsJsx = __webpack_require__(272);
+	var _clipsClipsJsx = __webpack_require__(273);
 
-	var _anotherAnotherJsx = __webpack_require__(273);
+	var _anotherAnotherJsx = __webpack_require__(274);
 
-	var _setsSetsJsx = __webpack_require__(274);
+	var _setsSetsJsx = __webpack_require__(275);
 
-	__webpack_require__(275);
+	__webpack_require__(269);
 
 	__webpack_require__(276);
 
@@ -26725,8 +26725,6 @@
 
 	var _reactRouter = __webpack_require__(178);
 
-	//import $ from "jquery";
-	//import "./jquery.bxslider.js"
 	var Index = _react2['default'].createClass({
 	    displayName: 'Index',
 
@@ -26742,7 +26740,6 @@
 	                }
 	            }).resize();
 	        });
-	        //$("body").css({"background-image":"url(/images/fon.jpg)"});
 	        $("#footer").css({ "margin-top": "3%" });
 
 	        $('.bxslider').bxSlider({
@@ -27594,23 +27591,8 @@
 	        $(".nav-mobile-menu li").click(function () {
 	            $(".nav-mobile-menu").hide();
 	        });
-
-	        //           $(function(){
-	        //           	$(window).resize(function(){
-	        //           		if($(window).width()<=640) {
-	        //           			//$("body").css({"background-image":"url(/images/fon640.jpg)"});
-	        //                       $("body").css({"background-image":"none"})
-	        //                       $("body").css({"background-color":"silver"});
-
-	        //           		} else {
-	        //           			$("body").css({"background-image":"url(/images/fon.jpg)"});
-	        //           		}
-	        //           	}).resize()
-	        //           })
 	    },
-
 	    render: function render() {
-
 	        return _react2["default"].createElement(
 	            "div",
 	            null,
@@ -30271,6 +30253,10 @@
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
+	var _otherJs = __webpack_require__(269);
+
+	var _otherJs2 = _interopRequireDefault(_otherJs);
+
 	var Carousel = __webpack_require__(250).Carousel;
 
 	var All = _react2['default'].createClass({
@@ -30279,66 +30265,7 @@
 	    componentDidMount: function componentDidMount() {
 	        $(".pages-numbers").css({ "right": "5%" });
 	        $("#footer").css({ "margin-top": "3.5%" });
-	        $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-
-	        $(".product-preview").hide();
-	        $(".product-preview").slice(0, 9).show();
-
-	        $(".pages-numbers-link1").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(0, 9).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link2").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(9, 18).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link2").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link3").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(18, 27).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link3").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link4").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(27, 36).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link4").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link5").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(36, 45).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link5").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link6").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(45, 54).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link6").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link7").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(54, 63).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link7").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link8").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(63, 72).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link8").addClass("pages-numbers-link-active");
-	        });
+	        (0, _otherJs2['default'])();
 	    },
 	    contextTypes: {
 	        router: _react2['default'].PropTypes.object.isRequired
@@ -31325,6 +31252,142 @@
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	//jivosite
+
+	//(function(){ var widget_id = 'WeuwmmB6yg';var d=document;var w=window;function l(){
+	//var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+
+	//яндекс метрика
+
+	(function (d, w, c) {
+	    (w[c] = w[c] || []).push(function () {
+	        try {
+	            w.yaCounter43578919 = new Ya.Metrika({
+	                id: 43578919,
+	                clickmap: true,
+	                trackLinks: true,
+	                accurateTrackBounce: true
+	            });
+	        } catch (e) {}
+	    });
+
+	    var n = d.getElementsByTagName("script")[0],
+	        s = d.createElement("script"),
+	        f = function f() {
+	        n.parentNode.insertBefore(s, n);
+	    };
+	    s.type = "text/javascript";
+	    s.async = true;
+	    s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	    if (w.opera == "[object Opera]") {
+	        d.addEventListener("DOMContentLoaded", f, false);
+	    } else {
+	        f();
+	    }
+	})(document, window, "yandex_metrika_callbacks");
+
+	_react2["default"].createElement(
+	    "noscript",
+	    null,
+	    _react2["default"].createElement(
+	        "div",
+	        null,
+	        _react2["default"].createElement("img", { src: "https://mc.yandex.ru/watch/43578919", style: "position:absolute; left:-9999px;", alt: "" })
+	    )
+	);
+
+	//переход по страничкам
+
+	function navigationPage() {
+	    $(".pages-numbers-link1").addClass("pages-numbers-link-active");
+	    $(".product-preview").hide();
+	    $(".product-preview").slice(0, 9).show();
+
+	    $(".pages-numbers-link1").click(function () {
+	        $(".product-preview").hide();
+	        $(".product-preview").slice(0, 9).show();
+	        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+	        $(".pages-numbers-link1").addClass("pages-numbers-link-active");
+	    });
+
+	    $(".pages-numbers-link2").click(function () {
+	        $(".product-preview").hide();
+	        $(".product-preview").slice(9, 18).show();
+	        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+	        $(".pages-numbers-link2").addClass("pages-numbers-link-active");
+	    });
+
+	    $(".pages-numbers-link3").click(function () {
+	        $(".product-preview").hide();
+	        $(".product-preview").slice(18, 27).show();
+	        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+	        $(".pages-numbers-link3").addClass("pages-numbers-link-active");
+	    });
+
+	    $(".pages-numbers-link4").click(function () {
+	        $(".product-preview").hide();
+	        $(".product-preview").slice(27, 36).show();
+	        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+	        $(".pages-numbers-link4").addClass("pages-numbers-link-active");
+	    });
+
+	    $(".pages-numbers-link5").click(function () {
+	        $(".product-preview").hide();
+	        $(".product-preview").slice(36, 45).show();
+	        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+	        $(".pages-numbers-link5").addClass("pages-numbers-link-active");
+	    });
+
+	    $(".pages-numbers-link6").click(function () {
+	        $(".product-preview").hide();
+	        $(".product-preview").slice(45, 54).show();
+	        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+	        $(".pages-numbers-link6").addClass("pages-numbers-link-active");
+	    });
+
+	    $(".pages-numbers-link7").click(function () {
+	        $(".product-preview").hide();
+	        $(".product-preview").slice(54, 63).show();
+	        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+	        $(".pages-numbers-link7").addClass("pages-numbers-link-active");
+	    });
+
+	    $(".pages-numbers-link8").click(function () {
+	        $(".product-preview").hide();
+	        $(".product-preview").slice(63, 72).show();
+	        $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+	        $(".pages-numbers-link8").addClass("pages-numbers-link-active");
+	    });
+
+	    $(".pages-numbers-link").click(function () {
+	        window.scrollTo(0, 0);
+	    });
+	}
+
+	exports["default"] = navigationPage;
+	module.exports = exports["default"];
+
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "other.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
 	'use strict';
 
 	Object.defineProperty(exports, '__esModule', {
@@ -31471,7 +31534,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "pendants.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 270 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -31500,6 +31563,10 @@
 
 	var _productJsx2 = _interopRequireDefault(_productJsx);
 
+	var _otherJs = __webpack_require__(269);
+
+	var _otherJs2 = _interopRequireDefault(_otherJs);
+
 	var Carousel = __webpack_require__(250).Carousel;
 
 	var Earrings = _react2['default'].createClass({
@@ -31507,45 +31574,7 @@
 
 	    componentDidMount: function componentDidMount() {
 	        $("#footer").css({ "margin-top": "3.5%" });
-	        $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-
-	        $(".product-preview").hide();
-	        $(".product-preview").slice(0, 9).show();
-
-	        $(".pages-numbers-link1").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(0, 9).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link1").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link2").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(9, 18).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link2").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link3").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(18, 27).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link3").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link4").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(27, 36).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link4").addClass("pages-numbers-link-active");
-	        });
-
-	        $(".pages-numbers-link5").click(function () {
-	            $(".product-preview").hide();
-	            $(".product-preview").slice(36, 45).show();
-	            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
-	            $(".pages-numbers-link5").addClass("pages-numbers-link-active");
-	        });
+	        (0, _otherJs2['default'])();
 	    },
 	    contextTypes: {
 	        router: _react2['default'].PropTypes.object.isRequired
@@ -31712,7 +31741,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "earrings.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 271 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -31863,7 +31892,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "rings.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 272 */
+/* 273 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32014,7 +32043,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "clips.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 273 */
+/* 274 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32049,7 +32078,7 @@
 	    displayName: 'Another',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "53.5%" });
+	        $("#footer").css({ "margin-top": "53.6%" });
 	    },
 
 	    contextTypes: {
@@ -32166,7 +32195,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "another.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 274 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
@@ -32201,7 +32230,7 @@
 	    displayName: 'Sets',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "28.7%" });
+	        $("#footer").css({ "margin-top": "28.5%" });
 	    },
 
 	    contextTypes: {
@@ -32315,67 +32344,6 @@
 	exports.ProductSets = ProductSets;
 
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "sets.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
-
-/***/ },
-/* 275 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("C:\\Flower-bluses\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
-
-	"use strict";
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	//jivosite
-
-	//(function(){ var widget_id = 'WeuwmmB6yg';var d=document;var w=window;function l(){
-	//var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-
-	//яндекс метрика
-
-	(function (d, w, c) {
-	    (w[c] = w[c] || []).push(function () {
-	        try {
-	            w.yaCounter43578919 = new Ya.Metrika({
-	                id: 43578919,
-	                clickmap: true,
-	                trackLinks: true,
-	                accurateTrackBounce: true
-	            });
-	        } catch (e) {}
-	    });
-
-	    var n = d.getElementsByTagName("script")[0],
-	        s = d.createElement("script"),
-	        f = function f() {
-	        n.parentNode.insertBefore(s, n);
-	    };
-	    s.type = "text/javascript";
-	    s.async = true;
-	    s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-	    if (w.opera == "[object Opera]") {
-	        d.addEventListener("DOMContentLoaded", f, false);
-	    } else {
-	        f();
-	    }
-	})(document, window, "yandex_metrika_callbacks");
-
-	_react2["default"].createElement(
-	    "noscript",
-	    null,
-	    _react2["default"].createElement(
-	        "div",
-	        null,
-	        _react2["default"].createElement("img", { src: "https://mc.yandex.ru/watch/43578919", style: "position:absolute; left:-9999px;", alt: "" })
-	    )
-	);
-
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Flower-bluses\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "other.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 276 */

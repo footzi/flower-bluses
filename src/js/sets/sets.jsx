@@ -7,7 +7,7 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Sets = React.createClass({
      componentDidMount () {
-         $("#footer").css({"margin-top":"28.7%"});
+         $("#footer").css({"margin-top":"28.5%"});
      },
        
     contextTypes: {
