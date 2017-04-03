@@ -19,9 +19,9 @@ gulp.task('css-index', function () {
     .pipe(gulp.dest('public/styles/'))
 });
 
-gulp.task('css-catalog', function () {
-  return gulp.src('src/styles/catalog/*.css')
-    .pipe(concatCss("catalog.css"))
+gulp.task('css-media', function () {
+  return gulp.src('src/styles/media/*.css')
+    .pipe(concatCss("media.css"))
     .pipe(uglifycss({
       "maxLineLen": 80,
       "uglyComments": true
@@ -46,6 +46,6 @@ gulp.task('webpack', function () {
 gulp.task('watch', function () {
     gulp.watch('src/js/**/*', ['webpack'])
     gulp.watch('src/styles/index/*.css', ['css-index'])
-    gulp.watch('src/styles/catalog/*.css', ['css-catalog'])
+    gulp.watch('src/styles/media/*.css', ['css-media'])
     gulp.watch('src/*.html', ['html'])
 })

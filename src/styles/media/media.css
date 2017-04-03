@@ -1,5 +1,5 @@
 @media (max-width:640px) {
-
+/*главная*/
 body {
   /*background-image: url("../images/fon640.jpg");*/
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@ body {
   background-position:top; 
   font-size: 20px;
 }
-.nav {
+.nav {    
     display:none;
 }
 .nav-mobile {
@@ -136,12 +136,81 @@ main {
 .news-button {
     width: 100%;
 }
+/*about*/
 
+.about {
+    font-size: 3.5vw;
+}
+.about-title {
+    font-size: 3.4vw;
+}
+.about-i-photo {
+    width: 100%;
+}
+.about-i-text {
+    width: 100%;
+    margin:0;
+}
+.about-form-title {
+    font-size: 3px
+}
+.about-form-input {
+    height: 30%;
+    font-size: 2vw;
+}
+.about-info-button {
+    font-size: 3vw;   
+}
 
-
-
-
-
+/*каталог*/    
+.catalog-butterfly-img {
+    display: none;
+}
+.catalog-title {
+    font-size:2.9vw; 
+}
+.catalog-introduction {
+    font-size: 2.5vw;
+}
+.catalog-info {
+    font-size: 2.5vw;
+}
+.catalog-info-title {
+    font-size: 2.9vw;
+}
+.catalog-info-recomendation {
+    font-size: 2.5vw;   
+}
+.catalog-polimer-introduction {
+     font-size: 2.5vw;   
+}
+.catalog-navigation {
+    display:none;
+}
+.Link {
+    padding: 0% 1.5%;
+    font-size: 1.6vw;
+}
+.product-preview {
+    width: 45%;
+    font-size: 2.5vw;
+    margin-right: 5%;
+}
+.product-preview:nth-child(3n) {
+  margin-right:5%;
+}
+.product-preview-button-img {
+    margin-left: 33%;
+    width: 32%;
+    font-size: 3vw;
+}
+.product-preview-thumbs:before {
+    height: 35%
+}
+.product-preview-thumbs:focus:before, .product-preview-thumbs:hover:before {
+    top:65%;
+}
+/*футер*/
 footer {
     width: 78%;
     text-align: center;

@@ -8,7 +8,7 @@ let About = React.createClass({
                 $(window).resize(function(){
                     if($(window).width()<=640) {
                         $("body").css({"background-image":"none"})
-                        $("body").css({"background-color":"silver"});
+                        $("body").css({"background-color":"white"});
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
@@ -17,7 +17,7 @@ let About = React.createClass({
             })
 		//$("body").css({"background-image":"url(/images/fon.jpg)"});
         $("#footer").css({"margin-top":"11%"});
-
+ 
         (function(){
             emailjs.init("user_jmnF1YC49paVFwkbJRipP");
         })();
