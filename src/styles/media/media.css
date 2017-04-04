@@ -1,10 +1,10 @@
 @media (max-width:640px) {
 /*главная*/
 body {
-  /*background-image: url("../images/fon640.jpg");*/
-  background-repeat: no-repeat;
-  background-size: 100% 110.5%;
-  /*background-size: cover;*/
+  background-image: url("../images/fon640.jpg");
+  /*background-repeat: no-repeat;
+  background-size: 100% 110.5%;*/
+  background-size: cover;
   background-position:top; 
   font-size: 20px;
 }
@@ -152,11 +152,11 @@ main {
     margin:0;
 }
 .about-form-title {
-    font-size: 3px
+    font-size: 3vw;
 }
 .about-form-input {
     height: 30%;
-    font-size: 2vw;
+    font-size: 4vw;
 }
 .about-info-button {
     font-size: 3vw;   
@@ -167,37 +167,55 @@ main {
     display: none;
 }
 .catalog-title {
-    font-size:2.9vw; 
+    font-size:3.5vw; 
 }
 .catalog-introduction {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
 }
 .catalog-info {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
 }
 .catalog-info-title {
-    font-size: 2.9vw;
+    font-size: 3.9vw;
+}
+.catalog-img {
+    text-align: center;
+} 
+.catalog-img-prew {
+    width: 80%;
+}
+.catalog-img-prew-right {
+    margin: 5% 0 0 0;
+}
+.catalog-caption-text {
+    font-size: 4vw;
+}
+.product-preview-caption {
+    font-size: 3vw;
 }
 .catalog-info-recomendation {
-    font-size: 2.5vw;   
+    font-size: 3.5vw;   
 }
 .catalog-polimer-introduction {
-     font-size: 2.5vw;   
+     font-size: 3.5vw;   
 }
 .catalog-navigation {
     display:none;
 }
 .Link {
-    padding: 0% 1.5%;
-    font-size: 1.6vw;
+    padding: 1% 3%;
+    font-size: 2.6vw;
 }
 .product-preview {
     width: 45%;
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     margin-right: 5%;
 }
 .product-preview:nth-child(3n) {
   margin-right:5%;
+}
+.product-preview:nth-child(2n) {
+  margin-right:0;
 }
 .product-preview-button-img {
     margin-left: 33%;
@@ -210,6 +228,45 @@ main {
 .product-preview-thumbs:focus:before, .product-preview-thumbs:hover:before {
     top:65%;
 }
+.pages {
+   width:90%;
+}
+.pages-link, .pages-numbers-link{
+    font-size: 3vw;
+}
+
+
+
+#product, #order {
+    background-image: none;
+    background-color: silver;
+}
+#b-popup .b-popup-content {
+    width: 100%;
+}
+.product-info-name {
+    font-size: 2.5vw;
+}
+.product-info-text {
+    font-size: 2.5vw;
+}
+.product-info-button {
+    font-size: 3vw;
+}
+.carousel .thumbs-wrapper {
+    margin-top:4.5%;
+}
+.order-title, .order-form-input {
+    font-size: 2.5vw;
+}
+.order-buttons-send {
+    font-size: 3vw;
+    margin: 26.1% auto 2% auto;
+}
+.order-buttons-back {
+    font-size: 2vw;
+}
+
 /*футер*/
 footer {
     width: 78%;
