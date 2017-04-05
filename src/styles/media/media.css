@@ -4,7 +4,7 @@ body {
   background-image: url("../images/fon640.jpg");
   /*background-repeat: no-repeat;
   background-size: 100% 110.5%;*/
-  background-size: cover;
+  background-size: 100% 100%;
   background-position:top; 
   font-size: 20px;
 }
