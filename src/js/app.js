@@ -4,6 +4,7 @@ import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import Index from "./index.jsx"
 import Catalog from "./catalog.jsx"
 import Polimer from "./polimer.jsx"
+import Compositions from "./compositions.jsx"
 import About from "./about.jsx"
 import Contacts from "./contacts.jsx"
 import Main from "./main.jsx"
@@ -18,7 +19,9 @@ import { Earrings, ProductEarrings } from "./earrings/earrings.jsx"
 import { Rings, ProductRings } from "./rings/rings.jsx"
 import { Clips, ProductClips } from "./clips/clips.jsx"
 import { Another, ProductAnother } from "./another/another.jsx"
-import {Sets, ProductSets } from "./sets/sets.jsx"
+import { Sets, ProductSets } from "./sets/sets.jsx"
+
+import { Floral, ProductFloral }from "./floral/floral.jsx"
 
 
 import "./other.js"
@@ -67,6 +70,11 @@ ReactDOM.render (
                      <Route path="/catalog/polimer/sets" component={Sets} >
                         <Route path="/catalog/polimer/sets/:productId" component={ProductSets} />
                      </Route>
+            </Route>
+            <Route path="/catalog/compositions" component={Compositions}>
+                <Route path="/catalog/compositions/floral" component={Floral}>
+                    <Route path="/catalog/compositions/floral/:productId" component={ProductFloral}/>
+                </Route>
             </Route>
         </Route>
 

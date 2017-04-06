@@ -67,6 +67,10 @@ let Product = React.createClass({
                             <div><img src={this.props.image3} /></div>
                             <div><img src={this.props.image4} /></div>
                             <div><img src={this.props.image5} /></div>
+                            <div><img src={this.props.image6} /></div>
+                            <div><img src={this.props.image7} /></div>
+                            <div><img src={this.props.image8} /></div>
+                            <div><img src={this.props.image9} /></div>
                         </Carousel>
                     </div>
                     
