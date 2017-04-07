@@ -6,6 +6,7 @@ import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
 
 let Rings = React.createClass({
+
      componentDidMount () {
          $("#footer").css({"margin-top":"28.5%"});
      },
@@ -13,8 +14,8 @@ let Rings = React.createClass({
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
-    
     getInitialState() {
+        
         return {
             
             products
@@ -28,7 +29,9 @@ let Rings = React.createClass({
     },
 
     render () {
-            let { products } = this.state;
+        //document.getElementById("footer").style.display="none"
+        //$("#footer").css({"margin-top":"28.5%"});
+        let { products } = this.state;
         return (
             <div>
                 <div className="catalog-navigation">

@@ -6,7 +6,6 @@ import ReactDOM from 'react-dom';
 let Сompositions = React.createClass({
     componentDidMount () {
         window.scrollTo(0, 0)
-        $("#footer").css({"margin-top":"3.5%"});
     },
     render () {
         return (

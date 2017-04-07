@@ -22,7 +22,7 @@ npm i gulp-webpack --save -dev
 удалить из package.json галлелею
 [ { "keys": ["ctrl+alt+s"], "command": "save_all" } ]
 
-
+36%
 
 console.log(location.pathname);
         let locationLink = location.pathname;
@@ -173,3 +173,12 @@ $("#3").bind("click", function() {
 
         </div>
     </footer>
+
+
+    @font-face {
+    font-family: 'Arial';
+    src: url('../fonts/Arial/arial.eot');
+    src: local('☺'), url('../fonts/Arial/arial.woff') format('woff'), url('../fonts/Arial/arial.ttf') format('truetype'), url('../fonts/Arial/arial.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

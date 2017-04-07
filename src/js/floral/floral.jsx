@@ -8,7 +8,8 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Floral = React.createClass({
      componentDidMount () {
-         $("#footer").css({"margin-top":"28.5%"});
+         $("#footer").css({"margin-top":"9%"});
+         $(".product-preview:eq(13)").css({"margin-bottom":"36%"})
          navigationPage ();
      },
        
@@ -33,10 +34,6 @@ let Floral = React.createClass({
             let { products } = this.state;
         return (
             <div>
-                <div className="catalog-navigation">
-                    <Link to="/catalog">Каталог>></Link>
-                    <Link to="/catalog/polimer/all">Цветочные композиции</Link>
-                </div>
                 <div className="catalog-content">
                 {
                     products.map(product => 
