@@ -7,7 +7,7 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Pendants = React.createClass({
      componentDidMount () {
-         $("#footer").css({"margin-top":"28.5%"});
+         $("#footer").css({"margin-top":"28.6%"});
      },
        
     contextTypes: {

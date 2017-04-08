@@ -3,11 +3,14 @@ import products from "./../Data/data-inStock.js";
 import ProductPreview from './../ProductPreview.jsx';
 import { Link } from 'react-router';
 import Product from "./../product.jsx"
+import navigationPage from "../other.js"
 var Carousel = require('react-responsive-carousel').Carousel;
 
 let InStock = React.createClass({
     componentDidMount () {
          $("#footer").css({"margin-top":"3.5%"});
+         $(".product-preview:eq(13)").css({"margin-bottom":"35.7%"})
+         navigationPage ();
      },  
     contextTypes: {
         router: React.PropTypes.object.isRequired
@@ -45,14 +48,13 @@ let InStock = React.createClass({
 
                 )}
                 </div>
-                <div className="pages">
+                 <div className="pages">
                     <div className="pages-back">
                          <a className="pages-link">← предыдущая</a>
                     </div>
                     <div className="pages-numbers">
-                        <Link to="/catalog" className="pages-numbers-link">1</Link>
-                        <Link to="/catalog" className="pages-numbers-link">2</Link>
-                        <Link to="/catalog" className="pages-numbers-link">3</Link>
+                        <p className="pages-numbers-link pages-numbers-link1">1</p>
+                        <p className="pages-numbers-link pages-numbers-link2">2</p>
                     </div>
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>

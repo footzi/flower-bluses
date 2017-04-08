@@ -7,7 +7,7 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Another = React.createClass({
      componentDidMount () {
-         $("#footer").css({"margin-top":"53.6%"});
+         $("#footer").css({"margin-top":"53.7%"});
      },
        
     contextTypes: {
@@ -36,7 +36,7 @@ let Another = React.createClass({
                 <div className="catalog-navigation">
                     <Link to="/catalog">Каталог>></Link>
                     <Link to="/catalog/polimer/all">Полимерная глина>></Link>
-                    <Link to="/catalog/polimer/pendants">Прочие</Link>
+                    <Link to="/catalog/polimer/pendants">Разное</Link>
                 </div>
                 <div className="catalog-content">
                 {

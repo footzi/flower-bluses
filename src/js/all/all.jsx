@@ -73,9 +73,7 @@ let All = React.createClass({
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>
                     </div>
-            </div>
-
-
+                 </div>
             </div>
         )
     }

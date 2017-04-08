@@ -7,7 +7,7 @@ let products = [{
     "image1":"/images/catalog/pendants/колье 1.png",
     "image2":"/images/catalog/pendants/колье 1.1.png",
     "image3":"/images/catalog/pendants/колье 1.2.png",
-    "instock":"/images/catalog/instock.png"
+    "instock":"/images/catalog/notstock.png"
 },{
     "id":"1-2",
     "name":"Кулон 1",
@@ -31,7 +31,7 @@ let products = [{
     "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную",
     "imagePreview":"/images/catalog/pendants/preview/кулон 3.jpg",
     "image1":"/images/catalog/pendants/кулон 3.png",
-    "instock":"/images/catalog/instock.png"
+    "instock":"/images/catalog/notstock.png"
 },{
     "id":"1-5",
     "name":"Кулон 4",
@@ -41,6 +41,14 @@ let products = [{
     "image1":"/images/catalog/pendants/кулон 4.png",
     "image2":"/images/catalog/pendants/кулон 4.1.png",
     "instock":"/images/catalog/notstock.png"
+},{
+    "id":"1-5",
+    "name":"Кулон 5",
+    "cost":"1500 руб.",
+    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную",
+    "imagePreview":"/images/catalog/pendants/preview/кулон 5.jpg",
+    "image1":"/images/catalog/pendants/кулон 5.png",
+    "instock":"/images/catalog/instock.png"
 }];
 
 

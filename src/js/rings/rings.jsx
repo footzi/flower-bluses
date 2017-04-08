@@ -6,31 +6,23 @@ import Product from "../product.jsx"
 var Carousel = require('react-responsive-carousel').Carousel;
 
 let Rings = React.createClass({
-
      componentDidMount () {
-         $("#footer").css({"margin-top":"28.5%"});
+         $("#footer").css({"margin-top":"28.6%"});
      },
        
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },
     getInitialState() {
-        
         return {
-            
             products
         }
     },
-    
-        
-
     handlePreviewClick(productId) {
         this.context.router.push(`/catalog/polimer/rings/${productId}`);
     },
 
     render () {
-        //document.getElementById("footer").style.display="none"
-        //$("#footer").css({"margin-top":"28.5%"});
         let { products } = this.state;
         return (
             <div>
@@ -59,8 +51,6 @@ let Rings = React.createClass({
                 <div >
                 {this.props.children}
                 </div>
-
-
             </div>
         )
     }
