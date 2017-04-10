@@ -42,28 +42,43 @@ let Product = React.createClass({
 
             // $(".slide").hide();
             // $(".thumb").hide();
+ 
             
-          // console.log($(".slide img").prop("currentSrc")) 
-           let a = $(".test")
-        //   arr.forEach(function(entry) {
-        //     console.log(entry);
-        // });
-        var index;
-for (index = 0; index < a.length; ++index) {
-    let b = a[index]
-    console.log(b);
+if ( $(".test")[1].getAttribute("src") === null ) {
+    $(".test1").hide()
 }
-var names = ['HTML', 'CSS', 'JavaScript'];
+//if ( $(".test")[2].getAttribute("src") === null ) {
+    $(".test2").hide()
+ }
+// if ( $(".test")[3].getAttribute("src") === null ) {
+//     $(".test3").hide()
+// }
+// if ( $(".test")[4].getAttribute("src") === null ) {
+//     $(".test4").hide()
+// }
+// if ( $(".test")[5].getAttribute("src") === null ) {
+//     $(".test5").hide()
+// }
+// if ( $(".test")[6].getAttribute("src") === null ) {
+//     $(".test6").hide()
+// }
+// if ( $(".test")[7].getAttribute("src") === null ) {
+//     $(".test7").hide()
+// }
+// if ( $(".test")[8].getAttribute("src") === null ) {
+//     $(".test8").hide()
+// }
+// let a =$(".test")
+// var index;
+// for (index = 0; index < a.length; ++index) {  
+//     let e = a[index].getAttribute("src")
+//     if ( e === null) {
+//         $(".test").hide()
+//     }
+//     //console.log(a[index].getAttribute("src"))
+//  }
 
-var nameLengths = names.map(function(name) {
-  return name.length;
-});
 
-// получили массив с длинами
-alert( nameLengths ); // 4,3,10
-
-var newLi = document.createElement('li');
-  newLi.innerHTML = 'Привет, мир!'
 
 
     },
@@ -90,14 +105,14 @@ var newLi = document.createElement('li');
                     <div id="product-carousel">
                         <Carousel>
                             <div><img className="test" src={this.props.image1} /></div>
-                            <div><img className="test" src={this.props.image2} /></div>
-                            <div><img className="test" src={this.props.image3} /></div>
-                            <div ><img className="test" src={this.props.image4} /></div>
-                            <div ><img className="test" src={this.props.image5} /></div>
-                            <div ><img className="test" src={this.props.image6} /></div>
-                            <div ><img className="test" src={this.props.image7} /></div>
-                            <div ><img className="test" src={this.props.image8} /></div>
-                            <div ><img className="test" src={this.props.image9} /></div>
+                            <div><img className="test1" src={this.props.image2} /></div>
+                            <div ><img className="test2"  src={this.props.image3} /></div>
+                            <div ><img className="test3" src={this.props.image4} /></div>
+                            <div ><img className="test4" src={this.props.image5} /></div>
+                            <div ><img className="test5" src={this.props.image6} /></div>
+                            <div ><img className="test6" src={this.props.image7} /></div>
+                            <div ><img className="test7" src={this.props.image8} /></div>
+                            <div ><img className="test8" src={this.props.image9} /></div>
                         </Carousel>
                     </div>
                     
