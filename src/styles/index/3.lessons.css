@@ -78,6 +78,7 @@
 	background-color: rgba(255, 255, 255, 0.349)
 }
 .lesson-img {
+	cursor: pointer;
 	position: absolute;
 	width: 13%;
 }
@@ -176,14 +177,13 @@
 #b-popup-lesson-close-button {
 	position: relative;
 	right: -4%;
-	cursor: pointer;
     text-align: right;
     padding-top: 1%;
 }
 #b-popup-lesson-close-button img {
-	width: 2%;
+	width: 1.5%;
+	cursor: pointer;
 }
-
 .lesson-input {
 	margin-left: 36%;
 	display: inline-block;
@@ -230,6 +230,7 @@
     margin-bottom: 0;
 }
 .lesson-form-button{
+	cursor: pointer;
     margin-top:1%;
     border: 1px solid #705290;
     border-radius: 10px;

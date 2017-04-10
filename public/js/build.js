@@ -28169,73 +28169,94 @@
 	});
 	var lessons = [{
 		"id": "1",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"image1": "/images/lessons/1.jpg",
-		"image2": "/images/lessons/2.jpg",
-		"image3": "/images/lessons/3.jpg",
+		"imagePreview": "/images/lessons/preview/Короставник.jpg",
+		"image1": "/images/lessons/короставник 1.jpg",
+		"image2": "/images/lessons/короставник 2.jpg",
+		"image3": " ",
 		"name": "Полевой цветок Короставник",
 		"info": " ",
 		"duration": "Длительность: 5 часа",
 		"level": "Уровень сложности: простой (рекомендовано для новичков)"
 	}, {
 		"id": "2",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"image1": "/images/lessons/1.jpg",
-		"image2": "/images/lessons/2.jpg",
-		"image3": " ",
-		"name": "Реалистичная незабудка",
+		"imagePreview": "/images/lessons/preview/Незабудка.jpg",
+		"image1": "/images/lessons/незабудка 1.jpg",
+		"image2": "/images/lessons/незабудка 2.jpg",
+		"image3": "/images/lessons/незабудка 3.jpg",
+		"name": "Реалистичная Незабудка",
 		"info": "Возможно изготовление брошки. Много мелких деталей.",
 		"duration": "Длительность:около 5 часов",
 		"level": "Уровень сложности: высокий (для учеников с навыками)"
 	}, {
 		"id": "3",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"name": "Реалистичная незабудка",
-		"info": "Возможно изготовление брошки. Много мелких деталей.",
-		"duration": "Длительность:около 5 часов",
-		"level": "Уровень сложности: высокий (для учеников с навыками)"
+		"imagePreview": "/images/lessons/preview/Сирень.jpg",
+		"image1": "/images/lessons/сирень 1.jpg",
+		"image2": " ",
+		"image3": " ",
+		"name": "Соцветие Сирени",
+		"info": "Возможно создание украшения на выбор: брошка,серьги или кулон.",
+		"duration": "Длительность: более 2х часов",
+		"level": "Уровень сложности: средний"
 	}, {
 		"id": "4",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"name": "Реалистичная незабудка",
-		"info": "Возможно изготовление брошки. Много мелких деталей.",
-		"duration": "Длительность:около 5 часов",
-		"level": "Уровень сложности: высокий (для учеников с навыками)"
+		"imagePreview": "/images/lessons/preview/Малина.jpg",
+		"image1": "/images/lessons/малина 1.jpg",
+		"image2": " ",
+		"image3": " ",
+		"name": "Веточка Малины",
+		"info": "Возможность создания брошки или кулона.",
+		"duration": "Длительность: 6 часов",
+		"level": "Уровень сложности: простой"
 	}, {
 		"id": "5",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"name": "Реалистичная незабудка",
-		"info": "Возможно изготовление брошки. Много мелких деталей.",
-		"duration": "Длительность:около 5 часов",
-		"level": "Уровень сложности: высокий (для учеников с навыками)"
+		"imagePreview": "/images/lessons/preview/Подснежник.jpg",
+		"image1": "/images/lessons/подснежник 1.jpg",
+		"image2": "/images/lessons/подснежник 2.png",
+		"image3": " ",
+		"name": "Подснежник",
+		"info": " ",
+		"duration": "Длительность:3 часа",
+		"level": "Уровень сложности: простой"
 	}, {
 		"id": "6",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"name": "Реалистичная незабудка",
-		"info": "Возможно изготовление брошки. Много мелких деталей.",
-		"duration": "Длительность:около 5 часов",
-		"level": "Уровень сложности: высокий (для учеников с навыками)"
+		"imagePreview": "/images/lessons/preview/Крокус.jpg",
+		"image1": "/images/lessons/крокус 1.jpg",
+		"image2": "/images/lessons/крокус 2.jpg",
+		"image3": "/images/lessons/крокус 3.png",
+		"name": "Крокус",
+		"info": " ",
+		"duration": "Длительность:6 часов",
+		"level": "Уровень сложности: простой"
 	}, {
 		"id": "7",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"name": "Реалистичная незабудка",
-		"info": "Возможно изготовление брошки. Много мелких деталей.",
-		"duration": "Длительность:около 5 часов",
-		"level": "Уровень сложности: высокий (для учеников с навыками)"
+		"imagePreview": "/images/lessons/preview/Смородина.jpg",
+		"image1": "/images/lessons/смородина 1.jpg",
+		"image2": "/images/lessons/смородина 2.png",
+		"image3": " ",
+		"name": "Веточка с Черной Смородиной",
+		"info": "Возможно создание брошки или кулона",
+		"duration": "Длительность: 5 часов",
+		"level": "Уровень сложности: простой"
 	}, {
 		"id": "8",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"name": "Реалистичная незабудка",
-		"info": "Возможно изготовление брошки. Много мелких деталей.",
-		"duration": "Длительность:около 5 часов",
-		"level": "Уровень сложности: высокий (для учеников с навыками)"
+		"imagePreview": "/images/lessons/preview/Фрезия.jpg",
+		"image1": "/images/lessons/фрезия 1.jpg",
+		"image2": "/images/lessons/фрезия 2.jpg",
+		"image3": "/images/lessons/фрезия 3.png",
+		"name": "Веточка Фрезии",
+		"info": " ",
+		"duration": "Длительность:7 часов",
+		"level": "Уровень сложности: средний"
 	}, {
 		"id": "9",
-		"imagePreview": "/images/lessons/1-1.jpg",
-		"name": "Реалистичная незабудка",
+		"imagePreview": "/images/lessons/preview/Настурция.jpg",
+		"image1": "/images/lessons/настурция 1.jpg",
+		"image2": "/images/lessons/настурция 2.png",
+		"image3": " ",
+		"name": "Веточка с цветами Настурции",
 		"info": "Возможно изготовление брошки. Много мелких деталей.",
-		"duration": "Длительность:около 5 часов",
-		"level": "Уровень сложности: высокий (для учеников с навыками)"
+		"duration": "Длительность: 6 часов",
+		"level": "Уровень сложности: простой"
 	}];
 
 	exports["default"] = lessons;
@@ -28489,6 +28510,9 @@
 	        if ($("#lessons-image-photo-small-3").attr("src") == " ") {
 	            $("#lessons-image-photo-small-3").hide();
 	        }
+	        if ($("#lessons-image-photo-small-2").attr("src") == " ") {
+	            $("#lessons-image-photo-small-2").hide();
+	        }
 	    },
 	    getInitialState: function getInitialState() {
 	        var lessonId = this.props.params.lessonId;
@@ -28515,10 +28539,6 @@
 	    render: function render() {
 	        var lesson = this.state.lesson;
 
-	        function close(e) {
-	            e.preventDefault();
-	            document.getElementById("lessons-image-b-popup").style = "display:none";
-	        }
 	        return _react2["default"].createElement(
 	            "div",
 	            null,
@@ -28530,11 +28550,11 @@
 	                    { className: "lessons-image-b-popup-content" },
 	                    _react2["default"].createElement(
 	                        "div",
-	                        { id: "b-popup-lesson-close-button", onClick: close },
+	                        { id: "b-popup-lesson-close-button" },
 	                        _react2["default"].createElement(
 	                            _reactRouter.Link,
 	                            { to: "/lessons" },
-	                            _react2["default"].createElement("img", { src: "/./images/catalog/close.png" }),
+	                            _react2["default"].createElement("img", { src: "/./images/catalog/close.png", onClick: _reactRouter.browserHistory.goBack }),
 	                            " "
 	                        )
 	                    ),
@@ -28951,7 +28971,7 @@
 
 	        return _react2["default"].createElement(
 	            "div",
-	            { className: "product-preview", onClick: openPopup },
+	            { className: "product-preview", onClick: onClick },
 	            _react2["default"].createElement(
 	                "div",
 	                { className: "product-preview-thumbs" },
@@ -29059,6 +29079,31 @@
 	            $("#product").show();
 	            $("#order").hide();
 	        });
+
+	        // $(".slide").hide();
+	        // $(".thumb").hide();
+
+	        // console.log($(".slide img").prop("currentSrc"))
+	        var a = $(".test");
+	        //   arr.forEach(function(entry) {
+	        //     console.log(entry);
+	        // });
+	        var index;
+	        for (index = 0; index < a.length; ++index) {
+	            var b = a[index];
+	            console.log(b);
+	        }
+	        var names = ['HTML', 'CSS', 'JavaScript'];
+
+	        var nameLengths = names.map(function (name) {
+	            return name.length;
+	        });
+
+	        // получили массив с длинами
+	        alert(nameLengths); // 4,3,10
+
+	        var newLi = document.createElement('li');
+	        newLi.innerHTML = 'Привет, мир!';
 	    },
 	    render: function render() {
 	        var product = this.props.product;
@@ -29107,47 +29152,47 @@
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image1 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image1 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image2 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image2 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image3 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image3 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image4 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image4 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image5 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image5 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image6 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image6 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image7 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image7 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image8 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image8 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { src: this.props.image9 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image9 })
 	                            )
 	                        )
 	                    )
@@ -30794,9 +30839,9 @@
 	});
 	var products = [{
 	    "id": "1-1",
-	    "name": "Kолье 1",
+	    "name": "Черничное настроение",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": "Изящное колье с черникой и ромашками обязательно подарит Вам летнее настроение даже в самую морозную зиму! Ягодки и цветочки размером не более 1 см. Все вылеплено, тонировано и собрано вручную.",
 	    "imagePreview": "/images/catalog/pendants/preview/колье 1.jpg",
 	    "image1": "/images/catalog/pendants/колье 1.png",
 	    "image2": "/images/catalog/pendants/колье 1.1.png",
@@ -30804,45 +30849,37 @@
 	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "1-2",
-	    "name": "Кулон 1",
+	    "name": "Кулон с цветами сирени и незабудки",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную",
+	    "text": "Нежный кулон с цветами сирени и белой незабудки. Каждый цветок вылеплен вручную.",
 	    "imagePreview": "/images/catalog/pendants/preview/кулон 1.jpg",
 	    "image1": "/images/catalog/pendants/кулон 1.png",
 	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "1-3",
-	    "name": "Кулон 2",
+	    "name": "Кулон с черничкой",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную",
+	    "text": "Стильный кулон для поддержания летнего настроения круглый год! Все вылеплено, тонировано и собрано вручную.",
 	    "imagePreview": "/images/catalog/pendants/preview/кулон 2.jpg",
 	    "image1": "/images/catalog/pendants/кулон 2.png",
 	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "1-4",
-	    "name": "Кулон 3",
+	    "name": "Кулон с малиной",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную",
+	    "text": "Вы обязательно почувствуете вкус лета когда его наденете! Все вылеплено, тонировано и собрано вручную.",
 	    "imagePreview": "/images/catalog/pendants/preview/кулон 3.jpg",
 	    "image1": "/images/catalog/pendants/кулон 3.png",
 	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "1-5",
-	    "name": "Кулон 4",
+	    "name": "Кулон «нежный»",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную",
+	    "text": "Нежный кулон с цветами, вылепленными вручную из холодного фарфора.",
 	    "imagePreview": "/images/catalog/pendants/preview/кулон 4.jpg",
 	    "image1": "/images/catalog/pendants/кулон 4.png",
 	    "image2": "/images/catalog/pendants/кулон 4.1.png",
 	    "instock": "/images/catalog/notstock.png"
-	}, {
-	    "id": "1-5",
-	    "name": "Кулон 5",
-	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную",
-	    "imagePreview": "/images/catalog/pendants/preview/кулон 5.jpg",
-	    "image1": "/images/catalog/pendants/кулон 5.png",
-	    "instock": "/images/catalog/instock.png"
 	}];
 
 	exports.products = products;
@@ -30862,18 +30899,18 @@
 	});
 	var products = [{
 	    "id": "2-1",
-	    "name": "Серьги 1",
+	    "name": "Cерьги нежность",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": "Нежные серьги с цветами сирени и белой незабудки. Каждый цветок вылеплен вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 1.jpg",
 	    "image1": "/images/catalog/earrings/серьги 1.png",
 	    "instock": "/images/catalog/notstock.png"
 
 	}, {
 	    "id": "2-2",
-	    "name": "Серьги 2",
+	    "name": "Серьги с малиной ",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины.",
+	    "text": "С этими сережками Вы обязательно почувствуете вкус лета даже зимой! Все вылеплено, тонировано и собрано вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 2.jpg",
 	    "image1": "/images/catalog/earrings/серьги 2.png",
 	    "image2": "/images/catalog/earrings/серьги 2.1.png",
@@ -30882,45 +30919,44 @@
 
 	}, {
 	    "id": "2-3",
-	    "name": "Серьги 3",
+	    "name": "Серьги с малиной и черной смородиной ",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": " С этими сережками Вы обязательно почувствуете вкус лета даже зимой! Все вылеплено, тонировано и собрано вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 3.jpg",
 	    "image1": "/images/catalog/earrings/серьги 3.png",
 	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "2-4",
-	    "name": "Серьги 4",
+	    "name": "Серьги с малиной и черникой ",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": "С этими сережками Вы обязательно почувствуете вкус лета даже зимой! Все вылеплено, тонировано и собрано вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 4.jpg",
 	    "image1": "/images/catalog/earrings/серьги 4.png",
 	    "image2": "/images/catalog/earrings/серьги 4.1.png",
-	    "image3": "/images/catalog/earrings/серьги 4.2.png",
 	    "instock": "/images/catalog/notstock.png"
 
 	}, {
 	    "id": "2-5",
-	    "name": "Серьги 5",
-	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "name": "Серьги с малиной и черной смородиной",
+	    "cost": "750 руб.",
+	    "text": "голубые полянки в березовом лесу, запах ландышей и тепло! Каждый цветок вылеплен вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 5.jpg",
 	    "image1": "/images/catalog/earrings/серьги 5.png",
 	    "instock": "/images/catalog/notstock.png"
 	}, {
 	    "id": "2-6",
-	    "name": "Серьги 7",
+	    "name": "Серьги веточка сирени ",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": "Серьги с нежной сиренью. Каждый цветок вылеплен вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 6.jpg",
 	    "image1": "/images/catalog/earrings/серьги 6.png",
 	    "instock": "/images/catalog/notstock.png"
 
 	}, {
 	    "id": "2-7",
-	    "name": "Серьги 7",
+	    "name": "Серьги с сакурой",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": "Нежная розовая сакура, белые розочки и бусины из чешского стекла. Каждый цветок выполнен вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 7.jpg",
 	    "image1": "/images/catalog/earrings/серьги 7.png",
 	    "image2": "/images/catalog/earrings/серьги 7.1.png",
@@ -30928,9 +30964,9 @@
 
 	}, {
 	    "id": "2-8",
-	    "name": "Серьги 8",
+	    "name": "Cерьги с красными розочками",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": "Нежные серьги с маленькими красными розочками. Каждый цветок выполнен вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 8.jpg",
 	    "image1": "/images/catalog/earrings/серьги 8.png",
 	    "image2": "/images/catalog/earrings/серьги 8.1.png",
@@ -30938,9 +30974,9 @@
 
 	}, {
 	    "id": "2-9",
-	    "name": "Серьги 9",
+	    "name": "Серьги розовая нежность ",
 	    "cost": "1500 руб.",
-	    "text": "Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
+	    "text": "Невероятно нежные серьги с миниатюрными розочками. Каждый цветочек вылеплен вручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 9.jpg",
 	    "image1": "/images/catalog/earrings/серьги 9.png",
 	    "image2": "/images/catalog/earrings/серьги 9.1.png",

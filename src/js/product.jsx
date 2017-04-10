@@ -38,6 +38,33 @@ let Product = React.createClass({
                 $("#product").show()
                 $("#order").hide()
             })
+            
+
+            // $(".slide").hide();
+            // $(".thumb").hide();
+            
+          // console.log($(".slide img").prop("currentSrc")) 
+           let a = $(".test")
+        //   arr.forEach(function(entry) {
+        //     console.log(entry);
+        // });
+        var index;
+for (index = 0; index < a.length; ++index) {
+    let b = a[index]
+    console.log(b);
+}
+var names = ['HTML', 'CSS', 'JavaScript'];
+
+var nameLengths = names.map(function(name) {
+  return name.length;
+});
+
+// получили массив с длинами
+alert( nameLengths ); // 4,3,10
+
+var newLi = document.createElement('li');
+  newLi.innerHTML = 'Привет, мир!'
+
 
     },
     render () {
@@ -62,15 +89,15 @@ let Product = React.createClass({
 
                     <div id="product-carousel">
                         <Carousel>
-                            <div><img src={this.props.image1} /></div>
-                            <div><img src={this.props.image2} /></div>
-                            <div><img src={this.props.image3} /></div>
-                            <div><img src={this.props.image4} /></div>
-                            <div><img src={this.props.image5} /></div>
-                            <div><img src={this.props.image6} /></div>
-                            <div><img src={this.props.image7} /></div>
-                            <div><img src={this.props.image8} /></div>
-                            <div><img src={this.props.image9} /></div>
+                            <div><img className="test" src={this.props.image1} /></div>
+                            <div><img className="test" src={this.props.image2} /></div>
+                            <div><img className="test" src={this.props.image3} /></div>
+                            <div ><img className="test" src={this.props.image4} /></div>
+                            <div ><img className="test" src={this.props.image5} /></div>
+                            <div ><img className="test" src={this.props.image6} /></div>
+                            <div ><img className="test" src={this.props.image7} /></div>
+                            <div ><img className="test" src={this.props.image8} /></div>
+                            <div ><img className="test" src={this.props.image9} /></div>
                         </Carousel>
                     </div>
                     

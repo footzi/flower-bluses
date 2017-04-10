@@ -23,6 +23,9 @@ let LessonsImage = React.createClass({
         if ($("#lessons-image-photo-small-3").attr("src")==" ") {
             $("#lessons-image-photo-small-3").hide()
         }
+        if ($("#lessons-image-photo-small-2").attr("src")==" ") {
+            $("#lessons-image-photo-small-2").hide()
+        }
         
 
     },
@@ -46,21 +49,15 @@ let LessonsImage = React.createClass({
 
 	render () {
         let { lesson }=this.state;
-		function close(e) {
-            e.preventDefault();
-            document.getElementById("lessons-image-b-popup").style="display:none";
-         }
 		return (
             
 			<div>
                <div id="lessons-image-b-popup">
                 <div className="lessons-image-b-popup-content">
-                    <div id="b-popup-lesson-close-button" onClick={close}>
-                        <Link to="/lessons"><img src="/./images/catalog/close.png" /> </Link>
+                    <div id="b-popup-lesson-close-button">
+                        <Link to="/lessons"><img src="/./images/catalog/close.png"  onClick={browserHistory.goBack}/> </Link>
                     </div>
                     <h1 className="lessons-image-name">{lesson.name} </h1>
-                   
-                    
                     <div className="lessons-image-photo-big" >
                         <img id="lessons-image-photo-big-img" src={lesson.image1} />
                     </div>

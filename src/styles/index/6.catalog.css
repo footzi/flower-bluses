@@ -220,6 +220,7 @@
   display:none; 
 }
 .product-preview {
+  cursor: pointer;
   color:black;
   margin-top: 6%;
   margin-right: 6.5%;
@@ -355,7 +356,7 @@
 }
 #product-info{
   text-align: center;
-  margin-top:2.5%; 
+  margin-top:4%; 
   width: 45%;
   outline:0px solid red;
   float:right;
