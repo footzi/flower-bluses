@@ -40,16 +40,16 @@ let Product = React.createClass({
             })
             
 
+// $("div[attributeName='value']")
+//console.log($(".test[src=null]"))
             // $(".slide").hide();
             // $(".thumb").hide();
- 
-            
-if ( $(".test")[1].getAttribute("src") === null ) {
-    $(".test1").hide()
-}
-//if ( $(".test")[2].getAttribute("src") === null ) {
-    $(".test2").hide()
- }
+// if ( $(".test:eq(1)").attr("src") == undefined  ) {
+//     $(".test1").hide()
+// }
+// if ( $(".test")[2].attr("src") == undefined ) {
+//     $(".test2").hide()
+//  }
 // if ( $(".test")[3].getAttribute("src") === null ) {
 //     $(".test3").hide()
 // }
@@ -107,12 +107,12 @@ if ( $(".test")[1].getAttribute("src") === null ) {
                             <div><img className="test" src={this.props.image1} /></div>
                             <div><img className="test1" src={this.props.image2} /></div>
                             <div ><img className="test2"  src={this.props.image3} /></div>
-                            <div ><img className="test3" src={this.props.image4} /></div>
-                            <div ><img className="test4" src={this.props.image5} /></div>
-                            <div ><img className="test5" src={this.props.image6} /></div>
-                            <div ><img className="test6" src={this.props.image7} /></div>
-                            <div ><img className="test7" src={this.props.image8} /></div>
-                            <div ><img className="test8" src={this.props.image9} /></div>
+                            <div ><img className="test" src={this.props.image4} /></div>
+                            <div ><img className="test" src={this.props.image5} /></div>
+                            <div ><img className="test" src={this.props.image6} /></div>
+                            <div ><img className="test" src={this.props.image7} /></div>
+                            <div ><img className="test" src={this.props.image8} /></div>
+                            <div ><img className="test" src={this.props.image9} /></div>
                         </Carousel>
                     </div>
                     
