@@ -37,46 +37,15 @@ let Product = React.createClass({
              $(".order-buttons-back").bind("click", function() {
                 $("#product").show()
                 $("#order").hide()
-            })
+            });
             
-
-// $("div[attributeName='value']")
-//console.log($(".test[src=null]"))
-            // $(".slide").hide();
-            // $(".thumb").hide();
-
-// console.log($(".test:eq(4)").attr("src"))
-// let a = $(".test:eq(4)").attr("src")
-
-// if ($(".test:eq(1)").attr("src")!==undefined) {
-//      $("Carousel div:eq(1)").remove()
-// } 
-
-// $("img:not(img[src])").remove()
-// $(".thumb").detach(":empty")
-// $("div").detach(":empty")
-// $(".slide").detach(":empty")
-//  $(".thumb:gt(2)").remove()
-//   $(".slide:gt(2)").remove()
-
-// let a =$(".test")
-// var index;
-// for (index = 0; index < a.length; ++index) {  
-//     let e = a[index].getAttribute("src")
-//     if ( e === null) {
-//         $(".test").hide()
-//     }
-//     //console.log(a[index].getAttribute("src"))
-//  }
-
-
+            //$("button").hide()
 
 
     },
     render () {
         let { product } = this.props;
         let linkProduct = location.href;
-
 
         return (
             
@@ -94,16 +63,16 @@ let Product = React.createClass({
                         </div>
 
                     <div id="product-carousel">
-                        <Carousel>
-                            <div><img className="test" src={this.props.image1} /></div>
-                            <div><img className="test" src={this.props.image2} /></div>
-                            <div><img className="test"  src={this.props.image3} /></div>
-                            <div><img className="test" src={this.props.image4} /></div>
-                            <div><img className="test" src={this.props.image5} /></div>
-                            <div><img className="test" src={this.props.image6} /></div>
-                            <div><img className="test" src={this.props.image7} /></div>
-                            <div><img className="test" src={this.props.image8} /></div>
-                            <div><img className="test" src={this.props.image9} /></div>
+                        <Carousel className="test-carousel">
+                            <div className="test-div"><img className="test" src={this.props.image1} /></div>
+                            <div className="test-div"><img className="test" src={this.props.image2} /></div>
+                            <div className="test-div"><img className="test"  src={this.props.image3} /></div>
+                            <div className="test-div"><img className="test" src={this.props.image4} /></div>
+                            <div className="test-div"><img className="test" src={this.props.image5} /></div>
+                            <div className="test-div"><img className="test" src={this.props.image6} /></div>
+                            <div className="test-div"><img className="test" src={this.props.image7} /></div>
+                            <div className="test-div"><img className="test" src={this.props.image8} /></div>
+                            <div className="test-div"><img className="test" src={this.props.image9} /></div>
                         </Carousel>
                     </div>
                     
