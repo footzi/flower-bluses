@@ -29084,30 +29084,21 @@
 	        //console.log($(".test[src=null]"))
 	        // $(".slide").hide();
 	        // $(".thumb").hide();
-	        // if ( $(".test:eq(1)").attr("src") == undefined  ) {
-	        //     $(".test1").hide()
+
+	        // console.log($(".test:eq(4)").attr("src"))
+	        // let a = $(".test:eq(4)").attr("src")
+
+	        // if ($(".test:eq(1)").attr("src")!==undefined) {
+	        //      $("Carousel div:eq(1)").remove()
 	        // }
-	        // if ( $(".test")[2].attr("src") == undefined ) {
-	        //     $(".test2").hide()
-	        //  }
-	        // if ( $(".test")[3].getAttribute("src") === null ) {
-	        //     $(".test3").hide()
-	        // }
-	        // if ( $(".test")[4].getAttribute("src") === null ) {
-	        //     $(".test4").hide()
-	        // }
-	        // if ( $(".test")[5].getAttribute("src") === null ) {
-	        //     $(".test5").hide()
-	        // }
-	        // if ( $(".test")[6].getAttribute("src") === null ) {
-	        //     $(".test6").hide()
-	        // }
-	        // if ( $(".test")[7].getAttribute("src") === null ) {
-	        //     $(".test7").hide()
-	        // }
-	        // if ( $(".test")[8].getAttribute("src") === null ) {
-	        //     $(".test8").hide()
-	        // }
+
+	        // $("img:not(img[src])").remove()
+	        // $(".thumb").detach(":empty")
+	        // $("div").detach(":empty")
+	        // $(".slide").detach(":empty")
+	        //  $(".thumb:gt(2)").remove()
+	        //   $(".slide:gt(2)").remove()
+
 	        // let a =$(".test")
 	        // var index;
 	        // for (index = 0; index < a.length; ++index) { 
@@ -29170,12 +29161,12 @@
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { className: "test1", src: this.props.image2 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image2 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
 	                                null,
-	                                _react2["default"].createElement("img", { className: "test2", src: this.props.image3 })
+	                                _react2["default"].createElement("img", { className: "test", src: this.props.image3 })
 	                            ),
 	                            _react2["default"].createElement(
 	                                "div",
