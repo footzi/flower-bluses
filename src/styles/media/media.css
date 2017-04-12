@@ -4,7 +4,7 @@ body {
   background-image: url("../images/fon640.jpg");
   /*background-repeat: no-repeat;
   background-size: 100% 110.5%;*/
-  background-size: 100% 100%;
+  background-size: cover;
   background-position:top; 
   font-size: 20px;
 }
@@ -57,7 +57,7 @@ main {
 }
 .main-title {
     margin:0;
-    font-size: 4.9vw;
+    font-size: 5vw;
     margin-bottom: 12%;
 }
 .main-introduction{
@@ -139,27 +139,47 @@ main {
 /*about*/
 
 .about {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
 }
 .about-title {
-    font-size: 3.4vw;
+    font-size: 5vw;
+}
+.about-introduction-marker {
+    width: 5%;
+}
+.about-introduction-text {
+    text-align: justify;
 }
 .about-i-photo {
     width: 100%;
 }
 .about-i-text {
     width: 100%;
-    margin:0;
+    margin:3% 0 0 0;
 }
 .about-form-title {
-    font-size: 3vw;
+    font-size: 3.4vw;
 }
 .about-form-input {
-    height: 30%;
-    font-size: 4vw;
+    margin-bottom: 3%;
+    width: 100%;
+    padding: 2% 0 2% 0.5%;
+    font-size: 3.5vw;
+    box-sizing: border-box;
+}
+.about-form-input-email, .about-form-input-phone {
+    left: 0;
+    float: none;
+    width: 100%;
+}
+.about-form-input-message {
+    padding-bottom: 25%;
 }
 .about-info-button {
-    font-size: 3vw;   
+    margin: 0;
+    width: 100%;
+    padding: 2% 0;
+    font-size: 5vw;   
 }
 
 /*каталог*/    

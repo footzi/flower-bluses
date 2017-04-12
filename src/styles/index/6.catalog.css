@@ -1,6 +1,3 @@
-.a {
-  width: 40%;
-}
 /*Первый блок с приветствием*/
 .catalog-greeting  {
   padding-top:2.5%;
@@ -341,7 +338,7 @@
   text-align: right;
   padding-top: 2%;
 }
-img {
+#b-popup-close-button img {
   width: 1.5%;
 }
 

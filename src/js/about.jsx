@@ -9,14 +9,17 @@ let About = React.createClass({
                     if($(window).width()<=640) {
                         $("body").css({"background-image":"none"})
                         $("body").css({"background-image":"url(/images/fon640.jpg)"});
+ 
+                        $("#footer").css({"margin-top":"21%"});
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
+                        $("#footer").css({"margin-top":"9%"})
                     }
                 }).resize()
             })
 		//$("body").css({"background-image":"url(/images/fon.jpg)"});
-        $("#footer").css({"margin-top":"11%"});
+        //$("#footer").css({"margin-top":"11%"});
  
         (function(){
             emailjs.init("user_jmnF1YC49paVFwkbJRipP");

@@ -8,7 +8,7 @@ let Index = React.createClass({
                 $(window).resize(function(){
                     if($(window).width()<=640) {
                         $("body").css({"background-image":"url(/images/fon640.jpg)"})
-                        $("#footer").css({"margin-top":"8%"});
+                        $("#footer").css({"margin-top":"23%"});
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
