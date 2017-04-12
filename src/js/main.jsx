@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 let Main = React.createClass({
 		componentDidMount(){
-			$(".nav-mobile-button").click(function() {
+			$(".nav-mobile-button img").click(function() {
                 if ($(".nav-mobile-menu").css("display")=="none") {
                     $(".nav-mobile-menu").css("display","block")
                 } else 

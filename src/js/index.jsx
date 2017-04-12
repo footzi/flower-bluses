@@ -16,7 +16,7 @@ let Index = React.createClass({
                     }
                 }).resize()
             })
-        $("#footer").css({"margin-top":"3%"});
+        //$("#footer").css({"margin-top":"3%"});
     
         $('.bxslider').bxSlider({
             auto:true,

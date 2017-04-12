@@ -27328,7 +27328,7 @@
 	                }
 	            }).resize();
 	        });
-	        $("#footer").css({ "margin-top": "3%" });
+	        //$("#footer").css({"margin-top":"3%"});
 
 	        $('.bxslider').bxSlider({
 	            auto: true,
@@ -27917,39 +27917,37 @@
 					if ($(window).width() <= 640) {
 						$("body").css({ "background-image": "none" });
 						$("body").css({ "background-image": "url(/images/fon640.jpg)" });
-
 						$("#footer").css({ "margin-top": "21%" });
 					} else {
 						$("body").css({ "background-image": "url(/images/fon.jpg)" });
-						$("#footer").css({ "margin-top": "9%" });
+						$("#footer").css({ "margin-top": "11%" });
 					}
 				}).resize();
-			})
-			//$("body").css({"background-image":"url(/images/fon.jpg)"});
-			//$("#footer").css({"margin-top":"11%"});
-
-			(function () {
-				emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-			})();
-
-			var orderform = $("#aboutform");
-			orderform.submit(function (event) {
-				event.preventDefault();
-
-				// Change to your service ID, or keep using the default service
-				var service_id = "mail_ru";
-				var template_id = "about";
-
-				orderform.find("#aboutform-button").text("Отправляется...");
-				emailjs.sendForm(service_id, template_id, "aboutform").then(function () {
-					console.log("Sent!");
-					orderform.find("#aboutform-button").text("Отправлено");
-				}, function (err) {
-					console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-					orderform.find("#aboutform-button").text("Oшибка");
-				});
-				return false;
 			});
+
+			// (function(){
+			//     emailjs.init("user_jmnF1YC49paVFwkbJRipP");
+			// })();
+
+			// var orderform = $("#aboutform");
+			// orderform.submit(function(event){
+			//     event.preventDefault();
+
+			// // Change to your service ID, or keep using the default service
+			// var service_id = "mail_ru";
+			// var template_id = "about";
+
+			// orderform.find("#aboutform-button").text("Отправляется...");
+			// emailjs.sendForm(service_id,template_id,"aboutform")
+			//     .then(function(){
+			//         console.log("Sent!");
+			//     orderform.find("#aboutform-button").text("Отправлено");
+			//     }, function(err) {
+			//     console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+			//     orderform.find("#aboutform-button").text("Oшибка");
+			//     });
+			// return false;
+			// });
 		},
 
 		render: function render() {
@@ -28238,7 +28236,7 @@
 	    displayName: "Main",
 
 	    componentDidMount: function componentDidMount() {
-	        $(".nav-mobile-button").click(function () {
+	        $(".nav-mobile-button img").click(function () {
 	            if ($(".nav-mobile-menu").css("display") == "none") {
 	                $(".nav-mobile-menu").css("display", "block");
 	            } else $(".nav-mobile-menu").css("display", "none");

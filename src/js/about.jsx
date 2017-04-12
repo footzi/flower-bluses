@@ -8,42 +8,39 @@ let About = React.createClass({
                 $(window).resize(function(){
                     if($(window).width()<=640) {
                         $("body").css({"background-image":"none"})
-                        $("body").css({"background-image":"url(/images/fon640.jpg)"});
- 
+                        $("body").css({"background-image":"url(/images/fon640.jpg)"})
                         $("#footer").css({"margin-top":"21%"});
-
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
-                        $("#footer").css({"margin-top":"9%"})
+                        $("#footer").css({"margin-top":"11%"});
                     }
                 }).resize()
             })
-		//$("body").css({"background-image":"url(/images/fon.jpg)"});
-        //$("#footer").css({"margin-top":"11%"});
+        
  
-        (function(){
-            emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-        })();
+        // (function(){
+        //     emailjs.init("user_jmnF1YC49paVFwkbJRipP");
+        // })();
 
-        var orderform = $("#aboutform");
-        orderform.submit(function(event){
-            event.preventDefault();
+        // var orderform = $("#aboutform");
+        // orderform.submit(function(event){
+        //     event.preventDefault();
 
-        // Change to your service ID, or keep using the default service
-        var service_id = "mail_ru";
-        var template_id = "about";
+        // // Change to your service ID, or keep using the default service
+        // var service_id = "mail_ru";
+        // var template_id = "about";
 
-        orderform.find("#aboutform-button").text("Отправляется...");
-        emailjs.sendForm(service_id,template_id,"aboutform")
-            .then(function(){ 
-                console.log("Sent!");
-            orderform.find("#aboutform-button").text("Отправлено");
-            }, function(err) {
-            console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-            orderform.find("#aboutform-button").text("Oшибка");
-            });
-        return false;
-        });
+        // orderform.find("#aboutform-button").text("Отправляется...");
+        // emailjs.sendForm(service_id,template_id,"aboutform")
+        //     .then(function(){ 
+        //         console.log("Sent!");
+        //     orderform.find("#aboutform-button").text("Отправлено");
+        //     }, function(err) {
+        //     console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+        //     orderform.find("#aboutform-button").text("Oшибка");
+        //     });
+        // return false;
+        // });
 	},
 
 	render() {
