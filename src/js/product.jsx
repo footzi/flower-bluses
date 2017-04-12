@@ -3,6 +3,7 @@ import { Link } from "react-router";
 var Carousel = require('react-responsive-carousel').Carousel;
 import { browserHistory } from 'react-router';
 
+
 let Product = React.createClass({
     componentDidMount () {
                     (function(){
@@ -39,16 +40,22 @@ let Product = React.createClass({
                 $("#order").hide()
             });
             
-            //$("button").hide()
 
+// $("img:not(img[src])").remove()
+// $(".thumb").detach(":empty")
+// $("div").detach(":empty")
+// $(".slide").detach(":empty")
+
+
+
+
+	
 
     },
     render () {
         let { product } = this.props;
         let linkProduct = location.href;
-
         return (
-            
             <div id="b-popup">
                 <div className="b-popup-content">
                      
@@ -63,17 +70,18 @@ let Product = React.createClass({
                         </div>
 
                     <div id="product-carousel">
-                        <Carousel className="test-carousel">
-                            <div className="test-div"><img className="test" src={this.props.image1} /></div>
-                            <div className="test-div"><img className="test" src={this.props.image2} /></div>
-                            <div className="test-div"><img className="test"  src={this.props.image3} /></div>
-                            <div className="test-div"><img className="test" src={this.props.image4} /></div>
-                            <div className="test-div"><img className="test" src={this.props.image5} /></div>
-                            <div className="test-div"><img className="test" src={this.props.image6} /></div>
-                            <div className="test-div"><img className="test" src={this.props.image7} /></div>
-                            <div className="test-div"><img className="test" src={this.props.image8} /></div>
-                            <div className="test-div"><img className="test" src={this.props.image9} /></div>
+                        <Carousel>
+                            <div><img src={this.props.image1} /></div>
+                            <div><img src={this.props.image2} /></div>
+                            <div><img src={this.props.image3} /></div>
+                            <div><img src={this.props.image4} /></div>
+                            <div><img src={this.props.image5} /></div>
+                            <div><img src={this.props.image6} /></div>
+                            <div><img src={this.props.image7} /></div>
+                            <div><img src={this.props.image8} /></div>
+                            <div><img src={this.props.image9} /></div>
                         </Carousel>
+    
                     </div>
                     
                     </div>

@@ -10,7 +10,7 @@ let Floral = React.createClass({
      componentDidMount () {
          $("#footer").css({"margin-top":"8.6%"});
          $(".catalog-navigation").css({"margin-top":"-32.3%"});
-         $(".product-preview:eq(13)").css({"margin-bottom":"36%"})
+         $(".product-preview:eq(12)").css({"margin-bottom":"36%"})
          navigationPage ();
      },
        

@@ -2,7 +2,7 @@ let products = [{
     "id":"7-1",
     "name":"Букет с цветами космеи",
     "cost":"1200 руб.",
-    "text":"Букет с цветами космеи из полимерной глины. Ранее к этим цветам я относилась довольно спокойно. Но,решив слепить это цветок, внимательно его рассмотрела...А пока воплощалась моя творческая задумка,шаг за шагом,лепесточек за лепесточком,я влюбилась в это ажурное и очень нежное чудо! Стоимость указана за одну веточку. Количество веточек может быть разным.",
+    "text":"Букет с цветами космеи из полимерной глины. Ранее к этим цветам я относилась довольно спокойно. Но,решив слепить это цветок, внимательно его рассмотрела.А пока воплощалась моя творческая задумка,шаг за шагом,лепесточек за лепесточком,я влюбилась в это ажурное и очень нежное чудо!",
     "imagePreview":"/images/catalog/floral/preview/букет 1.jpg",
     "image1":"/images/catalog/floral/букет 1.png",
     "image2":"/images/catalog/floral/букет 1.1.png",
@@ -59,11 +59,10 @@ let products = [{
     "image1":"/images/catalog/floral/букет 5.png",
     "image2":"/images/catalog/floral/букет 5.1.png",
     "image3":"/images/catalog/floral/букет 5.2.png",
-    "image4":"/images/catalog/floral/букет 5.3.png",
     "instock":"/images/catalog/instock.png"
 },{
     "id":"7-6",
-    "name":"Букет »Настурция»",
+    "name":"Букет «Настурция»",
     "cost":"900 руб.",
     "text":"Осенний букет теплых оттенков. 5 небольших кустиков (1 цветок, бутон и два листочка) настурции в белом кувшинчике. Размер композиции 20 на 22 см. Цена указана за один кустик. Количество веточек может быть разным.",
     "imagePreview":"/images/catalog/floral/preview/букет 6.jpg",
@@ -86,7 +85,7 @@ let products = [{
     "instock":"/images/catalog/instock.png"
 },{
     "id":"7-8",
-    "name":"Букет »Осенний блюз",
+    "name":"Букет «Осенний блюз»",
     "cost":"1500 руб.",
     "text":"Композиция состоит из пионов, веточек рябины, кленовых листьев, хризантем и соцветий гортензии. Все цветы натурального размера. Полностью ручная работа.",
     "imagePreview":"/images/catalog/floral/preview/букет 8.jpg",
@@ -137,33 +136,23 @@ let products = [{
     "instock":"/images/catalog/instock.png"
 },{
     "id":"7-12",
-    "name":"Букет 12",
+    "name":"Композиция «Танец маков»",
     "cost":"1500 руб.",
-    "text":"",
+    "text":"Яркая цветочная композиция с алыми маками. Каждый цветок вылеплен и тонирован вручную. Возможность изготовления на заказ уточняйте.",
     "imagePreview":"/images/catalog/floral/preview/букет 12.jpg",
     "image1":"/images/catalog/floral/букет 12.png",
     "image2":"/images/catalog/floral/букет 12.1.png",
     "image3":"/images/catalog/floral/букет 12.2.png",
+    "image4":"/images/catalog/floral/букет 12.3.png",
+    "image5":"/images/catalog/floral/букет 12.4.png",
     "instock":"/images/catalog/instock.png"
 },{
     "id":"7-13",
-    "name":"Композиция Танец маков",
-    "cost":"1500 руб.",
-    "text":"Яркая цветочная композиция с алыми маками. Каждый цветок вылеплен и тонирован вручную. Возможность изготовления на заказ уточняйте.",
-    "imagePreview":"/images/catalog/floral/preview/букет 13.jpg",
-    "image1":"/images/catalog/floral/букет 13.png",
-    "image2":"/images/catalog/floral/букет 13.1.png",
-    "image3":"/images/catalog/floral/букет 13.2.png",
-    "image4":"/images/catalog/floral/букет 13.3.png",
-    "image5":"/images/catalog/floral/букет 13.4.png",
-    "instock":"/images/catalog/instock.png"
-},{
-    "id":"7-14",
-    "name":"Композиция «Пришла весна",
+    "name":"Композиция «Пришла весна»",
     "cost":"600 руб.",
     "text":"Нежная цветочная композиция из белых подснежников. Ручная работа.",
-    "imagePreview":"/images/catalog/floral/preview/букет 14.jpg",
-    "image1":"/images/catalog/floral/букет 14.png",
+    "imagePreview":"/images/catalog/floral/preview/букет 13.jpg",
+    "image1":"/images/catalog/floral/букет 13.png",
     "instock":"/images/catalog/instock.png"
 }]
 export { products };

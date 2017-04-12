@@ -93,7 +93,7 @@ let products = [{
     "instock":"/images/catalog/instock.png"
 },{
     "id":"4-11",
-    "name":"Заколка «Вкус лета»",
+    "name":"Заколка «Вкус лета»", 
     "cost":"1500 руб.",
     "text":"Заколка с ягодками черники, черной смородины и брусники. Ручная работа.",
     "imagePreview":"/images/catalog/сlips/preview/заколка 6.jpg",

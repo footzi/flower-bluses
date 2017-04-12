@@ -1,4 +1,6 @@
-
+.a {
+  width: 40%;
+}
 /*Первый блок с приветствием*/
 .catalog-greeting  {
   padding-top:2.5%;
@@ -338,6 +340,9 @@
   cursor: pointer;
   text-align: right;
   padding-top: 2%;
+}
+img {
+  width: 1.5%;
 }
 
 .order-close-button {

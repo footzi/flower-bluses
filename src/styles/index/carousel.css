@@ -107,6 +107,7 @@
     margin: 0;
     overflow: hidden; }
     .carousel.carousel-slider .control-arrow {
+      display: none;
       top: 0;
       color: #fff;
       font-size: 26px;
