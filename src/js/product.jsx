@@ -68,6 +68,9 @@ let Product = React.createClass({
                             <h2 className="product-info-text">{this.props.text}</h2>
                             <div className="product-info-button" >Заказать</div>
                         </div>
+                        <div className="product-info-mobile">   
+                            <h1 className="product-info-name">{this.props.name}</h1>
+                        </div>
 
                     <div id="product-carousel">
                         <Carousel>
@@ -81,9 +84,11 @@ let Product = React.createClass({
                             <div><img src={this.props.image8} /></div>
                             <div><img src={this.props.image9} /></div>
                         </Carousel>
-    
                     </div>
-                    
+                    <div className="product-info-mobile">
+                        <h2 className="product-info-text">{this.props.text}</h2>
+                        <div className="product-info-button" >Заказать</div>
+                    </div>
                     </div>
                     <div id="order">
                         <div id="b-popup-close-button" className="order-close-button" onClick={browserHistory.goBack}>

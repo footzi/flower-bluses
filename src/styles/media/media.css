@@ -187,16 +187,16 @@ main {
     display: none;
 }
 .catalog-title {
-    font-size:3.5vw; 
+    font-size:5vw; 
 }
 .catalog-introduction {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
 }
 .catalog-info {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
 }
 .catalog-info-title {
-    font-size: 3.9vw;
+    font-size: 5vw;
 }
 .catalog-img {
     text-align: center;
@@ -208,31 +208,28 @@ main {
     margin: 5% 0 0 0;
 }
 .catalog-caption-text {
-    font-size: 4vw;
+    font-size: 4.5vw;
 }
 .product-preview-caption {
     font-size: 3vw;
 }
 .catalog-info-recomendation {
-    font-size: 3.5vw;   
+    font-size: 4.5vw;   
 }
 .catalog-polimer-introduction {
-     font-size: 3.5vw;   
+     font-size: 4.5vw;   
 }
 .catalog-navigation {
     display:none;
 }
 .Link {
     padding: 1% 3%;
-    font-size: 2.6vw;
+    font-size: 4vw;
 }
 .product-preview {
     width: 45%;
     font-size: 3.5vw;
-    margin-right: 5%;
-}
-.product-preview:nth-child(3n) {
-  margin-right:5%;
+    margin: 0 0 4% 4%;
 }
 .product-preview:nth-child(2n) {
   margin-right:0;
@@ -249,12 +246,18 @@ main {
     top:65%;
 }
 .pages {
-   width:90%;
+    width: 94%;
 }
-.pages-link, .pages-numbers-link{
-    font-size: 3vw;
+.pages-back, .pages-next {
+    display: none;
 }
-
+.pages-numbers {
+    width: 100%
+}
+.pages-numbers-link {
+    font-size: 5vw;
+    margin-right: 5%;
+}
 
 
 #product, #order {
@@ -264,17 +267,45 @@ main {
 #b-popup .b-popup-content {
     width: 100%;
 }
+#b-popup-close-button {
+    padding-top: 0;
+    float: right;
+}
+#b-popup-close-button img {
+    width: 90%;
+}
+#product {
+    padding:1% 2% 2% 2%;
+}
+#product-info {
+    display: none;
+}
 .product-info-name {
-    font-size: 2.5vw;
+    margin: 5% 0;
+    font-size: 5vw;
 }
 .product-info-text {
-    font-size: 2.5vw;
+    padding: 0 5%;
+    margin:2%;
+    font-size: 4.5vw;
 }
 .product-info-button {
-    font-size: 3vw;
+    width: 86%;
+    padding: 2% 0;
+    font-size: 5vw;
+    margin: 0 auto;
+}
+#product-carousel {
+    width: 75%;
+}
+.carousel {
+    width: 130%;
 }
 .carousel .thumbs-wrapper {
     margin-top:4.5%;
+}
+.carousel-slider {
+    left:18%;
 }
 .order-title, .order-form-input {
     font-size: 2.5vw;
@@ -350,6 +381,9 @@ footer {
 }
 header{
     display:none;
+}
+.product-info-mobile {
+    display: none;
 }
     
 }

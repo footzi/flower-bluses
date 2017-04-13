@@ -10,14 +10,13 @@ let Catalog = React.createClass ({
                     if($(window).width()<=640) {
                         $("body").css({"background-image":"none"})
                         $("body").css({"background-image":"url(/images/fon640.jpg)"});
-
+                        $("#footer").css({"margin-top":"54%"});
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
+                        $("#footer").css({"margin-top":"3.2%"});
                     }
                 }).resize()
             })
-            //$("body").css({"background-image":"url(/images/fon.jpg)"});
-            $("#footer").css({"margin-top":"3.2%"});
         },
     render () {
         

@@ -27533,13 +27533,13 @@
 	                if ($(window).width() <= 640) {
 	                    $("body").css({ "background-image": "none" });
 	                    $("body").css({ "background-image": "url(/images/fon640.jpg)" });
+	                    $("#footer").css({ "margin-top": "54%" });
 	                } else {
 	                    $("body").css({ "background-image": "url(/images/fon.jpg)" });
+	                    $("#footer").css({ "margin-top": "3.2%" });
 	                }
 	            }).resize();
 	        });
-	        //$("body").css({"background-image":"url(/images/fon.jpg)"});
-	        $("#footer").css({ "margin-top": "3.2%" });
 	    },
 	    render: function render() {
 
@@ -30349,6 +30349,15 @@
 	                    ),
 	                    _react2["default"].createElement(
 	                        "div",
+	                        { className: "product-info-mobile" },
+	                        _react2["default"].createElement(
+	                            "h1",
+	                            { className: "product-info-name" },
+	                            this.props.name
+	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "div",
 	                        { id: "product-carousel" },
 	                        _react2["default"].createElement(
 	                            Carousel,
@@ -30398,6 +30407,20 @@
 	                                null,
 	                                _react2["default"].createElement("img", { src: this.props.image9 })
 	                            )
+	                        )
+	                    ),
+	                    _react2["default"].createElement(
+	                        "div",
+	                        { className: "product-info-mobile" },
+	                        _react2["default"].createElement(
+	                            "h2",
+	                            { className: "product-info-text" },
+	                            this.props.text
+	                        ),
+	                        _react2["default"].createElement(
+	                            "div",
+	                            { className: "product-info-button" },
+	                            "Заказать"
 	                        )
 	                    )
 	                ),
