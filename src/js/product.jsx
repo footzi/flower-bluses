@@ -60,9 +60,7 @@ let Product = React.createClass({
                 <div className="b-popup-content">
                      
                     <div id="product">
-                        <div id="b-popup-close-button" onClick={browserHistory.goBack}>
-                            <img src="/./images/catalog/close.png" />
-                        </div> 
+                        <div id="b-popup-close-button" onClick={browserHistory.goBack}>✖</div> 
                         <div id="product-info">   
                             <h1 className="product-info-name">{this.props.name}</h1>
                             <h2 className="product-info-text">{this.props.text}</h2>
@@ -92,9 +90,7 @@ let Product = React.createClass({
                     </div>
                     </div>
                     <div id="order">
-                        <div id="b-popup-close-button" className="order-close-button" onClick={browserHistory.goBack}>
-                            <img src="/./images/catalog/close.png" />
-                        </div> 
+                        <div id="b-popup-close-button" className="order-close-button" onClick={browserHistory.goBack}>✖</div> 
                         <div className="order-title">ЗАКАЗАТЬ / УТОЧНИТЬ
                         </div>
                         <div className="order-image">

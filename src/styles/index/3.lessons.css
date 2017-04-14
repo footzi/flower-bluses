@@ -175,6 +175,7 @@
   text-align: justify;
 }
 #b-popup-lesson-close-button {
+	color:#705290;
 	position: relative;
 	right: -4%;
     text-align: right;

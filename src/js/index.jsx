@@ -14,6 +14,7 @@ let Index = React.createClass({
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
                         $("#footer").css({"margin-top":"3%"});
                     }
+                  //  if ($(window).width())
                 }).resize()
             })
         //$("#footer").css({"margin-top":"3%"});

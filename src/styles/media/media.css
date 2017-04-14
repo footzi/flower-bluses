@@ -234,7 +234,15 @@ main {
 .product-preview:nth-child(2n) {
   margin-right:0;
 }
+.product-preview-name {
+    font-size: 2.1vw;
+}
+.product-preview-cost {
+    font-size: 2.5vw;
+    
+}
 .product-preview-button-img {
+    border-radius: 1.5vw;
     margin-left: 33%;
     width: 32%;
     font-size: 3vw;
@@ -285,12 +293,14 @@ main {
     font-size: 5vw;
 }
 .product-info-text {
+    line-height: inherit;
     padding: 0 5%;
     margin:2%;
     font-size: 4.5vw;
 }
 .product-info-button {
-    width: 86%;
+    border-radius: 1.5vw;
+    width: 65%;
     padding: 2% 0;
     font-size: 5vw;
     margin: 0 auto;
@@ -407,4 +417,13 @@ header{
 .lesson-form-input-message {
     right: 58.9%;
 } 
+}
+@media (max-width:1024px) {
+.product-preview-thumbs .product-preview-caption span {
+    opacity: 1;
+}
+.product-preview-thumbs:before {
+    opacity: 1;
+    bottom:0;
+}
 }

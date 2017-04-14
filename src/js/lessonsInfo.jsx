@@ -63,7 +63,7 @@ let LessonsInfo = React.createClass({
 			<div id="lessons-b-popup">
                 <div className="lessons-b-popup-content">
                     <div id="b-popup-lesson-close-button" onClick={close}>
-                        <Link to="/lessons"><img src="/./images/catalog/close.png" /> </Link>
+                        <Link to="/lessons"><p>✖</p></Link>
                     </div>
                     <div className="lesson-order">
                         <div className="lesson-title">ЗАПИСАТЬСЯ</div>
