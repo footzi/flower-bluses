@@ -283,42 +283,42 @@ let products = [{
     
 },{
     "id":"2-34",
-    "name":"Серьги «С жасмин»",
+    "name":"Серьги «Розовый пион»",
     "cost":"под заказ",
-    "text":"Невероятно нежные серьги с миниатюрными пионами, жасмином, розочками. Очень нежная расцветка для романтического образа.Швензы - гипоаллергенные, сталь. Ручная работа.",
+    "text":"Невероятно нежные серьги с миниатюрными пионами, жасмином, розочками. Очень нежная расцветка для романтического образа. Швензы - гипоаллергенные, сталь. Ручная работа.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 34.jpg",
     "image1":"/images/catalog/earrings/серьги 34.1.png",
     "image2":"/images/catalog/earrings/серьги 34.png",
     
 },{
     "id":"2-35",
-    "name":"Серьги 35",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Сиренивый пион»",
+    "cost":"под заказ",
+    "text":"Невероятно нежные серьги с миниатюрными пионами, жасмином, розочками. Очень нежная расцветка для романтического образа.Швензы - гипоаллергенные, сталь. Ручная работа.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 35.jpg",
     "image1":"/images/catalog/earrings/серьги 35.png",
     "image2":"/images/catalog/earrings/серьги 35.1.png",
-    
+    "image3":"/images/catalog/earrings/серьги 35.2.png",
+    "image4":"/images/catalog/earrings/серьги 35.3.png",
 },{
     "id":"2-36",
-    "name":"Серьги 36",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Белый пион»",
+    "cost":"под заказ",
+    "text":"Серьги с миниатюрными цветами из полимерной глины (бело-розовый пион, белый жасмин и ягоды черники). Швензы - гипоаллергенные, сталь.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 36.jpg",
-    "image1":"/images/catalog/earrings/серьги 36.png",
-    
+    "image1":"/images/catalog/earrings/серьги 36.1.png",
+    "image2":"/images/catalog/earrings/серьги 36.png",
+    "image3":"/images/catalog/earrings/серьги 36.2.png",
 },{
     "id":"2-37",
-    "name":"Серьги 37",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Алый пион»",
+    "cost":"под заказ",
+    "text":"Серьги с миниатюрными цветами из полимерной глины (алый пион, белый жасмин и ягоды черники). Швензы - гипоаллергенные, сталь.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 37.jpg",
     "image1":"/images/catalog/earrings/серьги 37.png",
     "image2":"/images/catalog/earrings/серьги 37.1.png",
     "image3":"/images/catalog/earrings/серьги 37.2.png",
-    
-
-},{
+},/*{
     "id":"2-38",
     "name":"Серьги 38",
     "cost":"1500 руб.",
@@ -326,8 +326,6 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 38.jpg",
     "image1":"/images/catalog/earrings/серьги 38.png",
     "image2":"/images/catalog/earrings/серьги 38.1.png",
-    
-
 },{
     "id":"2-39",
     "name":"Серьги 39",
@@ -336,60 +334,48 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 39.jpg",
     "image1":"/images/catalog/earrings/серьги 39.png",
     "image2":"/images/catalog/earrings/серьги 39.1.png",
-    
-
-},{
+},*/{
     "id":"2-40",
-    "name":"Серьги 40",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Гроздь сирени»",
+    "cost":"1400 руб.",
+    "text":"Длинные серьги с каскадом спускающихся цветов сирени. Швензы - родиевое покрытие.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 40.jpg",
     "image1":"/images/catalog/earrings/серьги 40.png",
-    
-
 },{
     "id":"2-41",
-    "name":"Серьги 41",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Рубиновый пион»",
+    "cost":"под заказ",
+    "text":"Серьги с миниатюрными цветами из полимерной глины (алый пион, белый жасмин). Швензы - гипоаллергенные, сталь.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 41.jpg",
     "image1":"/images/catalog/earrings/серьги 41.png",
     "image2":"/images/catalog/earrings/серьги 41.1.png",
     "image3":"/images/catalog/earrings/серьги 42.2.png",
-    
-
 },{
     "id":"2-42",
-    "name":"Серьги 42",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Оранжевое настроение»",
+    "cost":"под заказ",
+    "text":"Стильные серьги с миниатюрными розами. Каждый цветок вылеплен и тонирован в ручную.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 42.jpg",
     "image1":"/images/catalog/earrings/серьги 42.png",
-    
-
 },{
     "id":"2-43",
-    "name":"Серьги 43",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Облепиха»",
+    "cost":"под заказ.",
+    "text":"Стильные серьги с ягодами облепихи. Каждый цветок вылеплен и тонирован в ручную.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 43.jpg",
     "image1":"/images/catalog/earrings/серьги 43.png",
-    
-
 },{
     "id":"2-44",
-    "name":"Серьги 44",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Лесные ягоды»",
+    "cost":"под заказ",
+    "text":"Стильные серьги с ягодами малины и черники. Обязательно подарит Вам летнее настроение, даже в самый холодный зимний день. Ручная работа.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 44.jpg",
     "image1":"/images/catalog/earrings/серьги 44.png",
-    
-
 },{
     "id":"2-45",
-    "name":"Серьги 45",
-    "cost":"1500 руб.",
-    "text":"",
+    "name":"Серьги «Лесная поляна»",
+    "cost":"под заказ",
+    "text":"Нежный серьги с цветами ромашки и голубой незабудки. Каждый цветок вылеплен и тонирован в ручную.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 45.jpg",
     "image1":"/images/catalog/earrings/серьги 45.png",
     

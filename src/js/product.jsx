@@ -60,18 +60,20 @@ let Product = React.createClass({
                 <div className="b-popup-content">
                      
                     <div id="product">
-                        <div id="b-popup-close-button" onClick={browserHistory.goBack}>✖</div> 
-                        <div id="product-info">   
+                        <div className="b-popup-close-button" onClick={browserHistory.goBack}>✖</div> 
+                        <div className="product-info">   
                             <h1 className="product-info-name">{this.props.name}</h1>
                             <h2 className="product-info-text">{this.props.text}</h2>
-                            <h2 className="product-info-cost">Цена: {this.props.cost}</h2>
-                            <div className="product-info-button" >Заказать</div>
+                            <div className="product-info-cost-button">
+                                <h2 className="product-info-cost">Цена: {this.props.cost}</h2>
+                                <div className="product-info-button" >Заказать</div>
+                            </div>
                         </div>
                         <div className="product-info-mobile">   
                             <h1 className="product-info-name">{this.props.name}</h1>
                         </div>
 
-                    <div id="product-carousel">
+                    <div className="product-carousel">
                         <Carousel>
                             <div><img src={this.props.image1} /></div>
                             <div><img src={this.props.image2} /></div>
@@ -90,7 +92,7 @@ let Product = React.createClass({
                     </div>
                     </div>
                     <div id="order">
-                        <div id="b-popup-close-button" className="order-close-button" onClick={browserHistory.goBack}>✖</div> 
+                        <div className="order-close-button" className="b-popup-close-button"  onClick={browserHistory.goBack}>✖</div> 
                         <div className="order-title">ЗАКАЗАТЬ / УТОЧНИТЬ
                         </div>
                         <div className="order-image">
@@ -109,7 +111,7 @@ let Product = React.createClass({
                                 <textarea className="order-form-input order-form-input-message" name="info" type="text" placeholder="Сообщение:" />
                             </div>
                              <div className="order-buttons">
-                                <span className="order-buttons-back">← назад</span>
+                                <span className="order-buttons-back">« назад</span>
                                 <button id="orderform-button" className="order-buttons-send">Отправить</button>
 
                              </div>

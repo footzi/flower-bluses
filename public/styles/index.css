@@ -104,21 +104,21 @@ h3{margin-bottom:7%;font-size:1.2vw;font-family:Arial,Helvetica,sans-serif;color
 .pages-numbers-link:hover{font-weight:bolder;text-decoration:underline;color:#705290}
 .pages-numbers-link-active{font-weight:bolder;text-decoration:underline;color:#705290}
 #b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
-#b-popup .b-popup-content{margin:4% auto 0 auto;width:65%}#b-popup-close-button{color:#705290;cursor:pointer;text-align:right;padding-top:1%}
-.order-close-button{position:relative;margin-top:.1%;left:3.3%}#product{background-image:url("../images/catalog/product-fon.png");background-size:100% 100%;padding:0 2% 2% 2%}
-#product-info{text-align:center;margin-top:4%;width:45%;outline:0 solid red;float:right}
+#b-popup .b-popup-content{margin:4% auto 0 auto;width:65%}.b-popup-close-button{color:#705290;cursor:pointer;text-align:right;padding-top:1.3%;font-size:1vw}
+.order-close-button{position:relative;padding-top:2%;left:3.3%}#product{background-image:url("../images/catalog/product-fon.png");background-size:100% 100%;padding:0 2% 2% 2%}
+.product-info{text-align:center;margin-top:4%;width:45%;outline:0 solid red;float:right}
 .product-info-button{cursor:pointer;margin:0 auto;display:inline-block;width:40%;border:1px solid #705290;border-radius:.6vw;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
 .product-info-name{outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw}
-.product-info-text{margin-top:10%;padding:0 19%;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;color:#888;text-align:justify;font-size:1.1vw;line-height:1.3vw}
-.product-info-cost{margin:5%;font-weight:bolder;color:#888;font-family:Arial,Helvetica,sans-serif}
-#product-carousel{width:52%}#order{background-image:url("../images/catalog/orderform-fon.png");background-size:100% 100%;padding:0 5% 2% 5%;width:90.1%;display:none}
+.product-info-text{margin-top:10%;padding:0 10%;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;color:#888;text-align:justify;font-size:1.1vw;line-height:1.3vw;text-indent:1vw}
+.product-info-cost-button{position:absolute;width:30%;top:40%}.product-info-cost{margin:5%;font-weight:bolder;color:#888;font-family:Arial,Helvetica,sans-serif}
+.product-carousel{width:52%}#order{background-image:url("../images/catalog/orderform-fon.png");background-size:100% 100%;padding:0 5% 2% 5%;width:90%;display:none}
 .order-title{margin-bottom:5%;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw}
 .order-image{margin:0 3% 3% 0;float:left;display:inline-table;outline:0 solid black;width:28%}
 .order-image img{width:100%}.order-form{width:69%;float:right;display:inline-table;outline:0 solid red}
 .order-form-input{background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw;width:99%;padding:1.5% 0 1.5% .5%;display:block;margin-bottom:5.2%}
 .order-form-input-message{padding-bottom:21%;position:relative;left:-45%;display:block;width:144%}
 .order-buttons{text-align:justify}.order-buttons-back{font-family:Arial;cursor:pointer;font-size:1.5vw;position:relative;right:.4%;color:#705290}
-.order-buttons-send{cursor:pointer;position:relative;left:30%;margin:24.1% auto 2% auto;background-color:transparent;display:inline-block;width:20%;border:1px solid #705290;border-radius:.6vw;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
+.order-buttons-send{cursor:pointer;position:relative;left:29.6%;margin:24.1% auto 2% auto;background-color:transparent;display:inline-block;width:20%;border:1px solid #705290;border-radius:.6vw;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
 .order-form-hide{display:none}.carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transition:all .25s ease-in;transition:all .25s ease-in;opacity:.4;filter:alpha(opacity=40);position:absolute;z-index:2;top:20px;background:0;border:0;font-size:32px;cursor:pointer}
 .carousel .control-arrow:hover{opacity:1;filter:alpha(opacity=100)}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:15px solid transparent;border-bottom:15px solid transparent;content:''}
 .carousel .control-disabled.control-arrow{opacity:1;cursor:inherit}.carousel .control-prev.control-arrow{left:0}
