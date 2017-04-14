@@ -19,7 +19,7 @@ let ProductPreview = React.createClass ({
                     <span className="product-preview-button" onClick={onClick}>
                         <div className="product-preview-button-img" onClick={openPopup}>Заказать</div>
                     </span>
-                     <span><img className="product-preview-instock"  src={instock} /></span>
+                     {/*<span><img className="product-preview-instock"  src={instock} /></span>*/}
                    
                 </div>
             </div>

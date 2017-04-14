@@ -6,7 +6,6 @@ let products = [{
     "imagePreview":"/images/catalog/сlips/preview/брошь 1.png",
     "image1":"/images/catalog/сlips/брошь 1.png",
     "image2":"/images/catalog/сlips/брошь 1.1.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-2",
     "name":"Брошь «Веточка жасмина»",
@@ -15,7 +14,6 @@ let products = [{
     "imagePreview":"/images/catalog/сlips/preview/брошь 2.jpg",
     "image1":"/images/catalog/сlips/брошь 2.png",
     "image2":"/images/catalog/сlips/брошь 2.1.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-3",
     "name":"Брошь «Запах весны»",
@@ -25,7 +23,6 @@ let products = [{
     "image1":"/images/catalog/сlips/брошь 3.png",
     "image2":"/images/catalog/сlips/брошь 3.1.png",
     "image3":"/images/catalog/сlips/брошь 3.2.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-4",
     "name":"Брошь «Вкус осени»",
@@ -34,7 +31,6 @@ let products = [{
     "imagePreview":"/images/catalog/сlips/preview/брошь 4.jpg",
     "image1":"/images/catalog/сlips/брошь 4.png",
     "image2":"/images/catalog/сlips/брошь 4.1.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-5",
     "name":"Брошь «сиреневый май»",
@@ -44,7 +40,6 @@ let products = [{
     "image1":"/images/catalog/сlips/брошь 5.png",
     "image2":"/images/catalog/сlips/брошь 5.1.png",
     "image3":"/images/catalog/сlips/брошь 5.2.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-6",
     "name":"Заколка «Майская сирень» ",
@@ -53,7 +48,6 @@ let products = [{
     "imagePreview":"/images/catalog/сlips/preview/заколка 1.jpg",
     "image1":"/images/catalog/сlips/заколка 1.png",
     "image2":"/images/catalog/сlips/заколка 1.1.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-7",
     "name":"Заколка «Кусочек весны»",
@@ -61,7 +55,6 @@ let products = [{
     "text":"Нежная заколка с цветами сирени. Каждый цветочек вылеплен и тонирован вручную. ",
     "imagePreview":"/images/catalog/сlips/preview/заколка 2.jpg",
     "image1":"/images/catalog/сlips/заколка 2.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-8",
     "name":"Заколка «Весенний букет»",
@@ -72,7 +65,6 @@ let products = [{
     "image2":"/images/catalog/сlips/заколка 3.1.png",
     "image3":"/images/catalog/сlips/заколка 3.2.png",
     "image4":"/images/catalog/сlips/заколка 3.3.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-9",
     "name":"Заколка «Веточка малины»",
@@ -80,7 +72,6 @@ let products = [{
     "text":"Заколка с веточкой малины будет радовать вас летним настроением даже в самый холодный зимний день. Ручная работа.",
     "imagePreview":"/images/catalog/сlips/preview/заколка 4.jpg",
     "image1":"/images/catalog/сlips/заколка 4.png",
-    "instock":"/images/catalog/notstock.png"
 },{
     "id":"4-10",
     "name":"Брошь «Весенняя с незабудками»",
@@ -90,7 +81,6 @@ let products = [{
     "image1":"/images/catalog/сlips/заколка 5.jpg",
     "image2":"/images/catalog/сlips/заколка 5.1.png",
     "image3":"/images/catalog/сlips/заколка 5.2.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"4-11",
     "name":"Заколка «Вкус лета»", 
@@ -100,7 +90,6 @@ let products = [{
     "image1":"/images/catalog/сlips/заколка 6.png",
     "image2":"/images/catalog/сlips/заколка 6.1.png",
     "image3":"/images/catalog/сlips/заколка 6.2.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"4-12",
     "name":"Заколка с ромашкой и черничкой ",
@@ -110,7 +99,6 @@ let products = [{
     "image1":"/images/catalog/сlips/заколка 7.png",
     "image2":"/images/catalog/сlips/заколка 7.1.png",
     "image3":"/images/catalog/сlips/заколка 7.2.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"4-13",
     "name":"Брошь «Бархат»",
@@ -120,6 +108,5 @@ let products = [{
     "image1":"/images/catalog/сlips/заколка 8.png",
     "image2":"/images/catalog/сlips/заколка 8.1.png",
     "image3":"/images/catalog/сlips/заколка 8.2.png",
-    "instock":"/images/catalog/instock.png"
 }];
 export  { products };

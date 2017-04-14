@@ -6,7 +6,6 @@ let products = [{
     "imagePreview":"/images/catalog/another/preview/браслет 1.jpg",
     "image1":"/images/catalog/another/браслет 1.png",
     "image2":"/images/catalog/another/браслет 1.1.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"5-2",
     "name":"Браслет «Черничная полянка»",
@@ -15,7 +14,6 @@ let products = [{
     "imagePreview":"/images/catalog/another/preview/браслет 2.jpg",
     "image1":"/images/catalog/another/браслет 2.png",
     "image2":"/images/catalog/another/браслет 2.1.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"5-3",
     "name":"Ободок «Вкус лета»",
@@ -26,6 +24,5 @@ let products = [{
     "image2":"/images/catalog/another/обруч 1.1.png",
     "image3":"/images/catalog/another/обруч 1.2.png",
     "image4":"/images/catalog/another/обруч 1.3.png",
-    "instock":"/images/catalog/instock.png"
 }];
 export  { products };

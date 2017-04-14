@@ -13,7 +13,7 @@ let products = [{
     "image7":"/images/catalog/floral/букет 1.6.png",
     "image8":"/images/catalog/floral/букет 1.7.png",
     "image9":"/images/catalog/floral/букет 1.8.png",
-    "instock":"/images/catalog/instock.png"
+    
 
 },{
     "id":"7-2",
@@ -26,7 +26,7 @@ let products = [{
     "image3":"/images/catalog/floral/букет 2.2.png",
     "image4":"/images/catalog/floral/букет 2.3.png",
     "image5":"/images/catalog/floral/букет 2.4.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-3",
     "name":"Букет «Ромашки»",
@@ -37,7 +37,7 @@ let products = [{
     "image2":"/images/catalog/floral/букет 3.1.png",
     "image3":"/images/catalog/floral/букет 3.2.png",
     "image4":"/images/catalog/floral/букет 3.3.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-4",
     "name":"Цветочная композиция «Весна»",
@@ -49,7 +49,7 @@ let products = [{
     "image3":"/images/catalog/floral/букет 4.2.png",
     "image4":"/images/catalog/floral/букет 4.3.png",
     "image5":"/images/catalog/floral/букет 4.4.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-5",
     "name":"Букет «Kороставник»",
@@ -59,7 +59,7 @@ let products = [{
     "image1":"/images/catalog/floral/букет 5.png",
     "image2":"/images/catalog/floral/букет 5.1.png",
     "image3":"/images/catalog/floral/букет 5.2.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-6",
     "name":"Букет «Настурция»",
@@ -71,7 +71,7 @@ let products = [{
     "image3":"/images/catalog/floral/букет 6.2.png",
     "image4":"/images/catalog/floral/букет 6.3.png",
     "image5":"/images/catalog/floral/букет 6.4.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-7",
     "name":"Букет «Фрезия»",
@@ -82,7 +82,7 @@ let products = [{
     "image2":"/images/catalog/floral/букет 7.1.png",
     "image3":"/images/catalog/floral/букет 7.2.png",
     "image4":"/images/catalog/floral/букет 7.3.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-8",
     "name":"Букет «Осенний блюз»",
@@ -95,7 +95,7 @@ let products = [{
     "image4":"/images/catalog/floral/букет 8.3.png",
     "image5":"/images/catalog/floral/букет 8.4.png",
     "image6":"/images/catalog/floral/букет 8.4.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-9",
     "name":"Букет «Пионы»",
@@ -106,7 +106,7 @@ let products = [{
     "image2":"/images/catalog/floral/букет 9.1.png",
     "image3":"/images/catalog/floral/букет 9.2.png",
     "image4":"/images/catalog/floral/букет 9.3.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-10",
     "name":"Цветы Шиповника",
@@ -119,7 +119,7 @@ let products = [{
     "image4":"/images/catalog/floral/букет 10.3.png",
     "image5":"/images/catalog/floral/букет 10.4.png",
     "image6":"/images/catalog/floral/букет 10.5.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-11",
     "name":"Цветы Крокуса",
@@ -133,7 +133,7 @@ let products = [{
     "image5":"/images/catalog/floral/букет 11.4.png",
     "image6":"/images/catalog/floral/букет 11.5.png",
     "image7":"/images/catalog/floral/букет 11.6.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-12",
     "name":"Композиция «Танец маков»",
@@ -145,7 +145,7 @@ let products = [{
     "image3":"/images/catalog/floral/букет 12.2.png",
     "image4":"/images/catalog/floral/букет 12.3.png",
     "image5":"/images/catalog/floral/букет 12.4.png",
-    "instock":"/images/catalog/instock.png"
+    
 },{
     "id":"7-13",
     "name":"Композиция «Пришла весна»",
@@ -153,6 +153,6 @@ let products = [{
     "text":"Нежная цветочная композиция из белых подснежников. Ручная работа.",
     "imagePreview":"/images/catalog/floral/preview/букет 13.jpg",
     "image1":"/images/catalog/floral/букет 13.png",
-    "instock":"/images/catalog/instock.png"
+    
 }]
 export { products };

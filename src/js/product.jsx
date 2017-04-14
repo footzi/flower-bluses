@@ -66,6 +66,7 @@ let Product = React.createClass({
                         <div id="product-info">   
                             <h1 className="product-info-name">{this.props.name}</h1>
                             <h2 className="product-info-text">{this.props.text}</h2>
+                            <h2 className="product-info-cost">Цена: {this.props.cost}</h2>
                             <div className="product-info-button" >Заказать</div>
                         </div>
                         <div className="product-info-mobile">   

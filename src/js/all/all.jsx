@@ -109,6 +109,7 @@ let ProductAll = React.createClass({
                   id={product.id}
                   name={ product.name }
                   text={ product.text }
+                  cost={ product.cost }
                   image1={product.image1}
                   image2={product.image2}
                   image3={product.image3}

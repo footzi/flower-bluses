@@ -57,7 +57,6 @@ let products = [{
     "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 22.jpg",
     "image1":"/images/catalog/earrings/серьги 22.png",
-    "instock":"/images/catalog/notstock.png"
 
 },{
     "id":"2-23",
@@ -69,7 +68,7 @@ let products = [{
     "image2":"/images/catalog/earrings/серьги 23.1.png",
     "image3":"/images/catalog/earrings/серьги 23.2.png",
     "image4":"/images/catalog/earrings/серьги 23.3.png",
-    "instock":"/images/catalog/notstock.png"
+    
 },{
     "id":"2-24",
     "name":"Серьги 24",
@@ -79,7 +78,7 @@ let products = [{
     "image1":"/images/catalog/earrings/серьги 24.png",
     "image2":"/images/catalog/earrings/серьги 24.1.png",
     "image3":"/images/catalog/earrings/серьги 24.2.png",
-    "instock":"/images/catalog/notstock.png"
+    
 
 },{
     "id":"2-25",
@@ -91,7 +90,7 @@ let products = [{
     "image2":"/images/catalog/earrings/серьги 25.1.png",
     "image3":"/images/catalog/earrings/серьги 25.2.png",
     "image4":"/images/catalog/earrings/серьги 25.3.png",
-    "instock":"/images/catalog/notstock.png"
+    
 
 },{
     "id":"2-26",
@@ -101,7 +100,7 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 26.jpg",
     "image1":"/images/catalog/earrings/серьги 26.png",
     "image2":"/images/catalog/earrings/серьги 26.2.png",
-    "instock":"/images/catalog/notstock.png"
+    
 
 },{
     "id":"2-27",
@@ -112,7 +111,7 @@ let products = [{
     "image1":"/images/catalog/earrings/серьги 27.png",
     "image2":"/images/catalog/earrings/серьги 27.1.png",
     "image3":"/images/catalog/earrings/серьги 27.1.png",
-    "instock":"/images/catalog/notstock.png"
+    
 
 },{
     "id":"2-28",
@@ -122,7 +121,7 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 28.jpg",
     "image1":"/images/catalog/earrings/серьги 28.png",
     "image2":"/images/catalog/earrings/серьги 28.1.png",
-    "instock":"/images/catalog/notstock.png"
+    
 
 },{
     "id":"2-29",
@@ -132,7 +131,7 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 29.jpg",
     "image1":"/images/catalog/earrings/серьги 29.png",
     "image2":"/images/catalog/earrings/серьги 29.1.png",
-    "instock":"/images/catalog/notstock.png"
+    
 
 },{
     "id":"2-30",
@@ -141,7 +140,7 @@ let products = [{
     "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 30.jpg",
     "image1":"/images/catalog/earrings/серьги 30.png",
-    "instock":"/images/catalog/notstock.png"
+    
 }
 ]
 export default products;

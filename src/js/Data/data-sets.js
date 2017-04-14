@@ -5,7 +5,6 @@ let products = [{
     "text":"В набор входит браслет и серьги с черничкой и миниатюрными ромашками. Каждый цветочек и ягодка вылеплены и тонированы вручную. Бусины из чешского стекла.",
     "imagePreview":"/images/catalog/sets/preview/набор 1.jpg",
     "image1":"/images/catalog/sets/набор 1.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"6-2",
     "name":"Набор «Нежность пиона»",
@@ -13,7 +12,6 @@ let products = [{
     "text":"В набор входят серьги и кольцо с нежными, миниатюрными пионами. Каждый цветочек вылеплен и тонирован вручную.",
     "imagePreview":"/images/catalog/sets/preview/набор 2.jpg",
     "image1":"/images/catalog/sets/набор 2.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"6-3",
     "name":"Набор «Малинка»",
@@ -21,7 +19,6 @@ let products = [{
     "text":"В набор входят серьги и кулон с ягодками малины. Окунитесь в лето даже холодной зимой! Ручная работа.",
     "imagePreview":"/images/catalog/sets/preview/набор 3.jpg",
     "image1":"/images/catalog/sets/набор 3.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"6-4",
     "name":"Набор «Бронза»",
@@ -29,7 +26,6 @@ let products = [{
     "text":"В набор входят серьги и кольцо с миниатюрными розами. Ручная работа.",
     "imagePreview":"/images/catalog/sets/preview/набор 4.jpg",
     "image1":"/images/catalog/sets/набор 4.png",
-    "instock":"/images/catalog/instock.png"
 },{
     "id":"6-5",
     "name":"Набор «Розовая нежность»",
@@ -38,6 +34,5 @@ let products = [{
     "imagePreview":"/images/catalog/sets/preview/набор 5.jpg",
     "image1":"/images/catalog/sets/набор 5.png",
     "image2":"/images/catalog/sets/набор 5.1.png",
-    "instock":"/images/catalog/instock.png"
 }]
 export  { products };

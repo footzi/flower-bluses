@@ -17,7 +17,7 @@ let products = [{
     "image1":"/images/catalog/rings/кольцо 2.png",
     "image2":"/images/catalog/rings/кольцо 2.1.png",
     "image3":"/images/catalog/rings/кольцо 2.2.png",
-    "instock":"/images/catalog/notstock.png"
+    
 },{
     "id":"3-3",
     "name":"Кольцо «Бронза»",
@@ -25,7 +25,7 @@ let products = [{
     "text":"Кольцо с миниатюрными розами, примулами и черной рябинкой. Ручная работа.",
     "imagePreview":"/images/catalog/rings/preview/кольцо 3.jpg",
     "image1":"/images/catalog/rings/кольцо 3.png",
-    "instock":"/images/catalog/notstock.png"
+    
 },{
     "id":"3-4",
     "name":"Кольцо «Розовая нежность»",
@@ -42,7 +42,7 @@ let products = [{
     "text":"Чудесное яркое кольцо с миниатюрными розочками. Диаметр розочек 0,8 – 1см. Фурнитура под бронзу.",
     "imagePreview":"/images/catalog/rings/preview/кольцо 5.jpg",
     "image1":"/images/catalog/rings/кольцо 5.png",
-    "instock":"/images/catalog/notstock.png"
+    
 }];
 
 
