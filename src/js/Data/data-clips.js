@@ -105,7 +105,7 @@ let products = [{
     "cost":"1200 руб.",
     "text":"Нежная брошь с цветами сирени и яблоневым цветом. Каждый цветок выполнен и тонирован вручную. Возможно изготовление заколки.",
     "imagePreview":"/images/catalog/сlips/preview/заколка 8.jpg",
-    "image1":"/images/catalog/сlips/заколка 8.3.png",
+    "image1":"/images/catalog/сlips/заколка 8.2.png",
     "image2":"/images/catalog/сlips/заколка 8.1.png",
     "image3":"/images/catalog/сlips/заколка 8.png",
 }];

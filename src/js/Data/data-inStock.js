@@ -6,22 +6,11 @@ let products = [{
     "id":clips[9].id,
     "name":clips[9].name,
     "cost":clips[9].cost,
-    "text":  clips[9].text,
+    "text":clips[9].text,
     "imagePreview":clips[9].imagePreview,
     "image1":clips[9].image1,
     "image2":clips[9].image2,
-    "image3":clips[9].image3,
-    "instock":clips[9].instock
-},{
-    "id":clips[10].id,
-    "name":clips[10].name,
-    "cost":clips[10].cost,
-    "text":  clips[10].text,
-    "imagePreview":clips[10].imagePreview,
-    "image1":clips[10].image1,
-    "image2":clips[10].image2,
-    "image3":clips[10].image3,
-    "instock":clips[10].instock
+    "image3":clips[9].image3
 },{
     "id":clips[11].id,
     "name":clips[11].name,
@@ -30,117 +19,109 @@ let products = [{
     "imagePreview":clips[11].imagePreview,
     "image1":clips[11].image1,
     "image2":clips[11].image2,
-    "image3":clips[11].image3,
-    "instock":clips[11].instock
+    "image3":clips[11].image3
 },{
     "id":clips[12].id,
     "name":clips[12].name,
     "cost":clips[12].cost,
-    "text":  clips[12].text,
+    "text":clips[12].text,
     "imagePreview":clips[12].imagePreview,
     "image1":clips[12].image1,
     "image2":clips[12].image2,
-    "image3":clips[12].image3,
-    "instock":clips[12].instockg
+    "image3":clips[12].image3
 },{
-    "id":pendants[4].id,
-    "name":pendants[4].name,
-    "cost":pendants[4].cost,
-    "text":pendants[4].text,
-    "imagePreview":pendants[4].imagePreview,
-    "image1":pendants[4].image1,
-    "instock":pendants[4].instock
+    "id":earrings[5].id,
+    "name":earrings[5].name,
+    "cost":earrings[5].cost,
+    "text":earrings[5].text,
+    "imagePreview":earrings[5].imagePreview,
+    "image1":earrings[5].image1
 },{
-    "id":"2-22",
-    "name":"Серьги 22",
-    "cost":"1500 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 22.jpg",
-    "image1":"/images/catalog/earrings/серьги 22.png",
-
+    "id":earrings[18].id,
+    "name":earrings[18].name,
+    "cost":earrings[18].cost,
+    "text":earrings[18].text,
+    "imagePreview":earrings[18].imagePreview,
+    "image1":earrings[18].image1,
+    "image2":earrings[18].image2
 },{
-    "id":"2-23",
-    "name":"Серьги 23",
-    "cost":"12300 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 23.jpg",
-    "image1":"/images/catalog/earrings/серьги 23.png",
-    "image2":"/images/catalog/earrings/серьги 23.1.png",
-    "image3":"/images/catalog/earrings/серьги 23.2.png",
-    "image4":"/images/catalog/earrings/серьги 23.3.png",
-    
+    "id":earrings[20].id,
+    "name":earrings[20].name,
+    "cost":earrings[20].cost,
+    "text":earrings[20].text,
+    "imagePreview":earrings[20].imagePreview,
+    "image1":earrings[20].image1
 },{
-    "id":"2-24",
-    "name":"Серьги 24",
-    "cost":"2400 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 24.jpg",
-    "image1":"/images/catalog/earrings/серьги 24.png",
-    "image2":"/images/catalog/earrings/серьги 24.1.png",
-    "image3":"/images/catalog/earrings/серьги 24.2.png",
-    
-
+    "id":earrings[21].id,
+    "name":earrings[21].name,
+    "cost":earrings[21].cost,
+    "text":earrings[21].text,
+    "imagePreview":earrings[21].imagePreview,
+    "image1":earrings[21].image1,
+    "image2":earrings[21].image2,
+    "image3":earrings[21].image3,
+    "image4":earrings[21].image4
 },{
-    "id":"2-25",
-    "name":"Серьги 25",
-    "cost":"1500 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 25.jpg",
-    "image1":"/images/catalog/earrings/серьги 25.png",
-    "image2":"/images/catalog/earrings/серьги 25.1.png",
-    "image3":"/images/catalog/earrings/серьги 25.2.png",
-    "image4":"/images/catalog/earrings/серьги 25.3.png",
-    
-
+    "id":earrings[22].id,
+    "name":earrings[22].name,
+    "cost":earrings[22].cost,
+    "text":earrings[22].text,
+    "imagePreview":earrings[22].imagePreview,
+    "image1":earrings[22].image1,
+    "image2":earrings[22].image2,
+    "image3":earrings[22].image3
 },{
-    "id":"2-26",
-    "name":"Серьги 26",
-    "cost":"1500 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 26.jpg",
-    "image1":"/images/catalog/earrings/серьги 26.png",
-    "image2":"/images/catalog/earrings/серьги 26.2.png",
-    
-
+    "id":earrings[23].id,
+    "name":earrings[23].name,
+    "cost":earrings[23].cost,
+    "text":earrings[23].text,
+    "imagePreview":earrings[23].imagePreview,
+    "image1":earrings[23].image1,
+    "image2":earrings[23].image2,
+    "image3":earrings[23].image3,
+    "image4":earrings[23].image1
 },{
-    "id":"2-27",
-    "name":"Серьги 27",
-    "cost":"1500 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 27.jpg",
-    "image1":"/images/catalog/earrings/серьги 27.png",
-    "image2":"/images/catalog/earrings/серьги 27.1.png",
-    "image3":"/images/catalog/earrings/серьги 27.1.png",
-    
-
+    "id":earrings[24].id,
+    "name":earrings[24].name,
+    "cost":earrings[24].cost,
+    "text":earrings[24].text,
+    "imagePreview":earrings[24].imagePreview,
+    "image1":earrings[24].image1,
+    "image2":earrings[24].image2
 },{
-    "id":"2-28",
-    "name":"Серьги 28",
-    "cost":"1500 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 28.jpg",
-    "image1":"/images/catalog/earrings/серьги 28.png",
-    "image2":"/images/catalog/earrings/серьги 28.1.png",
-    
-
+    "id":earrings[25].id,
+    "name":earrings[25].name,
+    "cost":earrings[25].cost,
+    "text":earrings[25].text,
+    "imagePreview":earrings[25].imagePreview,
+    "image1":earrings[25].image1,
+    "image2":earrings[25].image2,
+    "image3":earrings[25].image3
 },{
-    "id":"2-29",
-    "name":"Серьги 29",
-    "cost":"1500 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 29.jpg",
-    "image1":"/images/catalog/earrings/серьги 29.png",
-    "image2":"/images/catalog/earrings/серьги 29.1.png",
-    
-
+    "id":earrings[26].id,
+    "name":earrings[26].name,
+    "cost":earrings[26].cost,
+    "text":earrings[26].text,
+    "imagePreview":earrings[26].imagePreview,
+    "image1":earrings[26].image1,
+    "image2":earrings[26].image2
 },{
-    "id":"2-30",
-    "name":"Серьги 30",
-    "cost":"1500 руб.",
-    "text":"Заколка автомат с цветами яблони, сирени и ягодами черной смородины. Все ягодки, лепесточки, тычинки вылеплены, тонированы и собраны вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 30.jpg",
-    "image1":"/images/catalog/earrings/серьги 30.png",
-    
-}
+    "id":earrings[27].id,
+    "name":earrings[27].name,
+    "cost":earrings[27].cost,
+    "text":earrings[27].text,
+    "imagePreview":earrings[27].imagePreview,
+    "image1":earrings[27].image1,
+    "image2":earrings[27].image2
+},{
+    "id":earrings[36].id,
+    "name":earrings[36].name,
+    "cost":earrings[36].cost,
+    "text":earrings[36].text,
+    "imagePreview":earrings[36].imagePreview,
+    "image1":earrings[36].image1,
+    "image2":earrings[36].image2,
+    "image3":earrings[36].image3
+},
 ]
 export default products;

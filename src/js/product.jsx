@@ -92,7 +92,7 @@ let Product = React.createClass({
                     </div>
                     </div>
                     <div id="order">
-                        <div className="order-close-button" className="b-popup-close-button"  onClick={browserHistory.goBack}>✖</div> 
+                        <div className="order-close-button b-popup-close-button"  onClick={browserHistory.goBack}>✖</div> 
                         <div className="order-title">ЗАКАЗАТЬ / УТОЧНИТЬ
                         </div>
                         <div className="order-image">

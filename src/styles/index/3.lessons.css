@@ -179,11 +179,17 @@
 	position: relative;
 	right: -4%;
     text-align: right;
-    padding-top: 1%;
+	font-size: 1vw;
+	text-decoration:none;
 }
-#b-popup-lesson-close-button img {
-	width: 1.5%;
-	cursor: pointer;
+#b-popup-lesson-close-button a {
+	text-decoration: none;
+}
+#b-popup-lesson-close-button p {
+	padding-top: 1%;
+}
+#b-popup-lesson-close-button p:hover {
+	color:#565656
 }
 .lesson-input {
 	margin-left: 36%;
@@ -220,17 +226,17 @@
 	width: 102.5%;
 	color:#888888;
 }
-.lesson-form-input-message{
+.lesson-form-input-message {
 	font-family: Arial, Helvetica, sans-serif;
  	margin-top: 2%;
     position: relative;
     right: 57.9%;
     display: block;
-    width: 159.5%;
-    padding: 0.5% 0 26% 0.5%;
+    width: 159%;
+    padding: 1% 0 26% 1%;
     margin-bottom: 0;
 }
-.lesson-form-button{
+.lesson-form-button {
 	cursor: pointer;
     margin-top:1%;
     border: 1px solid #705290;

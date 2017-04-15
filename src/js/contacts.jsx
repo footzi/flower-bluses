@@ -12,11 +12,11 @@ let Contacts = React.createClass({
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
+						$("#footer").css({"margin-top":"76.1%"});
                     }
                 }).resize()
             })
-		//$("body").css({"background-image":"url(/images/fon.jpg)"});
-        $("#footer").css({"margin-top":"76.2%"});
+        
         (function(){
             emailjs.init("user_jmnF1YC49paVFwkbJRipP");
         })();

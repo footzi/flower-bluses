@@ -25,8 +25,8 @@ import { Floral, ProductFloral }from "./floral/floral.jsx"
 
 
 import "./other.js"
-import "./Other/jquery.min.js"
-import "./Other/jquery.bxslider.min.js"
+// import "./Other/jquery.min.js"
+import "./Other/jquery.bxslider.js"
 //import "./Other/html5shiv.js"
 //import "./Other/respond.js"
 

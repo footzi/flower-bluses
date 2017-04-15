@@ -35,7 +35,7 @@ let Catalog = React.createClass ({
         <div className="catalog-img-prew"> 
             <Link to="/catalog/polimer/inStock">
                 <div className="catalog-thumbs">
-                    <img src="../images/catalog/1.png" /> 
+                    <img src="../images/catalog/1.jpg" /> 
                     <div className="catalog-caption">
                         <span className="catalog-caption-text">Украшения из<br/> полимерной глины</span>
                     </div>
@@ -46,7 +46,7 @@ let Catalog = React.createClass ({
         <div className="catalog-img-prew catalog-img-prew-right">
             <Link to="/catalog/compositions/floral">
                 <div className="catalog-thumbs">
-                    <img src="../images/catalog/2.png" /> 
+                    <img src="../images/catalog/2.jpg" /> 
                     <div className="catalog-caption">
                         <span className="catalog-caption-text">Цветочные композиции<br/> из полимерной глины</span>
                     </div>
