@@ -30,7 +30,7 @@ main{margin-top:12%;width:100%;text-align:center;box-sizing:border-box;padding:0
 .product-info{display:none}.product-info-name{line-height:3vw;margin:5% 0;font-size:5vw}
 .product-info-text{line-height:inherit;padding:0 5%;margin:2%;font-size:4.5vw}.product-info-button{border-radius:1.5vw;width:65%;padding:2% 0;font-size:5vw;margin:0 auto}
 .product-carousel{width:75%}.carousel{width:130%}.carousel .thumbs-wrapper{margin-top:4.5%}
-.carousel-slider{left:18%}.order-title{font-size:5vw}.order-image{width:100%;margin:0}
+.carousel-slider{left:18%}.order-title{font-size:5vw}.order-image{width:80%;margin:0}
 .order-form{float:none;width:100%}.order-form-input{width:100%;font-size:5vw}.order-form-input-message{left:0}
 .order-buttons{text-align:center}.order-buttons-send{border-radius:1.5vw;width:65%;padding:2% 0;font-size:5vw;margin-top:2%;left:0}
 .order-buttons-back{display:none}footer{text-align:center;margin:7% auto 0 auto;padding:2% 0 0 0}

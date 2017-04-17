@@ -30,6 +30,7 @@ let Product = React.createClass({
             return false;
             });
 
+
             function buttons () {
                 $(".product-info-button").bind("click", function() {
                 $("#product").hide()
@@ -48,7 +49,6 @@ let Product = React.createClass({
     render () {
         $(document).ready(function() {
             navigationPage();
-            buttons ()
         })
         let { product } = this.props;
         let linkProduct = location.href;
