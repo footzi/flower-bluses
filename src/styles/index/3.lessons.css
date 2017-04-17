@@ -105,7 +105,10 @@
 	margin: 10.5% 0 0 83%;
 	float: none;
 }
-
+.lesson-button:hover {
+  color:#888888;
+  border: 1px solid #888888;
+}
 /*просмотр картинок*/
 
 #lessons-image-b-popup{
@@ -132,6 +135,9 @@
 	border-style:  solid;
 	border-color: #705290;
 	width:100%; 
+}
+.lessons-image-photo-small big {
+	width: 70%;
 }
 .lessons-image-photo-small img {
 	cursor: pointer;
@@ -214,7 +220,7 @@
 	font-size: 1vw;
 	width: 100%;
 	display: block;
-	margin-bottom: 8%;
+	margin-bottom: 8.5%;
 	padding-left: 2%;
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -238,7 +244,8 @@
 }
 .lesson-form-button {
 	cursor: pointer;
-    margin-top:1%;
+    margin-top:3.4%;
+	margin-bottom: 2%;
     border: 1px solid #705290;
     border-radius: 10px;
     padding-top: 1%;
@@ -247,6 +254,10 @@
     color: #705290;
     width: 20%;
     background-color: transparent;
+}
+.lesson-form-button:hover {
+  color:#888888;
+  border: 1px solid #888888;
 }
 
 

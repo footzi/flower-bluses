@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 
 let Index = React.createClass({
     componentDidMount () {
-        window.scrollTo(0, 0)
+        //window.scrollTo(0, 0)
         $(function(){
                 $(window).resize(function(){
                     if($(window).width()<=640) {
@@ -12,7 +12,7 @@ let Index = React.createClass({
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
-                        $("#footer").css({"margin-top":"2.2%"});
+                        $("#footer").css({"margin-top":"1.3%"});
                     }
                   //  if ($(window).width())
                 }).resize()

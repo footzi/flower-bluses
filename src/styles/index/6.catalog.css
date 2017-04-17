@@ -382,6 +382,10 @@
   font-size: 2vw;
   color: #705290;
 }
+.product-info-button:hover {
+  color:#888888;
+  border: 1px solid #888888;
+}
 
 .product-info-name {
   outline:0px solid blue;
@@ -499,7 +503,10 @@
   font-family: PhillippScript;
   font-size: 2vw;
   color: #705290;
-  
+}
+.order-buttons-send:hover {
+  color:#888888;
+  border: 1px solid #888888;
 }
 .order-form-hide {
   display:none;

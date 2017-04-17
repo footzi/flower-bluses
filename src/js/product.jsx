@@ -48,7 +48,7 @@ let Product = React.createClass({
     },
     render () {
         $(document).ready(function() {
-            navigationPage();
+            //navigationPage();
         })
         let { product } = this.props;
         let linkProduct = location.href;

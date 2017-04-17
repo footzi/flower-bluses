@@ -117,3 +117,7 @@
 	font-size: 2vw;
 	color: #705290;
 }
+.about-info-button:hover {
+  color:#888888;
+  border: 1px solid #888888;
+}

@@ -3,7 +3,7 @@ import lessons from "./Data/data-lessons.js";
 import { Link } from "react-router";
 let Lessons = React.createClass({
     componentDidMount () {
-        window.scrollTo(0, 0)
+       // window.scrollTo(0, 0)
         $(function(){
                 $(window).resize(function(){
                     if($(window).width()<=640) {
@@ -12,7 +12,7 @@ let Lessons = React.createClass({
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon-lessons.jpg)"});
-                         $("#footer").css({"margin-top":"17.2%"});
+                         $("#footer").css({"margin-top":"17.3%"});
                     }
                 }).resize()
             })
