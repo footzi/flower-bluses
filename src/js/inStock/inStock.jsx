@@ -11,7 +11,10 @@ let InStock = React.createClass({
          $("#footer").css({"margin-top":"3.5%"});
          $(".product-preview:eq(13)").css({"margin-bottom":"35.7%"})
          navigationPage ();
-     },  
+
+         
+        },
+
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },

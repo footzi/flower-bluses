@@ -32,7 +32,7 @@ import React from "react";
 
 <noscript><div><img src="https://mc.yandex.ru/watch/43578919" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
-//переход по страничкам
+//переход по страничкам 
 
 function navigationPage () {
         $(".pages-numbers-link1").addClass("pages-numbers-link-active");

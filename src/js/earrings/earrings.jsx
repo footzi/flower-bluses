@@ -11,6 +11,19 @@ let Earrings = React.createClass({
          $("#footer").css({"margin-top":"3.5%"});
          $(".product-preview:eq(40)").css({"margin-bottom":"35.7%"})
          navigationPage ();
+         
+         // $(".pages-next").click(function() {
+         //        if ($(".pages-numbers-link1").hasClass("pages-numbers-link-active")) {
+         //            $(".product-preview").hide();
+         //            $(".product-preview").slice(9,18).show();
+         //            $(".pages-numbers-link2").addClass("pages-numbers-link-active");
+         //    }   else if ($(".pages-numbers-link2").hasClass("pages-numbers-link-active")) {
+         //            $(".product-preview").hide();
+         //            $(".product-preview").slice(18,27).show();
+         //            $(".pages-numbers-link3").addClass("pages-numbers-link-active");
+
+         //    }
+         // })
      },   
     contextTypes: {
         router: React.PropTypes.object.isRequired
