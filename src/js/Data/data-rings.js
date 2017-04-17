@@ -10,7 +10,7 @@ let products = [{
     "instock":"/images/catalog/instock.png"
 },{
     "id":"3-2",
-    "name":"Кольцо с веточкой сирени",
+    "name":"Кольцо «Нежная сирень»",
     "cost":"под заказ",
     "text":"Нежное кольцо с миниатюрной веточкой сирени, каждый цветок вылеплен вручную.",
     "imagePreview":"/images/catalog/rings/preview/кольцо 2.jpg",
@@ -32,14 +32,14 @@ let products = [{
     "cost":"под заказ",
     "text":"Невероятно нежное кольцо с миниатюрными розочками. Каждый цветочек вылеплен вручную.",
     "imagePreview":"/images/catalog/rings/preview/кольцо 4.jpg",
-    "image1":"/images/catalog/rings/кольцо 4.png",
-    "image2":"/images/catalog/rings/кольцо 4.1.png",
+    "image1":"/images/catalog/rings/кольцо 4.1.png",
+    "image2":"/images/catalog/rings/кольцо 4.png",
     "instock":"/images/catalog/instock.png"
 },{
     "id":"3-5",
     "name":"Кольцо «Фламенко»",
     "cost":"под заказ",
-    "text":"Чудесное яркое кольцо с миниатюрными розочками. Диаметр розочек 0,8 – 1см. Фурнитура под бронзу.",
+    "text":"Чудесное яркое кольцо с миниатюрными розочками. Диаметр розочек 0,8 – 1см. Фурнитура под бронзу. Ручная работа.",
     "imagePreview":"/images/catalog/rings/preview/кольцо 5.jpg",
     "image1":"/images/catalog/rings/кольцо 5.png",
     

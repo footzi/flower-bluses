@@ -69,9 +69,9 @@ let Main = React.createClass({
             </div>
             <div className="footer-content-icons">
                 <a href="https://vk.com/zivem_so_vkusom"><img className="footer-content-icons-img" src="/images/vk.png" /></a>
-                <a href="https://ru-ru.facebook.com/"><img className="footer-content-icons-img" src="/images/fb.png" /></a>
-                <a href="https://www.instagram.com/"><img className="footer-content-icons-img" src="/images/in.png" /></a>
-                <a href="https://www.livemaster.ru/"><img className="footer-content-icons-img" src="/images/ym.png" /></a>
+                <a href="https://ru-ru.facebook.com/people/Galina-Agafonova/100005326959410"><img className="footer-content-icons-img" src="/images/fb.png" /></a>
+                <a href="https://www.instagram.com/art_pastille"><img className="footer-content-icons-img" src="/images/in.png" /></a>
+                <a href="https://www.livemaster.ru/zivem-so-vkusom"><img className="footer-content-icons-img" src="/images/ym.png" /></a>
             </div>
             <div className="footer-content-developer">
                 <p className="footer-title footer-content-developer-title">Дизайн и разработка:<a href="https://vk.com/vlad.vlad.vlad">Манаков Владислав</a></p>
@@ -79,8 +79,8 @@ let Main = React.createClass({
             <div className="footer-content-contacts">
                 <p className="footer-title footer-content-contacts-title">Cвязаться с нами: </p>
                 <p className="footer-text footer-content-contacts-text">г.Нижний Новгород</p>
-                <p className="footer-text footer-content-contacts-text">тел: <u>+7(953)1833296</u></p>
-                <p className="footer-text footer-content-contacts-text">e-mail: <u>specy@rambler.ru</u></p>
+                <p className="footer-text footer-content-contacts-text">тел: <u>+7(903)8482661</u></p>
+                <p className="footer-text footer-content-contacts-text">e-mail: <u>galina.agafonova.2013@mail.ru</u></p>
             </div>
         </div>
     </footer>

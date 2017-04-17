@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 var Carousel = require('react-responsive-carousel').Carousel;
 import { browserHistory } from 'react-router';
-
+import navigationPage from "./other.js"
 
 let Product = React.createClass({
     componentDidMount () {
@@ -30,7 +30,8 @@ let Product = React.createClass({
             return false;
             });
 
-            $(".product-info-button").bind("click", function() {
+            function buttons () {
+                $(".product-info-button").bind("click", function() {
                 $("#product").hide()
                 $("#order").show()
             })
@@ -39,20 +40,16 @@ let Product = React.createClass({
                 $("#product").show()
                 $("#order").hide()
             });
+            }
+            buttons ();
             
-
-// $("img:not(img[src])").remove()
-// $(".thumb").detach(":empty")
-// $("div").detach(":empty")
-// $(".slide").detach(":empty")
-
-
-
-
-	
-
+            
     },
     render () {
+        $(document).ready(function() {
+            navigationPage();
+            buttons ()
+        })
         let { product } = this.props;
         let linkProduct = location.href;
         return (

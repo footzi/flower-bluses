@@ -12,7 +12,7 @@ let Index = React.createClass({
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
-                        $("#footer").css({"margin-top":"3%"});
+                        $("#footer").css({"margin-top":"2.2%"});
                     }
                   //  if ($(window).width())
                 }).resize()
@@ -21,14 +21,13 @@ let Index = React.createClass({
     
         $('.bxslider').bxSlider({
             auto:true,
-             moveSlides: 1,
+            speed:100,
+            moveSlides: 1,
             minSlides: 4,
-          maxSlides: 4,
-          slideWidth: 360,
-          slideMargin: 13
+            maxSlides: 4,
+            slideWidth: 280,
+            slideMargin: 20
           })
-          
-          
     },
     render () {
         return (
@@ -43,10 +42,20 @@ let Index = React.createClass({
             <p className="stock-text">Большинство изделий я делаю на заказ, но есть и те которые Вы можете преобрести в самые короткие сроки, не дожидаясь их изготовления. Вот самые свежие готовые новинки В НАЛИЧИИ, успейте сделать заказ и уже через пару* дней Вы его получите!</p>
             <div className="stock-images">
                 <ul className="bxslider">
-                    <li className="slide"><a href="/catalog/polimer/inStock/1-1"><img className="stock-img" src="images/1.jpg" /></a></li>
-                    <li className="slide"><a href="/catalog/polimer/earrings/2-1"><img className="stock-img" src="images/2.jpg" /></a></li>
-                    <li className="slide"><a href="/catalog/polimer/earrings/2-2"><img className="stock-img" src="images/3.jpg" /></a></li>
-                    <li className="slide"><a href="/catalog/polimer/earrings/2-3"><img className="stock-img" src="images/4.jpg" /></a></li>
+                    <li className="slide"><Link to="/catalog/polimer/clips/4-12"><img className="stock-img" src="images/catalog/сlips/preview/заколка 7.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-22"><img className="stock-img" src="images/catalog/earrings/preview/серьги 23.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-26"><img className="stock-img" src="images/catalog/earrings/preview/серьги 26.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-6"><img className="stock-img" src="images/catalog/earrings/preview/серьги 6.jpg" /></Link></li>
+
+                    <li className="slide"><Link to="/catalog/polimer/clips/4-10"><img className="stock-img" src="images/catalog/сlips/preview/заколка 5.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-24"><img className="stock-img" src="images/catalog/earrings/preview/серьги 25.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/clips/4-13"><img className="stock-img" src="images/catalog/сlips/preview/заколка 8.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-19"><img className="stock-img" src="images/catalog/earrings/preview/серьги 20.jpg" /></Link></li>
+
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-27"><img className="stock-img" src="images/catalog/earrings/preview/серьги 26.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-37"><img className="stock-img" src="images/catalog/earrings/preview/серьги 40.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-21"><img className="stock-img" src="images/catalog/earrings/preview/серьги 22.jpg" /></Link></li>
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-23"><img className="stock-img" src="images/catalog/earrings/preview/серьги 24.jpg" /></Link></li>
                 </ul>
             </div>
             <div className="stock-images-mobile">

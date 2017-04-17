@@ -239,16 +239,17 @@
   width:30%;
 }
 .product-preview-name {
-  text-transform: uppercase;
-  font-size: 1vw;
-  color:#6d6d6d;
+  font-family: PhillippScript;
+  /*text-transform: uppercase;*/
+  font-size: 1.5vw;
+  color:#705290;
   display: block;
   margin-top:2%;
 }
 .product-preview-cost {
   color:#6d6d6d;
   display: block;
-  margin-top:2%;
+  margin-top:0;
   font-weight: 600;
 }
 
@@ -286,6 +287,7 @@
   float: right;
 }
 .pages-link {
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2vw;
   color:#888888;
   text-decoration: underline;
@@ -406,8 +408,8 @@
 }
 
 .product-info-cost {
-  margin-top: 5%;
-  margin-bottom: 11%;
+  margin-top: 6%;
+  margin-bottom: 9%;
   font-weight: bolder;
   color:#888888;
   font-family: Arial, Helvetica, sans-serif;
@@ -453,10 +455,10 @@
   border: 1px solid #705290;
   font-family: Arial, Helvetica, sans-serif;
   color:#705290;
-  font-size: 1.3vw;
+  font-size: 1vw;
   width: 99%;
   /*height: 30%;*/
-  padding: 1.5% 0 1.5% 0.5%;
+  padding: 2% 0 2% 0.5%;
   display: block;
   margin-bottom: 5.2%;
 }

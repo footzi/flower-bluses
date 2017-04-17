@@ -1,8 +1,31 @@
 import React from 'react';
 
-
 let Contacts = React.createClass({
 	componentDidMount () {
+		(function(){
+                emailjs.init("user_jmnF1YC49paVFwkbJRipP");
+            })();
+
+            var orderform = $("#aboutform");
+            orderform.submit(function(event){
+                event.preventDefault();
+
+            // Change to your service ID, or keep using the default service
+            var service_id = "mail_ru";
+            var template_id = "about";
+
+            orderform.find("#aboutform-button").text("Отправляется...");
+            emailjs.sendForm(service_id,template_id,"orderform")
+                .then(function(){ 
+                    console.log("Sent!");
+                orderform.find("#aboutform-button").text("Отправлено");
+                }, function(err) {
+                console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+                orderform.find("#aboutform-button").text("Oшибка");
+                });
+            return false;
+		});
+		
 		window.scrollTo(0, 0)
 		$(function(){
                 $(window).resize(function(){
@@ -16,32 +39,13 @@ let Contacts = React.createClass({
                     }
                 }).resize()
             })
+
+		 
         
-        (function(){
-            emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-        })();
-
-        var orderform = $("#aboutform");
-        orderform.submit(function(event){
-            event.preventDefault();
-
-        // Change to your service ID, or keep using the default service
-        var service_id = "mail_ru";
-        var template_id = "about";
-
-        orderform.find("#aboutform-button").text("Отправляется...");
-        emailjs.sendForm(service_id,template_id,"aboutform")
-            .then(function(){ 
-                console.log("Sent!");
-            orderform.find("#aboutform-button").text("Отправлено");
-            }, function(err) {
-            console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-            orderform.find("#aboutform-button").text("Oшибка");
-            });
-        return false;
-        });
+      
 	},
 	render () {
+		
 		return (
 			
 			<div className="contacts">
@@ -59,12 +63,11 @@ let Contacts = React.createClass({
 							</div>
 							<div>
 								<h2>ТЕЛЕФОН:</h2>
-								<h3>+7(953)173-32-96</h3>
+								<h3>+7(903)848-26-61</h3>
 							</div>
 								<h2>E-MAIL:</h2>
-								<h3>footzi@mail.ru</h3>
+								<h3>galina.agafonova.2013@mail.ru</h3>
 							<div>
-								
 							</div>
 						</div>
 						<div className="contacts-form-message">

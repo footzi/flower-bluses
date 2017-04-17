@@ -28,7 +28,7 @@ main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;
 .footer-content-icons-img{width:15%;margin-right:6%}.footer-content-developer{margin-left:6%;font-size:.7vw;outline:0 solid red;display:inline-block}
 .footer-content-developer-title{margin-top:1%;font-size:.7vw}.footer-content-developer-title a{text-decoration:underline;color:#888}
 .footer-content-contacts{position:absolute;margin-left:6%;display:inline-block;outline:0 solid green;text-align:right}
-.footer-content-contacts-title{margin-bottom:10%}.footer-content-contacts-text{margin-bottom:5%}
+.footer-content-contacts-title{margin-bottom:7%}.footer-content-contacts-text{margin-bottom:3%}
 .lessons{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888}.lessons-title{font-size:1.8vw;color:#705290}
 .lessons-introduction{text-align:justify;color:#705290;width:76%;margin:4% auto 0 auto;background-image:url("../images/lessons-introduction-fon.png");background-repeat:no-repeat;background-size:100%;padding:4.5% 0}
 .lessons-introduction-next-date{margin-left:3.5%;margin-top:-0.8%;position:absolute;font-family:PhillippScript;width:10%;text-align:center;font-size:1.5vw;display:inline-block}
@@ -96,11 +96,12 @@ h3{margin-bottom:7%;font-size:1.2vw;font-family:Arial,Helvetica,sans-serif;color
 .Link-name:hover{text-decoration:underline}.active-link{background-color:rgba(255,255,255,0.5);text-decoration:underline}
 .catalog-content{text-align:justify}.hidden{display:none}.product-preview{cursor:pointer;color:black;margin-top:6%;margin-right:6.5%;display:inline-table;width:29%;font-family:Arial,Helvetica,sans-serif;font-size:1vw}
 .product-preview:nth-child(3n){margin-right:0}.product-preview-img{box-shadow:3px 3px rgba(0,0,0,0.302);width:30%}
-.product-preview-name{text-transform:uppercase;font-size:1vw;color:#6d6d6d;display:block;margin-top:2%}
-.product-preview-cost{color:#6d6d6d;display:block;margin-top:2%;font-weight:600}.product-preview-button-img{cursor:pointer;margin-top:2%;margin-left:36%;position:absolute;color:#705290;font-family:PhillippScript;font-size:1.2vw;width:25%;border:1px solid #705290;border-radius:.6vw;padding-top:.7%}
+.product-preview-name{font-family:PhillippScript;font-size:1.5vw;color:#705290;display:block;margin-top:2%}
+.product-preview-cost{color:#6d6d6d;display:block;margin-top:0;font-weight:600}.product-preview-button-img{cursor:pointer;margin-top:2%;margin-left:36%;position:absolute;color:#705290;font-family:PhillippScript;font-size:1.2vw;width:25%;border:1px solid #705290;border-radius:.6vw;padding-top:.7%}
 .product-preview-instock{right:10%;width:10%;position:absolute}.pages{width:71%;position:absolute;margin-top:5.6%}
 .pages-back{display:inline-table;float:left}.pages-next{display:inline-table;float:right}
-.pages-link{font-size:1.2vw;color:#888;text-decoration:underline}.pages-numbers{position:relative;width:10%;display:inline-block;margin:0 auto 0 auto}
+.pages-link{font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888;text-decoration:underline}
+.pages-numbers{position:relative;width:10%;display:inline-block;margin:0 auto 0 auto}
 .pages-numbers-link{display:inline;cursor:pointer;font-size:1.2vw;color:#888;text-decoration:none;margin-right:20%}
 .pages-numbers-link:hover{font-weight:bolder;text-decoration:underline;color:#705290}
 .pages-numbers-link-active{font-weight:bolder;text-decoration:underline;color:#705290}
@@ -112,12 +113,12 @@ h3{margin-bottom:7%;font-size:1.2vw;font-family:Arial,Helvetica,sans-serif;color
 .product-info-button{cursor:pointer;margin:0 auto;display:inline-block;width:40%;border:1px solid #705290;border-radius:.6vw;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
 .product-info-name{outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw}
 .product-info-text{margin-top:10%;padding:0 10%;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;color:#888;text-align:justify;font-size:1.1vw;line-height:1.3vw;text-indent:1vw}
-.product-info-cost-button{position:absolute;width:30%;top:40%;right:19.3%}.product-info-cost{margin-top:5%;margin-bottom:11%;font-weight:bolder;color:#888;font-family:Arial,Helvetica,sans-serif}
+.product-info-cost-button{position:absolute;width:30%;top:40%;right:19.3%}.product-info-cost{margin-top:6%;margin-bottom:9%;font-weight:bolder;color:#888;font-family:Arial,Helvetica,sans-serif}
 .product-carousel{width:52%}#order{background-image:url("../images/catalog/orderform-fon.png");background-size:100% 100%;padding:0 5% 2% 5%;width:90%;display:none}
 .order-title{margin-bottom:5%;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw}
 .order-image{margin:0 3% 3% 0;float:left;display:inline-table;outline:0 solid black;width:28%}
 .order-image img{width:100%}.order-form{width:69%;float:right;display:inline-table;outline:0 solid red}
-.order-form-input{background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1.3vw;width:99%;padding:1.5% 0 1.5% .5%;display:block;margin-bottom:5.2%}
+.order-form-input{background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1vw;width:99%;padding:2% 0 2% .5%;display:block;margin-bottom:5.2%}
 .order-form-input-message{padding-bottom:21%;position:relative;left:-45%;display:block;width:144%}
 .order-buttons{text-align:justify}.order-buttons-back{font-family:Arial;cursor:pointer;font-size:1.5vw;position:relative;right:.4%;color:#705290}
 .order-buttons-back:hover{color:#565656}.order-buttons-send{cursor:pointer;position:relative;left:31%;margin:24.1% auto 2% auto;background-color:transparent;display:inline-block;width:20%;border:1px solid #705290;border-radius:.6vw;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}

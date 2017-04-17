@@ -77,8 +77,5 @@ ReactDOM.render (
                 </Route>
             </Route>
         </Route>
-
-        
-
     </Router>,
 document.getElementById("wrapper"))

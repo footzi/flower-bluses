@@ -9,6 +9,7 @@ var Carousel = require('react-responsive-carousel').Carousel;
 let Earrings = React.createClass({
     componentDidMount () {
          $("#footer").css({"margin-top":"3.5%"});
+         $(".product-preview:eq(40)").css({"margin-bottom":"35.7%"})
          navigationPage ();
      },   
     contextTypes: {
@@ -31,7 +32,7 @@ let Earrings = React.createClass({
     
 
     render () {
-           // window.scrollTo(0, 500);
+            // $(".product-preview").hide()
             let { products } = this.state;
         return (
             <div>
