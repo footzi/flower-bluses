@@ -36,7 +36,7 @@ let Product = React.createClass({
                 $("#order").show()
             })
 
-             $(".order-buttons-back").bind("click", function() {
+             $(".order-buttons-back, .order-buttons-back-mobile").bind("click", function() {
                 $("#product").show()
                 $("#order").hide()
             });
@@ -109,8 +109,9 @@ let Product = React.createClass({
                             </div>
                              <div className="order-buttons">
                                 <span className="order-buttons-back">« назад</span>
-                                <button id="orderform-button" className="order-buttons-send">Отправить</button>
 
+                                <button id="orderform-button" className="order-buttons-send">Отправить</button>
+                                <button className="order-buttons-back-mobile order-buttons-send">Назад</button>
                              </div>
                         </form>
                     </div>
