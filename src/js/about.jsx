@@ -27,7 +27,7 @@ let About = React.createClass({
         return false;
 	});
 	
-		//window.scrollTo(0, 0)
+		window.scrollTo(0, 0)
 		$(function(){
                 $(window).resize(function(){
                     if($(window).width()<=640) {

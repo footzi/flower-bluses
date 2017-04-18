@@ -33,7 +33,7 @@ let Clips = React.createClass({
                 <div className="catalog-navigation">
                     <Link to="/catalog">Каталог>></Link>
                     <Link to="/catalog/polimer/all">Полимерная глина>></Link>
-                    <Link to="/catalog/polimer/pendants">Броши/заколки</Link>
+                    <Link to="/catalog/polimer/pendants">Кулоны/подвески</Link>
                 </div>
                 <div className="catalog-content">
                 {

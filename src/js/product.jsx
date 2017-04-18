@@ -30,11 +30,7 @@ let Product = React.createClass({
             return false;
             });
 
-    
-            //  $("body").children().remove()
-            //  $("html").append( $("#pop-up"))
-        
-
+            window.scrollTo(0, 0)
             function buttons () {
                 $(".product-info-button").bind("click", function() {
                 $("#product").hide()
@@ -48,11 +44,23 @@ let Product = React.createClass({
             }
             buttons ();
             
+            $(function(){
+                $(window).resize(function(){
+                    if($(window).width()<=640) {
+                        //$("#b-popup").show()        
+                        $("#footer, .catalog-polimer, .catalog-navbar, .catalog-content, .pages").hide() 
+                    }
+                }).resize()
+            })
+            $(".product-info-button-back").click(function() {
+            
+                 $("#footer,.catalog-polimer, .catalog-navbar, .catalog-content, .pages").show()
+             })
             
     },
     render () {
         $(document).ready(function() {
-            //navigationPage();
+            navigationPage();
         })
         let { product } = this.props;
         let linkProduct = location.href;
@@ -90,6 +98,7 @@ let Product = React.createClass({
                     <div className="product-info-mobile">
                         <h2 className="product-info-text">{this.props.text}</h2>
                         <div className="product-info-button" >Заказать</div>
+                        <div className="product-info-button-back" onClick={browserHistory.goBack}>Назад</div>
                     </div>
                     </div>
                     <div id="order">
