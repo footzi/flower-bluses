@@ -9,7 +9,7 @@ body {
   font-size: 20px;
 }
 .nav {    
-    display:none;
+    display:none; 
 }
 .nav-mobile {
     width: 50%;
@@ -349,6 +349,53 @@ main {
     display: none;
 }
 
+
+
+
+
+
+
+.lessons-title {
+    font-size: 5vw;
+}
+.lessons-info {
+    text-align: justify;
+    font-size: 4.5vw;
+}
+.lessons-info-more {
+    width: 100%;
+    margin: 0; 
+}
+.lesson {
+    text-align: center;
+}
+.lesson-img {
+    width: 100%;
+    position: static;
+}
+.lesson-info {
+    position: static;
+    margin: 0;
+    
+}
+.lesson-name {
+    font-size: 4vw;
+    margin:0 auto;
+}
+.lesson-more {
+    font-size: 3vw;
+    margin: 0 10%;
+    text-align: justify;
+}
+.lesson-button {
+    margin:0;
+    border-radius: 1.5vw;
+    width: 100%;
+    padding: 2% 0;
+    font-size: 5vw;
+    margin-top: 2%;
+    left:0;
+}
 /*футер*/
 footer {
     text-align: center;
