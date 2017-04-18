@@ -30,6 +30,10 @@ let Product = React.createClass({
             return false;
             });
 
+    
+            //  $("body").children().remove()
+            //  $("html").append( $("#pop-up"))
+        
 
             function buttons () {
                 $(".product-info-button").bind("click", function() {
