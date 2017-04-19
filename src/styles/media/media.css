@@ -441,6 +441,26 @@ main {
     margin-top: 2%;
     left:0;
 }
+
+#lessons-image-b-popup .lessons-image-b-popup-content {
+    max-height: 1vw;
+    
+    margin: 0;
+    width: 100%;
+}
+#b-popup-lesson-close-button {
+    display: none;
+}
+.lessons-image-name {
+    margin:5% 0;
+    font-size: 5vw;
+}
+
+.lessons-image-photo-small img {
+    width: 25%;
+}
+
+
 /*футер*/
 footer {
     text-align: center;

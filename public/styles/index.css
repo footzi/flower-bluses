@@ -39,7 +39,7 @@ main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;
 .lesson-name{font-size:2vw;font-family:PhillippScript;color:#705290}.lesson-more{margin-top:2%;font-size:1.2vw}
 .lesson-button{padding-bottom:.6%;margin:10.5% 0 0 83%;float:none}#lessons-image-b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
 #lessons-image-b-popup .lessons-image-b-popup-content{background-color:#e6e2eb;background-size:100% 100%;margin:4% auto 0 auto;width:36%;padding:0 3% 1% 3%}
-.lessons-image-photo-small{padding-top:.6%;border-width:1px 0 1px 0;border-style:solid;border-color:#705290;width:100%}
+#lessons-image-photo-big-img{width:80%}.lessons-image-photo-small{padding-top:.6%;border-width:1px 0 1px 0;border-style:solid;border-color:#705290;width:100%}
 .lessons-image-photo-small img{cursor:pointer;width:20%;margin-right:5%}.lessons-image-photo-small img:last-child{margin-right:0}
 .lessons-image-name{margin-top:-2.3%;margin-bottom:2.3%;font-size:1.7vw;font-family:PhillippScript;color:#705290}
 #lessons-b-popup{left:0;width:100%;min-height:100%;background-color:rgba(0,0,0,0.5);overflow:hidden;position:fixed;top:0;z-index:3}
