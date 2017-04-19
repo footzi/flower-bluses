@@ -44,6 +44,8 @@ let Product = React.createClass({
             }
             buttons ();
             
+
+
             // $(function(){
             //     $(window).resize(function(){
             //         if($(window).width()<=640) {
