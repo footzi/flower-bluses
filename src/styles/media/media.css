@@ -192,6 +192,9 @@ main {
 .catalog-introduction {
     font-size: 4.5vw;
 }
+.catalog-polimer-introduction {
+    display: none;
+}
 .catalog-info {
     font-size: 4.5vw;
 }
@@ -227,9 +230,11 @@ main {
     font-size: 4vw;
 }
 .product-preview {
-    width: 45%;
+    margin:5%;
+    width: 90%;
+    /*width: 45%;*/
     font-size: 3.5vw;
-    margin: 0 0 4% 4%;
+    /*margin: 0 0 4% 4%;*/
 }
 .product-preview:nth-child(2n) {
   margin-right:0;

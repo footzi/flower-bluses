@@ -27812,11 +27812,11 @@
 	                if ($(window).width() <= 640) {
 	                    $("body").css({ "background-image": "none" });
 	                    $("body").css({ "background-image": "url(/images/fon640.jpg)" });
-	                    $("#footer").css({ "margin-top": "240%" });
+	                    //$("#footer").css({"margin-top":"240%"});
 	                } else {
-	                    $("body").css({ "background-image": "url(/images/fon.jpg)" });
-	                    // $("#footer").css({"margin-top":"17.2%"});
-	                }
+	                        $("body").css({ "background-image": "url(/images/fon.jpg)" });
+	                        // $("#footer").css({"margin-top":"17.2%"});
+	                    }
 	            }).resize();
 	        });
 	    },
