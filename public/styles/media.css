@@ -25,16 +25,15 @@ main{margin-top:12%;width:100%;text-align:center;box-sizing:border-box;padding:0
 .product-preview-cost{font-size:2.5vw}.product-preview-button-img{border-radius:1.5vw;margin-left:33%;width:32%;font-size:3vw}
 .product-preview-thumbs:before{height:35%}.product-preview-thumbs:focus:before,.product-preview-thumbs:hover:before{top:65%}
 .pages{width:94%}.pages-back,.pages-next{display:none}.pages-numbers{width:100%}.pages-numbers-link{font-size:5vw;margin-right:5%}
-#b-popup{position:absolute;margin:20% auto 0 auto;background-color:rgba(0,0,0,0)}
-#product,#order{background-image:none;background-color:rgba(255,255,255,0.349);border:1px solid rgba(129,88,159,0.349)}
-#b-popup .b-popup-content{width:100%}.b-popup-close-button{display:none}#product{padding:1% 2% 2% 2%}
-.product-info{display:none}.product-info-name{line-height:3vw;margin:5% 0;font-size:5vw}
-.product-info-text{line-height:inherit;padding:0 5%;margin:2%;font-size:4.5vw}.product-info-button{border-radius:1.5vw;width:65%;padding:2% 0;font-size:5vw;margin:0 auto;cursor:pointer}
-.product-info-button-back{border-radius:1.5vw;width:65%;padding:2% 0;font-size:5vw;margin:0 auto;border:1px solid #705290;font-family:PhillippScript;color:#705290}
+#b-popup{margin:0;background-color:rgba(0,0,0,0.5)}#product,#order{background-image:none;background-color:#e6e2eb;border:1px solid rgba(129,88,159,0.349)}
+#b-popup .b-popup-content{margin:0;width:100%}.b-popup-close-button{display:none}
+#product{padding:1% 2% 2% 2%}.product-info{display:none}.product-info-name{line-height:3vw;margin:5% 0;font-size:5vw}
+.product-info-text{line-height:inherit;padding:0 5%;margin:2%;font-size:4.5vw}.product-info-button{border-radius:1.5vw;width:65%;padding:2% 0;font-size:8vw;margin:0 auto;cursor:pointer}
+.product-info-button-back{font-size:Arial;color:#888;font-weight:bolder;margin-top:5%}
 .product-carousel{width:75%}.carousel{width:130%}.carousel .thumbs-wrapper{margin-top:4.5%}
 .carousel-slider{left:18%}.order-title{font-size:5vw}.order-image{width:80%;margin:0}
-.order-form{float:none;width:100%}.order-form-input{width:100%;font-size:5vw}.order-form-input-message{left:0}
-.order-buttons{text-align:center}.order-buttons-send{border-radius:1.5vw;width:65%;padding:2% 0;font-size:5vw;margin-top:2%;left:0}
+.order-form{float:none;width:100%}.order-form-input{width:100%;font-size:5vw}.order-form-input-message{padding-bottom:0;left:0}
+.order-buttons{text-align:center}.order-buttons-send{border-radius:1.5vw;width:65%;padding:2% 0;font-size:8vw;margin-top:2%;left:0}
 .order-buttons-back{display:none}.lessons-title{font-size:5vw}.lessons-info{text-align:justify;font-size:4.5vw}
 .lessons-info-more{width:100%;margin:0}.lesson{text-align:center}.lesson-img{width:100%;position:static}
 .lesson-info{position:static;margin:0}.lesson-name{font-size:4vw;margin:0 auto}.lesson-more{font-size:3vw;margin:0 10%;text-align:justify}

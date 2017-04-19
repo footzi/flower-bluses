@@ -44,18 +44,18 @@ let Product = React.createClass({
             }
             buttons ();
             
-            $(function(){
-                $(window).resize(function(){
-                    if($(window).width()<=640) {
-                        //$("#b-popup").show()        
-                        $("#footer, .catalog-polimer, .catalog-navbar, .catalog-content, .pages").hide() 
-                    }
-                }).resize()
-            })
-            $(".product-info-button-back").click(function() {
+            // $(function(){
+            //     $(window).resize(function(){
+            //         if($(window).width()<=640) {
+            //             //$("#b-popup").show()        
+            //             $("#footer, .catalog-polimer, .catalog-navbar, .catalog-content, .pages").hide() 
+            //         }
+            //     }).resize()
+            // })
+            // $(".product-info-button-back").click(function() {
             
-                 $("#footer,.catalog-polimer, .catalog-navbar, .catalog-content, .pages").show()
-             })
+            //      $("#footer,.catalog-polimer, .catalog-navbar, .catalog-content, .pages").show()
+            //  })
             
     },
     render () {
@@ -97,8 +97,9 @@ let Product = React.createClass({
                     </div>
                     <div className="product-info-mobile">
                         <h2 className="product-info-text">{this.props.text}</h2>
+                        
                         <div className="product-info-button" >Заказать</div>
-                        <div className="product-info-button-back" onClick={browserHistory.goBack}>Назад</div>
+                        <div className="product-info-button-back" onClick={browserHistory.goBack}>« назад</div>
                     </div>
                     </div>
                     <div id="order">
@@ -124,7 +125,7 @@ let Product = React.createClass({
                                 <span className="order-buttons-back">« назад</span>
 
                                 <button id="orderform-button" className="order-buttons-send">Отправить</button>
-                                <button className="order-buttons-back-mobile order-buttons-send">Назад</button>
+                                <div className="order-buttons-back-mobile product-info-button-back">« назад</div>
                              </div>
                         </form>
                     </div>

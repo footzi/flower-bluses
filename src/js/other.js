@@ -9,8 +9,8 @@ import React from "react";
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
-                w.yaCounter43578919 = new Ya.Metrika({
-                    id:43578919,
+                w.yaCounter44294474 = new Ya.Metrika({
+                    id:44294474,
                     clickmap:true,
                     trackLinks:true,
                     accurateTrackBounce:true
@@ -30,7 +30,7 @@ import React from "react";
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
 
-<noscript><div><img src="https://mc.yandex.ru/watch/43578919" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/44294474" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
 //переход по страничкам 
 

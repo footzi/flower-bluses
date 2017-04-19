@@ -30268,18 +30268,18 @@
 	        }
 	        buttons();
 
-	        $(function () {
-	            $(window).resize(function () {
-	                if ($(window).width() <= 640) {
-	                    //$("#b-popup").show()       
-	                    $("#footer, .catalog-polimer, .catalog-navbar, .catalog-content, .pages").hide();
-	                }
-	            }).resize();
-	        });
-	        $(".product-info-button-back").click(function () {
+	        // $(function(){
+	        //     $(window).resize(function(){
+	        //         if($(window).width()<=640) {
+	        //             //$("#b-popup").show()       
+	        //             $("#footer, .catalog-polimer, .catalog-navbar, .catalog-content, .pages").hide()
+	        //         }
+	        //     }).resize()
+	        // })
+	        // $(".product-info-button-back").click(function() {
 
-	            $("#footer,.catalog-polimer, .catalog-navbar, .catalog-content, .pages").show();
-	        });
+	        //      $("#footer,.catalog-polimer, .catalog-navbar, .catalog-content, .pages").show()
+	        //  })
 	    },
 	    render: function render() {
 	        $(document).ready(function () {
@@ -30409,7 +30409,7 @@
 	                        _react2["default"].createElement(
 	                            "div",
 	                            { className: "product-info-button-back", onClick: _reactRouter.browserHistory.goBack },
-	                            "Назад"
+	                            "« назад"
 	                        )
 	                    )
 	                ),
@@ -30468,9 +30468,9 @@
 	                                "Отправить"
 	                            ),
 	                            _react2["default"].createElement(
-	                                "button",
-	                                { className: "order-buttons-back-mobile order-buttons-send" },
-	                                "Назад"
+	                                "div",
+	                                { className: "order-buttons-back-mobile product-info-button-back" },
+	                                "« назад"
 	                            )
 	                        )
 	                    )
@@ -30514,8 +30514,8 @@
 	(function (d, w, c) {
 	    (w[c] = w[c] || []).push(function () {
 	        try {
-	            w.yaCounter43578919 = new Ya.Metrika({
-	                id: 43578919,
+	            w.yaCounter44294474 = new Ya.Metrika({
+	                id: 44294474,
 	                clickmap: true,
 	                trackLinks: true,
 	                accurateTrackBounce: true
@@ -30545,7 +30545,7 @@
 	    _react2["default"].createElement(
 	        "div",
 	        null,
-	        _react2["default"].createElement("img", { src: "https://mc.yandex.ru/watch/43578919", style: "position:absolute; left:-9999px;", alt: "" })
+	        _react2["default"].createElement("img", { src: "https://mc.yandex.ru/watch/44294474", style: "position:absolute; left:-9999px;", alt: "" })
 	    )
 	);
 
