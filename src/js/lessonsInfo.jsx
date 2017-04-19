@@ -67,29 +67,28 @@ let LessonsInfo = React.createClass({
                     </div>
                     <div className="lesson-order">
                         <div className="lesson-title">ЗАПИСАТЬСЯ</div>
-                    </div>
-                    
-                    <form id="lessonsform" method="post">
-                            
-                            <div className="lesson-form">
-                                <img src={lesson.image1} />
-                                <div className="lesson-input">
-                                    <input className="lesson-form-input" name="product" type="text" readonly placeholder="Название мастер-класса" value={lesson.name}/>
-                                    <input className="lesson-form-input" name="name" type="text" required placeholder="Ваше имя:" />
-                                    <input className="lesson-form-input" name="email" type="email" required placeholder="Ваш e-mail:" />
-                                    {/*<select className="lesson-form-input lesson-form-input-date" required name="date">
-                                        <option hidden>Дата мастер класса:</option>
-                                        <option className="lesson-form-option">10.05.1990</option>
-                                        <option>11.05.1990</option>
-                                        <option>12.05.1990</option>
-                                    </select> */}
-                                    <textarea className="lesson-form-input lesson-form-input-message" name="info" type="text" placeholder="Сообщение:" />
+                        <form id="lessonsform" method="post">
+                                
+                                <div className="lesson-form">
+                                    <img src={lesson.image1} />
+                                    <div className="lesson-input">
+                                        <input className="lesson-form-input" name="product" type="text" readonly placeholder="Название мастер-класса" value={lesson.name}/>
+                                        <input className="lesson-form-input" name="name" type="text" required placeholder="Ваше имя:" />
+                                        <input className="lesson-form-input" name="email" type="email" required placeholder="Ваш e-mail:" />
+                                        {/*<select className="lesson-form-input lesson-form-input-date" required name="date">
+                                            <option hidden>Дата мастер класса:</option>
+                                            <option className="lesson-form-option">10.05.1990</option>
+                                            <option>11.05.1990</option>
+                                            <option>12.05.1990</option>
+                                        </select> */}
+                                        <textarea className="lesson-form-input lesson-form-input-message" name="info" type="text" placeholder="Сообщение:" />
+                                    </div>
+
                                 </div>
-
-                            </div>
-                             <button id="lessonsform-button" className="lesson-form-button">Отправить</button>
-                    </form>
-
+                                <button id="lessonsform-button" className="lesson-form-button">Отправить</button>
+                                <div className="order-buttons-back-mobile product-info-button-back" onClick={browserHistory.goBack}>« назад</div>
+                        </form>
+                    </div>
                 </div>            
 			</div>
             

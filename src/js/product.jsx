@@ -44,21 +44,6 @@ let Product = React.createClass({
             }
             buttons ();
             
-
-
-            // $(function(){
-            //     $(window).resize(function(){
-            //         if($(window).width()<=640) {
-            //             //$("#b-popup").show()        
-            //             $("#footer, .catalog-polimer, .catalog-navbar, .catalog-content, .pages").hide() 
-            //         }
-            //     }).resize()
-            // })
-            // $(".product-info-button-back").click(function() {
-            
-            //      $("#footer,.catalog-polimer, .catalog-navbar, .catalog-content, .pages").show()
-            //  })
-            
     },
     render () {
         $(document).ready(function() {

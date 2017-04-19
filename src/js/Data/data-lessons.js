@@ -80,7 +80,7 @@ let lessons = [{
 	"level":"Уровень сложности: средний"
 },{
 	"id":"9",
-	"imagePreview":"images/lessons/preview/Настурция.jpg",
+	"imagePreview":"/images/lessons/preview/настурция.jpg",
 	"image1":"/images/lessons/настурция 1.jpg",
 	"image2":"/images/lessons/настурция 2.png",
 	"image3":" ",
