@@ -29942,8 +29942,8 @@
 	(function (d, w, c) {
 	    (w[c] = w[c] || []).push(function () {
 	        try {
-	            w.yaCounter43578919 = new Ya.Metrika({
-	                id: 43578919,
+	            w.yaCounter44294474 = new Ya.Metrika({
+	                id: 44294474,
 	                clickmap: true,
 	                trackLinks: true,
 	                accurateTrackBounce: true
@@ -29973,7 +29973,7 @@
 	    _react2["default"].createElement(
 	        "div",
 	        null,
-	        _react2["default"].createElement("img", { src: "https://mc.yandex.ru/watch/43578919", style: "position:absolute; left:-9999px;", alt: "" })
+	        _react2["default"].createElement("img", { src: "https://mc.yandex.ru/watch/44294474", style: "position:absolute; left:-9999px;", alt: "" })
 	    )
 	);
 
