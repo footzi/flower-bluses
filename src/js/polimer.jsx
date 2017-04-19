@@ -14,8 +14,8 @@ let Polimer = React.createClass({
                         $("#footer").css({"margin-top":"240%"});
 
                     } else {
-                        $("body").css({"background-image":"url(/images/fon-lessons.jpg)"});
-                         $("#footer").css({"margin-top":"17.2%"});
+                        $("body").css({"background-image":"url(/images/fon.jpg)"});
+                         // $("#footer").css({"margin-top":"17.2%"});
                     }
                 }).resize()
             })

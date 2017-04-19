@@ -27814,8 +27814,8 @@
 	                    $("body").css({ "background-image": "url(/images/fon640.jpg)" });
 	                    $("#footer").css({ "margin-top": "240%" });
 	                } else {
-	                    $("body").css({ "background-image": "url(/images/fon-lessons.jpg)" });
-	                    $("#footer").css({ "margin-top": "17.2%" });
+	                    $("body").css({ "background-image": "url(/images/fon.jpg)" });
+	                    // $("#footer").css({"margin-top":"17.2%"});
 	                }
 	            }).resize();
 	        });
@@ -28831,7 +28831,7 @@
 	});
 	var lessons = [{
 		"id": "1",
-		"imagePreview": "/images/lessons/preview/Короставник.jpg",
+		"imagePreview": "images/lessons/preview/Короставник.jpg",
 		"image1": "/images/lessons/короставник 1.jpg",
 		"image2": "/images/lessons/короставник 2.jpg",
 		"image3": " ",
@@ -28841,7 +28841,7 @@
 		"level": "Уровень сложности: простой (рекомендовано для новичков)"
 	}, {
 		"id": "2",
-		"imagePreview": "/images/lessons/preview/Незабудка.jpg",
+		"imagePreview": "images/lessons/preview/Незабудка.jpg",
 		"image1": "/images/lessons/незабудка 1.jpg",
 		"image2": "/images/lessons/незабудка 2.jpg",
 		"image3": "/images/lessons/незабудка 3.jpg",
@@ -28851,7 +28851,7 @@
 		"level": "Уровень сложности: высокий (для учеников с навыками)"
 	}, {
 		"id": "3",
-		"imagePreview": "/images/lessons/preview/Сирень.jpg",
+		"imagePreview": "images/lessons/preview/Сирень.jpg",
 		"image1": "/images/lessons/сирень 1.jpg",
 		"image2": " ",
 		"image3": " ",
@@ -28861,7 +28861,7 @@
 		"level": "Уровень сложности: средний"
 	}, {
 		"id": "4",
-		"imagePreview": "/images/lessons/preview/Малина.jpg",
+		"imagePreview": "images/lessons/preview/Малина.jpg",
 		"image1": "/images/lessons/малина 1.jpg",
 		"image2": " ",
 		"image3": " ",
@@ -28871,7 +28871,7 @@
 		"level": "Уровень сложности: простой"
 	}, {
 		"id": "5",
-		"imagePreview": "/images/lessons/preview/Подснежник.jpg",
+		"imagePreview": "images/lessons/preview/Подснежник.jpg",
 		"image1": "/images/lessons/подснежник 1.jpg",
 		"image2": "/images/lessons/подснежник 2.png",
 		"image3": " ",
@@ -28881,7 +28881,7 @@
 		"level": "Уровень сложности: простой"
 	}, {
 		"id": "6",
-		"imagePreview": "/images/lessons/preview/Крокус.jpg",
+		"imagePreview": "images/lessons/preview/Крокус.jpg",
 		"image1": "/images/lessons/крокус 1.jpg",
 		"image2": "/images/lessons/крокус 2.jpg",
 		"image3": "/images/lessons/крокус 3.png",
@@ -28891,7 +28891,7 @@
 		"level": "Уровень сложности: простой"
 	}, {
 		"id": "7",
-		"imagePreview": "/images/lessons/preview/Смородина.jpg",
+		"imagePreview": "images/lessons/preview/Смородина.jpg",
 		"image1": "/images/lessons/смородина 1.jpg",
 		"image2": "/images/lessons/смородина 2.png",
 		"image3": " ",
@@ -28901,7 +28901,7 @@
 		"level": "Уровень сложности: простой"
 	}, {
 		"id": "8",
-		"imagePreview": "/images/lessons/preview/Фрезия.jpg",
+		"imagePreview": "images/lessons/preview/Фрезия.jpg",
 		"image1": "/images/lessons/фрезия 1.jpg",
 		"image2": "/images/lessons/фрезия 2.jpg",
 		"image3": "/images/lessons/фрезия 3.png",
@@ -28911,7 +28911,7 @@
 		"level": "Уровень сложности: средний"
 	}, {
 		"id": "9",
-		"imagePreview": "/images/lessons/preview/Настурция.jpg",
+		"imagePreview": "images/lessons/preview/Настурция.jpg",
 		"image1": "/images/lessons/настурция 1.jpg",
 		"image2": "/images/lessons/настурция 2.png",
 		"image3": " ",
