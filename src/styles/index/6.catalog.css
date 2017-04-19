@@ -337,6 +337,7 @@
     position:fixed;
     top:0px;
     z-index:3;
+    
 }
 #b-popup .b-popup-content{
     margin:4% auto 0 auto;
