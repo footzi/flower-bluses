@@ -105,7 +105,7 @@ let Main = React.createClass({
                 </p>
             </div>
             <div className="footer-content-developer">
-                <p className="footer-title footer-content-developer-title">Дизайн и разработка:<a href="https://vk.com/vlad.vlad.vlad">ArtBox</a></p>
+                <p className="footer-title footer-content-developer-title">Дизайн и разработка: <a href="https://vk.com/vlad.vlad.vlad">ArtBox</a></p>
             </div>
         </div>
     </footer>

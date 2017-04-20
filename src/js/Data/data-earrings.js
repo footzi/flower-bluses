@@ -211,7 +211,7 @@ let products = [{
     "text":"Серьги с розовыми пионами. Можно выполнить в любой цветовой гамме. Можно использовать швензы с родиевым покрытием (доплата 200 руб). Серьги с миниатюрными розовами пионами.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 26.jpg",
     "image1":"/images/catalog/earrings/серьги 26.png",
-    "image2":"/images/catalog/earrings/серьги 26.2.png",
+    "image2":"/images/catalog/earrings/серьги 26.1.png",
 },{
     "id":"2-26",
     "name":"Серьги «Пион алый»",
