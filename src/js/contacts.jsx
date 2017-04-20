@@ -31,7 +31,7 @@ let Contacts = React.createClass({
                 $(window).resize(function(){
                     if($(window).width()<=640) {
                         $("body").css({"background-image":"none"})
-                        $("body").css({"background-color":"silver"});
+                        $("body").css({"background-image":"url(/images/fon2.jpg)"})
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});

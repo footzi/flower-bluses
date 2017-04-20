@@ -11,22 +11,21 @@ body {
 .nav {    
     display:none; 
 }
-.nav-mobile {
+header {
     background-image: url("../images/fon1.jpg");
     background-size:cover; 
-    padding-bottom: 22%;
-    /*width: 50%;
-    float: right;*/
+    height: 22vw;
+}
+.nav-mobile {
+    width: 50%;
+    float: right;
 }
 .nav-mobile-button {
-    float: right;
-    top:2%;
     right: 2%;
-    width: 50%;
+    top:-21vw;
     position: relative;
     z-index: 2;
     text-align: right;
-    /*margin-top:2%*/
 }
 .nav-mobile-button img {
     cursor:pointer;
@@ -54,7 +53,7 @@ body {
     text-decoration: none;
 }
 main {
-    margin-top:1%; 
+    margin-top:-7%; 
     width:100%;
     text-align:center;
     box-sizing:border-box;
@@ -530,9 +529,23 @@ main {
 
 /*футер*/
 footer {
+    outline: 2px solid red;
+    background-image: url("../images/fon3.jpg");
+    background-size:cover; 
     text-align: center;
-    margin: 7% auto 0 auto;
+    margin: -80% auto 0 auto;
     padding: 2% 0 0 0;
+    height: 148vw;
+}
+.footer-content {
+    display: none;
+}
+.footer-content-mobile {
+    margin:0 13% 0 13%;
+    position: relative;
+    top:10vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
 }
 .footer-content-icons {
     position: relative;
@@ -541,13 +554,11 @@ footer {
 }
 .footer-content-icons img {
     cursor:pointer;
-    width: 8%;
+    width: 12%;
     margin: 0 6.5% 0 6.5%;
 }
-.footer-content-regulations {
-    padding: 0 17%;    
-    position: absolute;
-    margin:29% 0 4% 0;
+.footer-content-regulations { 
+    margin:3% 0 0 0;
     left: 0;
 }
 .footer-content-regulations-title {
@@ -557,7 +568,7 @@ footer {
 
 }
 .footer-content-developer {
-    display: none;
+
 }
 .footer-content-contacts {
     position: relative;
@@ -566,7 +577,7 @@ footer {
     text-align: center;
 }
 .footer-title {
-    margin: 10% 0 5% 0;
+    margin: 5% 0 5% 0;
     font-size: 3vw;
 }
 .footer-text {
@@ -601,9 +612,10 @@ header{
 .product-info-mobile {
     display: none;
 }
-    
+.footer-content-mobile {
+    display: none;
+}    
 }
-
 @media (max-width:1024px) {
 .product-preview-thumbs .product-preview-caption span {
     opacity: 1;
