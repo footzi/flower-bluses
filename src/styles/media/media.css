@@ -1,27 +1,32 @@
 @media (max-width:640px) {
 /*главная*/
 body {
-  background-image: url("../images/fon640.jpg");
-  /*background-repeat: no-repeat;
-  background-size: 100% 110.5%;*/
-  background-size: cover;
-  background-position:top; 
-  font-size: 20px;
+  /*background-image: url("../images/fon640.jpg");*/
+  background-image: url("../images/fon2.jpg");
+  /*background-size: cover;
+  background-position:top; */
+  background-size:100%; 
+  background-repeat: repeat;
 }
 .nav {    
     display:none; 
 }
 .nav-mobile {
-    width: 50%;
-    float: right;
+    background-image: url("../images/fon1.jpg");
+    background-size:cover; 
+    padding-bottom: 22%;
+    /*width: 50%;
+    float: right;*/
 }
 .nav-mobile-button {
+    float: right;
+    top:2%;
     right: 2%;
-    width: 100%;
+    width: 50%;
     position: relative;
     z-index: 2;
     text-align: right;
-    margin-top:2%
+    /*margin-top:2%*/
 }
 .nav-mobile-button img {
     cursor:pointer;
@@ -49,7 +54,7 @@ body {
     text-decoration: none;
 }
 main {
-    margin-top:12%; 
+    margin-top:1%; 
     width:100%;
     text-align:center;
     box-sizing:border-box;
@@ -423,11 +428,11 @@ main {
     margin: 0 10%;
 }
 .lesson-name {
-    font-size: 5vw;
+    font-size: 6vw;
     margin:2% auto;
 }
 .lesson-more {
-    font-size: 3vw;
+    font-size: 4vw;
     margin: 0 10% 3% 0;
     text-align: justify;
 }
@@ -451,6 +456,7 @@ main {
     background-image:none;
     background-color: #e6e2eb;
     border: 1px solid rgba(129,88,159,0.349);
+    padding: 0;
     
 }
 #b-popup-lesson-close-button {
@@ -476,12 +482,10 @@ main {
     border: 1px solid rgba(129,88,159,0.349);
     width:100%;
     margin: 0;
-    
+    padding: 0;
 }
-.lesson-order {
-    width: 90%;
-    padding: 0 5% 2% 5%;
-}
+
+
 .lesson-title {
     margin: 5% 0;
     font-size: 5vw;

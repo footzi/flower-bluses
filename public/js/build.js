@@ -26748,7 +26748,8 @@
 	        $(function () {
 	            $(window).resize(function () {
 	                if ($(window).width() <= 640) {
-	                    $("body").css({ "background-image": "url(/images/fon640.jpg)" });
+	                    // $("body").css({"background-image":"url(/images/fon640.jpg)"})
+	                    $("body").css({ "background-image": "url(/images/fon2.jpg)" });
 	                    $("#footer").css({ "margin-top": "23%" });
 	                } else {
 	                    $("body").css({ "background-image": "url(/images/fon.jpg)" });
