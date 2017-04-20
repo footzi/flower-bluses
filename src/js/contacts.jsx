@@ -57,7 +57,11 @@ let Contacts = React.createClass({
 							<input className="contacts-form-input" name="name" type="text" required/>
 							<label>Ваш e-mail:</label>
 							<input className="contacts-form-input contacts-form-input-email" name="email" type="email" required/>
-							<div>
+						<div className="contacts-form-message-mobile">
+							<label>Ваше сообщение:</label>
+							<textarea className="contacts-form-message-textarea" name="message" type="text" required></textarea>
+						</div>
+						<div>
 								<h2>ГОРОД:</h2>
 								<h3>Нижний Новгород</h3>
 							</div>
@@ -73,7 +77,6 @@ let Contacts = React.createClass({
 						<div className="contacts-form-message">
 							<label>Ваше сообщение:</label>
 							<textarea className="contacts-form-message-textarea" name="message" type="text" required></textarea>
-							
 						</div>
 							<button id="aboutform-button" className="contacts-form-button-send">Отправить</button>
 						

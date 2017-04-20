@@ -24,7 +24,7 @@ header {
     right: 2%;
     top:-21vw;
     position: relative;
-    z-index: 2;
+    z-index: 4;
     text-align: right;
 }
 .nav-mobile-button img {
@@ -34,7 +34,7 @@ header {
 .nav-mobile-menu {
     text-align: center;
     padding-top: 10%;
-    z-index: 1;
+    z-index: 3;
     width: 50%;
     display: none;
     position: absolute;
@@ -58,6 +58,8 @@ main {
     text-align:center;
     box-sizing:border-box;
     padding:0 6%;
+    position: relative;
+    z-index: 2;
 }
 .main-title {
     margin:0;
@@ -406,7 +408,7 @@ main {
     font-size: 5vw;
 }
 .lessons-info {
-    text-align: justify;
+    text-align: left;
     font-size: 4.5vw;
 }
 .lessons-info-more {
@@ -417,6 +419,7 @@ main {
     width: 90%;
     margin: 0 auto 5% auto;
     text-align: center;
+    border:1px solid rgba(129,88,159,0.349);
 }
 .lesson-img {
     width: 100%;
@@ -432,8 +435,8 @@ main {
 }
 .lesson-more {
     font-size: 4vw;
-    margin: 0 10% 3% 0;
-    text-align: justify;
+    margin: 0 0 3% -5%;
+    text-align: left;
 }
 .lesson-button {
     margin:0 auto 2% auto;
@@ -519,23 +522,58 @@ main {
     left:0;
 }
 
+.contacts-form {
+    background-image: none;
+    background-color: rgba(255,255,255,0.349): 
+    border:1px solid rgba(129,88,159,0.349);
+    font-size: 4.5vw;
 
-
-
-
-
+}
+.contacts-form-adress {
+    width: 100%;
+    float: none;
+    
+}
+.contacts-form-message-mobile {
+    width: 100%;
+    float: none;
+    margin-bottom: 6%;
+}
+.contacts-form-message {
+    display: none;
+}
+label {
+    font-size: 4.5vw;
+}
+h2, h3 {
+    font-size: 4.5vw;
+}
+.contacts-form-input {
+    font-size: 4vw;
+}
+.contacts-form-message-textarea {
+    font-size: 4vw;   
+}
+.contacts-form-button-send {
+    margin:2% auto 2% auto;
+    border-radius: 1.5vw;
+    width: 100%;
+    padding: 1% 0;
+    font-size: 6vw;
+    left:0;
+}
 
 
 
 /*футер*/
 footer {
-    outline: 2px solid red;
     background-image: url("../images/fon3.jpg");
     background-size:cover; 
     text-align: center;
     margin: -80% auto 0 auto;
     padding: 2% 0 0 0;
     height: 148vw;
+    z-index: 1;
 }
 .footer-content {
     display: none;
@@ -615,6 +653,9 @@ header{
 .footer-content-mobile {
     display: none;
 }    
+.contacts-form-message-mobile {
+    display: none;
+}
 }
 @media (max-width:1024px) {
 .product-preview-thumbs .product-preview-caption span {

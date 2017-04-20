@@ -1,9 +1,9 @@
 @media(max-width:640px){body{background-image:url("../images/fon2.jpg");background-size:100%;background-repeat:repeat}
 .nav{display:none}header{background-image:url("../images/fon1.jpg");background-size:cover;height:22vw}
-.nav-mobile{width:50%;float:right}.nav-mobile-button{right:2%;top:-21vw;position:relative;z-index:2;text-align:right}
-.nav-mobile-button img{cursor:pointer;width:25%}.nav-mobile-menu{text-align:center;padding-top:10%;z-index:1;width:50%;display:none;position:absolute;top:0;background-color:#705290}
+.nav-mobile{width:50%;float:right}.nav-mobile-button{right:2%;top:-21vw;position:relative;z-index:4;text-align:right}
+.nav-mobile-button img{cursor:pointer;width:25%}.nav-mobile-menu{text-align:center;padding-top:10%;z-index:3;width:50%;display:none;position:absolute;top:0;background-color:#705290}
 .nav-mobile-menu li{margin-bottom:15%;font-size:5vw;font-family:PhillippScript}.nav-mobile-menu li a{color:white;text-decoration:none}
-main{margin-top:-7%;width:100%;text-align:center;box-sizing:border-box;padding:0 6%}
+main{margin-top:-7%;width:100%;text-align:center;box-sizing:border-box;padding:0 6%;position:relative;z-index:2}
 .main-title{margin:0;font-size:5vw;margin-bottom:12%}.main-introduction{margin:0;font-size:4.5vw;text-indent:5%;padding:0}
 .stock{margin:10% auto 0 auto;width:90%;padding:0}.stock-title{margin:9% 0;font-size:5vw}
 .stock-text{display:none}.stock-images{display:none}.stock-images-mobile img{margin-bottom:5%;width:80%}
@@ -36,10 +36,10 @@ main{margin-top:-7%;width:100%;text-align:center;box-sizing:border-box;padding:0
 .order-title{margin:5% 0 0 0;font-size:5vw}.order-image{width:100%;margin:5% 0}.order-form{margin:5% 0;float:none;width:100%}
 .order-form-input{width:100%;font-size:5vw}.order-form-input-message{padding-bottom:10%;left:0}
 .order-buttons{text-align:center}.order-buttons-send{border-radius:2.5vw;width:65%;padding:2% 0;font-size:8vw;margin-top:5%;left:0}
-.order-buttons-back{display:none}.lessons-title{font-size:5vw}.lessons-info{text-align:justify;font-size:4.5vw}
-.lessons-info-more{width:100%;margin:0}.lesson{width:90%;margin:0 auto 5% auto;text-align:center}
+.order-buttons-back{display:none}.lessons-title{font-size:5vw}.lessons-info{text-align:left;font-size:4.5vw}
+.lessons-info-more{width:100%;margin:0}.lesson{width:90%;margin:0 auto 5% auto;text-align:center;border:1px solid rgba(129,88,159,0.349)}
 .lesson-img{width:100%;position:static}.lesson-info{position:static;margin:0 10%}
-.lesson-name{font-size:6vw;margin:2% auto}.lesson-more{font-size:4vw;margin:0 10% 3% 0;text-align:justify}
+.lesson-name{font-size:6vw;margin:2% auto}.lesson-more{font-size:4vw;margin:0 0 3% -5%;text-align:left}
 .lesson-button{margin:0 auto 2% auto;border-radius:1.5vw;width:100%;padding:1% 0;font-size:6vw;margin-top:2%;left:0}
 #lessons-image-b-popup{max-height:1vw;overflow-y:scroll}#lessons-image-b-popup .lessons-image-b-popup-content{margin:0;width:100%;background-image:none;background-color:#e6e2eb;border:1px solid rgba(129,88,159,0.349);padding:0}
 #b-popup-lesson-close-button{display:none}.lessons-image-name{margin:5% 0;font-size:5vw}
@@ -48,7 +48,11 @@ main{margin-top:-7%;width:100%;text-align:center;box-sizing:border-box;padding:0
 .lesson-title{margin:5% 0;font-size:5vw}.lesson-form img{position:static;display:block;width:60%;margin:0 auto 5% auto}
 .lesson-input{margin:0 auto 0 auto;width:100%}.lesson-form-input{padding:2% 0 2% .5%;font-size:5vw;margin-bottom:5.2%}
 .lesson-form-input-message{width:100%;left:0;position:static;padding-bottom:10%}.lesson-form-button{border-radius:2.5vw;width:65%;padding:2% 0;font-size:8vw;margin-top:5%;left:0}
-footer{outline:2px solid red;background-image:url("../images/fon3.jpg");background-size:cover;text-align:center;margin:-80% auto 0 auto;padding:2% 0 0 0;height:148vw}
+.contacts-form{background-image:none;background-color:rgba(255,255,255,0.349):border:1px solid rgba(129,88,159,0.349);font-size:4.5vw}
+.contacts-form-adress{width:100%;float:none}.contacts-form-message-mobile{width:100%;float:none;margin-bottom:6%}
+.contacts-form-message{display:none}label{font-size:4.5vw}h2,h3{font-size:4.5vw}.contacts-form-input{font-size:4vw}
+.contacts-form-message-textarea{font-size:4vw}.contacts-form-button-send{margin:2% auto 2% auto;border-radius:1.5vw;width:100%;padding:1% 0;font-size:6vw;left:0}
+footer{background-image:url("../images/fon3.jpg");background-size:cover;text-align:center;margin:-80% auto 0 auto;padding:2% 0 0 0;height:148vw;z-index:1}
 .footer-content{display:none}.footer-content-mobile{margin:0 13% 0 13%;position:relative;top:10vw;font-family:Arial,Helvetica,sans-serif;color:#888}
 .footer-content-icons{position:relative;width:100%;margin:0}.footer-content-icons img{cursor:pointer;width:12%;margin:0 6.5% 0 6.5%}
 .footer-content-regulations{margin:3% 0 0 0;left:0}.footer-content-regulations-title{font-size:3vw;margin:0 0 2% 0;font-weight:bolder}
@@ -56,6 +60,6 @@ footer{outline:2px solid red;background-image:url("../images/fon3.jpg");backgrou
 .footer-text{font-size:2vw}.clear{clear:both}}@media(min-width:641px){.stock-images-mobile{display:none}
 .nav-mobile{display:none}.order-buttons-back-mobile{display:none}header{display:none}
 .product-info-button-back{display:none}.product-info-mobile{display:none}.footer-content-mobile{display:none}
-}@media(max-width:1024px){.product-preview-thumbs .product-preview-caption span{opacity:1}
+.contacts-form-message-mobile{display:none}}@media(max-width:1024px){.product-preview-thumbs .product-preview-caption span{opacity:1}
 .product-preview-thumbs:before{opacity:1;bottom:0}.catalog-thumbs .catalog-caption span{opacity:1}
 .catalog-thumbs:before{opacity:1;bottom:33%}}

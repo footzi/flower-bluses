@@ -27814,7 +27814,7 @@
 	                if ($(window).width() <= 640) {
 	                    //$("body").css({"background-image":"none"})
 	                    //$("body").css({"background-image":"url(/images/fon640.jpg)"});
-	                    //$("#footer").css({"margin-top":"240%"});
+	                    //$("#footer").css({"margin-top":"-80%"});
 
 	                } else {
 	                        $("body").css({ "background-image": "url(/images/fon.jpg)" });
@@ -28261,6 +28261,16 @@
 								"Ваш e-mail:"
 							),
 							_react2["default"].createElement("input", { className: "contacts-form-input contacts-form-input-email", name: "email", type: "email", required: true }),
+							_react2["default"].createElement(
+								"div",
+								{ className: "contacts-form-message-mobile" },
+								_react2["default"].createElement(
+									"label",
+									null,
+									"Ваше сообщение:"
+								),
+								_react2["default"].createElement("textarea", { className: "contacts-form-message-textarea", name: "message", type: "text", required: true })
+							),
 							_react2["default"].createElement(
 								"div",
 								null,
@@ -29397,8 +29407,16 @@
 	    displayName: 'InStock',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "3.5%" });
-	        $(".product-preview:eq(13)").css({ "margin-bottom": "35.7%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "3.5%" });
+	                    $(".product-preview:eq(13)").css({ "margin-bottom": "35.7%" });
+	                }
+	            }).resize();
+	        });
+	        // $("#footer").css({"margin-top":"3.5%"});
+	        // $(".product-preview:eq(13)").css({"margin-bottom":"35.7%"})
 	        (0, _otherJs2['default'])();
 	    },
 
@@ -31953,8 +31971,16 @@
 	    displayName: 'All',
 
 	    componentDidMount: function componentDidMount() {
-	        $(".pages-numbers").css({ "right": "5%" });
-	        $("#footer").css({ "margin-top": "3.5%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "3.5%" });
+	                    $(".pages-numbers").css({ "right": "5%" });
+	                }
+	            }).resize();
+	        });
+
+	        //$("#footer").css({"margin-top":"3.5%"});
 	        (0, _otherJs2['default'])();
 	    },
 	    contextTypes: {
@@ -32356,7 +32382,14 @@
 	    displayName: 'Pendants',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "28.6%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "28.6%" });
+	                }
+	            }).resize();
+	        });
+	        //$("#footer").css({"margin-top":"28.6%"});
 	    },
 
 	    contextTypes: {
@@ -32513,8 +32546,17 @@
 	    displayName: 'Earrings',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "3.5%" });
-	        $(".product-preview:eq(40)").css({ "margin-bottom": "35.7%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "3.5%" });
+	                    $(".product-preview:eq(40)").css({ "margin-bottom": "35.7%" });
+	                }
+	            }).resize();
+	        });
+
+	        //$("#footer").css({"margin-top":"3.5%"});
+	        //$(".product-preview:eq(40)").css({"margin-bottom":"35.7%"})
 	        (0, _otherJs2['default'])();
 
 	        // $(".pages-next").click(function() {
@@ -32732,7 +32774,14 @@
 	    displayName: 'Rings',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "28.6%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "28.6%" });
+	                }
+	            }).resize();
+	        });
+	        //$("#footer").css({"margin-top":"28.6%"});
 	    },
 
 	    contextTypes: {
@@ -32886,8 +32935,16 @@
 	    displayName: 'Clips',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "3.5%" });
-	        $(".product-preview:eq(12)").css({ "margin-bottom": "35.7%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "3.5%" });
+	                    $(".product-preview:eq(12)").css({ "margin-bottom": "35.7%" });
+	                }
+	            }).resize();
+	        });
+	        //$("#footer").css({"margin-top":"3.5%"});
+	        //$(".product-preview:eq(12)").css({"margin-bottom":"35.7%"})
 	        (0, _otherJs2['default'])();
 	    },
 
@@ -33075,7 +33132,13 @@
 	    displayName: 'Another',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "53.7%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "53.7%" });
+	                }
+	            }).resize();
+	        });
 	    },
 
 	    contextTypes: {
@@ -33229,7 +33292,14 @@
 	    displayName: 'Sets',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "28.6%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "28.6%" });
+	                }
+	            }).resize();
+	        });
+	        //$("#footer").css({"margin-top":"28.6%"});
 	    },
 
 	    contextTypes: {
@@ -33386,9 +33456,18 @@
 	    displayName: 'Floral',
 
 	    componentDidMount: function componentDidMount() {
-	        $("#footer").css({ "margin-top": "8.6%" });
-	        $(".catalog-navigation").css({ "margin-top": "-32.3%" });
-	        $(".product-preview:eq(12)").css({ "margin-bottom": "36%" });
+	        $(function () {
+	            $(window).resize(function () {
+	                if ($(window).width() > 640) {
+	                    $("#footer").css({ "margin-top": "8.6%" });
+	                    $(".product-preview:eq(12)").css({ "margin-bottom": "36%" });
+	                    $(".catalog-navigation").css({ "margin-top": "-32.3%" });
+	                }
+	            }).resize();
+	        });
+	        //$("#footer").css({"margin-top":"8.6%"});
+	        //$(".catalog-navigation").css({"margin-top":"-32.3%"});
+	        // $(".product-preview:eq(12)").css({"margin-bottom":"36%"})
 	        (0, _otherJs2['default'])();
 	    },
 

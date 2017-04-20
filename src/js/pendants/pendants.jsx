@@ -7,9 +7,16 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Pendants = React.createClass({
      componentDidMount () {
-         $("#footer").css({"margin-top":"28.6%"});
+        $(function(){
+                $(window).resize(function(){
+                    if($(window).width()>640) {
+                        $("#footer").css({"margin-top":"28.6%"});
+                        } 
+                }).resize()
+            })
+         //$("#footer").css({"margin-top":"28.6%"});
      },
-       
+        
     contextTypes: {
         router: React.PropTypes.object.isRequired
     },

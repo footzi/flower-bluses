@@ -8,8 +8,17 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Earrings = React.createClass({
     componentDidMount () {
-         $("#footer").css({"margin-top":"3.5%"});
-         $(".product-preview:eq(40)").css({"margin-bottom":"35.7%"})
+      $(function(){
+                $(window).resize(function(){
+                    if($(window).width()>640) {
+                        $("#footer").css({"margin-top":"3.5%"});
+                        $(".product-preview:eq(40)").css({"margin-bottom":"35.7%"});
+                      }
+                }).resize()
+            })
+
+         //$("#footer").css({"margin-top":"3.5%"});
+         //$(".product-preview:eq(40)").css({"margin-bottom":"35.7%"})
          navigationPage ();
          
          // $(".pages-next").click(function() {

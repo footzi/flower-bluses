@@ -13,7 +13,7 @@ let Catalog = React.createClass ({
                         // $("#footer").css({"margin-top":"54%"});
                         $("body").css({"background-image":"url(/images/fon2.jpg)"})
                     } else {
-                        $("body").css({"background-image":"url(/images/fon.jpg)"});
+                         $("body").css({"background-image":"url(/images/fon.jpg)"});
                         $("#footer").css({"margin-top":"3.2%"});
                     }
                 }).resize()

@@ -8,9 +8,18 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Floral = React.createClass({
      componentDidMount () {
-         $("#footer").css({"margin-top":"8.6%"});
-         $(".catalog-navigation").css({"margin-top":"-32.3%"});
-         $(".product-preview:eq(12)").css({"margin-bottom":"36%"})
+      $(function(){
+                $(window).resize(function(){
+                    if($(window).width()>640) {
+                        $("#footer").css({"margin-top":"8.6%"});
+                        $(".product-preview:eq(12)").css({"margin-bottom":"36%"})
+                        $(".catalog-navigation").css({"margin-top":"-32.3%"});
+                      }
+                }).resize()
+            })
+         //$("#footer").css({"margin-top":"8.6%"});
+         //$(".catalog-navigation").css({"margin-top":"-32.3%"});
+        // $(".product-preview:eq(12)").css({"margin-bottom":"36%"})
          navigationPage ();
      },
        
