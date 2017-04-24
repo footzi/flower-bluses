@@ -639,6 +639,9 @@ footer {
 .footer-text {
     font-size: 2vw;
 }
+.footer-content-developer-title a {
+    font-size: 3vw;
+}
 .clear {
     clear: both;
 }
