@@ -37,7 +37,7 @@ let About = React.createClass({
                         // $("#footer").css({"margin-top":"21%"});
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
-                        $("#footer").css({"margin-top":"11%"});
+                        $("#footer").css({"margin-top":"9.3%"});
                     }
                 }).resize()
             })

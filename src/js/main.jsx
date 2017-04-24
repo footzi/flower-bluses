@@ -74,7 +74,7 @@ let Main = React.createClass({
                 <a href="https://www.livemaster.ru/zivem-so-vkusom"><img className="footer-content-icons-img" src="/images/ym.png" /></a>
             </div>
             <div className="footer-content-developer">
-                <p className="footer-title footer-content-developer-title">Дизайн и разработка:<a href="https://vk.com/vlad.vlad.vlad">Манаков Владислав</a></p>
+                <p className="footer-title footer-content-developer-title">Дизайн и разработка: <a href="https://vk.com/vlad.vlad.vlad">ArtBox</a></p>
             </div>
             <div className="footer-content-contacts">
                 <p className="footer-title footer-content-contacts-title">Cвязаться с нами: </p>

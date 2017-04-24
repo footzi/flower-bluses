@@ -12,7 +12,7 @@ let InStock = React.createClass({
                 $(window).resize(function(){
                     if($(window).width()>640) {
                         $("#footer").css({"margin-top":"3.5%"});
-                        $(".product-preview:eq(13)").css({"margin-bottom":"35.7%"})
+                        $(".product-preview:eq(11)").css({"margin-bottom":"71.3%"})
                     } 
                 }).resize()
             })

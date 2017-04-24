@@ -2,29 +2,29 @@ import React from 'react';
 
 let Contacts = React.createClass({
 	componentDidMount () {
-		(function(){
-                emailjs.init("user_jmnF1YC49paVFwkbJRipP");
-            })();
+			(function(){
+            emailjs.init("user_jmnF1YC49paVFwkbJRipP");
+        })();
 
-            var orderform = $("#aboutform");
-            orderform.submit(function(event){
-                event.preventDefault();
+        var orderform = $("#aboutform");
+        orderform.submit(function(event){
+            event.preventDefault();
 
-            // Change to your service ID, or keep using the default service
-            var service_id = "mail_ru";
-            var template_id = "about";
+        // Change to your service ID, or keep using the default service
+        var service_id = "mail_ru";
+        var template_id = "about";
 
-            orderform.find("#aboutform-button").text("Отправляется...");
-            emailjs.sendForm(service_id,template_id,"orderform")
-                .then(function(){ 
-                    console.log("Sent!");
-                orderform.find("#aboutform-button").text("Отправлено");
-                }, function(err) {
-                console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-                orderform.find("#aboutform-button").text("Oшибка");
-                });
-            return false;
-		});
+        orderform.find("#aboutform-button").text("Отправляется...");
+        emailjs.sendForm(service_id,template_id,"aboutform")
+            .then(function(){ 
+                console.log("Sent!");
+            orderform.find("#aboutform-button").text("Отправлено");
+            }, function(err) {
+            console.log("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+            orderform.find("#aboutform-button").text("Oшибка");
+            });
+        return false;
+	});
 		
 		window.scrollTo(0, 0)
 		$(function(){
@@ -35,14 +35,10 @@ let Contacts = React.createClass({
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon.jpg)"});
-						$("#footer").css({"margin-top":"76.1%"});
+						$("#footer").css({"margin-top":"75.8%"});
                     }
                 }).resize()
             })
-
-		 
-        
-      
 	},
 	render () {
 		
@@ -56,10 +52,10 @@ let Contacts = React.createClass({
 							<label>Ваше имя:</label>
 							<input className="contacts-form-input" name="name" type="text" required/>
 							<label>Ваш e-mail:</label>
-							<input className="contacts-form-input contacts-form-input-email" name="email" type="email" required/>
-						<div className="contacts-form-message-mobile">
+							<input className="contacts-form-input contacts-form-input-email" name="email" type="email" />
+							<div className="contacts-form-message-mobile">
 							<label>Ваше сообщение:</label>
-							<textarea className="contacts-form-message-textarea" name="message" type="text"></textarea>
+							<textarea className="contacts-form-message-textarea" name="message1" type="text"></textarea>
 						</div>
 						<div>
 								<h2>ГОРОД:</h2>
@@ -76,7 +72,7 @@ let Contacts = React.createClass({
 						</div>
 						<div className="contacts-form-message">
 							<label>Ваше сообщение:</label>
-							<textarea className="contacts-form-message-textarea" name="message" type="text"></textarea>
+							<textarea className="contacts-form-message-textarea" name="message" type="text" ></textarea>
 						</div>
 							<button id="aboutform-button" className="contacts-form-button-send">Отправить</button>
 						

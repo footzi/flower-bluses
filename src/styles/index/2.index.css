@@ -114,7 +114,13 @@ main {
   font-weight: bolder;
   line-height: 130%;
 }
-
+.stock-text a {
+  color: #705290;
+  text-decoration: none;
+}
+.stock-text a:hover {
+  text-decoration: underline;
+}
 .news-text {
   margin: 2.2% 0;
   outline: 0px solid red;

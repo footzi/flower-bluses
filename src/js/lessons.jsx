@@ -15,7 +15,7 @@ let Lessons = React.createClass({
 
                     } else {
                         $("body").css({"background-image":"url(/images/fon-lessons.jpg)"});
-                         $("#footer").css({"margin-top":"17.2%"});
+                         $("#footer").css({"margin-top":"17.4%"});
                     }
                 }).resize()
             })

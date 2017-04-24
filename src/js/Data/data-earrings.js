@@ -38,7 +38,7 @@ let products = [{
     "text":"Голубые полянки в березовом лесу, запах ландышей и тепло - вот что Вы почувствуете, когда одените эти нежные сережки. Каждый цветок вылеплен вручную.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 5.jpg",
     "image1":"/images/catalog/earrings/серьги 5.png",
-},{
+},/*{
     "id":"2-6",
     "name":"Серьги «Веточка сирени»",
     "cost":"1400 руб.",
@@ -46,7 +46,7 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 6.jpg",
     "image1":"/images/catalog/earrings/серьги 6.png",
 
-},{
+},*/{
     "id":"2-7",
     "name":"Серьги «Цветы сакуры»",
     "cost":"под заказ",
@@ -154,7 +154,7 @@ let products = [{
 },{
     "id":"2-19",
     "name":"Серьги «Дикая роза»",
-    "cost":"1200 руб.",
+    "cost":"под заказ",
     "text":"Стильные серьги с якрой розочкой и нежными цветами сирени. Каждый цветок вылеплен и тонирован вручную.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 20.jpg",
     "image1":"/images/catalog/earrings/серьги 20.png",
@@ -196,7 +196,7 @@ let products = [{
     "image3":"/images/catalog/earrings/серьги 24.2.png",
 },{
     "id":"2-24",
-    "name":"Серьги «Короставник»",
+    "name":"Серьги «Полевой цветок»",
     "cost":"850 руб.",
     "text":"Серьги с реалистичным цветком короставника. Каждый цветок вылеплен, тонирован и собран в ручную. Швезы - гипоаллергенные, сталь",
     "imagePreview":"/images/catalog/earrings/preview/серьги 25.jpg",
@@ -220,13 +220,13 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 27.jpg",
     "image1":"/images/catalog/earrings/серьги 27.png",
     "image2":"/images/catalog/earrings/серьги 27.1.png",
-    "image3":"/images/catalog/earrings/серьги 27.1.png",
+    "image3":"/images/catalog/earrings/серьги 27.2.png",
 
 },{
     "id":"2-27",
-    "name":"Серьги «Древесный пион»",
+    "name":"Серьги Летний аромат»",
     "cost":"700 руб.",
-    "text":"Серьги с розовыми пионами. Можно выполнить в любой цветовой гамме. Можно использовать швензы с родиевым покрытием (доплата 200 руб). Серьги с розовыми древесными пионами. ",
+    "text":"Серьги с розовыми древовидными пионами. Можно выполнить в любой цветовой гамме. Можно использовать швензы с родиевым покрытием (доплата 200 руб).",
     "imagePreview":"/images/catalog/earrings/preview/серьги 28.jpg",
     "image1":"/images/catalog/earrings/серьги 28.png",
     "image2":"/images/catalog/earrings/серьги 28.1.png",
@@ -309,8 +309,8 @@ let products = [{
     "image3":"/images/catalog/earrings/серьги 37.2.png",
 },{
     "id":"2-37",
-    "name":"Серьги «Гроздь сирени»",
-    "cost":"1400 руб.",
+    "name":"Серьги «Сирени-гроздья душистые»",
+    "cost":"под заказ",
     "text":"Длинные серьги с каскадом спускающихся цветов сирени. Швензы - родиевое покрытие. Ручная работа.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 40.jpg",
     "image1":"/images/catalog/earrings/серьги 40.png",
