@@ -11,8 +11,6 @@ let Floral = React.createClass({
       $(function(){
                 $(window).resize(function(){
                     if($(window).width()>640) {
-                        $("#footer").css({"margin-top":"8.6%"});
-                        $(".product-preview:eq(12)").css({"margin-bottom":"36%"})
                         $(".catalog-navigation").css({"margin-top":"-32.3%"});
                       }
                 }).resize()

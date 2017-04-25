@@ -11,12 +11,10 @@ let All = React.createClass({
         $(function(){
                 $(window).resize(function(){
                     if($(window).width()>640) {
-                        $("#footer").css({"margin-top":"3.5%"});
                         $(".pages-numbers").css({"right":"5%"})} 
                 }).resize()
             })
          
-         //$("#footer").css({"margin-top":"3.5%"});
          navigationPage ();
      },  
     contextTypes: {

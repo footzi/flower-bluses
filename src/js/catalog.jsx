@@ -8,13 +8,10 @@ let Catalog = React.createClass ({
             $(function(){
                 $(window).resize(function(){
                     if($(window).width()<=640) {
-                        $("body").css({"background-image":"none"})
-                        // $("body").css({"background-image":"url(/images/fon640.jpg)"});
-                        // $("#footer").css({"margin-top":"54%"});
                         $("body").css({"background-image":"url(/images/fon2.jpg)"})
                     } else {
-                         $("body").css({"background-image":"url(/images/fon.jpg)"});
-                        $("#footer").css({"margin-top":"3.2%"});
+                         $("body").css({"background-image":"url(/images/fon.jpg)","height":"142vw"});
+                        //$("#footer").css({"margin-top":"3.2%"});
                     }
                 }).resize()
             })

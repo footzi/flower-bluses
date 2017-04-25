@@ -8,18 +8,7 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Earrings = React.createClass({
     componentDidMount () {
-      $(function(){
-                $(window).resize(function(){
-                    if($(window).width()>640) {
-                        $("#footer").css({"margin-top":"3.5%"});
-                        $(".product-preview:eq(39)").css({"margin-bottom":"35.8%"});
-                      }
-                }).resize()
-            })
-
          navigationPage ();
-         
-     
      },   
     contextTypes: {
         router: React.PropTypes.object.isRequired

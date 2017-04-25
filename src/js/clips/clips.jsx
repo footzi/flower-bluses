@@ -8,16 +8,6 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Clips = React.createClass({
      componentDidMount () {
-        $(function(){
-                $(window).resize(function(){
-                    if($(window).width()>640) {
-                        $("#footer").css({"margin-top":"3.5%"});
-                        $(".product-preview:eq(12)").css({"margin-bottom":"35.7%"})
-                    }
-                }).resize()
-            })
-        //$("#footer").css({"margin-top":"3.5%"});
-        //$(".product-preview:eq(12)").css({"margin-bottom":"35.7%"})
         navigationPage ();
      },
        

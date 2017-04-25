@@ -7,13 +7,6 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Another = React.createClass({
      componentDidMount () {
-        $(function(){
-                $(window).resize(function(){
-                    if($(window).width()>640) {
-                        $("#footer").css({"margin-top":"53.7%"}); 
-                    }
-                }).resize()
-            })
      },
        
     contextTypes: {

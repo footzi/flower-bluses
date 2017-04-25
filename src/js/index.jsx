@@ -7,18 +7,14 @@ let Index = React.createClass({
         $(function(){
                 $(window).resize(function(){
                     if($(window).width()<=640) {
-                        // $("body").css({"background-image":"url(/images/fon640.jpg)"})
                        $("body").css({"background-image":"url(/images/fon2.jpg)"})
-                        // $("#footer").css({"margin-top":"23%"});
-
                     } else {
-                        $("body").css({"background-image":"url(/images/fon.jpg)"});
-                        $("#footer").css({"margin-top":"1%"});
+                        $("body").css({"background-image":"url(/images/fon.jpg)","height":"142vw"});
+                        //$("#footer").css({"margin-top":"1%"});
                     }
-                  //  if ($(window).width())
+                  
                 }).resize()
             })
-        //$("#footer").css({"margin-top":"3%"});
     
         $('.bxslider').bxSlider({
             auto:true,

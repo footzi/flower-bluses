@@ -31,13 +31,10 @@ let About = React.createClass({
 		$(function(){
                 $(window).resize(function(){
                     if($(window).width()<=640) {
-                        $("body").css({"background-image":"none"})
                         $("body").css({"background-image":"url(/images/fon2.jpg)"})
-                        // $("body").css({"background-image":"url(/images/fon640.jpg)"})
-                        // $("#footer").css({"margin-top":"21%"});
                     } else {
-                        $("body").css({"background-image":"url(/images/fon.jpg)"});
-                        $("#footer").css({"margin-top":"9.3%"});
+                        $("body").css({"background-image":"url(/images/fon.jpg)","height":"142vw"});
+                        //$("#footer").css({"margin-top":"9.3%"});
                     }
                 }).resize()
             })
@@ -47,7 +44,6 @@ let About = React.createClass({
 	},
 
 	render() {
-		// document.getElementById("footer").style.marginTop="3.7%"
 		
 		return (
 			<div className="about">

@@ -13,6 +13,12 @@ body {
   background-image: url("../images/fon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  height: 142vw;
+}
+#wrapper {
+  position: relative;
+  min-height: 100%;
 }
 
 main {
@@ -210,8 +216,10 @@ main {
 }
 
 footer{
-  /*margin-top: 12%;*/
-  margin-top: 3.1%;
+  position: absolute;
+  bottom:0;
+  width: 100%;
+  /*margin-top: 3.1%;*/
   padding-top: 0.5%;
   padding-bottom: 0.5%;
   outline:0px solid red;
@@ -258,7 +266,7 @@ footer{
 }
 
 .footer-content-developer{
-  margin-left: 6%;
+  margin-left: 7.7%;
   font-size:0.7vw;
   outline: 0px solid red;
   display: inline-block;
@@ -275,7 +283,7 @@ footer{
 
 .footer-content-contacts {
   position: absolute;
-  margin-left: 6%;
+  margin-left: 4.5%;
   display: inline-block;
   outline:0px solid green;
   text-align: right;

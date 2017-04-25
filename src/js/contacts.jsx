@@ -30,12 +30,11 @@ let Contacts = React.createClass({
 		$(function(){
                 $(window).resize(function(){
                     if($(window).width()<=640) {
-                        $("body").css({"background-image":"none"})
                         $("body").css({"background-image":"url(/images/fon2.jpg)"})
 
                     } else {
-                        $("body").css({"background-image":"url(/images/fon.jpg)"});
-						$("#footer").css({"margin-top":"75.8%"});
+                        $("body").css({"background-image":"url(/images/fon.jpg)","height":"142vw"});
+						//$("#footer").css({"margin-top":"75.8%"});
                     }
                 }).resize()
             })

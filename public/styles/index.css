@@ -1,7 +1,7 @@
 body{padding:0;margin:0;*font-size:small;*font:x-small}h1,h2,h3,h4,h5,h6,ul,li,em,strong,pre,code{padding:0;margin:0;line-height:1em;font-size:100%;font-weight:normal;font-style:normal}
 ul{list-style:none}img{border:0}p{margin:1em 0}@font-face{font-family:'PhillippScript';src:url("../fonts/PhillippScript/PhillippScript.eot");src:local('☺'),url("../fonts/PhillippScript/PhillippScript.woff") format('woff'),url("../fonts/PhillippScript.ttf") format('truetype'),url("../fonts/PhillippScript/PhillippScript.svg") format('svg');font-weight:normal;font-style:normal}
-body{background-position:center;background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover}
-main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;padding:4% 6% 0 3%}
+body{background-position:center;background-image:url("../images/fon.jpg");background-repeat:no-repeat;background-size:cover;height:142vw}
+#wrapper{position:relative;min-height:100%}main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;padding:4% 6% 0 3%}
 .nav{float:left;margin-top:34%;margin-left:1.5%;outline:0 solid green;width:14%}.navbar-button{margin-top:7%;width:96%}
 .navbar-button img{width:100%}.navbar-butterfly{position:absolute;z-index:2;width:3%;margin-left:-0.5%}
 .navbar-butterfly2{position:absolute;z-index:2;width:2.5%;margin-top:11%;margin-left:11.8%}
@@ -20,15 +20,15 @@ main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;
 .news-calendar-img{width:100%}.news-details{width:76%;margin-top:-0.5%;float:right;text-align:left;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888}
 .news-details-text{position:relative;margin:-3.5% 0 3% 6%;outline:0 solid yellow;text-indent:1vw}
 .news-details-marker{position:relative;display:inline;width:4%}.clear{clear:both}
-.button .button-more{margin-top:0}footer{margin-top:3.1%;padding-top:.5%;padding-bottom:.5%;outline:0 solid red}
+.button .button-more{margin-top:0}footer{position:absolute;bottom:0;width:100%;padding-top:.5%;padding-bottom:.5%;outline:0 solid red}
 .footer-content{outline:0 solid black;font-family:Arial,Helvetica,sans-serif;color:#888}
 .footer-title{font-size:.8vw;font-weight:bolder;margin:0;margin-bottom:3%}.footer-text{font-size:.7vw;margin:0;margin-bottom:1%}
 .footer-content-regulations{display:inline-block;outline:0 solid blue;margin-left:23.5%}
 .footer-content-regulations-title{font-weight:bolder;margin-top:0;font-size:.8vw}
 .footer-content-icons{width:15%;position:absolute;display:inline-block;outline:0 solid orange;margin-left:7%;margin-top:.3%}
-.footer-content-icons-img{width:15%;margin-right:6%}.footer-content-developer{margin-left:6%;font-size:.7vw;outline:0 solid red;display:inline-block}
+.footer-content-icons-img{width:15%;margin-right:6%}.footer-content-developer{margin-left:7.7%;font-size:.7vw;outline:0 solid red;display:inline-block}
 .footer-content-developer-title{margin-top:1%;font-size:.7vw}.footer-content-developer-title a{text-decoration:underline;color:#888}
-.footer-content-contacts{position:absolute;margin-left:6%;display:inline-block;outline:0 solid green;text-align:right}
+.footer-content-contacts{position:absolute;margin-left:4.5%;display:inline-block;outline:0 solid green;text-align:right}
 .footer-content-contacts-title{margin-bottom:7%}.footer-content-contacts-text{margin-bottom:3%}
 .lessons{font-family:Arial,Helvetica,sans-serif;font-size:1.5vw;color:#888}.lessons-title{font-size:1.8vw;color:#705290}
 .lessons-introduction{text-align:justify;color:#705290;width:76%;margin:4% auto 0 auto;background-image:url("../images/lessons-introduction-fon.png");background-repeat:no-repeat;background-size:100%;padding:4.5% 0}
@@ -60,10 +60,12 @@ main{float:right;width:71%;outline:0 solid red;margin-top:17%;text-align:center;
 .about-more{margin-top:7%;text-align:justify;outline:0 solid red}.about-more p:nth-child(1){font-style:italic;text-indent:3%}
 .about-more p:nth-child(2){margin-top:5%;margin-bottom:3%;text-decoration:underline}
 .about-more p:nth-child(n+3){margin:0;text-indent:3%}.about-form-title{margin-bottom:1%;font-size:1.6vw;color:#705290}
-.about-form{margin-top:5.5%;text-align:left;outline:0 solid rosybrown}.about-form form{display:inline-table;width:100%;height:100%}
-.about-form-input{height:20%;margin-bottom:1%;padding-left:.5%;background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1vw;width:99.6%}
-.about-form-input-email{position:relative;left:.3%;float:right;width:49%}.about-form-input-phone{float:left;width:49%}
-.about-form-input-message{width:99.4%;height:70%}.about-info-button{margin-top:0;background-color:transparent;cursor:pointer;margin-left:81.3%;width:19%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
+.about-form{margin-top:3%;text-align:left;outline:0 solid rosybrown}.about-form form{display:inline-table;width:100%;height:100%}
+.about-form-input{height:25%;margin-bottom:1%;padding-left:.5%;background-color:transparent;border:1px solid #705290;font-family:Arial,Helvetica,sans-serif;color:#705290;font-size:1vw;width:99.6%}
+.about-form-input::-webkit-input-placeholder{color:#555}.about-form-input:-moz-placeholder{color:#555}
+.about-form-input:-ms-input-placeholder{color:#555}.about-form-input-email{position:relative;left:.3%;float:right;width:49%}
+.about-form-input-phone{float:left;width:49%}.about-form-input-message{padding-top:.8%;width:99.4%;height:70%}
+.about-info-button{margin-top:0;background-color:transparent;cursor:pointer;margin-left:81.3%;width:19%;border:1px solid #705290;border-radius:10px;padding-top:1%;font-family:PhillippScript;font-size:2vw;color:#705290}
 .contacts{outline:0 solid red}.contacts-form{background-image:url("../images/contacts-fon.png");background-repeat:no-repeat;background-size:100%;margin:6% 3% 0 3%;padding:3%;text-align:justify;outline:0 solid blue}
 label{font-weight:bold;margin-bottom:1%;color:#705290;display:block;font-size:1.2vw}
 h2,h3{margin:0}h2{margin-bottom:2%;font-size:1.2vw;font-family:Arial,Helvetica,sans-serif;color:#705290}

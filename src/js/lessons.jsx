@@ -3,23 +3,17 @@ import lessons from "./Data/data-lessons.js";
 import { Link } from "react-router";
 let Lessons = React.createClass({
     componentDidMount () {
-        //window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
         $(function(){
                 $(window).resize(function(){
                     if($(window).width()<=640) {
-                        $("body").css({"background-image":"none"})
-                        // $("body").css({"background-image":"url(/images/fon640.jpg)"});
-                        // $("#footer").css({"margin-top":"54%"});
                         $("body").css({"background-image":"url(/images/fon2.jpg)"})
-                       
-
                     } else {
-                        $("body").css({"background-image":"url(/images/fon-lessons.jpg)"});
-                         $("#footer").css({"margin-top":"17.4%"});
+                        $("body").css({"background-image":"url(/images/fon-lessons.jpg)","height":"229vw"});
+                        //  $("#footer").css({"margin-top":"17.4%"});
                     }
                 }).resize()
             })
-        //$("body").css({"background-image":"url(/images/fon-lessons.jpg)"});
        
     },
 	contextTypes: {

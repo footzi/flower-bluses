@@ -587,6 +587,7 @@ h2, h3 {
 
 /*футер*/
 footer {
+    position: static;
     background-image: url("../images/fon3.jpg");
     background-size:cover; 
     text-align: center;
