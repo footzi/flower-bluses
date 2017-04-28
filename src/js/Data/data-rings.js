@@ -35,6 +35,15 @@ let products = [{
     "imagePreview":"/images/catalog/rings/preview/кольцо 5.jpg",
     "image1":"/images/catalog/rings/кольцо 5.png",
     
+},{
+    "id":"3-6",
+    "name":"Кольцо «Весна»",
+    "cost":"700 руб.",
+    "text":"Кольцо с цветами сирени из холодного фарфора. Размер кольца регулируется. Покрытие основы - родий.",
+    "imagePreview":"/images/catalog/rings/preview/кольцо 6.jpg",
+    "image1":"/images/catalog/rings/кольцо 6.png",
+    "image2":"/images/catalog/rings/кольцо 6.1.png",
+    "image3":"/images/catalog/rings/кольцо 6.2.png",
 }];
 
 

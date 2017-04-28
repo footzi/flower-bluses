@@ -17,7 +17,7 @@ products.sort(function (a, b) {
     return 0;
 });
 
-products.splice(12)
+products.splice(22)
 
 export default products;
   

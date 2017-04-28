@@ -21,9 +21,9 @@ let products = [{
     "image1":"/images/catalog/sets/набор 3.png",
 },{
     "id":"6-4",
-    "name":"Набор ",
-    "cost":"",
-    "text":"",
+    "name":"Набор «Сиреневый букет»",
+    "cost":"под заказ",
+    "text":"В набор входят: серьги, кольцо, кулон и небольшая заколка с цветами нежной сирени. Каждый цветок вылеплен и тонирован вручную.",
     "imagePreview":"/images/catalog/sets/preview/набор 4.jpg",
     "image1":"/images/catalog/sets/набор 4.png",
 }]

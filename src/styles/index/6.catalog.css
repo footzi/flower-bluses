@@ -135,7 +135,7 @@
 
 /*список продуктов*/
 .catalog-navigation {
-  margin-top:-39.5%;
+  margin-top:-34.5%;
   float: right;
   
 }
@@ -164,6 +164,7 @@
 
 }
 .catalog-polimer-introduction {
+  margin-top: 2%;
   margin-bottom: 4%;
   text-align: justify;
   font-size: 1.2vw;

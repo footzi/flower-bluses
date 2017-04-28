@@ -24,17 +24,17 @@ let products = [{
     
 },{
     "id":"1-5",
-    "name":"Кулон ",
-    "cost":"",
-    "text":"",
+    "name":"Кулон «Сиреневый букет»",
+    "cost":"650 руб.",
+    "text":"Кулон с цветами реалистичной сирени. Каждый цветок вылеплен и тонирован вручную.",
     "imagePreview":"/images/catalog/pendants/preview/кулон 5.jpg",
     "image1":"/images/catalog/pendants/кулон 5.png",
     
 },{
     "id":"1-6",
-    "name":"Кулон ",
-    "cost":"",
-    "text":"",
+    "name":"Кулон «Зефирный»",
+    "cost":"1200 руб.",
+    "text":"Реалистичные голубые и розовые незабудки в букете с ландышами. Каждый цветок вылеплен и тонирован вручную. ",
     "imagePreview":"/images/catalog/pendants/preview/кулон 6.jpg",
     "image1":"/images/catalog/pendants/кулон 6.png",
     

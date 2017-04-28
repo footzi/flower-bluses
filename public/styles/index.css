@@ -11,14 +11,14 @@ body{background-position:center;background-image:url("../images/fon.jpg");backgr
 .main-introduction p{margin:0}.center{margin:0;text-align:center}.stock{margin-top:5.5%;padding:3% 2%;outline:0 solid yellow;background-size:cover;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349)}
 .stock-title{font-family:Arial,Helvetica,sans-serif;font-size:1.7vw;color:#705290}
 .stock-text{margin:2.2% 0;outline:0 solid red;font-family:Arial,Helvetica,sans-serif;color:#888;font-size:1.2vw;font-weight:bolder;line-height:130%}
-.stock-text a{color:#705290;text-decoration:none}.stock-text a:hover{text-decoration:underline}
+.link-contacts{color:#705290;text-decoration:none}.link-contacts:hover{text-decoration:underline}
 .news-text{margin:2.2% 0;outline:0 solid red;font-family:Arial,Helvetica,sans-serif;color:#888;font-size:1.2vw;font-weight:bolder;line-height:130%}
 .stock-images{outline:0 solid red;margin:3.2% 0 4% 1.2%}.stock-images-640{display:none}
 .stock-img{outline:0 solid red}.stock-img:last-child{margin-right:0}.stock-button{display:inline-block;width:27%;border:1px solid #705290;border-radius:10px;padding-top:.3%;font-family:PhillippScript;font-size:2vw;color:#705290}
 .stock-button a{text-decoration:none}.news{outline:0 solid green;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349);background-size:cover;padding:3% 2%;margin-top:7%;margin-bottom:14%}
 .news-content{outline:0 solid orange}.news-calendar{width:14.5%;margin:4% 0 0 4%;float:left;outline:0 solid red}
 .news-calendar-img{width:100%}.news-details{width:76%;margin-top:-0.5%;float:right;text-align:left;outline:0 solid blue;font-family:Arial,Helvetica,sans-serif;font-size:1.2vw;color:#888}
-.news-details-text{position:relative;margin:-3.5% 0 3% 6%;outline:0 solid yellow;text-indent:1vw}
+.news-details-text{position:relative;margin:-3.5% 4% 3% 6%;outline:0 solid yellow;text-indent:1vw}
 .news-details-marker{position:relative;display:inline;width:4%}.clear{clear:both}
 .button .button-more{margin-top:0}footer{position:absolute;bottom:0;width:100%;padding-top:.5%;padding-bottom:.5%;outline:0 solid red}
 .footer-content{outline:0 solid black;font-family:Arial,Helvetica,sans-serif;color:#888}
@@ -85,10 +85,10 @@ h3{margin-bottom:7%;font-size:1.2vw;font-family:Arial,Helvetica,sans-serif;color
 .catalog-info-text{margin-top:2%;text-align:justify;text-indent:2vw}.catalog-info-recomendation{margin-top:3%;margin-bottom:0;font-size:1.7vw;text-decoration:underline}
 .catalog-info-text:last-child{margin-top:1%}.catalog-info-text-list{margin:0}.catalog-info-text-list:nth-child(6){margin-bottom:6%}
 .catalog-butterfly-img{position:absolute;width:3%}.catalog-info-butterfly1{margin-top:0;margin-left:-35%}
-.catalog-info-butterfly2{margin-top:-5%;margin-left:32%}.catalog-navigation{margin-top:-39.5%;float:right}
+.catalog-info-butterfly2{margin-top:-5%;margin-left:32%}.catalog-navigation{margin-top:-34.5%;float:right}
 .catalog-navigation a{text-decoration:none;color:#a9a9a9;font-size:1vw}.catalog-navigation a:hover{text-decoration:underline;color:#705290}
 .catalog-list{margin-bottom:16%;height:100%;outline:0 solid black}.catalog-polimer{padding-top:2.5%;padding-left:1%;padding-right:1%;border:1px solid rgba(129,88,159,0.349);background-color:rgba(255,255,255,0.349)}
-.catalog-polimer-introduction{margin-bottom:4%;text-align:justify;font-size:1.2vw;text-indent:2vw}
+.catalog-polimer-introduction{margin-top:2%;margin-bottom:4%;text-align:justify;font-size:1.2vw;text-indent:2vw}
 .catalog-polimer-butterfly1{margin-top:0;margin-left:-35%}.catalog-polimer-butterfly2{margin-top:-4%;margin-left:32%}
 .catalog-navbar{border-top:2px solid #705290;border-bottom:2px solid #705290;margin-top:2.2%;margin-bottom:1.5%}
 .Link{color:#705290;font-size:.9vw;font-weight:bolder;display:inline-block;padding:.7% 3%}

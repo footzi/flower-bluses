@@ -120,11 +120,11 @@ main {
   font-weight: bolder;
   line-height: 130%;
 }
-.stock-text a {
+.link-contacts {
   color: #705290;
   text-decoration: none;
 }
-.stock-text a:hover {
+.link-contacts:hover {
   text-decoration: underline;
 }
 .news-text {
@@ -199,7 +199,7 @@ main {
   }
 .news-details-text {
   position: relative;
-  margin: -3.5%  0 3% 6%;
+  margin: -3.5%  4% 3% 6%;
   outline: 0px solid yellow;
   text-indent: 1vw;
 }

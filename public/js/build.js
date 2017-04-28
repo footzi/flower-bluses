@@ -26804,7 +26804,7 @@
 	                    'Большинство изделий я делаю на заказ, но есть и те, которые Вы можете приобрести в самые короткие сроки, не дожидаясь их изготовления. Представленные ниже украшения и интерьерные композиции есть в наличии. Заказ можно оформить на сайте или, в случае возникновения вопросов и пожеланий, связаться со мной по ',
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
-	                        { to: '/contacts' },
+	                        { className: 'link-contacts', to: '/contacts' },
 	                        'форме обратной связи.'
 	                    )
 	                ),
@@ -26969,13 +26969,13 @@
 	                        _react2['default'].createElement(
 	                            'div',
 	                            { className: 'news-details-text' },
-	                            'Группы - небольшие, до 4 х человек.'
+	                            'Занятия будут проводиться в небольших группах. Максимальное количество участников - 4 человека.'
 	                        ),
 	                        _react2['default'].createElement('img', { className: 'news-details-marker', src: 'images/marker.png' }),
 	                        _react2['default'].createElement(
 	                            'div',
 	                            { className: 'news-details-text' },
-	                            'Все материалы и фурнитура предоставляются.'
+	                            'Все необходимые материалы и фурнитура для создания украшений с реалистичными цветами предоставляются. Вам дополнительно докупать ничего не требуется.'
 	                        ),
 	                        _react2['default'].createElement('img', { className: 'news-details-marker', src: 'images/marker.png' }),
 	                        _react2['default'].createElement(
@@ -26987,7 +26987,13 @@
 	                        _react2['default'].createElement(
 	                            'div',
 	                            { className: 'news-details-text' },
-	                            'Участие в МК по предварительной записи. Телефон 89038482661 или оставьте заявку.'
+	                            'Участие в мастер-классах осуществляется по предварительной записи. Вы можете оставить свою заявку с помощью ',
+	                            _react2['default'].createElement(
+	                                _reactRouter.Link,
+	                                { className: 'link-contacts', to: '/contacts' },
+	                                'формы обратной связи'
+	                            ),
+	                            ' или позвонив по телефону: +79038482661 '
 	                        )
 	                    ),
 	                    _react2['default'].createElement('div', { className: 'clear' }),
@@ -27265,7 +27271,7 @@
 	                _react2['default'].createElement(
 	                    'h2',
 	                    { className: 'main-introduction catalog-polimer-introduction' },
-	                    'Цветочные украшения из полимерной глины обладают необычайной легкостью и реалистичностью. Благодаря этим двум качествам цветы ручной работы пользуются большой популярностью среди женского населения. Многообразие цветов и исключительно ручная работа позволяет создавать уникальные украшения, которых не будет больше ни у кого. Даже две одинаковые веточки сирени будут выглядеть по-разному и необычайно живо. Украшения ручной работы из самозастывающей полимерной глины — это красивый, эффектный и уникальный подарок. Вам не стоит бояться, что вы можете подарить то, что уже есть у человека. Любое цветочное украшение будет уникальным!'
+	                    'Цветочные украшения из полимерной глины обладают необычайной легкостью и реалистичностью. Благодаря этим двум качествам они пользуются большой популярностью. Многообразие цветов и исключительно ручная работа позволяет создавать уникальные украшения и интерьерные композиции. Даже две одинаковые веточки сирени будут выглядеть по-разному и необычайно живо. Украшения ручной работы или цветочная композиция из полимерной глины — это красивый, эффектный и уникальный подарок.'
 	                ),
 	                _react2['default'].createElement('img', { className: 'catalog-butterfly-img catalog-polimer-butterfly2', src: '/../images/catalog/catalog-butterfly2.png' })
 	            ),
@@ -27942,7 +27948,7 @@
 	                        _react2["default"].createElement(
 	                            "p",
 	                            { className: "footer-text " },
-	                            "Все фотографии на данном ресурсе являются собственностью Агафоновой Галины."
+	                            "Все фотографии на данном ресурсе являются собственностью Агафоновой Галины Владимировны."
 	                        ),
 	                        _react2["default"].createElement(
 	                            "p",
@@ -28222,25 +28228,31 @@
 	                        "div",
 	                        { className: "lessons-info-more-text" },
 	                        _react2["default"].createElement("img", { className: "about-introduction-marker lessons-info-more-marker", src: "/images/marker.png" }),
-	                        "Во-первых, наши занятия будут проводиться независимо от количества пришедших на МК учеников, даже для одного человека! (группа небольшая, до 4 человек!)."
+	                        "Во-первых, занятия будут проводиться в небольших группах. Максимальное количество участников - 4 человека."
 	                    ),
 	                    _react2["default"].createElement(
 	                        "div",
 	                        { className: "lessons-info-more-text" },
 	                        _react2["default"].createElement("img", { className: "about-introduction-marker lessons-info-more-marker", src: "/images/marker.png" }),
-	                        "Во-вторых, вы можете выбрать любой из предложенных ниже МК! И я, лично вам, буду показывать нюансы и тонкости лепки выбранного вами цветка!"
+	                        "Во-вторых, Все необходимые материалы и фурнитура для создания украшений с реалистичными цветами предоставляются. Вам дополнительно докупать ничего не требуется."
 	                    ),
 	                    _react2["default"].createElement(
 	                        "div",
 	                        { className: "lessons-info-more-text" },
 	                        _react2["default"].createElement("img", { className: "about-introduction-marker lessons-info-more-marker", src: "/images/marker.png" }),
-	                        "В-третьих, с завершенного МК, вы будете уходить с полностью готовой работой. Это может быть просто реалистический цветок, который можно будет поставить в вазу, или это будет брошка, или небольшая заколка- зажим..."
+	                        "В-третьих, с завершенного МК, вы будете уходить с полностью готовой работой. Это может быть просто реалистический цветок, который можно будет поставить в вазу, или это будет брошка, или небольшая заколка- зажим."
 	                    ),
 	                    _react2["default"].createElement(
 	                        "div",
 	                        { className: "lessons-info-more-text" },
 	                        _react2["default"].createElement("img", { className: "about-introduction-marker lessons-info-more-marker", src: "/images/marker.png" }),
-	                        "В-четвёртых, у вас будет возможность тратить столько часов на одно посещение, сколько вам необходимо. И Вы можете придти в указанные дни в удобное для вас время."
+	                        "В-четвёртых, участие в мастер-классах осуществляется по предварительной записи. Вы можете оставить свою заявку с помощью ",
+	                        _react2["default"].createElement(
+	                            _reactRouter.Link,
+	                            { className: "link-contacts", to: "/contacts" },
+	                            "формы обратной связи"
+	                        ),
+	                        " или позвонив по телефону: +79038482661."
 	                    )
 	                ),
 	                _react2["default"].createElement(
@@ -28920,6 +28932,11 @@
 	                        'p',
 	                        { className: 'pages-numbers-link pages-numbers-link2' },
 	                        '2'
+	                    ),
+	                    _react2['default'].createElement(
+	                        'p',
+	                        { className: 'pages-numbers-link pages-numbers-link3' },
+	                        '3'
 	                    )
 	                ),
 	                _react2['default'].createElement(
@@ -29023,7 +29040,7 @@
 	    return 0;
 	});
 
-	products.splice(12);
+	products.splice(22);
 
 	exports["default"] = products;
 	module.exports = exports["default"];
@@ -29137,9 +29154,9 @@
 	    "image3": "/images/catalog/сlips/заколка 8.png"
 	}, {
 	    "id": "4-14",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
+	    "name": "Заколка «Очарование рассвета»",
+	    "cost": "1250 руб.",
+	    "text": "Яркая заколка-автомат с красными реалистичными розами и жасмином. Цветы очень реалистичны, проработаны мельчайшие детали. Достаточно легкая. Яркая заколка к яркому образу. Огонь, страсть, волшебство.",
 	    "imagePreview": "/images/catalog/сlips/preview/заколка 9.jpg",
 	    "image1": "/images/catalog/сlips/заколка 9.png",
 	    "image2": "/images/catalog/сlips/заколка 9.1.png",
@@ -29188,17 +29205,17 @@
 
 	}, {
 	    "id": "1-5",
-	    "name": "Кулон ",
-	    "cost": "",
-	    "text": "",
+	    "name": "Кулон «Сиреневый букет»",
+	    "cost": "650 руб.",
+	    "text": "Кулон с цветами реалистичной сирени. Каждый цветок вылеплен и тонирован вручную.",
 	    "imagePreview": "/images/catalog/pendants/preview/кулон 5.jpg",
 	    "image1": "/images/catalog/pendants/кулон 5.png"
 
 	}, {
 	    "id": "1-6",
-	    "name": "Кулон ",
-	    "cost": "",
-	    "text": "",
+	    "name": "Кулон «Зефирный»",
+	    "cost": "1200 руб.",
+	    "text": "Реалистичные голубые и розовые незабудки в букете с ландышами. Каждый цветок вылеплен и тонирован вручную. ",
 	    "imagePreview": "/images/catalog/pendants/preview/кулон 6.jpg",
 	    "image1": "/images/catalog/pendants/кулон 6.png"
 
@@ -29531,64 +29548,49 @@
 	    "image1": "/images/catalog/earrings/серьги 45.png"
 	}, {
 	    "id": "2-43",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
+	    "name": "Серьги «Вдохновение»",
+	    "cost": "1600 руб.",
+	    "text": "Серьги с каскадом спускающихся весенних цветов : незабудки, ландыши, сирень. пролеска. Швензы с родиевым покрытием.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 46.jpg",
 	    "image1": "/images/catalog/earrings/серьги 46.png",
 	    "image2": "/images/catalog/earrings/серьги 46.1.png",
 	    "image3": "/images/catalog/earrings/серьги 46.2.png"
 	}, {
 	    "id": "2-44",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
+	    "name": "Серьги «Сиреневое облако»",
+	    "cost": "1200 руб.",
+	    "text": "Серьги с цветами реалистичной сирени. Выполнено из холодного фарфора. Швензы - гипоаллергенные, покрытие - родий.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 47.jpg",
 	    "image1": "/images/catalog/earrings/серьги 47.png",
 	    "image2": "/images/catalog/earrings/серьги 47.1.png"
 	}, {
 	    "id": "2-45",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
+	    "name": "Серьги «Зефирные»",
+	    "cost": "1400 руб.",
+	    "text": "Реалистичные голубые и розовые незабудки в букете с ландышами. Нежные, романтичные серьги. Швензы гипоаллергенные, покрытие родий",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 48.jpg",
 	    "image1": "/images/catalog/earrings/серьги 48.png",
 	    "image2": "/images/catalog/earrings/серьги 48.1.png"
 	}, {
 	    "id": "2-46",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
+	    "name": "Серьги «Зефирное лето»",
+	    "cost": "750 руб.",
+	    "text": "Ярко голубые или нежно розовые серьги с незабудками из полимерной глины. Швензы - гипоаллергенные, покрытие родий.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 49.jpg",
-	    "image1": "/images/catalog/earrings/серьги 49.png"
+	    "image1": "/images/catalog/earrings/серьги 49.png",
+	    "image2": "/images/catalog/earrings/серьги 49.1.png"
 	}, {
 	    "id": "2-47",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
+	    "name": "Серьги «Сиреневый букет»",
+	    "cost": "900 руб.",
+	    "text": "Серьги с сиренью из холодного фарфора. Швензы гипоаллергенные. Покрытие - родий.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 50.jpg",
 	    "image1": "/images/catalog/earrings/серьги 50.png"
 	}, {
-	    "id": "2-48",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
-	    "imagePreview": "/images/catalog/earrings/preview/серьги 51.jpg",
-	    "image1": "/images/catalog/earrings/серьги 51.png",
-	    "image2": "/images/catalog/earrings/серьги 51.1.png",
-	    "image3": "/images/catalog/earrings/серьги 51.2.png"
-	}, {
-	    "id": "2-49",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
-	    "imagePreview": "/images/catalog/earrings/preview/серьги 52.jpg",
-	    "image1": "/images/catalog/earrings/серьги 52.png"
-	}, {
 	    "id": "2-50",
-	    "name": "»",
-	    "cost": "",
-	    "text": "",
+	    "name": "Серьги «Дикая фиалка»",
+	    "cost": "700 руб.",
+	    "text": "Сережки с цветами дикой фиалки. Каждый цветок вылеплен и тонирован в ручную.",
 	    "imagePreview": "/images/catalog/earrings/preview/серьги 53.jpg",
 	    "image1": "/images/catalog/earrings/серьги 53.png",
 	    "image2": "/images/catalog/earrings/серьги 53.1.png",
@@ -29647,6 +29649,15 @@
 	    "imagePreview": "/images/catalog/rings/preview/кольцо 5.jpg",
 	    "image1": "/images/catalog/rings/кольцо 5.png"
 
+	}, {
+	    "id": "3-6",
+	    "name": "Кольцо «Весна»",
+	    "cost": "700 руб.",
+	    "text": "Кольцо с цветами сирени из холодного фарфора. Размер кольца регулируется. Покрытие основы - родий.",
+	    "imagePreview": "/images/catalog/rings/preview/кольцо 6.jpg",
+	    "image1": "/images/catalog/rings/кольцо 6.png",
+	    "image2": "/images/catalog/rings/кольцо 6.1.png",
+	    "image3": "/images/catalog/rings/кольцо 6.2.png"
 	}];
 
 	exports.products = products;
@@ -29687,9 +29698,9 @@
 	    "image1": "/images/catalog/sets/набор 3.png"
 	}, {
 	    "id": "6-4",
-	    "name": "Набор ",
-	    "cost": "",
-	    "text": "",
+	    "name": "Набор «Сиреневый букет»",
+	    "cost": "под заказ",
+	    "text": "В набор входят: серьги, кольцо, кулон и небольшая заколка с цветами нежной сирени. Каждый цветок вылеплен и тонирован вручную.",
 	    "imagePreview": "/images/catalog/sets/preview/набор 4.jpg",
 	    "image1": "/images/catalog/sets/набор 4.png"
 	}];
@@ -29736,9 +29747,9 @@
 	    "image4": "/images/catalog/another/обруч 1.png"
 	}, {
 	    "id": "5-4",
-	    "name": "",
-	    "cost": "",
-	    "text": "",
+	    "name": "Шпильки «Страсть и волшебство»",
+	    "cost": "400 руб.",
+	    "text": "Шпильки с розами цвета Марсала. Будут шикарно смотреться в прическе. Диаметр распущенной розы - около 3 см. Каждая шпилька с одной розой и листьями. Цена указана за одну шпильку с раскрытой розочкой.",
 	    "imagePreview": "/images/catalog/another/preview/невидимки 1.jpg",
 	    "image1": "/images/catalog/another/невидимки 1.png",
 	    "image2": "/images/catalog/another/невидимки 1.1.png",
@@ -32278,7 +32289,7 @@
 	                _react2['default'].createElement(
 	                    _reactRouter.Link,
 	                    { to: '/catalog/polimer/pendants' },
-	                    'Кулоны/подвески'
+	                    'Броши/заколки'
 	                )
 	            ),
 	            _react2['default'].createElement(
@@ -32898,9 +32909,9 @@
 	});
 	var products = [{
 	    "id": "7-1",
-	    "name": "«Цветами космеи»",
+	    "name": "«Космея»",
 	    "cost": "1200 руб.",
-	    "text": "Букет с цветами космеи из полимерной глины. Букет с ажурными и нежными цветами космеи, в натуральную величину. Каждый цветок вылеплен и тонирова в ручную. Цена указана за одну веточку.",
+	    "text": "Букет с цветами космеи из полимерной глины. Букет с ажурными и нежными цветами космеи, в натуральную величину. Каждый цветок вылеплен и тонирован вручную. Цена указана за одну веточку.",
 	    "imagePreview": "/images/catalog/floral/preview/букет 1.jpg",
 	    "image1": "/images/catalog/floral/букет 1.png",
 	    "image2": "/images/catalog/floral/букет 1.1.png",
@@ -32914,8 +32925,8 @@
 	}, {
 	    "id": "7-2",
 	    "name": "«Веточка Хмеля»",
-	    "cost": "1500 руб.",
-	    "text": "Реалистичный хмель, вылеплен из полимерной глины. Ручная работа. Стоимость указана за одну веточку. Количество веточек может быть разным.  Цена указана за одну веточку.",
+	    "cost": "1200 руб.",
+	    "text": "Реалистичный хмель, вылеплен из полимерной глины. Ручная работа. Стоимость указана за одну веточку. Цена указана за одну веточку.",
 	    "imagePreview": "/images/catalog/floral/preview/букет 2.jpg",
 	    "image1": "/images/catalog/floral/букет 2.png",
 	    "image2": "/images/catalog/floral/букет 2.1.png",
@@ -32926,7 +32937,7 @@
 	    "id": "7-3",
 	    "name": "«Полевые Ромашки»",
 	    "cost": "500 руб.",
-	    "text": "Реалистичные ромашки из полимерной глины принесут тепло вашему дому. Стоимость указана за 1 цветок. Количество цветков может быть разным. Дополнительное изготовление бутона на стебле - 150 руб.",
+	    "text": "Реалистичные ромашки из полимерной глины принесут тепло вашему дому. Стоимость указана за 1 цветок. Дополнительное изготовление бутона на стебле - 150 руб.",
 	    "imagePreview": "/images/catalog/floral/preview/букет 3.jpg",
 	    "image1": "/images/catalog/floral/букет 3.png",
 	    "image2": "/images/catalog/floral/букет 3.1.png",
@@ -32948,7 +32959,7 @@
 	    "id": "7-5",
 	    "name": "«Kороставник»",
 	    "cost": "650 руб.",
-	    "text": "Реалистичные цветы Короставника выполнены из самозастывающей полимерной глины. Стоимость указана за 1 цветочек. Количество цветков может быть разным. Дополнительное изготовление бутона на стебле - 300 руб. ",
+	    "text": "Реалистичные цветы Короставника выполнены из самозастывающей полимерной глины. Стоимость указана за 1 цветочек. Количество цветов может быть разным. Дополнительное изготовление бутона на стебле - 300 руб. ",
 	    "imagePreview": "/images/catalog/floral/preview/букет 5.jpg",
 	    "image1": "/images/catalog/floral/букет 5.png",
 	    "image2": "/images/catalog/floral/букет 5.1.png",
@@ -32992,7 +33003,7 @@
 	}, {
 	    "id": "7-9",
 	    "name": "«Пионы»",
-	    "cost": "1500 руб.",
+	    "cost": "под заказ",
 	    "text": "Композиция состоит из пионов в натуральную величину. Полностью ручная работа. Возможно изготовление данной композиции на заказ, а так же внесение изменений в ее состав.",
 	    "imagePreview": "/images/catalog/floral/preview/букет 9.jpg",
 	    "image1": "/images/catalog/floral/букет 9.png",
@@ -33000,22 +33011,10 @@
 	    "image3": "/images/catalog/floral/букет 9.2.png",
 	    "image4": "/images/catalog/floral/букет 9.3.png"
 	}, {
-	    "id": "7-10",
-	    "name": "Цветы «Шиповника»",
-	    "cost": "600 руб.",
-	    "text": "Реалистичные Цветы шиповника в натуральную величину. Ручная работа. Цена указана заодну веточку с одним цветком. Количество веточек может быть разным.",
-	    "imagePreview": "/images/catalog/floral/preview/букет 10.jpg",
-	    "image1": "/images/catalog/floral/букет 10.png",
-	    "image2": "/images/catalog/floral/букет 10.1.png",
-	    "image3": "/images/catalog/floral/букет 10.2.png",
-	    "image4": "/images/catalog/floral/букет 10.3.png",
-	    "image5": "/images/catalog/floral/букет 10.4.png",
-	    "image6": "/images/catalog/floral/букет 10.5.png"
-	}, {
 	    "id": "7-11",
 	    "name": "Цветы «Крокуса»",
 	    "cost": "500 руб.",
-	    "text": "Крокус, или шафран, символизирует надежду и возрождение, поскольку цветение большинства видов этого рода начинается, когда земля еще покрыта снегом.",
+	    "text": "Букет для интерьера в нежных тонах…. Нежная весенняя композиция с белыми крокусами и мускари. 14 крокусов и 5 цветов мускари закреплены в белом кувшинчике. Лепесточки белых крокусов очень тонкие, просвечивающие на солнце. Цветы выглядят очень реалистично и очаровательно.",
 	    "imagePreview": "/images/catalog/floral/preview/букет 11.jpg",
 	    "image1": "/images/catalog/floral/букет 11.png",
 	    "image2": "/images/catalog/floral/букет 11.1.png",
@@ -33026,20 +33025,8 @@
 	    "image7": "/images/catalog/floral/букет 11.6.png"
 
 	}, {
-	    "id": "7-12",
-	    "name": "Композиция «Танец маков»",
-	    "cost": "1500 руб.",
-	    "text": "Яркая цветочная композиция с алыми маками. Каждый цветок вылеплен и тонирован вручную. Возможность изготовления на заказ уточняйте.",
-	    "imagePreview": "/images/catalog/floral/preview/букет 13.jpg",
-	    "image1": "/images/catalog/floral/букет 12.png",
-	    "image2": "/images/catalog/floral/букет 12.1.png",
-	    "image3": "/images/catalog/floral/букет 12.2.png",
-	    "image4": "/images/catalog/floral/букет 12.3.png",
-	    "image5": "/images/catalog/floral/букет 12.4.png"
-
-	}, {
 	    "id": "7-13",
-	    "name": "Композиция «Пришла весна»",
+	    "name": "Композиция «Дыхание весна»",
 	    "cost": "600 руб.",
 	    "text": "Нежная цветочная композиция из белых подснежников. Ручная работа.",
 	    "imagePreview": "/images/catalog/floral/preview/букет 14.jpg",
@@ -33047,9 +33034,9 @@
 
 	}, {
 	    "id": "7-14",
-	    "name": "",
-	    "cost": "",
-	    "text": "",
+	    "name": "Букет «Кустовые розы»",
+	    "cost": "2000 руб.",
+	    "text": "Букет ярких темно-красных кустовых розочек сорта Little Buckaroo из холодного фарфора. Стоимость указана за одну веточку. На каждой веточке 5 полностью и полураскрытых роз диаметром до 4 см и несколько бутонов. Длина веточки около 30-35 см. Очень реалистичны и эффектны.",
 	    "imagePreview": "/images/catalog/floral/preview/розы.jpg",
 	    "image1": "/images/catalog/floral/розы 1.1.png",
 	    "image2": "/images/catalog/floral/розы 1.2.png",

@@ -26,9 +26,9 @@ let products = [{
     "image4":"/images/catalog/another/обруч 1.png",
 },{
     "id":"5-4",
-    "name":"",
-    "cost":"",
-    "text":"",
+    "name":"Шпильки «Страсть и волшебство»",
+    "cost":"400 руб.",
+    "text":"Шпильки с розами цвета Марсала. Будут шикарно смотреться в прическе. Диаметр распущенной розы - около 3 см. Каждая шпилька с одной розой и листьями. Цена указана за одну шпильку с раскрытой розочкой.",
     "imagePreview":"/images/catalog/another/preview/невидимки 1.jpg",
     "image1":"/images/catalog/another/невидимки 1.png",
     "image2":"/images/catalog/another/невидимки 1.1.png",

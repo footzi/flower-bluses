@@ -54,6 +54,7 @@ let InStock = React.createClass({
                     <div className="pages-numbers">
                         <p className="pages-numbers-link pages-numbers-link1">1</p>
                         <p className="pages-numbers-link pages-numbers-link2">2</p>
+                        <p className="pages-numbers-link pages-numbers-link3">3</p>
                     </div>
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>

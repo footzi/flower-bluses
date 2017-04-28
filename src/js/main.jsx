@@ -62,7 +62,7 @@ let Main = React.createClass({
         <div className="footer-content">
             <div className="footer-content-regulations">
                 <p className="footer-content-regulations-title">Условия использования материалов ресурса:</p>
-                <p className="footer-text ">Все фотографии на данном ресурсе являются собственностью Агафоновой Галины.</p>
+                <p className="footer-text ">Все фотографии на данном ресурсе являются собственностью Агафоновой Галины Владимировны.</p>
                 <p className="footer-text">Запрещено использование любого контента данного ресурса для получения коммерческой выгоды. </p>
                 <p className="footer-text">При размещении материалов на сторонних ресурсах обязательна ссылка на первоначальный ресурс-источник.
                 </p>

@@ -36,7 +36,7 @@ let Index = React.createClass({
         </div>
         <div className="stock">
             <h2 className="stock-title">УКРАШЕНИЯ В НАЛИЧИИ:</h2>
-            <p className="stock-text">Большинство изделий я делаю на заказ, но есть и те, которые Вы можете приобрести в самые короткие сроки, не дожидаясь их изготовления. Представленные ниже украшения и интерьерные композиции есть в наличии. Заказ можно оформить на сайте или, в случае возникновения вопросов и пожеланий, связаться со мной по <Link to="/contacts">форме обратной связи.</Link></p>
+            <p className="stock-text">Большинство изделий я делаю на заказ, но есть и те, которые Вы можете приобрести в самые короткие сроки, не дожидаясь их изготовления. Представленные ниже украшения и интерьерные композиции есть в наличии. Заказ можно оформить на сайте или, в случае возникновения вопросов и пожеланий, связаться со мной по <Link className="link-contacts" to="/contacts">форме обратной связи.</Link></p>
             <div className="stock-images">
                 <ul className="bxslider">
                     <li className="slide"><Link to="/catalog/polimer/clips/4-12"><img className="stock-img" src="images/catalog/сlips/preview/заколка 7.jpg" /></Link></li>
@@ -73,16 +73,16 @@ let Index = React.createClass({
                 </div>
                <div className="news-details">
                     <img className="news-details-marker" src="images/marker.png" />
-                    <div className="news-details-text">Группы - небольшие, до 4 х человек.</div>
+                    <div className="news-details-text">Занятия будут проводиться в небольших группах. Максимальное количество участников - 4 человека.</div>
                   
                     <img className="news-details-marker" src="images/marker.png" />
-                    <div className="news-details-text">Все материалы и фурнитура предоставляются.</div>
+                    <div className="news-details-text">Все необходимые материалы и фурнитура для создания украшений с реалистичными цветами предоставляются. Вам дополнительно докупать ничего не требуется.</div>
                     
                     <img className="news-details-marker" src="images/marker.png" />
                     <div className="news-details-text">С завершенного МК, вы будете уходить с полностью готовой работой. Это может быть просто реалистический цветок, который можно будет поставить в вазу, или это будет брошка, или небольшая заколка- зажим.</div>
                  
                     <img className="news-details-marker" src="images/marker.png" />
-                    <div className="news-details-text">Участие в МК по предварительной записи. Телефон 89038482661 или оставьте заявку.</div>
+                    <div className="news-details-text">Участие в мастер-классах осуществляется по предварительной записи. Вы можете оставить свою заявку с помощью <Link className="link-contacts" to="/contacts">формы обратной связи</Link> или позвонив по телефону: +79038482661 </div>
                 </div>
                 <div className="clear"></div>
                  <Link to="/lessons"><div className="stock-button news-button">Подробнее</div></Link>
