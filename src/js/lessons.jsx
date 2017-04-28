@@ -42,8 +42,8 @@ let Lessons = React.createClass({
                     <a href="/lessons/1"><div className="lessons-introduction-button">Записаться</div></a>
                 </div> */}
                 <div className="lessons-info">
-                    <p>Для тех, кто хочет научиться очень популярному виду искусства «Создание реалистичных цветов из самозастывающих полимерных глин». Все предлагаемые мастер-классы проводятся в моей уютной домашней мастерской. Здесь достаточно места для 6 человек. Но, на сегодняшний день мне удобен формат проведения МК для 1-4 человек.</p>
-                    <p>Используя опыт своего обучения у разных мастеров и на основе опыта проведения своих МК, я постаралась взять лучшее и предложить вам наиболее удобную форму обучения! Ее преимущества заключаются в том, что:</p>
+                    <p>Все предлагаемые мастер-классы проводятся в моей уютной домашней мастерской. Здесь достаточно места для 6 человек.</p>
+                    {/*<p>Используя опыт своего обучения у разных мастеров и на основе опыта проведения своих МК, я постаралась взять лучшее и предложить вам наиболее удобную форму обучения! Ее преимущества заключаются в том, что:</p>*/}
                     <div className="lessons-info-more">
                         <div className="lessons-info-more-text">
                             <img className="about-introduction-marker lessons-info-more-marker" src="/images/marker.png" />
@@ -80,6 +80,7 @@ let Lessons = React.createClass({
                         info={lesson.info}
                         duration={lesson.duration}
                         level={lesson.level}
+                        cost={lesson.cost}
                         
                     />
 
@@ -99,7 +100,7 @@ let Lessons = React.createClass({
 
 let LessonsPreview = React.createClass({
 	render() {
-		let { name, info, imagePreview, duration, level, openPopup, openImage} = this.props;
+		let { name, info, imagePreview, duration, level, openPopup, openImage, cost} = this.props;
 		return(
 			<div className="lesson">
                <div onClick={openImage}>
@@ -111,6 +112,7 @@ let LessonsPreview = React.createClass({
                         <div>{info}</div>
                         <div>{duration}</div>
                         <div>{level}</div>
+                        <div>{cost}</div>
                     </div>
                 </div>
                     <div className="lessons-introduction-button lesson-button" onClick={openPopup}>Записаться</div>

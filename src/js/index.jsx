@@ -65,24 +65,24 @@ let Index = React.createClass({
             </Link>
         </div>
         <div className="news">
-            <h2 className="stock-title">БЛИЖАЙШИЕ МАСТЕР-КЛАССЫ:</h2>
-            <p className="news-text">Если Вы покорены этим видом искусства – созданием цветов из полимерных глин, реалистической флори&shy;стикой и хотите научиться этому виду творчества, то я  Вам помогу осуществить эту мечту!</p>
+            <h2 className="stock-title">ОБУЧЕНИЕ:</h2>
+            <p className="news-text">Если Вы мечтаете овладеть этим видом искусства – созданием цветов из полимерных глин, то я с удовольствием вам помогу. Я приглашаю вас на индивидуальные занятия или на обучение в группах.</p>
             <div className="news-content">
                <div className="news-calendar">
                     <img className="news-calendar-img" src="images/calendar.png" />
                 </div>
                <div className="news-details">
                     <img className="news-details-marker" src="images/marker.png" />
-                    <div className="news-details-text">Занятия будут проводиться независимо от количества пришедших на МК учеников, даже для одного человека! (группа небольшая, до 4 человек!)</div>
+                    <div className="news-details-text">Группы - небольшие, до 4 х человек.</div>
                   
                     <img className="news-details-marker" src="images/marker.png" />
-                    <div className="news-details-text">Вы можете выбрать любой из предложенных  МК! И я, лично Вам, буду показывать нюансы и тонкости лепки выбранного вами цветка! </div>
+                    <div className="news-details-text">Все материалы и фурнитура предоставляются.</div>
                     
                     <img className="news-details-marker" src="images/marker.png" />
                     <div className="news-details-text">С завершенного МК, вы будете уходить с полностью готовой работой. Это может быть просто реалистический цветок, который можно будет поставить в вазу, или это будет брошка, или небольшая заколка- зажим.</div>
                  
                     <img className="news-details-marker" src="images/marker.png" />
-                    <div className="news-details-text">У вас будет возможность тратить столько часов на одно посещение, сколько вам необходимо. И Вы можете придти в указанные дни в удобное для вас время</div>
+                    <div className="news-details-text">Участие в МК по предварительной записи. Телефон 89038482661 или оставьте заявку.</div>
                 </div>
                 <div className="clear"></div>
                  <Link to="/lessons"><div className="stock-button news-button">Подробнее</div></Link>

@@ -47,7 +47,7 @@ let Main = React.createClass({
             </div>
             <ul className="nav-mobile-menu">
                 <li><Link to="/">Главная</Link></li>
-                <li><Link to="/about">О нас</Link></li>
+                <li><Link to="/about">Обо мне</Link></li>
                 <li><Link to="/catalog">Каталог</Link></li>
                 <li><Link to="/lessons">Обучение</Link></li>
                 <li><Link to="/contacts">Контакты</Link></li>
