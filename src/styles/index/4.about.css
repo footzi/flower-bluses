@@ -51,8 +51,6 @@
 	text-indent: 3%;
 }
 .about-more p:nth-child(2) {
-	margin-top: 5%;
-	margin-bottom: 3%;
 	text-decoration: underline;
 }
 .about-more p:nth-child(n+3) {

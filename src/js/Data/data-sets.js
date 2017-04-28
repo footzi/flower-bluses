@@ -19,20 +19,5 @@ let products = [{
     "text":"В набор входят серьги и кулон с ягодками малины. Окунитесь в лето даже холодной зимой! Ручная работа.",
     "imagePreview":"/images/catalog/sets/preview/набор 3.jpg",
     "image1":"/images/catalog/sets/набор 3.png",
-},{
-    "id":"6-4",
-    "name":"Набор «Бронза»",
-    "cost":"под заказ",
-    "text":"В набор входят серьги и кольцо с миниатюрными розами. Ручная работа.",
-    "imagePreview":"/images/catalog/sets/preview/набор 4.jpg",
-    "image1":"/images/catalog/sets/набор 4.png",
-},{
-    "id":"6-5",
-    "name":"Набор «Розовая нежность»",
-    "cost":"под заказ",
-    "text":"В набор входят серьги и кольцо с невероятно нежными миниатюрными розочками. Каждый цветок вылеплен и тонирован вручную.",
-    "imagePreview":"/images/catalog/sets/preview/набор 5.jpg",
-    "image1":"/images/catalog/sets/набор 5.png",
-    "image2":"/images/catalog/sets/набор 5.1.png",
 }]
 export  { products };

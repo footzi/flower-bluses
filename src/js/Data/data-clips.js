@@ -1,12 +1,4 @@
 let products = [{
-    "id":"4-1",
-    "name":"Брошь «Нежность сирени»",
-    "cost":"под заказ",
-    "text":"Нежная брошь с веточкой сирени. Каждый цветок вылеплен и тонирован вручную. Возможно изготовление заколки.",
-    "imagePreview":"/images/catalog/сlips/preview/брошь 1.png",
-    "image1":"/images/catalog/сlips/брошь 1.png",
-    "image2":"/images/catalog/сlips/брошь 1.1.png",
-},{
     "id":"4-2",
     "name":"Брошь «Веточка жасмина»",
     "cost":"под заказ",
@@ -40,14 +32,6 @@ let products = [{
     "image1":"/images/catalog/сlips/брошь 5.png",
     "image2":"/images/catalog/сlips/брошь 5.1.png",
     "image3":"/images/catalog/сlips/брошь 5.2.png",
-},{
-    "id":"4-6",
-    "name":"Заколка «Снежная сирень»",
-    "cost":"под заказ",
-    "text":"Зажим для волос с нежной сиренью. Веточка натурального размера. Каждый цветочек вылеплен и тонирован вручную.",
-    "imagePreview":"/images/catalog/сlips/preview/заколка 1.jpg",
-    "image1":"/images/catalog/сlips/заколка 1.png",
-    "image2":"/images/catalog/сlips/заколка 1.1.png",
 },{
     "id":"4-7",
     "name":"Заколка «Кусочек весны»",

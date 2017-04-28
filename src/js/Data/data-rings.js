@@ -19,14 +19,6 @@ let products = [{
     "image3":"/images/catalog/rings/кольцо 2.2.png",
     
 },{
-    "id":"3-3",
-    "name":"Кольцо «Бронза»",
-    "cost":"под заказ",
-    "text":"Кольцо с миниатюрными розами, примулами и черной рябинкой. Ручная работа.",
-    "imagePreview":"/images/catalog/rings/preview/кольцо 3.jpg",
-    "image1":"/images/catalog/rings/кольцо 3.png",
-    
-},{
     "id":"3-4",
     "name":"Кольцо «Розовая нежность»",
     "cost":"под заказ",

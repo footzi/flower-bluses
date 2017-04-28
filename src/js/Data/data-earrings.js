@@ -32,30 +32,6 @@ let products = [{
     "image2":"/images/catalog/earrings/серьги 4.1.png",
 
 },{
-    "id":"2-5",
-    "name":"Серьги «Незабудки»",
-    "cost":"750 руб.",
-    "text":"Голубые полянки в березовом лесу, запах ландышей и тепло - вот что Вы почувствуете, когда одените эти нежные сережки. Каждый цветок вылеплен вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 5.jpg",
-    "image1":"/images/catalog/earrings/серьги 5.png",
-},/*{
-    "id":"2-6",
-    "name":"Серьги «Веточка сирени»",
-    "cost":"1400 руб.",
-    "text":"Серьги с нежной сиренью. Каждый цветок вылеплен, тонирован и собран вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 6.jpg",
-    "image1":"/images/catalog/earrings/серьги 6.png",
-
-},*/{
-    "id":"2-7",
-    "name":"Серьги «Цветы сакуры»",
-    "cost":"под заказ",
-    "text":"Нежная розовая сакура, белые розочки и бусины из чешского стекла. Каждый цветок выполнен вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 7.jpg",
-    "image1":"/images/catalog/earrings/серьги 7.png",
-    "image2":"/images/catalog/earrings/серьги 7.1.png",
-
-},{
     "id":"2-8",
     "name":"Cерьги «Миниатюрные розы»",
     "cost":"под заказ",
@@ -63,17 +39,6 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 8.jpg",
     "image1":"/images/catalog/earrings/серьги 8.png",
     "image2":"/images/catalog/earrings/серьги 8.1.png",
-
-},{
-    "id":"2-9",
-    "name":"Серьги «Розовая нежность»",
-    "cost":"под заказ",
-    "text":"Невероятно нежные серьги с миниатюрными розочками. Каждый цветочек вылеплен вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 9.jpg",
-    "image1":"/images/catalog/earrings/серьги 9.png",
-    "image2":"/images/catalog/earrings/серьги 9.1.png",
-    "image3":"/images/catalog/earrings/серьги 9.2.png",
-    "image4":"/images/catalog/earrings/серьги 9.3.png",
 
 },{
     "id":"2-10",
@@ -109,13 +74,6 @@ let products = [{
     "imagePreview":"/images/catalog/earrings/preview/серьги 13.jpg",
     "image1":"/images/catalog/earrings/серьги 13.png",
 
-},{
-    "id":"2-14",
-    "name":"Серьги «Рассвет»",
-    "cost":"под заказ",
-    "text":"Стильные и яркие серьги с миниатюрными розочками. Каждый цветочек вылеплен, тонирован и собран вручную.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 14.jpg",
-    "image1":"/images/catalog/earrings/серьги 14.png",
 },{
     "id":"2-15",
     "name":"Серьги «Черничный водопад»",

@@ -8,13 +8,13 @@ var Carousel = require('react-responsive-carousel').Carousel;
 
 let Floral = React.createClass({
      componentDidMount () {
-      $(function(){
-                $(window).resize(function(){
-                    if($(window).width()>640) {
-                        $(".catalog-navigation").css({"margin-top":"-32.3%"});
-                      }
-                }).resize()
-            })
+      // $(function(){
+      //           $(window).resize(function(){
+      //               if($(window).width()>640) {
+      //                   $(".catalog-navigation").css({"margin-top":"-32.3%"});
+      //                 }
+      //           }).resize()
+      //       })
          //$("#footer").css({"margin-top":"8.6%"});
          //$(".catalog-navigation").css({"margin-top":"-32.3%"});
         // $(".product-preview:eq(12)").css({"margin-bottom":"36%"})
