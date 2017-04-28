@@ -27,13 +27,13 @@ module.exports = {
         ]
     },
     plugins: [
-    //   new webpack.optimize.UglifyJsPlugin(),
-    //   new webpack.optimize.DedupePlugin(),
-    //   new webpack.DefinePlugin({
-    //     'process.env': {
-    //         NODE_ENV: JSON.stringify('production'),
-    //     },
-    // }),
+      new webpack.optimize.UglifyJsPlugin(),
+      new webpack.optimize.DedupePlugin(),
+      new webpack.DefinePlugin({
+        'process.env': {
+            NODE_ENV: JSON.stringify('production'),
+        },
+    }),
       new webpack.ProvidePlugin({
         $: "jquery/dist/jquery.min.js",
         jQuery: "jquery/dist/jquery.min.js",

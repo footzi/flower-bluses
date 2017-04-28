@@ -207,7 +207,7 @@
 .lesson-form img {
 	position: absolute;
 	display: inline-block;
-	width: 14%;
+	width: 13.5%;
 }
 .lesson-form-input {
 	background-color: transparent;
@@ -240,7 +240,8 @@
 }
 .lesson-form-button {
 	cursor: pointer;
-    margin-top:1%;
+    margin:3% 0 2% 0;
+
     border: 1px solid #705290;
     border-radius: 10px;
     padding-top: 1%;
