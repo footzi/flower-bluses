@@ -92,5 +92,16 @@ let products = [{
     "image1":"/images/catalog/сlips/заколка 8.2.png",
     "image2":"/images/catalog/сlips/заколка 8.1.png",
     "image3":"/images/catalog/сlips/заколка 8.png",
+},{
+    "id":"4-14",
+    "name":"»",
+    "cost":"",
+    "text":"",
+    "imagePreview":"/images/catalog/сlips/preview/заколка 9.jpg",
+    "image1":"/images/catalog/сlips/заколка 9.png",
+    "image2":"/images/catalog/сlips/заколка 9.1.png",
+    "image3":"/images/catalog/сlips/заколка 9.2.png",
+    "image4":"/images/catalog/сlips/заколка 9.3.png",
+    "image5":"/images/catalog/сlips/заколка 9.4.png",
 }];
 export  { products };

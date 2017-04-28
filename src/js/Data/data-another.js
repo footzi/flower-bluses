@@ -24,5 +24,14 @@ let products = [{
     "image2":"/images/catalog/another/обруч 1.1.png",
     "image3":"/images/catalog/another/обруч 1.2.png",
     "image4":"/images/catalog/another/обруч 1.png",
+},{
+    "id":"5-4",
+    "name":"",
+    "cost":"",
+    "text":"",
+    "imagePreview":"/images/catalog/another/preview/невидимки 1.jpg",
+    "image1":"/images/catalog/another/невидимки 1.png",
+    "image2":"/images/catalog/another/невидимки 1.1.png",
+    "image3":"/images/catalog/another/невидимки 1.2.png"
 }];
 export  { products };

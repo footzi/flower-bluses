@@ -22,6 +22,22 @@ let products = [{
     "imagePreview":"/images/catalog/pendants/preview/кулон 3.jpg",
     "image1":"/images/catalog/pendants/кулон 3.png",
     
+},{
+    "id":"1-5",
+    "name":"Кулон ",
+    "cost":"",
+    "text":"",
+    "imagePreview":"/images/catalog/pendants/preview/кулон 5.jpg",
+    "image1":"/images/catalog/pendants/кулон 5.png",
+    
+},{
+    "id":"1-6",
+    "name":"Кулон ",
+    "cost":"",
+    "text":"",
+    "imagePreview":"/images/catalog/pendants/preview/кулон 6.jpg",
+    "image1":"/images/catalog/pendants/кулон 6.png",
+    
 }];
 
 

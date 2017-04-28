@@ -147,5 +147,19 @@ let products = [{
     "imagePreview":"/images/catalog/floral/preview/букет 14.jpg",
     "image1":"/images/catalog/floral/букет 13.png",
     
+},{
+    "id":"7-14",
+    "name":"",
+    "cost":"",
+    "text":"",
+    "imagePreview":"/images/catalog/floral/preview/розы.jpg",
+    "image1":"/images/catalog/floral/розы 1.1.png",
+    "image2":"/images/catalog/floral/розы 1.2.png",
+    "image3":"/images/catalog/floral/розы 1.3.png",
+    "image4":"/images/catalog/floral/розы 1.4.png",
+    "image5":"/images/catalog/floral/розы 1.5.png",
+    "image6":"/images/catalog/floral/розы 1.6.png",
+    "image7":"/images/catalog/floral/розы 1.7.png",
+    
 }]
 export { products };

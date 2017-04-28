@@ -95,6 +95,13 @@ function navigationPage () {
             $(".pages-numbers-link8").addClass("pages-numbers-link-active");
          })
 
+          $(".pages-numbers-link9").click(function(){
+            $(".product-preview").hide();
+            $(".product-preview").slice(72,81).show();
+            $(".pages-numbers-link").removeClass("pages-numbers-link-active");
+            $(".pages-numbers-link9").addClass("pages-numbers-link-active");
+         })
+
          $(".pages-numbers-link").click(function(){
              window.scrollTo(0,0)
           })

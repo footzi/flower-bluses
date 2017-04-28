@@ -19,5 +19,12 @@ let products = [{
     "text":"В набор входят серьги и кулон с ягодками малины. Окунитесь в лето даже холодной зимой! Ручная работа.",
     "imagePreview":"/images/catalog/sets/preview/набор 3.jpg",
     "image1":"/images/catalog/sets/набор 3.png",
+},{
+    "id":"6-4",
+    "name":"Набор ",
+    "cost":"",
+    "text":"",
+    "imagePreview":"/images/catalog/sets/preview/набор 4.jpg",
+    "image1":"/images/catalog/sets/набор 4.png",
 }]
 export  { products };

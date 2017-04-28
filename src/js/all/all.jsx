@@ -74,6 +74,7 @@ let All = React.createClass({
                         <p className="pages-numbers-link pages-numbers-link6">6</p>
                         <p className="pages-numbers-link pages-numbers-link7">7</p>
                         <p className="pages-numbers-link pages-numbers-link8">8</p>
+                        <p className="pages-numbers-link pages-numbers-link9">9</p>
                     </div>
                     <div className="pages-next">
                          <a className="pages-link">следующая →</a>
