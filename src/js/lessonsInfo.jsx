@@ -19,7 +19,7 @@ let LessonsInfo = React.createClass({
             var service_id = "mail_ru";
             var template_id = "lessons";
 
-            orderform.find("#lessonsform-button").text("Отправляется...");
+            orderform.find("#lessonsform-button").text("Отправляется");
             emailjs.sendForm(service_id,template_id,"lessonsform")
                 .then(function(){ 
                     console.log("Sent!");
@@ -75,13 +75,7 @@ let LessonsInfo = React.createClass({
                                         <input className="lesson-form-input" name="product" type="text" readonly placeholder="Название мастер-класса" value={lesson.name}/>
                                         <input className="lesson-form-input" name="name" type="text" required placeholder="Ваше имя:" />
                                         <input className="lesson-form-input" name="email" type="email" required placeholder="Ваш e-mail:" />
-                                        {/*<select className="lesson-form-input lesson-form-input-date" required name="date">
-                                            <option hidden>Дата мастер класса:</option>
-                                            <option className="lesson-form-option">10.05.1990</option>
-                                            <option>11.05.1990</option>
-                                            <option>12.05.1990</option>
-                                        </select> */}
-                                        <textarea className="lesson-form-input lesson-form-input-message" name="info" type="text" placeholder="Сообщение:" />
+                                        <textarea className="lesson-form-input lesson-form-input-message" name="message" type="text" placeholder="Сообщение:" />
                                     </div>
 
                                 </div>

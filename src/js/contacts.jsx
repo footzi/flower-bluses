@@ -14,7 +14,7 @@ let Contacts = React.createClass({
         var service_id = "mail_ru";
         var template_id = "about";
 
-        orderform.find("#aboutform-button").text("Отправляется...");
+        orderform.find("#aboutform-button").text("Отправляется");
         emailjs.sendForm(service_id,template_id,"aboutform")
             .then(function(){ 
                 console.log("Sent!");
