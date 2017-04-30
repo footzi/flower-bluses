@@ -91,11 +91,9 @@ main {
     margin-bottom:5%;
     width: 80%;
 }
-.stock-images-mobile img:last-child {
-    margin-bottom:0;
-}
+
 .stock-button {
-    margin: 9% 0;
+    margin: 4% 0 9% 0;
     padding: 2% 0;
     width: 80%;
     font-size: 7vw;

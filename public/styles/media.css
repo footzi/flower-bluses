@@ -7,15 +7,14 @@ main{margin-top:-7%;width:100%;text-align:center;box-sizing:border-box;padding:0
 .main-title{margin:0;font-size:5vw;margin-bottom:5%}.main-introduction{margin:0;font-size:4.5vw;text-indent:5%;padding:0}
 .stock{margin:10% auto 0 auto;width:90%;padding:0}.stock-title{margin:9% 0;font-size:5vw}
 .stock-text{display:none}.stock-images{display:none}.stock-images-mobile img{margin-bottom:5%;width:80%}
-.stock-images-mobile img:last-child{margin-bottom:0}.stock-button{margin:9% 0;padding:2% 0;width:80%;font-size:7vw}
-.news{padding:0 8%;width:73%;margin:10% auto 0 auto}.news-text{font-family:Arial,Helvetica,sans-serif;color:#888;font-size:4vw}
-.news-content{margin-top:9%;text-align:center}.news-calendar{margin:0;width:100%;float:none}
-.news-calendar img{margin-bottom:9%;width:40%}.news-details{font-size:3vw;width:100%;float:none}
-.news-details-text{margin:-6.6% 0 5% 12%}.news-details-text:last-child{margin:-6.6% 0 0 12%}
-.news-details-marker{width:6%}.news-button{width:100%}.about{font-size:4.5vw}.about-title{font-size:5vw}
-.about-introduction-marker{width:5%}.about-introduction-text{text-align:justify}.about-i-photo{width:100%}
-.about-i-text{width:100%;margin:3% 0 0 0}.about-form-title{font-size:3.4vw}.about-form form{display:block}
-.about-form-input{margin-bottom:3%;width:100%;padding:2% 0 2% .5%;font-size:3.5vw;box-sizing:border-box}
+.stock-button{margin:4% 0 9% 0;padding:2% 0;width:80%;font-size:7vw}.news{padding:0 8%;width:73%;margin:10% auto 0 auto}
+.news-text{font-family:Arial,Helvetica,sans-serif;color:#888;font-size:4vw}.news-content{margin-top:9%;text-align:center}
+.news-calendar{margin:0;width:100%;float:none}.news-calendar img{margin-bottom:9%;width:40%}
+.news-details{font-size:3vw;width:100%;float:none}.news-details-text{margin:-6.6% 0 5% 12%}
+.news-details-text:last-child{margin:-6.6% 0 0 12%}.news-details-marker{width:6%}
+.news-button{width:100%}.about{font-size:4.5vw}.about-title{font-size:5vw}.about-introduction-marker{width:5%}
+.about-introduction-text{text-align:justify}.about-i-photo{width:100%}.about-i-text{width:100%;margin:3% 0 0 0}
+.about-form-title{font-size:3.4vw}.about-form form{display:block}.about-form-input{margin-bottom:3%;width:100%;padding:2% 0 2% .5%;font-size:3.5vw;box-sizing:border-box}
 .about-form-input-email,.about-form-input-phone{left:0;float:none;width:100%}.about-form-input-message{padding-bottom:25%}
 .about-info-button{margin:0;width:100%;padding:2% 0;font-size:5vw}.catalog-butterfly-img{display:none}
 .catalog-title{font-size:5vw}.catalog-introduction{font-size:4.5vw}.catalog-polimer-introduction{display:none}

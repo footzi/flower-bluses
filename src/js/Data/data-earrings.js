@@ -176,9 +176,9 @@ let products = [{
     "cost":"1200 руб.",
     "text":"Серьги с миниатюрными пионами из самозастывающей полимерной глины Швензы - гипоаллергенные, сталь. Ручная работа.",
     "imagePreview":"/images/catalog/earrings/preview/серьги 27.jpg",
-    "image1":"/images/catalog/earrings/серьги 27.png",
+    "image1":"/images/catalog/earrings/серьги 27.2.png",
     "image2":"/images/catalog/earrings/серьги 27.1.png",
-    "image3":"/images/catalog/earrings/серьги 27.2.png",
+    "image3":"/images/catalog/earrings/серьги 27.png",
 
 },{
     "id":"2-27",
@@ -327,22 +327,6 @@ let products = [{
     "image1":"/images/catalog/earrings/серьги 47.png",
     "image2":"/images/catalog/earrings/серьги 47.1.png",
 },{
-    "id":"2-45",
-    "name":"Серьги «Зефирные»",
-    "cost":"1400 руб.",
-    "text":"Реалистичные голубые и розовые незабудки в букете с ландышами. Нежные, романтичные серьги. Швензы гипоаллергенные, покрытие родий",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 48.jpg",
-    "image1":"/images/catalog/earrings/серьги 48.png",
-    "image2":"/images/catalog/earrings/серьги 48.1.png",
-},{
-    "id":"2-46",
-    "name":"Серьги «Зефирное лето»",
-    "cost":"750 руб.",
-    "text":"Ярко голубые или нежно розовые серьги с незабудками из полимерной глины. Швензы - гипоаллергенные, покрытие родий.",
-    "imagePreview":"/images/catalog/earrings/preview/серьги 49.jpg",
-    "image1":"/images/catalog/earrings/серьги 49.png",
-    "image2":"/images/catalog/earrings/серьги 49.1.png"
-},{
     "id":"2-47",
     "name":"Серьги «Сиреневый букет»",
     "cost":"900 руб.",
@@ -358,6 +342,22 @@ let products = [{
     "image1":"/images/catalog/earrings/серьги 53.png",
     "image2":"/images/catalog/earrings/серьги 53.1.png",
     "image3":"/images/catalog/earrings/серьги 53.2.png",
-    "image3":"/images/catalog/earrings/серьги 53.4.png",
+    "image4":"/images/catalog/earrings/серьги 53.4.png",
+},{
+    "id":"2-45",
+    "name":"Серьги «Зефирные»",
+    "cost":"1400 руб.",
+    "text":"Реалистичные голубые и розовые незабудки в букете с ландышами. Нежные, романтичные серьги. Швензы гипоаллергенные, покрытие родий",
+    "imagePreview":"/images/catalog/earrings/preview/серьги 48.jpg",
+    "image1":"/images/catalog/earrings/серьги 48.png",
+    "image2":"/images/catalog/earrings/серьги 48.1.png",
+},{
+    "id":"2-46",
+    "name":"Серьги «Зефирное лето»",
+    "cost":"750 руб.",
+    "text":"Ярко голубые или нежно розовые серьги с незабудками из полимерной глины. Швензы - гипоаллергенные, покрытие родий.",
+    "imagePreview":"/images/catalog/earrings/preview/серьги 49.jpg",
+    "image1":"/images/catalog/earrings/серьги 49.png",
+    "image2":"/images/catalog/earrings/серьги 49.1.png"
 }]
 export { products };

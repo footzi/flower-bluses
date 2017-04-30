@@ -41,24 +41,19 @@ let Index = React.createClass({
                 <ul className="bxslider">
                     <li className="slide"><Link to="/catalog/polimer/clips/4-12"><img className="stock-img" src="images/catalog/сlips/preview/заколка 7.jpg" /></Link></li>
                     <li className="slide"><Link to="/catalog/polimer/earrings/2-22"><img className="stock-img" src="images/catalog/earrings/preview/серьги 23.jpg" /></Link></li>
-                    <li className="slide"><Link to="/catalog/polimer/earrings/2-26"><img className="stock-img" src="images/catalog/earrings/preview/серьги 26.jpg" /></Link></li>
-                    <li className="slide"><Link to="/catalog/polimer/earrings/2-6"><img className="stock-img" src="images/catalog/earrings/preview/серьги 6.jpg" /></Link></li>
-
+                    <li className="slide"><Link to="/catalog/polimer/earrings/2-25"><img className="stock-img" src="images/catalog/earrings/preview/серьги 26.jpg" /></Link></li>
                     <li className="slide"><Link to="/catalog/polimer/clips/4-10"><img className="stock-img" src="images/catalog/сlips/preview/заколка 5.jpg" /></Link></li>
                     <li className="slide"><Link to="/catalog/polimer/earrings/2-24"><img className="stock-img" src="images/catalog/earrings/preview/серьги 25.jpg" /></Link></li>
                     <li className="slide"><Link to="/catalog/polimer/clips/4-13"><img className="stock-img" src="images/catalog/сlips/preview/заколка 8.jpg" /></Link></li>
-                    <li className="slide"><Link to="/catalog/polimer/earrings/2-19"><img className="stock-img" src="images/catalog/earrings/preview/серьги 20.jpg" /></Link></li>
-
                     <li className="slide"><Link to="/catalog/polimer/earrings/2-27"><img className="stock-img" src="images/catalog/earrings/preview/серьги 26.jpg" /></Link></li>
-                    <li className="slide"><Link to="/catalog/polimer/earrings/2-37"><img className="stock-img" src="images/catalog/earrings/preview/серьги 40.jpg" /></Link></li>
                     <li className="slide"><Link to="/catalog/polimer/earrings/2-21"><img className="stock-img" src="images/catalog/earrings/preview/серьги 22.jpg" /></Link></li>
                     <li className="slide"><Link to="/catalog/polimer/earrings/2-23"><img className="stock-img" src="images/catalog/earrings/preview/серьги 24.jpg" /></Link></li>
                 </ul>
             </div>
             <div className="stock-images-mobile">
-                <img src="images/1-mobile.jpg" />
-                <img src="images/2-mobile.jpg" />
-                <img src="images/3-mobile.jpg" />
+               <Link to="/catalog/polimer/clips/4-12"><img src="images/catalog/сlips/preview/заколка 7.jpg" /></Link>
+               <Link to="/catalog/polimer/earrings/2-22"><img src="images/catalog/earrings/preview/серьги 23.jpg" /></Link>
+               <Link to="/catalog/polimer/earrings/2-25"><img src="images/catalog/earrings/preview/серьги 26.jpg" /></Link>
             </div>
             <Link to="/catalog">
                 <div className="stock-button">Каталог</div>
