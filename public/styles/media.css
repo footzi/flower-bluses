@@ -63,6 +63,6 @@ footer{position:static;background-image:url("../images/fon3.jpg");background-siz
 }@media(min-width:641px){.stock-images-mobile{display:none}.nav-mobile{display:none}
 .order-buttons-back-mobile{display:none}header{display:none}.product-info-button-back{display:none}
 .product-info-mobile{display:none}.footer-content-mobile{display:none}.contacts-form-message-mobile{display:none}
-}@media(max-width:1024px){.product-preview-thumbs .product-preview-caption span{opacity:1}
+}@media(max-width:1280px){.product-preview-thumbs .product-preview-caption span{opacity:1}
 .product-preview-thumbs:before{opacity:1;bottom:0}.catalog-thumbs .catalog-caption span{opacity:1}
 .catalog-thumbs:before{opacity:1;bottom:33%}}

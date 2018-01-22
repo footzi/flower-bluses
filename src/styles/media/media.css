@@ -677,7 +677,7 @@ header{
     display: none;
 }
 }
-@media (max-width:1024px) {
+@media (max-width:1280px) {
 .product-preview-thumbs .product-preview-caption span {
     opacity: 1;
 }
